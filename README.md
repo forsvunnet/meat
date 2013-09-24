@@ -1,5 +1,17 @@
-# Bones
-__A Lightweight Wordpress Development Theme__
+# Meat
+__A meatier Wordpress Development Theme__
+
+## Meat is a bones fork with muscle.
+
+It's using the fantastic bones theme as a skeleton and beefs it up to become a more powerful starting theme.
+
+## History
+
+Meat is mainly a collaborative effort between the excellent front-end developers at [drivdigital](https://www.drivdigital.no) and [Full Phat Design](http://www.fullphatdesign.co.uk/). We produce a lot of wordpress powered websites and our prefered starting theme has been bones, but we've recognized that there is room for improvement and we've set out to make a more fleshed out starting theme.
+
+Meat will feature a more complete mobile design and experience along with a more developed tablet and desktop view. Furthermore it comes packed with a few nifty functions for both PHP and JavaScript.
+
+## Bones
 
 Bones is designed to make the life of developers easier. It's built
 using HTML5 & has a strong semantic foundation. It was updated recently
@@ -22,9 +34,3 @@ https://github.com/eddiemachado/bones/issues
 
 ## License
 __[WTFPL](http://sam.zoy.org/wtfpl/)__
-
-	Are You Serious? Yes.
-
-
-## Meta
-* [Changelog](../../blob/master/CHANGELOG.md)
