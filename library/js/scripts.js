@@ -22,9 +22,23 @@ if (!window.getComputedStyle) {
                 });
             }
             return el.currentStyle[prop] ? el.currentStyle[prop] : null;
-        }
+        };
         return this;
-    }
+    };
+}
+
+var min_width;
+if (Modernizr.mq('(min-width: 0px)')) {
+  // Browsers that support media queries
+  min_width = function (width) {
+    return Modernizr.mq('(min-width: ' + width + 'px)');
+  };
+}
+else {
+  // Fallback for browsers that does not support media queries
+  min_width = function (width) {
+    return jQuery(window).width() >= width;
+  };
 }
 
 // as the page loads, call these scripts
@@ -38,32 +52,37 @@ jQuery(document).ready(function($) {
     */
     
     /* getting viewport width */
-    var responsive_viewport = $(window).width();
+    var resize = function() {
     
-    /* if is below 481px */
-    if (responsive_viewport < 481) {
-    
-    } /* end smallest screen */
-    
-    /* if is larger than 481px */
-    if (responsive_viewport > 481) {
+        /* if is below 481px */
+        if (min_width(481)) {
         
-    } /* end larger than 481px */
-    
-    /* if is above or equal to 768px */
-    if (responsive_viewport >= 768) {
-    
-        /* load gravatars */
-        $('.comment img[data-gravatar]').each(function(){
-            $(this).attr('src',$(this).attr('data-gravatar'));
-        });
+        } /* end smallest screen */
         
-    }
-    
-    /* off the bat large screen actions */
-    if (responsive_viewport > 1030) {
+        /* if is larger than 481px */
+        if (min_width(481)) {
+            
+        } /* end larger than 481px */
         
-    }
+        /* if is above or equal to 768px */
+        if (min_width(768)) {
+        
+            /* load gravatars */
+            $('.comment img[data-gravatar]').each(function(){
+                if (!$(this).attr('src')) {
+                    $(this).attr('src',$(this).attr('data-gravatar'));
+                }
+            });
+            
+        }
+        
+        /* off the bat large screen actions */
+        if (min_width(1030)) {
+            
+        }
+    };
+    $(window).resize(resize);
+    resize();
     
 	
 	// add all your scripts here
