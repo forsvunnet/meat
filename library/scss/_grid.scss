@@ -21,24 +21,27 @@ values are commented out on each line.
 
 ******************************************************************/
 
-.onecol    { width: 5.801104972%;  }       /* 4.85%;  } /* grid_1  */
-.twocol    { width: 14.364640883%; }       /* 13.45%; } /* grid_2  */
-.threecol  { width: 22.928176794%; }       /* 22.05%; } /* grid_3  */
-.fourcol   { width: 31.491712705%; }       /* 30.75%; } /* grid_4  */
-.fivecol   { width: 40.055248616%; }       /* 39.45%; } /* grid_5  */
-.sixcol    { width: 48.618784527%; }       /* 48%;    } /* grid_6  */
-.sevencol  { width: 57.182320438000005%; } /* 56.75%; } /* grid_7  */
-.eightcol  { width: 65.74585634900001%; }  /* 65.4%;  } /* grid_8  */
-.ninecol   { width: 74.30939226%; }        /* 74.05%; } /* grid_9  */
-.tencol    { width: 82.87292817100001%; }  /* 82.7%;  } /* grid_10 */
-.elevencol { width: 91.436464082%; }       /* 91.35%; } /* grid_11 */
-.twelvecol { width: 99.999999993%; }       /* 100%;   } /* grid_12 */
+.onecol    { width: (100 *  1 / 12) + 0%; }
+.twocol    { width: (100 *  2 / 12) + 0%; }
+.threecol  { width: (100 *  3 / 12) + 0%; }
+.fourcol   { width: (100 *  4 / 12) + 0%; }
+.fivecol   { width: (100 *  5 / 12) + 0%; }
+.sixcol    { width: (100 *  6 / 12) + 0%; }
+.sevencol  { width: (100 *  7 / 12) + 0%; }
+.eightcol  { width: (100 *  8 / 12) + 0%; }
+.ninecol   { width: (100 *  9 / 12) + 0%; }
+.tencol    { width: (100 * 10 / 12) + 0%; }
+.elevencol { width: (100 * 11 / 12) + 0%; }
+.twelvecol { width: (100 * 12 / 12) + 0%; }
 
 // layout & column defaults
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
-  margin-left: 2.762430939%;
+  h1, h2, h3, h4, h5, h6,
+  p {
+  	padding: 0 7px;
+  }
 }
 
 .first {
