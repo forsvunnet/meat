@@ -126,7 +126,7 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
     // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+    // wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
@@ -140,10 +140,10 @@ function bones_scripts_and_styles() {
     }
 
     //adding scripts file in the footer
-    wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
+    //wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
     // enqueue styles and scripts
-    wp_enqueue_script( 'bones-modernizr' );
+    //wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style( 'bones-ie-only' );
 
@@ -155,7 +155,7 @@ function bones_scripts_and_styles() {
     and your site will load faster.
     */
     wp_enqueue_script( 'jquery' );
-    wp_enqueue_script( 'bones-js' );
+    //wp_enqueue_script( 'bones-js' );
 
   }
 }
@@ -174,7 +174,7 @@ function bones_theme_support() {
 	set_post_thumbnail_size(125, 125, true);
 
 	// wp custom background (thx to @bransonwerner for update)
-	add_theme_support( 'custom-background',
+	/*add_theme_support( 'custom-background',
 	    array(
 	    'default-image' => '',  // background image default
 	    'default-color' => '', // background color default (dont add the #)
@@ -182,7 +182,7 @@ function bones_theme_support() {
 	    'admin-head-callback' => '',
 	    'admin-preview-callback' => ''
 	    )
-	);
+	);*/
 
 	// rss thingy
 	add_theme_support('automatic-feed-links');
@@ -192,15 +192,15 @@ function bones_theme_support() {
 	// adding post format support
 	add_theme_support( 'post-formats',
 		array(
-			'aside',             // title less blurb
+			//'aside',             // title less blurb
 			'gallery',           // gallery of images
 			'link',              // quick link to other site
-			'image',             // an image
-			'quote',             // a quick quote
-			'status',            // a Facebook like status update
-			'video',             // video
-			'audio',             // audio
-			'chat'               // chat transcript
+			//'image',             // an image
+			//'quote',             // a quick quote
+			//'status',            // a Facebook like status update
+			//'video',             // video
+			//'audio',             // audio
+			//'chat'               // chat transcript
 		)
 	);
 
