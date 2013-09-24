@@ -53,3 +53,4 @@ temp/
 .Trashes
 
 .svn
+*.sass-cache
