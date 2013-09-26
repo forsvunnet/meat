@@ -25,6 +25,8 @@ LAYOUT & GRID STYLES
 	margin: 0 auto;
 }
 
+$slab: 7px;
+
 
 //
 // Typography
@@ -34,23 +36,23 @@ LAYOUT & GRID STYLES
 /*********************
 GENERAL STYLES
 *********************/
-
+$base_line_height: 35px;
 body {
-	font-family: $base_font_family;
+	font-family: $sans-serif;
 	font-size: 100%;
-	line-height: 1.5;
+	line-height: 1.3;
 	color: #565656;
 	overflow: auto;
 }
 
 ul, ol, p {
-  margin: 0 0 $base_line_height * 7 / 12;
+  margin: 0 0 $slab * 3;
 }
 .lead {
-  margin-bottom: $base_line_height;
-  font-size: $base_font_size * 1.5;
+  margin-bottom: ($slab * 5);
+  +font-size{};//(14)
   font-weight: 200;
-  line-height: $base_line_height * 1.5;
+  line-height: 1.3;
 }
 
 
@@ -65,9 +67,9 @@ em      { font-style: italic; }
 cite    { font-style: normal; }
 
 // Utility classes
-.muted               { color: $gray_light; }
+.muted               { color: $grey-light; }
 a.muted:hover,
-a.muted:focus        { color: darken($gray_light, 10%); }
+a.muted:focus        { color: darken($grey-light, 10%); }
 
 .text-warning        { color: $warning_text; }
 a.text-warning:hover,
@@ -94,55 +96,39 @@ a.text-success:focus { color: darken($success_text, 10%); }
 // -------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;//($base_line_height / 2) 0;
-  font-family: $headings_font_family;
-  font-weight: $headings_font_weight;
-  line-height: $base_line_height;
-  color: $headings_color;
+  margin: 0;//(($slab * 5) / 2) 0;
+  font-family: $sans-serif;
+  //font-weight: $headings_font_weight;
+  //line-height: ($slab * 5);
+  color: $headings-color;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
     font-weight: normal;
     line-height: 1;
-    color: $gray_light;
+    color: $grey-light;
   }
 }
 
-h1,
-h2,
-h3 { line-height: $base_line_height * 1.5; }
+//h1, h2, h3 {
+	//line-height: ($slab * 5) * 1.5;
+//}
 
-h1 { font-size: $base_font_size * 1.75; } // ~38px
-h2 { font-size: $base_font_size * 1.25; } // ~32px
-h3 { font-size: $base_font_size * 1.25; } // ~24px
-h4 { font-size: $base_font_size * 1.25; } // ~18px
-h5 { font-size: $base_font_size; }
-h6 { font-size: $base_font_size * 0.85; } // ~12px
+h1 { @include font-size(22); } // ~38px
+h2 { @include font-size(20); } // ~32px
+h3 { @include font-size(18); } // ~24px
+h4 { @include font-size(18); } // ~18px
+h5 { @include font-size(16); } // ~12px
+h6 { @include font-size(16); } // ~12px
 
-h1 small { font-size: $base_font_size * 1.75; } // ~24px
-h2 small { font-size: $base_font_size * 1.25; } // ~18px
-h3 small { font-size: $base_font_size; }
-h4 small { font-size: $base_font_size; }
-
-
-// Page header
-// -------------------------
-
-.page-header {
-  padding-bottom: ($base_line_height / 2) - 1;
-  margin: $base_line_height 0 ($base_line_height * 1.5);
-  border-bottom: 1px solid $gray_lighter;
-}
-
+h1 small { @include font-size(18); } // ~24px
+h2 small { @include font-size(18); } // ~18px
+h3 small { @include font-size(14); }
+h4 small { @include font-size(14); }
 
 
 // Lists
 // --------------------------------------------------
 
-// Unordered and Ordered lists
-ul, ol {
-  //padding: 0;
-  //margin: 0 0 $base_line_height / 2 25px;
-}
 ul ul,
 ul ol,
 ol ol,
@@ -150,7 +136,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: $base_line_height;
+  //line-height: ($slab * 5);
 }
 
 // Remove default list styles
@@ -167,38 +153,35 @@ ol.inline {
   list-style: none;
   > li {
     display: inline-block;
-    @include ie7-inline-block();
-    //padding-left: 5px;
-    //padding-right: 5px;
   }
 }
 
 // Description Lists
 dl {
-  margin-bottom: $base_line_height;
+  margin-bottom: ($slab * 5);
 }
 dt,
 dd {
-  line-height: $base_line_height;
+  line-height: ($slab * 5);
 }
 dt {
   font-weight: bold;
 }
 dd {
-  margin-left: $base_line_height / 2;
+  margin-left: ($slab * 3);
 }
 // Horizontal layout (like forms)
 .dl-horizontal {
   @include clearfix(); // Ensure dl clears floats if empty dd elements present
   dt {
     float: left;
-    width: $horizontal_component_offset - 20;
+    width: 35px - 20;
     clear: left;
     text-align: right;
     @include text-overflow();
   }
   dd {
-    margin-left: $horizontal_component_offset;
+    margin-left: 35px;
   }
 }
 
@@ -207,7 +190,7 @@ dd {
 
 // Horizontal rules
 hr {
-  margin: $base_line_height 0;
+  margin: ($slab * 5) 0;
   border: 0;
   border-top: 1px solid $hr_border;
   border-bottom: 1px solid $white;
@@ -218,7 +201,7 @@ abbr[title],
 // Added data-* attribute to help out our tooltip plugin, per https://github.com/twitter/bootstrap/issues/5257
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted $gray_light;
+  border-bottom: 1px dotted $grey-light;
 }
 abbr.initialism {
   font-size: 90%;
@@ -228,18 +211,18 @@ abbr.initialism {
 // Blockquotes
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 $base_line_height;
-  border-left: 5px solid $gray_lighter;
+  margin: 0 0 ($slab * 5);
+  border-left: 5px solid $grey-lighter;
   p {
     margin-bottom: 0;
-    font-size: $base_font_size * 1.25;
+    @include font-size(12);
     font-weight: 300;
     line-height: 1.25;
   }
   small {
     display: block;
-    line-height: $base_line_height;
-    color: $gray_light;
+    line-height: ($slab * 5);
+    color: $grey-light;
     &:before {
       content: '\2014 \00A0';
     }
@@ -250,7 +233,7 @@ blockquote {
     float: right;
     padding-right: 15px;
     padding-left: 0;
-    border-right: 5px solid $gray_lighter;
+    border-right: 5px solid $grey-lighter;
     border-left: 0;
     p,
     small {
@@ -278,9 +261,9 @@ blockquote:after {
 // Addresses
 address {
   display: block;
-  margin-bottom: $base_line_height;
+  margin-bottom: ($slab * 5);
   font-style: normal;
-  line-height: $base_line_height;
+  line-height: ($slab * 5);
 }
 
 /*********************
@@ -325,9 +308,9 @@ and more scalable.
 	}
 }
 .clickable {
-	border-top: $menu-border;
-	border-bottom: $menu-border;
-	padding: $menu-padd;
+	border-top: 1px solid $menu-border;
+	border-bottom: 1px solid $menu-border;
+	padding: 0 14px;
 	margin: 0;
 	@include bg(darken($grey-lighter, 10%));
 	cursor: pointer;
@@ -343,11 +326,11 @@ and more scalable.
 			width:100%;
 			margin-bottom: 3px;
 			border-radius: 2px;
-			background: $gray;
+			background: $grey;
 		}
 	}
 .nav {
-	border-top: $menu-border;
+	border-top: 1px solid $menu-border;
 	margin: 0;
 	@extend %togglable;
 	.js & {
@@ -358,8 +341,8 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			@include bg($grey-lighter);
-			padding: $menu-padd;
-			border-bottom: $menu-border;
+			padding: 0 14px;
+			border-bottom: 1px solid $menu-border;
 		}
 		ul.sub-menu,
 		ul.children {

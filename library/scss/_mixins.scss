@@ -248,3 +248,61 @@ BUTTONS
 		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
 }
+
+// Meatier mixins:
+@mixin clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+@mixin font-size($sizeValue: 14){
+	font-size: ($sizeValue) + px;
+  font-size: $sizeValue / 14 + rem;
+}
+
+// Text overflow
+// -------------------------
+// Requires inline-block or block for proper styling
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin bg($color) {
+	// do some clever maths to determine if we
+	// should go brighter or darker
+	$brightness: lightness($color);
+	background-color: $color;
+
+	@if ($brightness > 50%) {
+		&:hover, &:focus {
+			background-color: darken($color, 10%);
+		}
+	} @else {
+		&:hover, &:focus {
+			background-color: lighten($color, 10%);
+		}
+	}
+
+}
+
+$grey-darker:             #222;
+$grey-dark:             #444;
+$grey:             #666;
+$grey-light:             #999;
+$grey-lighter:             #ccc;
+
+$red: #C00;
+$blue: #09F;
+$yellow: #330;
+$green: #0C0;
+
+$warning_text: $grey-dark;
+$error_text: $red;
+$warning_text: $grey-dark;
+$info_text: $yellow;
+$success_text: $green;
+$hr_border: $grey;
+$menu-border: $grey-dark;
+
+$headings-color: $blue;
