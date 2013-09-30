@@ -229,6 +229,7 @@ values are commented out on each line.
 }
 
 /* line 60, ../scss/_grid.scss */
+.alert,
 .article-header .byline,
 .footer p,
 .entry-content p,

@@ -741,31 +741,31 @@ BONES Mixin scss (migrated to keep mixins and styles separate)
 }
 
 /* line 28, ../scss/_mobile.scss */
-.alert-help, .alert-info, .alert-error, .alert-success {
+.alert-help p, .alert-info p, .alert-error p, .alert-success p {
   padding: 8px 16px;
   border: 1px solid;
 }
 
 /* line 34, ../scss/_mobile.scss */
-.alert-help {
+.alert-help p {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
 /* line 40, ../scss/_mobile.scss */
-.alert-info {
+.alert-info p {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
 /* line 46, ../scss/_mobile.scss */
-.alert-error {
+.alert-error p {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
 /* line 52, ../scss/_mobile.scss */
-.alert-success {
+.alert-success p {
   border-color: #deeaae;
   background: #e6efc2;
 }
@@ -1819,6 +1819,7 @@ you can add resource intensive styles.
   }
 
   /* line 60, ../scss/_grid.scss */
+  .alert,
   .article-header .byline,
   .footer p,
   .entry-content p,
