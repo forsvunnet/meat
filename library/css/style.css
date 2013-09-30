@@ -1165,8 +1165,6 @@ and more scalable.
 
 /* line 350, ../scss/_mobile.scss */
 .clickable {
-  border-top: 1px solid #444444;
-  border-bottom: 1px solid #444444;
   margin: 0;
   background-color: #b3b3b3;
   cursor: pointer;
