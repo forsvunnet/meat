@@ -9,7 +9,7 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
-/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -671,52 +671,6 @@ span.amp {
   font-style: italic;
 }
 
-/* line 113, ../scss/_mixins.scss */
-.text-left {
-  text-align: left;
-}
-
-/* line 114, ../scss/_mixins.scss */
-.text-center {
-  text-align: center;
-}
-
-/* line 115, ../scss/_mixins.scss */
-.text-right {
-  text-align: right;
-}
-
-/* line 119, ../scss/_mixins.scss */
-.alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
-  padding: 5px 18px;
-  border: 1px solid;
-}
-
-/* line 125, ../scss/_mixins.scss */
-.alert-help {
-  border-color: #e8dc59;
-  background: #ebe16f;
-}
-
-/* line 131, ../scss/_mixins.scss */
-.alert-info {
-  border-color: #bfe4f4;
-  background: #d5edf8;
-}
-
-/* line 137, ../scss/_mixins.scss */
-.alert-error {
-  border-color: #f8cdce;
-  background: #fbe3e4;
-}
-
-/* line 143, ../scss/_mixins.scss */
-.alert-success {
-  border-color: #deeaae;
-  background: #e6efc2;
-}
-
 /*********************
 TRANSITION
 *********************/
@@ -738,88 +692,6 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-/*********************
-BUTTONS
-*********************/
-/* line 205, ../scss/_mixins.scss */
-.button, .button:visited {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 1px solid #be0d37;
-  border-top-color: #db0f3f;
-  border-left-color: #db0f3f;
-  padding: 4px 12px;
-  color: white;
-  display: inline-block;
-  font-size: 11px;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: 21px;
-  border-radius: 4px;
-  background-color: #e40f42;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f01d4f), to(#e40f42));
-  background-image: -webkit-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -moz-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: -o-linear-gradient(top, #f01d4f, #e40f42);
-  background-image: linear-gradient(to bottom, #f01d4f, #e40f42);
-}
-/* line 224, ../scss/_mixins.scss */
-.button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-  color: white;
-  border: 1px solid #be0d37;
-  border-top-color: #9d0a2d;
-  border-left-color: #9d0a2d;
-  background-color: #cc0e3b;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#cc0e3b));
-  background-image: -webkit-linear-gradient(top, #e40f42, #cc0e3b);
-  background-image: -moz-linear-gradient(top, #e40f42, #cc0e3b);
-  background-image: -o-linear-gradient(top, #e40f42, #cc0e3b);
-  background-image: linear-gradient(to bottom, #e40f42, #cc0e3b);
-}
-/* line 232, ../scss/_mixins.scss */
-.button:active, .button:visited:active {
-  background-color: #f01d4f;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e40f42), to(#f01d4f));
-  background-image: -webkit-linear-gradient(top, #e40f42, #f01d4f);
-  background-image: -moz-linear-gradient(top, #e40f42, #f01d4f);
-  background-image: -o-linear-gradient(top, #e40f42, #f01d4f);
-  background-image: linear-gradient(to bottom, #e40f42, #f01d4f);
-}
-
-/* line 237, ../scss/_mixins.scss */
-.blue-button, .blue-button:visited {
-  border-color: #1472ad;
-  text-shadow: 0 1px 1px #1472ad;
-  background-color: #1681c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
-  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
-  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
-  background-image: -o-linear-gradient(top, #1990db, #1681c4);
-  background-image: linear-gradient(to bottom, #1990db, #1681c4);
-  box-shadow: inset 0 0 3px #59b3ec;
-}
-/* line 243, ../scss/_mixins.scss */
-.blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
-  border-color: #116396;
-  background-color: #1472ad;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
-  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
-  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
-  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
-}
-/* line 247, ../scss/_mixins.scss */
-.blue-button:active, .blue-button:visited:active {
-  background-color: #1990db;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
-  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
-  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
-  background-image: -o-linear-gradient(top, #1681c4, #1990db);
-  background-image: linear-gradient(to bottom, #1681c4, #1990db);
-}
-
 /*
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -838,143 +710,431 @@ possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
 ******************************************************************/
-/*********************
-GENERAL STYLES
-*********************/
-/* line 18, ../scss/_base.scss */
-body {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #565656;
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+/********************
+BONES Mixin scss (migrated to keep mixins and styles separate)
+********************/
+/* line 22, ../scss/_mobile.scss */
+.text-left {
+  text-align: left;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-/* for sites that are read right to left (i.e. hebrew) */
-/* home page */
-/* blog template page */
-/* archive page */
-/* date archive page */
-/* replace the number to the corresponding page number */
-/* search page */
-/* search result page */
-/* no results search page */
-/* individual paged search (i.e. body.search-paged-3) */
-/* 404 page */
-/* single post page */
-/* individual post page by id (i.e. body.postid-73) */
-/* individual paged single (i.e. body.single-paged-3) */
-/* attatchment page */
-/* individual attatchment page (i.e. body.attachmentid-763) */
-/* style mime type pages */
-/* author page */
-/* user nicename (i.e. body.author-samueladams) */
-/* paged author archives (i.e. body.author-paged-4) for page 4 */
-/* category page */
-/* individual category page (i.e. body.category-6) */
-/* replace the number to the corresponding page number */
-/* tag page */
-/* individual tag page (i.e. body.tag-news) */
-/* replace the number to the corresponding page number */
-/* custom page template page */
-/* individual page template (i.e. body.page-template-contact-php */
-/* replace the number to the corresponding page number */
-/* parent page template */
-/* child page template */
-/* replace the number to the corresponding page number */
-/* if user is logged in */
-/* paged items like search results or archives */
-/* individual paged (i.e. body.paged-3) */
+/* line 23, ../scss/_mobile.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 24, ../scss/_mobile.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 28, ../scss/_mobile.scss */
+.alert-help, .alert-info, .alert-error, .alert-success {
+  padding: 7px 14px;
+  border: 1px solid;
+}
+
+/* line 34, ../scss/_mobile.scss */
+.alert-help {
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+
+/* line 40, ../scss/_mobile.scss */
+.alert-info {
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+
+/* line 46, ../scss/_mobile.scss */
+.alert-error {
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+
+/* line 52, ../scss/_mobile.scss */
+.alert-success {
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 70, ../scss/_base.scss */
+/* line 62, ../scss/_mobile.scss */
 .wrap {
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
+}
+
+/*********************
+GENERAL STYLES
+*********************/
+/* line 78, ../scss/_mobile.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.3;
+  color: #565656;
+  overflow: auto;
+}
+
+/* line 86, ../scss/_mobile.scss */
+ul, ol, p {
+  margin: 0 0 21px;
+}
+
+/* line 90, ../scss/_mobile.scss */
+.lead {
+  margin-bottom: 35px;
+  font-weight: 200;
+}
+
+/* line 101, ../scss/_mobile.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 103, ../scss/_mobile.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 104, ../scss/_mobile.scss */
+em {
+  font-style: italic;
+}
+
+/* line 105, ../scss/_mobile.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 108, ../scss/_mobile.scss */
+.muted {
+  color: #999999;
+}
+
+/* line 110, ../scss/_mobile.scss */
+a.muted:hover,
+a.muted:focus {
+  color: gray;
+}
+
+/* line 112, ../scss/_mobile.scss */
+.text-warning {
+  color: #444444;
+}
+
+/* line 114, ../scss/_mobile.scss */
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #2b2b2b;
+}
+
+/* line 116, ../scss/_mobile.scss */
+.text-error {
+  color: #cc0000;
+}
+
+/* line 118, ../scss/_mobile.scss */
+a.text-error:hover,
+a.text-error:focus {
+  color: #990000;
+}
+
+/* line 120, ../scss/_mobile.scss */
+.text-info {
+  color: #333300;
+}
+
+/* line 122, ../scss/_mobile.scss */
+a.text-info:hover,
+a.text-info:focus {
+  color: black;
+}
+
+/* line 124, ../scss/_mobile.scss */
+.text-success {
+  color: #00cc00;
+}
+
+/* line 126, ../scss/_mobile.scss */
+a.text-success:hover,
+a.text-success:focus {
+  color: #009900;
+}
+
+/* line 128, ../scss/_mobile.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 129, ../scss/_mobile.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 130, ../scss/_mobile.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 136, ../scss/_mobile.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0099ff;
+  text-rendering: optimizelegibility;
+}
+/* line 143, ../scss/_mobile.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+/* line 154, ../scss/_mobile.scss */
+h1 {
+  font-size: 22px;
+   font-size: 1.57143rem;
+}
+
+/* line 155, ../scss/_mobile.scss */
+h2 {
+  font-size: 20px;
+   font-size: 1.42857rem;
+}
+
+/* line 156, ../scss/_mobile.scss */
+h3 {
+  font-size: 18px;
+   font-size: 1.28571rem;
+}
+
+/* line 157, ../scss/_mobile.scss */
+h4 {
+  font-size: 18px;
+   font-size: 1.28571rem;
+}
+
+/* line 158, ../scss/_mobile.scss */
+h5 {
+  font-size: 16px;
+   font-size: 1.14286rem;
+}
+
+/* line 159, ../scss/_mobile.scss */
+h6 {
+  font-size: 16px;
+   font-size: 1.14286rem;
+}
+
+/* line 161, ../scss/_mobile.scss */
+h1 small {
+  font-size: 18px;
+   font-size: 1.28571rem;
+}
+
+/* line 162, ../scss/_mobile.scss */
+h2 small {
+  font-size: 18px;
+   font-size: 1.28571rem;
+}
+
+/* line 163, ../scss/_mobile.scss */
+h3 small {
+  font-size: 14px;
+   font-size: 1rem;
+}
+
+/* line 164, ../scss/_mobile.scss */
+h4 small {
+  font-size: 14px;
+   font-size: 1rem;
+}
+
+/* line 173, ../scss/_mobile.scss */
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+
+/* line 182, ../scss/_mobile.scss */
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+/* line 189, ../scss/_mobile.scss */
+ul.inline,
+ol.inline {
+  margin-left: 0;
+  list-style: none;
+}
+/* line 192, ../scss/_mobile.scss */
+ul.inline > li,
+ol.inline > li {
+  display: inline-block;
+}
+
+/* line 198, ../scss/_mobile.scss */
+dl {
+  margin-bottom: 35px;
+}
+
+/* line 205, ../scss/_mobile.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 208, ../scss/_mobile.scss */
+dd {
+  margin-left: 21px;
+}
+
+/* line 212, ../scss/_mobile.scss */
+.dl-horizontal {
+  zoom: 1;
+}
+/* line 167, ../scss/_mixins.scss */
+.dl-horizontal:before, .dl-horizontal:after {
+  content: "";
+  display: table;
+}
+/* line 168, ../scss/_mixins.scss */
+.dl-horizontal:after {
+  clear: both;
+}
+/* line 214, ../scss/_mobile.scss */
+.dl-horizontal dt {
+  float: left;
+  width: 15px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 221, ../scss/_mobile.scss */
+.dl-horizontal dd {
+  margin-left: 35px;
+}
+
+/* line 230, ../scss/_mobile.scss */
+hr {
+  margin: 35px 0;
+  border: 0;
+  border-top: 1px solid #666666;
+  border-bottom: 1px solid white;
+}
+
+/* line 240, ../scss/_mobile.scss */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+
+/* line 244, ../scss/_mobile.scss */
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
+/* line 250, ../scss/_mobile.scss */
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 35px;
+  border-left: 5px solid #cccccc;
+}
+/* line 254, ../scss/_mobile.scss */
+blockquote p {
+  margin-bottom: 0;
+  font-size: 12px;
+   font-size: 0.85714rem;
+  font-weight: 300;
+}
+/* line 259, ../scss/_mobile.scss */
+blockquote small {
+  display: block;
+  color: #999999;
+}
+/* line 263, ../scss/_mobile.scss */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+/* line 269, ../scss/_mobile.scss */
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #cccccc;
+  border-left: 0;
+}
+/* line 276, ../scss/_mobile.scss */
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+/* line 280, ../scss/_mobile.scss */
+blockquote.pull-right small:before {
+  content: '';
+}
+/* line 283, ../scss/_mobile.scss */
+blockquote.pull-right small:after {
+  content: '\00A0 \2014';
+}
+
+/* line 294, ../scss/_mobile.scss */
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+
+/* line 299, ../scss/_mobile.scss */
+address {
+  display: block;
+  margin-bottom: 35px;
+  font-style: normal;
 }
 
 /*********************
 LINK STYLES
 *********************/
-/* line 79, ../scss/_base.scss */
+/* line 310, ../scss/_mobile.scss */
 a, a:visited {
   color: #f01d4f;
   /* on hover */
   /* on click */
   /* mobile tap color */
 }
-/* line 83, ../scss/_base.scss */
+/* line 314, ../scss/_mobile.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #d10e3c;
 }
-/* line 93, ../scss/_base.scss */
+/* line 323, ../scss/_mobile.scss */
 a:link, a:visited:link {
-  /*
-  this highlights links on iPhones/iPads.
-  so it basically works like the :hover selector
-  for mobile devices.
-  */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-/* line 107, ../scss/_base.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-rendering: optimizelegibility;
-  font-weight: 500;
-  /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
-  /* removing text decoration from all headline links */
-}
-/* line 117, ../scss/_base.scss */
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-  text-decoration: none;
-}
-
-/* line 122, ../scss/_base.scss */
-h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em;
-}
-
-/* line 127, ../scss/_base.scss */
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em;
-}
-
-/* line 133, ../scss/_base.scss */
-h3, .h3 {
-  font-size: 1.125em;
-}
-
-/* line 137, ../scss/_base.scss */
-h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
-/* line 142, ../scss/_base.scss */
-h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/*********************
-HEADER STYLES
-*********************/
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -985,71 +1145,127 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 169, ../scss/_base.scss */
+/* line 340, ../scss/_mobile.scss */
+.js .nav, .js .nav li ul.sub-menu, .nav li .js ul.sub-menu,
+.js .nav li ul.children,
+.nav li .js ul.children {
+  display: none;
+}
+/* line 342, ../scss/_mobile.scss */
+.js .show.nav, .js .nav li ul.show.sub-menu, .nav li .js ul.show.sub-menu,
+.js .nav li ul.show.children,
+.nav li .js ul.show.children {
+  display: block;
+}
+
+/* line 347, ../scss/_mobile.scss */
+.clickable, .nav li a {
+  padding: 7px 14px;
+}
+
+/* line 350, ../scss/_mobile.scss */
+.clickable {
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444;
+  margin: 0;
+  background-color: #b3b3b3;
+  cursor: pointer;
+  position: relative;
+  width: 30%;
+  float: right;
+}
+/* line 190, ../scss/_mixins.scss */
+.clickable:hover, .clickable:focus {
+  background-color: #999999;
+}
+
+/* line 364, ../scss/_mobile.scss */
+.menu-icon {
+  width: 18px;
+  float: right;
+  margin-top: 4px;
+}
+/* line 368, ../scss/_mobile.scss */
+.menu-icon div {
+  height: 3px;
+  width: 100%;
+  margin-bottom: 3px;
+  border-radius: 2px;
+  background: #666666;
+}
+
+/* line 376, ../scss/_mobile.scss */
+#logo {
+  float: left;
+}
+
+/* line 379, ../scss/_mobile.scss */
+.header nav {
+  position: relative;
+}
+
+/* line 382, ../scss/_mobile.scss */
 .nav {
-  border: 1px solid #ccc;
-  border-bottom: 0;
+  border-top: 1px solid #444444;
+  margin: 0;
   /* end .menu li */
-  /* highlight current page */
-  /* end current highlighters */
 }
-/* line 173, ../scss/_base.scss */
-.nav li {
-  /*
-  so you really have to rethink your dropdowns for mobile.
-  you don't want to have it expand too much because the
-  screen is so small. How you manage your menu should
-  depend on the project. Here's some great info on it:
-  http://www.alistapart.com/articles/organizing-mobile/
-  */
+/* line 386, ../scss/_mobile.scss */
+.js .nav {
+  border-top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  top: 0;
 }
-/* line 175, ../scss/_base.scss */
+/* line 399, ../scss/_mobile.scss */
 .nav li a {
   display: block;
   text-decoration: none;
-  padding: 10px 10px;
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
-  /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */
+  background-color: #cccccc;
+  border-bottom: 1px solid #444444;
 }
-/* line 209, ../scss/_base.scss */
+/* line 190, ../scss/_mixins.scss */
+.nav li a:hover, .nav li a:focus {
+  background-color: #b3b3b3;
+}
+/* line 410, ../scss/_mobile.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
-  padding-left: 30px;
+  background-color: white;
+  padding-left: 28px;
+}
+/* line 190, ../scss/_mixins.scss */
+.nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
+.nav li ul.children li a:hover,
+.nav li ul.children li a:focus {
+  background-color: #e6e6e6;
 }
 
 /* end .nav */
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 245, ../scss/_base.scss */
-#content {
-  margin-top: 2.2em;
+/* line 423, ../scss/_mobile.scss */
+img {
+  margin: 0;
+  width: 100%;
+  height: auto;
 }
 
-/* end .hentry */
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
+/* line 429, ../scss/_mobile.scss */
+#content {
+  margin-top: 14px;
+}
+
 /* post meta */
-/* line 277, ../scss/_base.scss */
+/* line 435, ../scss/_mobile.scss */
 .byline {
   color: #999;
 }
 
-/* entry content */
-/* line 284, ../scss/_base.scss */
+/* line 439, ../scss/_mobile.scss */
 .entry-content {
   /*
   image alignment on a screen this size may be
@@ -1058,25 +1274,17 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 319, ../scss/_base.scss */
+/* line 440, ../scss/_mobile.scss */
 .entry-content dd {
   margin-left: 0;
-  font-size: 0.9em;
   color: #787878;
-  margin-bottom: 1.5em;
 }
-/* line 326, ../scss/_base.scss */
-.entry-content img {
-  margin: 0 0 1.5em 0;
-  max-width: 100%;
-  height: auto;
-}
-/* line 342, ../scss/_base.scss */
+/* line 455, ../scss/_mobile.scss */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 347, ../scss/_base.scss */
+/* line 460, ../scss/_mobile.scss */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
@@ -1084,20 +1292,13 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 355, ../scss/_base.scss */
+/* line 468, ../scss/_mobile.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
-  /* images inside wp-caption */
 }
-/* line 361, ../scss/_base.scss */
-.wp-caption img {
-  max-width: 100%;
-  margin-bottom: 0;
-  width: 100%;
-}
-/* line 367, ../scss/_base.scss */
+/* line 473, ../scss/_mobile.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1105,62 +1306,70 @@ POSTS & CONTENT STYLES
 }
 
 /* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 405, ../scss/_base.scss */
-.pagination,
+/* line 486, ../scss/_mobile.scss */
+.page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 408, ../scss/_base.scss */
-.pagination {
-  text-align: center;
+/* line 489, ../scss/_mobile.scss */
+.bones_page_navi {
+  /* current page link */
+  /* end .bones_page_navi .bpn-current */
+  /* common styles for page-navi links */
+  /* remove the bg on end links */
 }
-/* line 410, ../scss/_base.scss */
-.pagination ul {
-  display: inline-block;
-  white-space: nowrap;
-  padding: 0;
-  clear: both;
-  margin: 1px;
-}
-/* line 416, ../scss/_base.scss */
-.pagination ul li {
-  padding: 0;
-  margin: 0;
+/* line 491, ../scss/_mobile.scss */
+.bones_page_navi li {
   float: left;
-  display: inline;
-  overflow: hidden;
+  margin-left: 10px;
 }
-/* line 422, ../scss/_base.scss */
-.pagination ul li a, .pagination ul li span {
-  margin: 0;
-  text-decoration: none;
-  padding: 0;
-  line-height: 1em;
-  font-size: 1em;
-  font-weight: normal;
-  padding: .5em;
-  min-width: 1em;
+/* line 495, ../scss/_mobile.scss */
+.bones_page_navi li a {
+  padding: 3px 6px;
   display: block;
+  text-decoration: none;
+  position: relative;
 }
-/* line 433, ../scss/_base.scss */
-.pagination ul li span.current {
-  font-weight: bold;
+/* line 502, ../scss/_mobile.scss */
+.bones_page_navi li a:hover, .bones_page_navi li a:focus {
+  color: #f01d4f;
+  text-decoration: underline;
+}
+/* line 511, ../scss/_mobile.scss */
+.bones_page_navi li.bpn-current {
+  padding: 3px 6px;
+  border-bottom: 2px solid #f01d4f;
+  position: relative;
+}
+/* line 520, ../scss/_mobile.scss */
+.bones_page_navi li.bpn-prev-link,
+.bones_page_navi li.bpn-next-link {
+  font-weight: 700;
+}
+/* line 523, ../scss/_mobile.scss */
+.bones_page_navi li.bpn-prev-link a,
+.bones_page_navi li.bpn-next-link a {
+  padding: 0;
+}
+/* line 532, ../scss/_mobile.scss */
+.bones_page_navi li.bpn-prev-link a:hover,
+.bones_page_navi li.bpn-next-link a:hover,
+.bones_page_navi li.bpn-first-page-link a:hover,
+.bones_page_navi li.bpn-last-page-link a:hover {
+  background: none;
 }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 448, ../scss/_base.scss */
+/* line 541, ../scss/_mobile.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 452, ../scss/_base.scss */
+/* line 545, ../scss/_mobile.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1169,24 +1378,17 @@ PAGE NAVI STYLES
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
-/* h3 comment title */
-/* line 463, ../scss/_base.scss */
-#comments {
-  /* number of comments span */
-}
-
-/* line 480, ../scss/_base.scss */
+/* line 556, ../scss/_mobile.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
   /* end .commentlist .vcard */
-  /* comment meta */
   /* comment content */
   /* end .commentlist .comment_content */
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 482, ../scss/_base.scss */
+/* line 558, ../scss/_mobile.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1196,63 +1398,61 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 490, ../scss/_base.scss */
+/* line 566, ../scss/_mobile.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 494, ../scss/_base.scss */
+/* line 570, ../scss/_mobile.scss */
 .commentlist li ul.children {
   margin: 0;
-  /* variations */
-  /* change number for different depth */
 }
-/* line 512, ../scss/_base.scss */
+/* line 575, ../scss/_mobile.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 516, ../scss/_base.scss */
+/* line 579, ../scss/_mobile.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 521, ../scss/_base.scss */
+/* line 584, ../scss/_mobile.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 535, ../scss/_base.scss */
+/* line 592, ../scss/_mobile.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 538, ../scss/_base.scss */
+/* line 595, ../scss/_mobile.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 553, ../scss/_base.scss */
+/* line 599, ../scss/_mobile.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 556, ../scss/_base.scss */
+/* line 602, ../scss/_mobile.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 564, ../scss/_base.scss */
+/* line 607, ../scss/_mobile.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 567, ../scss/_base.scss */
+/* line 610, ../scss/_mobile.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 571, ../scss/_base.scss */
+/* line 614, ../scss/_mobile.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 581, ../scss/_base.scss */
+/* line 622, ../scss/_mobile.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1260,17 +1460,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 606, ../scss/_base.scss */
+/* line 633, ../scss/_mobile.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 609, ../scss/_base.scss */
+/* line 636, ../scss/_mobile.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 618, ../scss/_base.scss */
+/* line 645, ../scss/_mobile.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1282,7 +1482,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 630, ../scss/_base.scss */
+/* line 657, ../scss/_mobile.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1291,49 +1491,39 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 642, ../scss/_base.scss */
-.respond-form {
-  margin: 1.5em 10px;
-  padding-bottom: 2.2em;
-}
-/* line 646, ../scss/_base.scss */
-.respond-form form {
-  margin: 0.75em 0;
-}
-/* line 649, ../scss/_base.scss */
-.respond-form form li {
+/* line 677, ../scss/_mobile.scss */
+form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 655, ../scss/_base.scss */
-.respond-form form li label,
-.respond-form form li small {
+/* line 683, ../scss/_mobile.scss */
+form li label,
+form li small {
   display: none;
 }
-/* line 663, ../scss/_base.scss */
-.respond-form form input[type=text],
-.respond-form form input[type=email],
-.respond-form form input[type=url],
-.respond-form form textarea {
-  padding: 3px 6px;
+/* line 691, ../scss/_mobile.scss */
+form input[type=text],
+form input[type=email],
+form input[type=url],
+form textarea {
+  padding: 3px 7px;
   background: #efefef;
   border: 2px solid #cecece;
-  line-height: 1.5em;
   /* form validation */
 }
-/* line 669, ../scss/_base.scss */
-.respond-form form input[type=text]:focus,
-.respond-form form input[type=email]:focus,
-.respond-form form input[type=url]:focus,
-.respond-form form textarea:focus {
+/* line 697, ../scss/_mobile.scss */
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=url]:focus,
+form textarea:focus {
   background: #fff;
 }
-/* line 674, ../scss/_base.scss */
-.respond-form form input[type=text]:invalid,
-.respond-form form input[type=email]:invalid,
-.respond-form form input[type=url]:invalid,
-.respond-form form textarea:invalid {
+/* line 702, ../scss/_mobile.scss */
+form input[type=text]:invalid,
+form input[type=email]:invalid,
+form input[type=url]:invalid,
+form textarea:invalid {
   outline: none;
   border-color: #fbc2c4;
   background-color: #f6e7eb;
@@ -1342,67 +1532,84 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 687, ../scss/_base.scss */
-.respond-form form input[type=text],
-.respond-form form input[type=email],
-.respond-form form input[type=url] {
-  max-width: 400px;
-  min-width: 250px;
+/* line 715, ../scss/_mobile.scss */
+form select,
+form input[type=text],
+form input[type=email],
+form input[type=url] {
+  max-width: 100%;
 }
-/* line 692, ../scss/_base.scss */
-.respond-form form textarea {
+/* line 720, ../scss/_mobile.scss */
+form textarea {
   resize: none;
-  width: 97.3%;
+  width: 100%;
   height: 150px;
 }
 
-/* comment submit button */
 /* comment form title */
-/* line 705, ../scss/_base.scss */
+/* line 729, ../scss/_mobile.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
 
-/* cancel comment reply link */
-/* logged in comments */
 /* allowed tags */
-/* line 718, ../scss/_base.scss */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
-
 /* no comments */
-/* line 723, ../scss/_base.scss */
-.nocomments {
-  margin: 0 20px 1.1em;
-}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-/* line 739, ../scss/_base.scss */
-.widget ul li {
-  /* deep nesting */
-}
-
 /*********************
 FOOTER STYLES
 *********************/
-/* line 760, ../scss/_base.scss */
-.footer {
-  clear: both;
+/* line 752, ../scss/_mobile.scss */
+.article-header .byline,
+.footer p,
+.entry-content p,
+.entry-content ul,
+form p, h1, h2, h3, h4, h5, h6,
+.article-footer {
+  padding: 0 14px;
 }
 
-/*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
+/* line 755, ../scss/_mobile.scss */
+form .alert p {
+  padding: 0;
+}
+
+/* line 758, ../scss/_mobile.scss */
+.entry-content ul {
+  list-style-type: disc;
+  padding-left: 42px;
+}
+
+/* line 766, ../scss/_mobile.scss */
+.button {
+  background-color: #28a1ed;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 14px 7px 14px;
+  outline: none;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 5px solid #ccc;
+}
+
+/* line 788, ../scss/_mobile.scss */
+.button:hover {
+  background-color: #4cc6ff;
+  border-bottom-color: #eee;
+}
+
+/* line 792, ../scss/_mobile.scss */
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -1582,36 +1789,36 @@ you can add resource intensive styles.
     width: 100%;
   }
 
-  /* line 38, ../scss/_grid.scss */
+  /* line 40, ../scss/_grid.scss */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
-  }
-  /* line 42, ../scss/_grid.scss */
-  .onecol h1, .onecol h2, .onecol h3, .onecol h4, .onecol h5, .onecol h6,
-  .onecol p, .twocol h1, .twocol h2, .twocol h3, .twocol h4, .twocol h5, .twocol h6,
-  .twocol p, .threecol h1, .threecol h2, .threecol h3, .threecol h4, .threecol h5, .threecol h6,
-  .threecol p, .fourcol h1, .fourcol h2, .fourcol h3, .fourcol h4, .fourcol h5, .fourcol h6,
-  .fourcol p, .fivecol h1, .fivecol h2, .fivecol h3, .fivecol h4, .fivecol h5, .fivecol h6,
-  .fivecol p, .sixcol h1, .sixcol h2, .sixcol h3, .sixcol h4, .sixcol h5, .sixcol h6,
-  .sixcol p, .sevencol h1, .sevencol h2, .sevencol h3, .sevencol h4, .sevencol h5, .sevencol h6,
-  .sevencol p, .eightcol h1, .eightcol h2, .eightcol h3, .eightcol h4, .eightcol h5, .eightcol h6,
-  .eightcol p, .ninecol h1, .ninecol h2, .ninecol h3, .ninecol h4, .ninecol h5, .ninecol h6,
-  .ninecol p, .tencol h1, .tencol h2, .tencol h3, .tencol h4, .tencol h5, .tencol h6,
-  .tencol p, .elevencol h1, .elevencol h2, .elevencol h3, .elevencol h4, .elevencol h5, .elevencol h6,
-  .elevencol p, .twelvecol h1, .twelvecol h2, .twelvecol h3, .twelvecol h4, .twelvecol h5, .twelvecol h6,
-  .twelvecol p {
     padding: 0 7px;
   }
 
-  /* line 47, ../scss/_grid.scss */
+  /* line 46, ../scss/_grid.scss */
   .first {
     margin-left: 0;
   }
 
-  /* line 51, ../scss/_grid.scss */
+  /* line 50, ../scss/_grid.scss */
   .last {
     float: right;
+  }
+
+  /* line 60, ../scss/_grid.scss */
+  .article-header .byline,
+  .footer p,
+  .entry-content p,
+  .entry-content ul,
+  form p, h1, h2, h3, h4, h5, h6,
+  .article-footer {
+    padding: 0 7px;
+  }
+
+  /* line 63, ../scss/_grid.scss */
+  .entry-content ul {
+    padding-left: 35px;
   }
 
   /******************************************************************
@@ -1652,7 +1859,15 @@ you can add resource intensive styles.
     /* highlight current page */
     /* end current highlighters */
   }
-  /* line 46, ../scss/_768up.scss */
+  /* line 43, ../scss/_768up.scss */
+  .js .nav {
+    display: block;
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+  /* line 51, ../scss/_768up.scss */
   .nav li {
     float: left;
     position: relative;
@@ -1661,7 +1876,7 @@ you can add resource intensive styles.
     */
     /* showing sub-menus */
   }
-  /* line 50, ../scss/_768up.scss */
+  /* line 55, ../scss/_768up.scss */
   .nav li a {
     border-bottom: 0;
     /*
@@ -1669,11 +1884,12 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 57, ../scss/_768up.scss */
+  /* line 62, ../scss/_768up.scss */
   .nav li a:hover, .nav li a:focus {
     background-color: #dedede;
   }
-  /* line 70, ../scss/_768up.scss */
+  /* line 77, ../scss/_768up.scss */
+  .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -1684,7 +1900,8 @@ you can add resource intensive styles.
     z-index: 8999;
     /* highlight sub-menu current page */
   }
-  /* line 78, ../scss/_768up.scss */
+  /* line 85, ../scss/_768up.scss */
+  .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
   .nav li ul.sub-menu li,
   .nav li ul.children li {
     /*
@@ -1693,7 +1910,8 @@ you can add resource intensive styles.
     for usability. k, bai.
     */
   }
-  /* line 80, ../scss/_768up.scss */
+  /* line 87, ../scss/_768up.scss */
+  .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
     padding-left: 10px;
@@ -1702,12 +1920,13 @@ you can add resource intensive styles.
     width: 180px;
     border-bottom: 1px solid #ccc;
   }
-  /* line 97, ../scss/_768up.scss */
+  /* line 104, ../scss/_768up.scss */
+  .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
     border-bottom: 0;
   }
-  /* line 119, ../scss/_768up.scss */
+  /* line 126, ../scss/_768up.scss */
   .nav li:hover ul {
     top: auto;
     display: block;
@@ -1717,28 +1936,28 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 139, ../scss/_768up.scss */
+  /* line 146, ../scss/_768up.scss */
   .sidebar {
     margin-top: 2.2em;
   }
 
-  /* line 143, ../scss/_768up.scss */
+  /* line 150, ../scss/_768up.scss */
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
-  /* line 148, ../scss/_768up.scss */
+  /* line 155, ../scss/_768up.scss */
   .widget {
     padding: 0 10px;
     margin: 2.2em 0;
   }
-  /* line 153, ../scss/_768up.scss */
+  /* line 160, ../scss/_768up.scss */
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */
   }
-  /* line 161, ../scss/_768up.scss */
+  /* line 168, ../scss/_768up.scss */
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em;
@@ -1763,7 +1982,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 269, ../scss/_768up.scss */
+  /* line 276, ../scss/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.

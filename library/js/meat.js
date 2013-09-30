@@ -70,4 +70,15 @@ jQuery(document).ready(function($) {
     }
   });
  
+  if(!Modernizr.svg) {
+    // Replace svg file-extention with png.
+    // Note: This is only for browsers that does not support svg
+    // and therefore if there is no png available it will not make a difference
+    // it will appear just as broken as before.
+    $('img[src$=".svg"]').attr('src', function() {
+        return $(this).attr('src').replace('.svg', '.png');
+    });
+  }
+
+  // Adjust menu top position:
 });

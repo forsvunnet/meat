@@ -34,14 +34,13 @@ values are commented out on each line.
 .elevencol { width: (100 * 11 / 12) + 0%; }
 .twelvecol { width: (100 * 12 / 12) + 0%; }
 
+$slab: 7px;
+
 // layout & column defaults
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
-  h1, h2, h3, h4, h5, h6,
-  p {
-  	padding: 0 7px;
-  }
+	padding: 0 $slab;
 }
 
 .first {
@@ -50,4 +49,17 @@ values are commented out on each line.
 
 .last {
   float: right;
+}
+
+
+.article-header .byline,
+.footer p,
+.entry-content p,
+.entry-content ul,
+form p, h1, h2, h3, h4, h5, h6,
+.article-footer {
+	padding: 0 $slab;
+}
+.entry-content ul {
+	padding-left: $slab * 5;
 }

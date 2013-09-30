@@ -40,6 +40,11 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
+	.js & {
+		display: block;
+		position: static;
+		top: auto; right: auto; left: auto;
+	}
 	background: #eee;
 	border: 0;
 
@@ -66,6 +71,8 @@ NAVIGATION STYLES
 		/*
 		plan your menus and drop-downs wisely.
 		*/
+		.js & ul.show.sub-menu,
+		.js & ul.show.children,
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
