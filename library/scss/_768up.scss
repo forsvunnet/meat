@@ -33,11 +33,14 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {float: none;}
 
 /*********************
 NAVIGATION STYLES
 *********************/
+.clickable {
+	display: none;
+}
 
 .nav {
 	.js & {
@@ -123,6 +126,8 @@ NAVIGATION STYLES
 		}
 
 		/* showing sub-menus */
+		.js &:hover ul,
+		.js &:hover ul.show,
 		&:hover ul {
 			top: auto;
 			display: block;
@@ -287,3 +292,10 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+
+h1 { font-size: 45px; }
+h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }

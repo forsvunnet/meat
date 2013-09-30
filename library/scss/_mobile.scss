@@ -12,7 +12,7 @@ and will be used across all viewports.
 ******************************************************************/
 
 // Base measurement
-$slab: 7px;
+$slab: 8px;
 
 
 /********************
@@ -764,16 +764,13 @@ form .alert p {
 
 
 .button {
-	//-moz-box-shadow: 0px 5px 0px 0px #bcc1c2;
-	//-webkit-box-shadow: 0px 5px 0px 0px #bcc1c2;
-	//box-shadow: 0px 5px 0px 0px #bcc1c2;
-	background-color:#28a1ed;
+	background-color: $link-color;
 	-webkit-border-radius:2px;
 	-moz-border-radius:2px;
 	border-radius:2px;
 	text-indent:0;
 	display:inline-block;
-	color:#ffffff;
+	color: #ffffff;
 	font-weight:normal;
 	font-style:normal;
 	text-decoration:none;
@@ -783,11 +780,11 @@ form .alert p {
 
 	outline: none; border: none;
 	-webkit-font-smoothing: antialiased;
-	border-bottom: 5px solid #ccc;
+	border-bottom: 5px solid $grey-light;
 }
 .button:hover {
-	background-color:#4cc6ff;
-	border-bottom-color: #eee;
+	background-color: lighten($link-color, 10%);
+	border-bottom-color: $grey-lighter;
 }
 .button:active {
 	position:relative;

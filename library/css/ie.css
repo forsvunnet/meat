@@ -352,10 +352,20 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+/* line 36, ../scss/_768up.scss */
+#logo {
+  float: none;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 42, ../scss/_768up.scss */
+/* line 41, ../scss/_768up.scss */
+.clickable {
+  display: none;
+}
+
+/* line 45, ../scss/_768up.scss */
 .nav {
   background: #eee;
   border: 0;
@@ -363,7 +373,7 @@ NAVIGATION STYLES
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 43, ../scss/_768up.scss */
+/* line 46, ../scss/_768up.scss */
 .js .nav {
   display: block;
   position: static;
@@ -371,7 +381,7 @@ NAVIGATION STYLES
   right: auto;
   left: auto;
 }
-/* line 51, ../scss/_768up.scss */
+/* line 54, ../scss/_768up.scss */
 .nav li {
   float: left;
   position: relative;
@@ -380,7 +390,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 55, ../scss/_768up.scss */
+/* line 58, ../scss/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
@@ -388,11 +398,11 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 62, ../scss/_768up.scss */
+/* line 65, ../scss/_768up.scss */
 .nav li a:hover, .nav li a:focus {
   background-color: #dedede;
 }
-/* line 77, ../scss/_768up.scss */
+/* line 80, ../scss/_768up.scss */
 .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
 .nav li ul.sub-menu,
 .nav li ul.children {
@@ -404,7 +414,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 85, ../scss/_768up.scss */
+/* line 88, ../scss/_768up.scss */
 .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
 .nav li ul.sub-menu li,
 .nav li ul.children li {
@@ -414,7 +424,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 87, ../scss/_768up.scss */
+/* line 90, ../scss/_768up.scss */
 .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
@@ -424,14 +434,14 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 104, ../scss/_768up.scss */
+/* line 107, ../scss/_768up.scss */
 .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 126, ../scss/_768up.scss */
-.nav li:hover ul {
+/* line 131, ../scss/_768up.scss */
+.js .nav li:hover ul, .js .nav li:hover ul.show, .nav li:hover ul {
   top: auto;
   display: block;
 }
@@ -440,28 +450,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 146, ../scss/_768up.scss */
+/* line 151, ../scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 150, ../scss/_768up.scss */
+/* line 155, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 155, ../scss/_768up.scss */
+/* line 160, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 160, ../scss/_768up.scss */
+/* line 165, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 168, ../scss/_768up.scss */
+/* line 173, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -486,7 +496,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 276, ../scss/_768up.scss */
+/* line 281, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -496,6 +506,36 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
+/* line 296, ../scss/_768up.scss */
+h1 {
+  font-size: 45px;
+}
+
+/* line 297, ../scss/_768up.scss */
+h2 {
+  font-size: 32px;
+}
+
+/* line 298, ../scss/_768up.scss */
+h3 {
+  font-size: 28px;
+}
+
+/* line 299, ../scss/_768up.scss */
+h4 {
+  font-size: 24px;
+}
+
+/* line 300, ../scss/_768up.scss */
+h5 {
+  font-size: 20px;
+}
+
+/* line 301, ../scss/_768up.scss */
+h6 {
+  font-size: 18px;
+}
+
 /******************************************************************
 Site Name: 
 Author: 
