@@ -28,6 +28,12 @@ function meat_build_js() {
 				break;
 			}
 		}
+
+		if (!$update) {
+			$script = file_get_contents($cache_path);
+			// Update the cached file if it is empty
+			$update = ($script === '');
+		}
 	}
 	else {
 		$update = TRUE;
@@ -44,11 +50,12 @@ function meat_build_js() {
 
 		$save_cache = @file_put_contents($cache_path, $script);
 		if (!$save_cache && current_user_can('edit_others_posts')) {
-			echo "<div class=\"meat-warning\">The javascript build system was not able to save cache.js</div>";
+			// Give a warning to admins that the build system could not
+			// save the cache to disk.
+			$message = "The javascript build system was not able to save cache.js";
+			$message.= "<br>Is cache.js given write permission?";
+			echo sprintf('<div class="meat-warning">%s</div>', $message);
 		}
-	}
-	else if ($cache_exists) {
-		$script = file_get_contents($cache_path);
 	}
 
 	if ($script !== FALSE) {
