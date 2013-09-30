@@ -1071,8 +1071,8 @@ abbr.initialism {
 
 /* line 258, ../scss/_mobile.scss */
 blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 40px;
+  padding: 0 0 0 8px;
+  margin: 0 8px 40px;
   border-left: 5px solid #cccccc;
 }
 /* line 262, ../scss/_mobile.scss */
