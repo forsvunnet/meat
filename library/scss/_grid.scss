@@ -40,7 +40,7 @@ $slab: 7px;
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
-	padding: 0 $slab;
+  padding: 0 $slab;
 }
 
 .first {
@@ -58,8 +58,8 @@ $slab: 7px;
 .entry-content ul,
 form p, h1, h2, h3, h4, h5, h6,
 .article-footer {
-	padding: 0 $slab;
+  padding: 0 $slab;
 }
 .entry-content ul {
-	padding-left: $slab * 5;
+  padding-left: $slab * 5;
 }
