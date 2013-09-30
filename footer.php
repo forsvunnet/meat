@@ -16,7 +16,10 @@
 
 		<!-- all js scripts are loaded in library/bones.php -->
 		<?php wp_footer(); ?>
-
+		<?php 
+			require_once "library/js/build.php";
+			echo meat_build_js(); 
+		?>
 	</body>
 
 </html> <!-- end page. what a ride! -->
