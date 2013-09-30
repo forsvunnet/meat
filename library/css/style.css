@@ -1608,6 +1608,20 @@ form .alert p {
   top: 1px;
 }
 
+/* line 795, ../scss/_mobile.scss */
+.user-is-admin b:after {
+  content: ' The html tag <b> is deprecated! Use <h2> or <strong> instead! ';
+}
+/* line 798, ../scss/_mobile.scss */
+.user-is-admin i:after {
+  content: ' The html tag <i> is deprecated! Use <em> instead! ';
+}
+/* line 801, ../scss/_mobile.scss */
+.user-is-admin i:after, .user-is-admin b:after {
+  color: #cc0000;
+  display: block;
+}
+
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

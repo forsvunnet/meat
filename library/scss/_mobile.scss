@@ -790,3 +790,16 @@ form .alert p {
 	position:relative;
 	top:1px;
 }
+
+.user-is-admin {
+	b:after {
+		content: ' The html tag <b> is deprecated! Use <h2> or <strong> instead! ';
+	}
+	i:after {
+		content: ' The html tag <i> is deprecated! Use <em> instead! ';
+	}
+	i:after, b:after {
+		color: $red;
+		display: block;
+	}
+}

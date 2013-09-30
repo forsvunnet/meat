@@ -39,7 +39,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class(current_user_can('edit_others_posts') ? 'user-is-admin' : ''); ?>>
 
 		<div id="container">
 
