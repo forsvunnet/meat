@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
 
   // Menu (button) script:
   $('body').addClass('js');
-  var menu_button = $('<p>').addClass('clickable mobile-only').text('Meny');
+  var menu_button = $('<p>').addClass('clickable mobile-only').text(window.main_nav_name || '');
   var menu_icon = '<div class="menu-icon"><div></div><div></div><div></div></div>';
   menu_button.append(menu_icon);
   $('.nav').before(menu_button);

@@ -217,6 +217,7 @@ function bones_theme_support() {
 } /* end bones theme support */
 
 
+
 /*********************
 MENUS & NAVIGATION
 *********************/
@@ -224,6 +225,17 @@ MENUS & NAVIGATION
 // the main menu
 function bones_main_nav() {
 	// display the wp3 menu if available
+
+	// Get the menu
+	$locations = get_nav_menu_locations();
+	if (isset( $locations['main-nav'])) {
+		$menu = wp_get_nav_menu_object( $locations['main-nav'] );
+		if ($menu) {
+			// Save the menu name in javascript for use in meat.js
+			echo '<script> window.main_nav_name = \'' . $menu->name . '\'; </script>';
+		}
+	}
+
     wp_nav_menu(array(
     	'container' => false,                           // remove nav container
     	'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
