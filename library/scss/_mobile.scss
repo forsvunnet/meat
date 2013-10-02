@@ -24,12 +24,17 @@ BONES Mixin scss (migrated to keep mixins and styles separate)
 .text-right  { text-align: right; }
 
 .meat-warning {
-  position: fixed;
-  background-color: $red;
-  color: $white;
-  -webkit-font-smoothing: antialiased;
-  bottom: 0; left: 0; right: 0;
-  padding: $slab * 2;
+  display: none;
+  .user-is-admin & {
+    display: block;
+    position: fixed;
+    background-color: $red;
+    background-color: transparentize($red, 0.5);
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    bottom: 0; left: 0; right: 0;
+    padding: $slab * 2;
+  }
 }
 
 // alerts and notices
@@ -395,7 +400,6 @@ and more scalable.
   .js & {
     border-top: 0;
 
-
     // This only applies to js enabled windows
     // We use js to adjust the top position
     position: absolute;
@@ -422,6 +426,12 @@ and more scalable.
         }
       }
     }
+
+    .js &.current-menu-ancestor {
+      ul.sub-menu {
+        display: block;
+      }
+    }
   } /* end .menu li */
 } /* end .nav */
 
@@ -431,8 +441,11 @@ POSTS & CONTENT STYLES
 *********************/
 img {
   margin: 0;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  &.full {
+    width: 100%;
+  }
 }
 
 #content {
@@ -757,6 +770,7 @@ FOOTER STYLES
 .footer p,
 .entry-content p,
 .entry-content ul,
+.entry-content ol,
 form p, h1, h2, h3, h4, h5, h6,
 .article-footer {
   padding: 0 $slab * 2;
@@ -766,6 +780,10 @@ form .alert p {
 }
 .entry-content ul {
   list-style-type: disc;
+  padding-left: $slab * 6;
+}
+.entry-content ol {
+  list-style-type: decimal;
   padding-left: $slab * 6;
 }
 

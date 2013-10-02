@@ -8,7 +8,7 @@ this file will be called automatically in the footer so as not to
 slow the page load.
 
 */
-(function($){
+(function($, w){
   // A helper function to measure heights
   // If you're using borders or outlines
   var map_height = function (index, element) {
@@ -46,8 +46,18 @@ slow the page load.
     }
   };
   // Expose:
-  window.equalise = equalise;
-})(jQuery);
+  w.equalise = equalise;
+
+  // Determine if an url is external:
+  var is_external = function (url) {
+    var match = url.match(/^([^:\/?#]+:)?(?:\/\/([^\/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/);
+    if (typeof match[1] === "string" && match[1].length > 0 && match[1].toLowerCase() !== location.protocol) return true;
+    if (typeof match[2] === "string" && match[2].length > 0 && match[2].replace(new RegExp(":("+{"http:":80,"https:":443}[location.protocol]+")?$"), "") !== location.host) return true;
+    return false;
+  };
+  // Expose:
+  w.is_external = is_external;
+})(jQuery, window);
 
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
@@ -80,5 +90,11 @@ jQuery(document).ready(function($) {
     });
   }
 
-  // Adjust menu top position:
+  // Give external links a class
+  $('a').each(function() {
+    if (is_external($(this).attr('href'))) {
+      $(this).addClass('external');
+    }
+  });
+
 });

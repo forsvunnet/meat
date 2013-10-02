@@ -81,9 +81,9 @@ jQuery(document).ready(function($) {
       
     }
 
-
-
+    // Adjust menu top position:
     $('.nav').css('top', $('.nav').prev().outerHeight());
+    
   };
   $(window).resize(resize);
   resize();

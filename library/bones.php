@@ -21,6 +21,9 @@ add_action( 'after_setup_theme', 'bones_ahoy', 16 );
 
 function bones_ahoy() {
 
+		// email filter (prevent spam)
+    add_filter('meat_auto_email', 'meat_auto_email');
+
     // launching operation cleanup
     add_action( 'init', 'bones_head_cleanup' );
     // remove WP version from RSS
@@ -129,7 +132,8 @@ function bones_scripts_and_styles() {
     // wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
-    wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+    $css_path = dirname(__FILE__) . '/css/style.css';
+    wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css?' . filemtime($css_path), array(), '', 'all' );
 
     // ie-only style sheet
     wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
@@ -379,5 +383,29 @@ function bones_get_the_author_posts_link() {
 	);
 	return $link;
 }
+
+/*
+ * A filter to obfuscate email addresses
+ */
+function meat_auto_email($text) {
+	static $count = 1;
+  $matches = array();
+	if (preg_match('/[A-Za-z\.\-\_]*@[A-Za-z\-\_]*\.[A-Za-z\.]*/', $text, $matches)) {
+		foreach ($matches as $match) {
+ 
+			$chars = array();
+			for ($i=0, $len = strlen($match); $i < $len; $i++) { 
+				$chars[] = ord($match[$i]);
+			}
+			$script = "var t = [" . implode(', ', $chars) . "]; var email = '&#' + t.join(';&#') + ';'; jQuery('.email-" . $count . "').html('<a href=\"mailto:' + email + '\">' + email + '</a>');";
+			$tag = '<span class="email %s"></span><script type="text/javascript">%s</script>';
+			$text = str_replace($match, sprintf($tag, 'email-' . $count, $script), $text);
+ 
+			$count++;
+		}
+	}
+	return $text;
+}
+
 
 ?>

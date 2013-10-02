@@ -403,8 +403,8 @@ NAVIGATION STYLES
 .nav li a:hover, .nav li a:focus {
   background-color: #dedede;
 }
-/* line 80, ../scss/_768up.scss */
-.js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
+/* line 81, ../scss/_768up.scss */
+.js .nav li.current-menu-ancestor ul.sub-menu, .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin-top: 0;
@@ -415,8 +415,8 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 88, ../scss/_768up.scss */
-.js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
+/* line 89, ../scss/_768up.scss */
+.js .nav li.current-menu-ancestor ul.sub-menu li, .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -425,8 +425,8 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 90, ../scss/_768up.scss */
-.js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
+/* line 91, ../scss/_768up.scss */
+.js .nav li.current-menu-ancestor ul.sub-menu li a, .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -435,14 +435,14 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #ccc;
 }
-/* line 107, ../scss/_768up.scss */
-.js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
+/* line 108, ../scss/_768up.scss */
+.js .nav li.current-menu-ancestor ul.sub-menu li:last-child a, .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 131, ../scss/_768up.scss */
-.js .nav li:hover ul, .js .nav li:hover ul.show, .nav li:hover ul {
+/* line 133, ../scss/_768up.scss */
+.js .nav li.current-menu-ancestor:hover ul, .js .nav li:hover ul, .js .nav li:hover ul.show, .nav li:hover ul {
   top: auto;
   display: block;
 }
@@ -451,28 +451,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 151, ../scss/_768up.scss */
+/* line 153, ../scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 155, ../scss/_768up.scss */
+/* line 157, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 160, ../scss/_768up.scss */
+/* line 162, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 165, ../scss/_768up.scss */
+/* line 167, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 173, ../scss/_768up.scss */
+/* line 175, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -497,7 +497,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 281, ../scss/_768up.scss */
+/* line 283, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -507,32 +507,32 @@ mobile. Make sure to double check these!
 }
 
 /* end .footer-links */
-/* line 296, ../scss/_768up.scss */
+/* line 298, ../scss/_768up.scss */
 h1 {
   font-size: 45px;
 }
 
-/* line 297, ../scss/_768up.scss */
+/* line 299, ../scss/_768up.scss */
 h2 {
   font-size: 32px;
 }
 
-/* line 298, ../scss/_768up.scss */
+/* line 300, ../scss/_768up.scss */
 h3 {
   font-size: 28px;
 }
 
-/* line 299, ../scss/_768up.scss */
+/* line 301, ../scss/_768up.scss */
 h4 {
   font-size: 24px;
 }
 
-/* line 300, ../scss/_768up.scss */
+/* line 302, ../scss/_768up.scss */
 h5 {
   font-size: 20px;
 }
 
-/* line 301, ../scss/_768up.scss */
+/* line 303, ../scss/_768up.scss */
 h6 {
   font-size: 18px;
 }
