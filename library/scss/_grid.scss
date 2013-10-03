@@ -21,8 +21,11 @@ values are commented out on each line.
 
 ******************************************************************/
 
+
 $gutter: 100% / 36.2;
 $gutter_em: 1em;
+
+// This calculate the gutter
 @function grid_width($n, $use_calc: false) {
 	$divisor: 12 / $n;
 	@if ($use_calc) {
@@ -33,6 +36,8 @@ $gutter_em: 1em;
 		@return (100% - $gutter * ($divisor - 1)) / $divisor;
 	}
 }
+
+// Each number here becomes a grid: onecol, twocol etc. 
 $grids: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
 $i: 1;
 @each $grid in $grids {
@@ -43,21 +48,22 @@ $i: 1;
 	$i: $i + 1;
 }
 
-// layout & column defaults
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+// This then collates these classes into one class to apply the gutter
+$classes: ();
+@each $grid in $grids {
+    $classes: join($classes, unquote(".#{$grid}col"), comma);
+}
+
+#{$classes} {
   position: relative;
   float: left;
   margin-left: $gutter;
   margin-left: calc(#{$gutter_em} * 1);
 }
 
-.first {
-  margin-left: 0;
-}
+.first { margin-left: 0; }
+.last { float: right; }
 
-.last {
-  float: right;
-}
 
 .alert,
 .article-header .byline,
