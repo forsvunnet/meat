@@ -91,7 +91,7 @@
 					var	resize = function() {
 						var fourcols = $('#content > .fourcol');
 						if (min_width(768)) {
-							equalise(fourcols, 3);
+							fourcols.equalise(3);
 						} else {
 							equalise(fourcols, 1);
 						}

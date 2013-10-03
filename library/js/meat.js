@@ -48,6 +48,12 @@ slow the page load.
   // Expose:
   w.equalise = equalise;
 
+  // Add jQuery plugin
+  $.fn.equalise = function(size) {
+    equalise(this, size);
+    return this;
+  };
+
   // Determine if an url is external:
   var is_external = function (url) {
     var match = url.match(/^([^:\/?#]+:)?(?:\/\/([^\/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/);
