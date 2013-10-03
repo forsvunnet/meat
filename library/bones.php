@@ -390,7 +390,10 @@ function bones_get_the_author_posts_link() {
 function meat_auto_email($text) {
 	static $count = 1;
   $matches = array();
-	if (preg_match('/[A-Za-z\.\-\_]*@[A-Za-z\-\_]*\.[A-Za-z\.]*/', $text, $matches)) {
+	if (preg_match_all('/[A-Za-z\.\-\_]*@[A-Za-z\-\_]*\.[A-Za-z\.]*/', $text, $matches)) {
+		if (!empty($matches)) {
+			$matches = $matches[0];
+		}
 		foreach ($matches as $match) {
  
 			$chars = array();
@@ -406,6 +409,5 @@ function meat_auto_email($text) {
 	}
 	return $text;
 }
-
 
 ?>
