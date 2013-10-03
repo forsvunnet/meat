@@ -28,8 +28,8 @@ BONES Mixin scss (migrated to keep mixins and styles separate)
   .user-is-admin & {
     display: block;
     position: fixed;
-    background-color: $red;
-    background-color: transparentize($red, 0.5);
+    background-color: $alert-red;
+    background-color: transparentize($alert-red, 0.5);
     color: $white;
     -webkit-font-smoothing: antialiased;
     bottom: 0; left: 0; right: 0;
@@ -826,7 +826,7 @@ form .alert p {
     content: ' The html tag <i> is deprecated! Use <em> instead! ';
   }
   i:after, b:after {
-    color: $red;
+    color: $alert-red;
     display: block;
   }
 }
