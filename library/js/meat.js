@@ -94,6 +94,7 @@ jQuery(document).ready(function($) {
   $('a').each(function() {
     if (is_external($(this).attr('href'))) {
       $(this).addClass('external');
+      $(this).attr('target', "_blank");
     }
   });
 
