@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 			<div id="content">
-				<div class="fourcol first clearfix">
+				<div style="background: #F9C;" class="fourcol first clearfix">
 					<h1>One</h1>
 					<div class="entry-content"><p>
 						Intrigued by the shower hide when guests come over or claw
@@ -18,7 +18,7 @@
 					  need to chase tail, so intently sniff hand.
 					</p></div>
 				</div>
-				<div class="fourcol clearfix">
+				<div style="background: #9CF;" class="fourcol clearfix">
 					<h1>Two</h1>
 					<div class="entry-content"><p>
 						Intrigued by the shower hide when guests come over or claw
@@ -35,7 +35,7 @@
 					  Rub face on everything nap all day yet rub face on everything.
 					</p></div>
 				</div>
-				<div class="fourcol clearfix">
+				<div style="background: #F9C;" class="fourcol last clearfix">
 					<h1>Three</h1>
 					<div class="entry-content"><p>
 						Intrigued by the shower hide when guests come over or claw
@@ -51,7 +51,7 @@
 					  they do that. Swat at dog sweet beast but rub face on everything.
 					</p></div>
 				</div>
-				<div class="fourcol clearfix">
+				<div style="background: #9CF;" class="fourcol first clearfix">
 					<h1>Four</h1>
 					<div class="entry-content"><p>
 						Intrigued by the shower hide when guests come over or claw
@@ -63,7 +63,7 @@
 					  need to chase tail, so intently sniff hand.
 					</p></div>
 				</div>
-				<div class="fourcol clearfix">
+				<div style="background: #F9C;" class="fourcol clearfix">
 					<h1>Five</h1>
 					<div class="entry-content"><p>
 						Intrigued by the shower hide when guests come over or claw
@@ -76,7 +76,7 @@
 					  Run in circles under the bed, all of a sudden go crazy but play time.
 					</p></div>
 				</div>
-				<div class="fourcol last clearfix">
+				<div style="background: #9CF;" class="fourcol last clearfix">
 					<h1>Six</h1>
 					<div class="entry-content"><p>
 						Intrigued by the shower hide when guests come over or claw
