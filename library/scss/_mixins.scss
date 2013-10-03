@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Harry Bugg
+Author: Full Phat Design
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -15,6 +15,8 @@ remember less is more.
 
 ******************************************************************/
 
+@import 'bourbon';
+
 /*********************
 CLEARFIXIN'
 *********************/
@@ -25,6 +27,33 @@ CLEARFIXIN'
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
 }
+
+// A Meatier Clearfix: You won't need to put clearfix class everywhere.
+// However, i've foudn taht this way of doing things gets messy. It's
+// easier to know what you're adding to your HTML rather than
+// clearfixing everything in the scss
+
+@mixin clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+
+
+// Base measurement
+$gutter: 7px;
+
+
+/********************
+meat Mixin scss (migrated to keep mixins and styles separate)
+********************/
+// text alignment
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+
 
 /*********************
 TOOLS
@@ -51,19 +80,7 @@ Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
 
-$alert-yellow:      #ebe16f;
-$alert-red:         #fbe3e4;
-$alert-green:       #e6efc2;
-$alert-blue:        #d5edf8;
-
-$black:             #000;
-$white:             #fff;
-
-$bones-pink:        #f01d4f;
-$bones-blue:        #1990db;
-
-$link-color:        $bones-pink;
-$link-hover:        darken($link-color, 9%);
+@import "colours";
 
 /*
 Here's a great tutorial on how to
@@ -76,6 +93,8 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
+$copy:				"Lato", sans-serif;
+$slab-serif:		"jubilat",sans-serif;
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
@@ -161,16 +180,16 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
-// Meatier mixins:
-@mixin clearfix {
-  zoom: 1;
-	&:before, &:after { content: ""; display: table; }
-	&:after { clear: both; }
+
+// This is for website rem to PX
+// so you can use @include font-size(2);
+// which outputs font-size: 24px; font-size:2rem;
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 16) + px;
+  font-size: $sizeValue + rem;
 }
-@mixin font-size($sizeValue: 14){
-	font-size: ($sizeValue) + px;
-  font-size: $sizeValue / 14 + rem;
-}
+
 
 // Text overflow
 // -------------------------
@@ -180,6 +199,7 @@ probably best not to use it. I mean, were you going to anyway? */
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 @mixin bg($color) {
 	// do some clever maths to determine if we
 	// should go brighter or darker
@@ -195,26 +215,36 @@ probably best not to use it. I mean, were you going to anyway? */
 			background-color: lighten($color, 10%);
 		}
 	}
-
 }
 
-$grey-darker:             #222;
-$grey-dark:             #444;
-$grey:             #666;
-$grey-light:             #999;
-$grey-lighter:             #ccc;
 
-$red: #C00;
-$blue: #09F;
-$yellow: #330;
-$green: #0C0;
+// alerts and notices
+%alert {
+	//margin: 10px;
+	padding: $gutter $gutter * 2;
+	border: 1px solid;
+}
 
-$warning_text: $grey-dark;
-$error_text: $red;
-$warning_text: $grey-dark;
-$info_text: $yellow;
-$success_text: $green;
-$hr_border: $grey;
-$menu-border: $grey-dark;
+.alert-help {
+	@extend %alert;
+	border-color: darken($alert-yellow, 5%);
+	background: $alert-yellow;
+}
 
-$headings-color: $blue;
+.alert-info {
+	@extend %alert;
+	border-color: darken($alert-blue, 5%);
+	background: $alert-blue;
+}
+
+.alert-error {
+	@extend %alert;
+	border-color: darken($alert-red, 5%);
+	background: $alert-red;
+}
+
+.alert-success {
+	@extend %alert;
+	border-color: darken($alert-green, 5%);
+	background: $alert-green;
+}
