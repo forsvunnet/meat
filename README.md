@@ -19,9 +19,8 @@ using some of the HTML5 Boilerplate's recommended markup and setup.
 It's constantly growing so be sure to check back often if you are a
 frequent user. I'm always open to contribution. :)
 
-Designed by **Eddie Machado**: http://themble.com/bones
-
 Special Thanks to:
+* Eddie Machado for the original Bones Theme
 * Paul Irish & the HTML5 Boilerplate
 * Yoast for some WP functions & optimization ideas
 * Andrew Rogers for code optimization
@@ -29,7 +28,7 @@ Special Thanks to:
 * and several other developers. :)
 
 Submit Bugs & or Fixes:
-https://github.com/eddiemachado/bones/issues
+https://github.com/forsvunnet/meat/issues
 
 
 ## License
