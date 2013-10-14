@@ -39,12 +39,6 @@ CLEARFIXIN'
 	&:after { clear: both; }
 }
 
-
-
-// Base measurement
-$gutter: 7px;
-
-
 /********************
 meat Mixin scss (migrated to keep mixins and styles separate)
 ********************/
@@ -180,16 +174,62 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+// A function to strip unit type from numbers
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
 
+// A mixin to remify a property
+@mixin rem($prop, $data) {
+  $len: length($data);
+
+  $px_list: null;
+  // Make a list of px values
+  @for $i from 1 through $len {
+    $item: nth($data, $i);
+    @if type-of($item) == number and unit($item) != "px" {
+      $item: strip-units($item * 16) + px;
+    }
+    $px_list: append(#{$px_list}, $item);
+  }
+
+  $rem_list: null;
+  // Make a list of rem values
+  @for $i from 1 through $len {
+    $item: nth($data, $i);
+    // Go through each item in the list
+    // to apply rem sizing, but only for numbers
+    @if type-of($item) == number {
+      $divisor: 1;
+      @if unit($item) == "px" {
+        $divisor: 16;
+      }
+      // Set item to rem
+      $item: strip-units($item / $divisor) + rem;
+    }
+    $rem_list: append($rem_list, $item);
+  }
+  // Output the results
+  #{$prop}: $px_list;
+  #{$prop}: $rem_list;
+}
 // This is for website rem to PX
 // so you can use @include font-size(2);
 // which outputs font-size: 24px; font-size:2rem;
-
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 16) + px;
-  font-size: $sizeValue + rem;
+@mixin font-size($size: 1) {
+  @include rem(font-size, $size);
 }
-
+// Shortcuts for various properties
+@mixin margin($list)         { @include rem(margin,         $list); }
+@mixin margin-top($list)     { @include rem(margin-top,     $list); }
+@mixin margin-left($list)    { @include rem(margin-left,    $list); }
+@mixin margin-right($list)   { @include rem(margin-right,   $list); }
+@mixin margin-bottom($list)  { @include rem(margin-bottom,  $list); }
+@mixin padding($list)        { @include rem(padding,        $list); }
+@mixin padding-top($list)    { @include rem(padding-top,    $list); }
+@mixin padding-left($list)   { @include rem(padding-left,   $list); }
+@mixin padding-right($list)  { @include rem(padding-right,  $list); }
+@mixin padding-bottom($list) { @include rem(padding-bottom, $list); }
 
 // Text overflow
 // -------------------------
@@ -220,8 +260,7 @@ probably best not to use it. I mean, were you going to anyway? */
 
 // alerts and notices
 %alert {
-	//margin: 10px;
-	padding: $gutter $gutter * 2;
+	@include padding(0.5 1);
 	border: 1px solid;
 }
 
