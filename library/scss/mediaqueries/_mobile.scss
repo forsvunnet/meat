@@ -11,9 +11,6 @@ and will be used across all viewports.
 
 ******************************************************************/
 
-// Base measurement
-$slab: 8px;
-
 
 /********************
 BONES Mixin scss (migrated to keep mixins and styles separate)
@@ -33,14 +30,14 @@ BONES Mixin scss (migrated to keep mixins and styles separate)
     color: $white;
     -webkit-font-smoothing: antialiased;
     bottom: 0; left: 0; right: 0;
-    padding: $slab * 2;
+    @include padding(1);
   }
 }
 
 // alerts and notices
 %alert {
   //margin: 10px;
-  padding: $slab $slab * 2;
+  @include padding(0.5 1);
   border: 1px solid;
 }
 
@@ -98,10 +95,10 @@ body {
 
 ul, ol, p {
   // @TODO: Rem this up!
-  margin: 0 0 $slab * 3;
+  @include margin(0 0 1.5);
 }
 .lead {
-  margin-bottom: ($slab * 5);
+  @include margin-bottom(2.5);
   +font-size{};//(14)
   font-weight: 200;
 }
@@ -147,10 +144,8 @@ a.text-success:focus { color: darken($success_text, 10%); }
 // -------------------------
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;//(($slab * 5) / 2) 0;
+  margin: 0;
   font-family: $sans-serif;
-  //font-weight: $headings_font_weight;
-  //line-height: ($slab * 5);
   color: $headings-color;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
@@ -159,11 +154,6 @@ h1, h2, h3, h4, h5, h6 {
     color: $grey-light;
   }
 }
-
-//h1, h2, h3 {
-  //line-height: ($slab * 5) * 1.5;
-//}
-
 h1 { @include font-size(22); } // ~38px
 h2 { @include font-size(20); } // ~32px
 h3 { @include font-size(18); } // ~24px
@@ -186,9 +176,6 @@ ol ol,
 ol ul {
   margin-bottom: 0;
 }
-li {
-  //line-height: ($slab * 5);
-}
 
 // Remove default list styles
 ul.unstyled,
@@ -209,17 +196,13 @@ ol.inline {
 
 // Description Lists
 dl {
-  margin-bottom: ($slab * 5);
-}
-dt,
-dd {
-  //line-height: ($slab * 5);
+  @include margin-bottom(2.5);
 }
 dt {
   font-weight: bold;
 }
 dd {
-  margin-left: ($slab * 3);
+  @include margin-left(1.5);
 }
 // Horizontal layout (like forms)
 .dl-horizontal {
@@ -241,7 +224,7 @@ dd {
 
 // Horizontal rules
 hr {
-  margin: ($slab * 5) 0;
+  @include margin(2.5 0);
   border: 0;
   border-top: 1px solid $hr_border;
   border-bottom: 1px solid $white;
@@ -261,8 +244,8 @@ abbr.initialism {
 
 // Blockquotes
 blockquote {
-  padding: 0 0 0 $slab * 2;
-  margin: 0 $slab ($slab * 5);
+  @include padding(0 0 0 1);
+  @include margin(0 1 2.5);
   border-left: 5px solid $grey-lighter;
   p {
     margin-bottom: 0;
@@ -272,7 +255,6 @@ blockquote {
   }
   small {
     display: block;
-    //line-height: ($slab * 5);
     color: $grey-light;
     &:before {
       content: '\2014 \00A0';
@@ -312,9 +294,8 @@ blockquote:after {
 // Addresses
 address {
   display: block;
-  margin-bottom: ($slab * 5);
+  @include margin-bottom(2.5);
   font-style: normal;
-  //line-height: ($slab * 5);
 }
 
 /*********************
@@ -359,7 +340,7 @@ and more scalable.
   }
 }
 %menu-button {
-  padding: $slab ($slab * 2);
+  @include padding(0.5 1);
 }
 .clickable {
   @extend %menu-button;
@@ -422,7 +403,7 @@ and more scalable.
       li {
         a {
           @include bg($white);
-          padding-left: $slab * 4;
+          @include padding-left(2);
         }
       }
     }
@@ -711,7 +692,7 @@ COMMENT FORM STYLES
     input[type=email],
     input[type=url],
     textarea {
-      padding: 3px $slab;
+      @include padding(0.25 0.5);
       background: #efefef;
       border: 2px solid #cecece;
       //line-height: 1.5;
@@ -773,18 +754,18 @@ FOOTER STYLES
 .entry-content ol,
 form p, h1, h2, h3, h4, h5, h6,
 .article-footer {
-  padding: 0 $slab * 2;
+  @include padding(0 1);
 }
 form .alert p {
   padding: 0;
 }
 .entry-content ul {
   list-style-type: disc;
-  padding-left: $slab * 6;
+  @include padding-left(3);
 }
 .entry-content ol {
   list-style-type: decimal;
-  padding-left: $slab * 6;
+  @include padding-left(3);
 }
 
 
@@ -803,7 +784,7 @@ form .alert p {
   text-decoration:none;
   text-align:center;
 
-  padding: $slab $slab * 2 $slab $slab * 2;
+  @include padding(0.5 1);
 
   outline: none; border: none;
   -webkit-font-smoothing: antialiased;
@@ -829,4 +810,35 @@ form .alert p {
     color: $alert-red;
     display: block;
   }
+}
+
+// alerts and notices
+%alert {
+  //margin: 10px;
+  padding: $gutter $gutter * 2;
+  border: 1px solid;
+}
+
+.alert-help {
+  @extend %alert;
+  border-color: darken($alert-yellow, 5%);
+  background: $alert-yellow;
+}
+
+.alert-info {
+  @extend %alert;
+  border-color: darken($alert-blue, 5%);
+  background: $alert-blue;
+}
+
+.alert-error {
+  @extend %alert;
+  border-color: darken($alert-red, 5%);
+  background: $alert-red;
+}
+
+.alert-success {
+  @extend %alert;
+  border-color: darken($alert-green, 5%);
+  background: $alert-green;
 }
