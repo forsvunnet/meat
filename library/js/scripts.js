@@ -82,7 +82,8 @@ jQuery(document).ready(function($) {
     }
 
     // Adjust menu top position:
-    $('.nav').css('top', $('.nav').prev().outerHeight());
+    // I dont understand this section here
+    //$('.nav').css('top', $('.nav').prev().outerHeight());
     
   };
   $(window).resize(resize);

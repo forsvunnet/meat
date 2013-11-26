@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: MEAT
+Author: Eivin + Andrew
 
 Stylesheet: Main Stylesheet
 
@@ -16,6 +16,7 @@ of the styles inside media queries.
 /*
  * Corrects `block` display not defined in IE6/7/8/9 & FF3.
  */
+/* line 21, ../scss/mixins/_normalize.scss */
 article,
 aside,
 details,
@@ -27,32 +28,39 @@ hgroup,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /*
  * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
  */
+/* line 31, ../scss/mixins/_normalize.scss */
 audio,
 canvas,
 video {
   display: inline-block;
   *display: inline;
-  *zoom: 1; }
+  *zoom: 1;
+}
 
 /*
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS5 devices.
  */
+/* line 42, ../scss/mixins/_normalize.scss */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /*
  * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
  * Known issue: no IE6 support.
  */
+/* line 52, ../scss/mixins/_normalize.scss */
 [hidden] {
-  display: none; }
+  display: none;
+}
 
 /* ==========================================================================
    Base
@@ -63,30 +71,36 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* line 67, ../scss/mixins/_normalize.scss */
 html {
   font-size: 100%;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /*
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
+/* line 82, ../scss/mixins/_normalize.scss */
 html,
 button,
 input,
 select,
 textarea {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 /*
  * Addresses margins handled incorrectly in IE6/7.
  */
+/* line 90, ../scss/mixins/_normalize.scss */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Links
@@ -94,16 +108,20 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
+/* line 102, ../scss/mixins/_normalize.scss */
 a:focus {
-  outline: thin dotted; }
+  outline: thin dotted;
+}
 
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  * people.opera.com/patrickl/experiments/keyboard/test
  */
+/* line 112, ../scss/mixins/_normalize.scss */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* ==========================================================================
    Typography
@@ -112,119 +130,155 @@ a:hover {
  * Addresses font sizes and margins set differently in IE6/7.
  * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
  */
+/*
+
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
+    font-size: 2em;
+    margin: 0.67em 0;
+}
 
 h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0; }
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
 
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0; }
+    font-size: 1.17em;
+    margin: 1em 0;
+}
 
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0; }
+    font-size: 1em;
+    margin: 1.33em 0;
+}
 
 h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0; }
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
 
 h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0; }
-
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+*/
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome.
  */
+/* line 161, ../scss/mixins/_normalize.scss */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /*
  * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
  */
+/* line 170, ../scss/mixins/_normalize.scss */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+/* line 174, ../scss/mixins/_normalize.scss */
 blockquote {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /*
  * Addresses styling not present in S5, Chrome.
  */
+/* line 182, ../scss/mixins/_normalize.scss */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /*
  * Addresses styling not present in IE6/7/8/9.
  */
+/* line 190, ../scss/mixins/_normalize.scss */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /*
  * Addresses margins set differently in IE6/7.
  */
+/* line 200, ../scss/mixins/_normalize.scss */
 p,
 pre {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome.
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
+/* line 212, ../scss/mixins/_normalize.scss */
 code,
 kbd,
 pre,
 samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
+/* line 222, ../scss/mixins/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+}
 
 /*
  * Addresses CSS quotes not supported in IE6/7.
  */
+/* line 232, ../scss/mixins/_normalize.scss */
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 /*
  * Addresses `quotes` property not supported in S4.
  */
+/* line 241, ../scss/mixins/_normalize.scss */
 q:before,
 q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
+/* line 246, ../scss/mixins/_normalize.scss */
 small {
-  font-size: 75%; }
+  font-size: 75%;
+}
 
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  * gist.github.com/413930
  */
+/* line 256, ../scss/mixins/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
+/* line 263, ../scss/mixins/_normalize.scss */
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
+/* line 267, ../scss/mixins/_normalize.scss */
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* ==========================================================================
    Lists
@@ -232,30 +286,38 @@ sub {
 /*
  * Addresses margins set differently in IE6/7.
  */
+/* line 282, ../scss/mixins/_normalize.scss */
 dl,
 menu,
 ol,
 ul {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
+/* line 286, ../scss/mixins/_normalize.scss */
 dd {
-  margin: 0 0 0 40px; }
+  margin: 0 0 0 40px;
+}
 
 /*
  * Addresses paddings set differently in IE6/7.
  */
+/* line 296, ../scss/mixins/_normalize.scss */
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px; }
+  padding: 0 0 0 40px;
+}
 
 /*
  * Corrects list images handled incorrectly in IE7.
  */
+/* line 305, ../scss/mixins/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
-  list-style-image: none; }
+  list-style-image: none;
+}
 
 /* ==========================================================================
    Embedded content
@@ -265,17 +327,21 @@ nav ol {
  * 2. Improves image quality when scaled in IE7.
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
+/* line 320, ../scss/mixins/_normalize.scss */
 img {
   border: 0;
   /* 1 */
   -ms-interpolation-mode: bicubic;
-  /* 2 */ }
+  /* 2 */
+}
 
 /*
  * Corrects overflow displayed oddly in IE9.
  */
+/* line 329, ../scss/mixins/_normalize.scss */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* ==========================================================================
    Figures
@@ -283,8 +349,10 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11.
  */
+/* line 341, ../scss/mixins/_normalize.scss */
 figure {
-  margin: 0; }
+  margin: 0;
+}
 
 /* ==========================================================================
    Forms
@@ -292,22 +360,27 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7.
  */
+/* line 353, ../scss/mixins/_normalize.scss */
 form {
-  margin: 0; }
+  margin: 0;
+}
 
 /*
  * Define consistent border, margin, and padding.
  */
+/* line 361, ../scss/mixins/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9.
  * 2. Corrects text not wrapping in FF3.
  * 3. Corrects alignment displayed oddly in IE6/7.
  */
+/* line 373, ../scss/mixins/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -315,13 +388,15 @@ legend {
   white-space: normal;
   /* 2 */
   *margin-left: -7px;
-  /* 3 */ }
+  /* 3 */
+}
 
 /*
  * 1. Corrects font size not being inherited in all browsers.
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
+/* line 389, ../scss/mixins/_normalize.scss */
 button,
 input,
 select,
@@ -333,15 +408,18 @@ textarea {
   vertical-align: baseline;
   /* 3 */
   *vertical-align: middle;
-  /* 3 */ }
+  /* 3 */
+}
 
 /*
  * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
  * UA stylesheet.
  */
+/* line 402, ../scss/mixins/_normalize.scss */
 button,
 input {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -352,6 +430,7 @@ input {
  * 4. Removes inner spacing in IE7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE6.
  */
+/* line 419, ../scss/mixins/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -361,14 +440,17 @@ input[type="submit"] {
   cursor: pointer;
   /* 3 */
   *overflow: visible;
-  /* 4 */ }
+  /* 4 */
+}
 
 /*
  * Re-set default cursor for disabled elements.
  */
+/* line 430, ../scss/mixins/_normalize.scss */
 button[disabled],
 input[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /*
  * 1. Addresses box sizing set to content-box in IE8/9.
@@ -376,6 +458,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7.
  *    Known issue: excess padding remains in IE6.
  */
+/* line 442, ../scss/mixins/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -385,45 +468,54 @@ input[type="radio"] {
   *height: 13px;
   /* 3 */
   *width: 13px;
-  /* 3 */ }
+  /* 3 */
+}
 
 /*
  * 1. Addresses `appearance` set to `searchfield` in S5, Chrome.
  * 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz`
  *    to future-proof).
  */
+/* line 455, ../scss/mixins/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X.
  */
+/* line 467, ../scss/mixins/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /*
  * Removes inner padding and border in FF3+.
  */
+/* line 476, ../scss/mixins/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
+/* line 486, ../scss/mixins/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */ }
+  /* 2 */
+}
 
 /* ==========================================================================
    Tables
@@ -431,9 +523,11 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
+/* line 499, ../scss/mixins/_normalize.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /******************************************************************
 CUSTOMIZED RESET VALUES
@@ -441,36 +535,50 @@ I added these extra styles as a more personalized reset. Feel free
 to remove them if you like or add your own. If you want to update
 the normalize styles, make sure to edit from this point up.
 ******************************************************************/
+/*
 p {
-  -webkit-hyphens: auto;
-  -epub-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto; }
-
+	-webkit-hyphens: auto;
+	-epub-hyphens:   auto;
+	-moz-hyphens:    auto;
+	hyphens:         auto;
+}
+*/
+/* line 521, ../scss/mixins/_normalize.scss */
 b, strong, .strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
+/* line 523, ../scss/mixins/_normalize.scss */
 dfn, em, .em {
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 525, ../scss/mixins/_normalize.scss */
 small, .small {
-  font-size: 75%; }
+  font-size: 75%;
+}
 
+/* line 527, ../scss/mixins/_normalize.scss */
 ul, ol {
   padding: 0;
-  list-style-type: none; }
+  list-style: inside square;
+}
 
+/* line 532, ../scss/mixins/_normalize.scss */
 dd {
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 538, ../scss/mixins/_normalize.scss */
 .sidebar ul,
 .sidebar ol,
 .commentlist {
-  list-style: none; }
+  list-style: none;
+}
 
 /******************************************************************
-Site Name: 
-Author: 
+Site Name: MEAT
+Author: Eivin + Andrew
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -487,38 +595,65 @@ remember less is more.
 /*********************
 CLEARFIXIN'
 *********************/
+/* line 25, ../scss/mixins/_mixins.scss */
 .clearfix {
-  zoom: 1; }
-  .clearfix:before, .clearfix:after {
-    content: "";
-    display: table; }
-  .clearfix:after {
-    clear: both; }
+  zoom: 1;
+}
+/* line 27, ../scss/mixins/_mixins.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 28, ../scss/mixins/_mixins.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 43, ../scss/mixins/_mixins.scss */
+.margin-auto {
+  margin: 0 auto;
+}
 
 /********************
 meat Mixin scss (migrated to keep mixins and styles separate)
 ********************/
+/* line 56, ../scss/mixins/_mixins.scss */
 .text-left {
-  text-align: left; }
+  text-align: left;
+}
 
+/* line 57, ../scss/mixins/_mixins.scss */
 .text-center {
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 58, ../scss/mixins/_mixins.scss */
 .text-right {
-  text-align: right; }
+  text-align: right;
+}
+
+/* line 60, ../scss/mixins/_mixins.scss */
+.marginauto {
+  margin: 0 auto !important;
+  float: none !important;
+}
 
 /*********************
 TOOLS
 *********************/
+/* line 67, ../scss/mixins/_mixins.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+/* line 74, ../scss/mixins/_mixins.scss */
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /*********************
 COLORS
@@ -534,31 +669,15 @@ http://sachagreif.com/sass-color-variables/
 /*********************
 TYPOGRAPHY
 *********************/
-/* 	To embed your own fonts, use this syntax
-	and place your fonts inside the
-	library/fonts folder. For more information
-	on embedding fonts, go to:
-	http://www.fontsquirrel.com/
-	Be sure to remove the comment brackets.
-*/
-/*	@font-face {
-    	font-family: 'Font Name';
-    	src: url('library/fonts/font-name.eot');
-    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
-             url('library/fonts/font-name.woff') format('woff'),
-             url('library/fonts/font-name.ttf') format('truetype'),
-             url('library/fonts/font-name.svg#font-name') format('svg');
-    	font-weight: normal;
-    	font-style: normal;
-	}
-*/
 /*
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
+/* line 109, ../scss/mixins/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
-  font-style: italic; }
+  font-style: italic;
+}
 
 /*********************
 TRANSITION
@@ -581,25 +700,35 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-.alert-help, .alert-info, .alert-error, .alert-success, .alert-help p, .alert-info p, .alert-error p, .alert-success p {
+/* line 205, ../scss/mixins/_mixins.scss */
+.alert-help, .alert-info, .alert-error, .validation_message, .alert-success {
   padding: 7px 14px;
-  border: 1px solid; }
+  border: 1px solid;
+}
 
+/* line 211, ../scss/mixins/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
-  background: #ebe16f; }
+  background: #ebe16f;
+}
 
+/* line 217, ../scss/mixins/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
-  background: #d5edf8; }
+  background: #d5edf8;
+}
 
-.alert-error {
+/* line 223, ../scss/mixins/_mixins.scss */
+.alert-error, .validation_message {
   border-color: #f8cdce;
-  background: #fbe3e4; }
+  background: #fbe3e4;
+}
 
+/* line 229, ../scss/mixins/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
-  background: #e6efc2; }
+  background: #e6efc2;
+}
 
 /*
 BASE (MOBILE) SIZE
@@ -608,8 +737,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
-Site Name:
-Author:
+Site Name: MEAT
+Author: Eivin + Andrew
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -619,295 +748,267 @@ possible. This is called at the top of the main stylsheet
 and will be used across all viewports.
 
 ******************************************************************/
-/********************
-BONES Mixin scss (migrated to keep mixins and styles separate)
-********************/
-.text-left {
-  text-align: left; }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.meat-warning {
-  display: none; }
-  .user-is-admin .meat-warning {
-    display: block;
-    position: fixed;
-    background-color: #fbe3e4;
-    background-color: rgba(251, 227, 228, 0.5);
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 16px; }
-
-.alert-help, .alert-info, .alert-error, .alert-success, .alert-help p, .alert-info p, .alert-error p, .alert-success p {
-  padding: 8px 16px;
-  border: 1px solid; }
-
-.alert-help p {
-  border-color: #e8dc59;
-  background: #ebe16f; }
-
-.alert-info p {
-  border-color: #bfe4f4;
-  background: #d5edf8; }
-
-.alert-error p {
-  border-color: #f8cdce;
-  background: #fbe3e4; }
-
-.alert-success p {
-  border-color: #deeaae;
-  background: #e6efc2; }
-
-/*********************
-LAYOUT & GRID STYLES
-*********************/
-.wrap {
-  width: 100%;
-  margin: 0 auto; }
-
 /*********************
 GENERAL STYLES
 *********************/
+/* line 19, ../scss/devices/_base.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #cccccc;
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
-  line-height: 1.3;
-  color: #565656;
-  overflow: auto; }
+  line-height: 1.5;
+  color: #444444;
+}
 
+/* line 27, ../scss/devices/_base.scss */
 ul, ol, p {
-  margin: 0 0 24px; }
-
-.lead {
-  margin-bottom: 40px;
-  font-weight: 200; }
-
-small {
-  font-size: 85%; }
-
-strong {
-  font-weight: bold; }
-
-em {
-  font-style: italic; }
-
-cite {
-  font-style: normal; }
-
-.muted {
-  color: gray; }
-
-a.muted:hover,
-a.muted:focus {
-  color: #666666; }
-
-.text-warning {
-  color: #4d4d4d; }
-
-a.text-warning:hover,
-a.text-warning:focus {
-  color: #333333; }
-
-.text-error {
-  color: #fbe3e4; }
-
-a.text-error:hover,
-a.text-error:focus {
-  color: #f5b6b9; }
-
-.text-info {
-  color: #ebe16f; }
-
-a.text-info:hover,
-a.text-info:focus {
-  color: #e5d842; }
-
-.text-success {
-  color: #e6efc2; }
-
-a.text-success:hover,
-a.text-success:focus {
-  color: #d5e49a; }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-.text-center {
-  text-align: center; }
-
-h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+}
+/* line 30, ../scss/devices/_base.scss */
+ul.sub-menu, ol.sub-menu, p.sub-menu {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #d5edf8;
-  text-rendering: optimizelegibility; }
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-weight: normal;
-    line-height: 1;
-    color: gray; }
+}
 
+/* line 35, ../scss/devices/_base.scss */
+#container {
+  padding: 0;
+}
+
+/* line 43, ../scss/devices/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 44, ../scss/devices/_base.scss */
+em {
+  font-style: italic;
+}
+
+/* line 45, ../scss/devices/_base.scss */
+cite {
+  font-style: normal;
+}
+
+/* line 47, ../scss/devices/_base.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 48, ../scss/devices/_base.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 49, ../scss/devices/_base.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 55, ../scss/devices/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizelegibility;
+  color: #383132;
+  line-height: 1.5;
+  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-weight: 300;
+  margin: 0;
+}
+/* line 63, ../scss/devices/_base.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+/* line 71, ../scss/devices/_base.scss */
 h1 {
-  font-size: 352px;
-  font-size: 22rem; }
-
-h2 {
-  font-size: 320px;
-  font-size: 20rem; }
-
-h3 {
-  font-size: 288px;
-  font-size: 18rem; }
-
-h4 {
-  font-size: 288px;
-  font-size: 18rem; }
-
-h5 {
-  font-size: 256px;
-  font-size: 16rem; }
-
-h6 {
-  font-size: 256px;
-  font-size: 16rem; }
-
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #444444;
+}
+/* line 74, ../scss/devices/_base.scss */
 h1 small {
-  font-size: 288px;
-  font-size: 18rem; }
+  font-size: 32px;
+  font-size: 2rem;
+}
 
+/* line 77, ../scss/devices/_base.scss */
+h2 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+/* line 79, ../scss/devices/_base.scss */
 h2 small {
-  font-size: 288px;
-  font-size: 18rem; }
+  font-size: 25.6px;
+  font-size: 1.6rem;
+}
 
+/* line 82, ../scss/devices/_base.scss */
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 84, ../scss/devices/_base.scss */
 h3 small {
-  font-size: 224px;
-  font-size: 14rem; }
+  font-size: 16px;
+  font-size: 1rem;
+}
+/* line 85, ../scss/devices/_base.scss */
+h3 span {
+  color: #6c6e6d;
+}
 
+/* line 88, ../scss/devices/_base.scss */
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+/* line 90, ../scss/devices/_base.scss */
 h4 small {
-  font-size: 224px;
-  font-size: 14rem; }
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
 
+/* line 93, ../scss/devices/_base.scss */
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* line 97, ../scss/devices/_base.scss */
+h6 {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
+
+/* line 109, ../scss/devices/_base.scss */
 ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 118, ../scss/devices/_base.scss */
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 125, ../scss/devices/_base.scss */
 ul.inline,
 ol.inline {
   margin-left: 0;
-  list-style: none; }
-  ul.inline > li,
-  ol.inline > li {
-    display: inline-block; }
+  list-style: none;
+}
+/* line 128, ../scss/devices/_base.scss */
+ul.inline > li,
+ol.inline > li {
+  display: inline-block;
+}
 
-dl {
-  margin-bottom: 40px; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin-left: 24px; }
-
-.dl-horizontal {
-  zoom: 1; }
-  .dl-horizontal:before, .dl-horizontal:after {
-    content: "";
-    display: table; }
-  .dl-horizontal:after {
-    clear: both; }
-  .dl-horizontal dt {
-    float: left;
-    width: 15px;
-    clear: left;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-  .dl-horizontal dd {
-    margin-left: 35px; }
-
+/* line 138, ../scss/devices/_base.scss */
 hr {
-  margin: 40px 0;
+  margin: 35px 0;
   border: 0;
   border-top: 1px solid #666666;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+}
 
+/* line 148, ../scss/devices/_base.scss */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted gray; }
+  border-bottom: 1px dotted #999999;
+}
 
+/* line 153, ../scss/devices/_base.scss */
 abbr.initialism {
   font-size: 90%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
+/* line 160, ../scss/devices/_base.scss */
 blockquote {
-  padding: 0 0 0 16px;
-  margin: 0 8px 40px;
-  border-left: 5px solid #999999; }
-  blockquote p {
-    margin-bottom: 0;
-    font-size: 192px;
-    font-size: 12rem;
-    font-weight: 300;
-    padding: 0; }
-  blockquote small {
-    display: block;
-    color: gray; }
-    blockquote small:before {
-      content: '\2014 \00A0'; }
-  blockquote.pull-right {
-    float: right;
-    padding-right: 15px;
-    padding-left: 0;
-    border-right: 5px solid #999999;
-    border-left: 0; }
-    blockquote.pull-right p,
-    blockquote.pull-right small {
-      text-align: right; }
-    blockquote.pull-right small:before {
-      content: ''; }
-    blockquote.pull-right small:after {
-      content: '\00A0 \2014'; }
+  padding: 0 0 0 15px;
+  margin: 0 0 35px;
+  border-left: 5px solid #383132;
+}
+/* line 165, ../scss/devices/_base.scss */
+blockquote p {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #383132;
+}
+/* line 172, ../scss/devices/_base.scss */
+blockquote small {
+  display: block;
+  color: #999999;
+}
+/* line 177, ../scss/devices/_base.scss */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+/* line 183, ../scss/devices/_base.scss */
+blockquote.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #cccccc;
+  border-left: 0;
+}
+/* line 191, ../scss/devices/_base.scss */
+blockquote.pull-right p,
+blockquote.pull-right small {
+  text-align: right;
+}
+/* line 195, ../scss/devices/_base.scss */
+blockquote.pull-right small:before {
+  content: '';
+}
+/* line 198, ../scss/devices/_base.scss */
+blockquote.pull-right small:after {
+  content: '\00A0 \2014';
+}
 
+/* line 209, ../scss/devices/_base.scss */
 q:before,
 q:after,
 blockquote:before,
 blockquote:after {
-  content: ""; }
+  content: "";
+}
 
+/* line 214, ../scss/devices/_base.scss */
 address {
   display: block;
-  margin-bottom: 40px;
-  font-style: normal; }
+  margin-bottom: 35px;
+  font-style: normal;
+}
 
 /*********************
 LINK STYLES
 *********************/
+/* line 225, ../scss/devices/_base.scss */
 a, a:visited {
-  color: #1dafee;
+  color: #383132;
+  border-bottom: 1px dotted #222222;
+  text-decoration: none;
   /* on hover */
   /* on click */
-  /* mobile tap color */ }
-  a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #0f94ce; }
-  a:link, a:visited:link {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+  /* mobile tap color */
+}
+/* line 231, ../scss/devices/_base.scss */
+a:hover, a:focus, a:visited:hover, a:visited:focus {
+  color: #201c1c;
+}
+/* line 240, ../scss/devices/_base.scss */
+a:link, a:visited:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
 
 /*********************
 NAVIGATION STYLES
@@ -919,171 +1020,441 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-.js .nav, .js .nav li ul.sub-menu, .nav li .js ul.sub-menu,
-.js .nav li ul.children,
-.nav li .js ul.children {
-  display: none; }
+@media only screen and (max-width: 47.9em) {
+  /* line 261, ../scss/devices/_base.scss */
+  .js .nav, .js .nav li ul.sub-menu, .nav li .js ul.sub-menu,
+  .js .nav li ul.children,
+  .nav li .js ul.children {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
+    -transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
+    transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  /* line 267, ../scss/devices/_base.scss */
   .js .show.nav, .js .nav li ul.show.sub-menu, .nav li .js ul.show.sub-menu,
   .js .nav li ul.show.children,
   .nav li .js ul.show.children {
-    display: block; }
+    max-height: 2000px;
+  }
+}
 
+/* line 274, ../scss/devices/_base.scss */
 .clickable, .nav li a {
-  padding: 8px 16px; }
+  padding: 7px 14px;
+}
 
+/* line 280, ../scss/devices/_base.scss */
 .clickable {
   margin: 0;
-  background-color: gray;
+  color: #222222;
   cursor: pointer;
   position: relative;
-  width: 30%;
-  float: right; }
-  .clickable:hover, .clickable:focus {
-    background-color: #999999; }
-
-.menu-icon {
-  width: 18px;
+  padding: 20px 8px 0;
   float: right;
-  margin-top: 4px; }
-  .menu-icon div {
-    height: 3px;
-    width: 100%;
-    margin-bottom: 3px;
-    border-radius: 2px;
-    background: #666666; }
+  width: 18%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
+/* line 295, ../scss/devices/_base.scss */
+.menu-icon {
+  margin-top: 0px;
+  padding: 0 4px;
+}
+/* line 301, ../scss/devices/_base.scss */
+.menu-icon div {
+  height: 4px;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  background: #222222;
+}
+/* line 309, ../scss/devices/_base.scss */
+.menu-icon:after {
+  content: "Meny";
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-family: "Helvetica", sans-serif;
+  display: block;
+  text-align: center;
+}
+
+/* line 322, ../scss/devices/_base.scss */
 #logo {
-  float: left; }
+  display: block;
+  text-align: center;
+  width: 80%;
+}
+/* line 327, ../scss/devices/_base.scss */
+#logo a {
+  border-bottom: 0;
+}
+/* line 331, ../scss/devices/_base.scss */
+#logo img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 
+/* line 338, ../scss/devices/_base.scss */
 .header nav {
-  position: relative; }
+  position: relative;
+}
 
+/* line 342, ../scss/devices/_base.scss */
 .nav {
-  border-top: 1px solid #4d4d4d;
+  border-top: 1px solid #444444;
   margin: 0;
-  /* end .menu li */ }
-  .js .nav {
-    border-top: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    top: 0; }
-  .nav li a {
-    display: block;
-    text-decoration: none;
-    background-color: #999999;
-    border-bottom: 1px solid #4d4d4d; }
-    .nav li a:hover, .nav li a:focus {
-      background-color: gray; }
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    background-color: white;
-    padding-left: 32px; }
-    .nav li ul.sub-menu li a:hover, .nav li ul.sub-menu li a:focus,
-    .nav li ul.children li a:hover,
-    .nav li ul.children li a:focus {
-      background-color: #e6e6e6; }
-  .js .nav li.current-menu-ancestor ul.sub-menu {
-    display: block; }
+  font-family: "Helvetica", sans-serif;
+  /* end .menu li */
+}
+/* line 348, ../scss/devices/_base.scss */
+.js .nav {
+  border-top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 0;
+  z-index: 5;
+}
+/* line 363, ../scss/devices/_base.scss */
+.js .nav li a {
+  width: 100%;
+}
+/* line 370, ../scss/devices/_base.scss */
+.nav li a {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #444444;
+  color: #534741;
+}
+/* line 382, ../scss/devices/_base.scss */
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 28px;
+}
 
 /* end .nav */
+@media only screen and (max-width: 47.9em) {
+  /* line 396, ../scss/devices/_base.scss */
+  #logo {
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    width: 80%;
+  }
+
+  /* line 406, ../scss/devices/_base.scss */
+  .nav {
+    border-top: 1px solid #444444;
+    margin: 0;
+  }
+  /* line 411, ../scss/devices/_base.scss */
+  .js .nav {
+    position: absolute;
+    top: 85px;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  /* line 419, ../scss/devices/_base.scss */
+  .lang_sel_list_horizontal {
+    display: none;
+  }
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+/* line 429, ../scss/devices/_base.scss */
+.tabContent {
+  position: relative;
+  width: 100%;
+}
+/* line 432, ../scss/devices/_base.scss */
+.tabContent a {
+  border-bottom: 0;
+}
+
+/* line 437, ../scss/devices/_base.scss */
+.tab-navigation {
+  width: 100%;
+}
+
+/* line 441, ../scss/devices/_base.scss */
+.tabs {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 445, ../scss/devices/_base.scss */
+.tabs li {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+/* line 451, ../scss/devices/_base.scss */
+.tabs li a {
+  color: #222222;
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-bottom: 0;
+  text-align: center;
+  padding: 20px 5px;
+  border-left: 0px solid #222222;
+  display: inline-block;
+  width: 100%;
+}
+/* line 465, ../scss/devices/_base.scss */
+.tabs li:first-child a {
+  border-left: 0;
+}
+
+/* line 472, ../scss/devices/_base.scss */
+.floating--excerpt {
+  background: rgba(108, 110, 109, 0.8);
+  color: white;
+  padding: 1em;
+  font-size: 13.6px;
+  font-size: 0.85rem;
+  line-height: 1.75;
+}
+/* line 479, ../scss/devices/_base.scss */
+.floating--excerpt a {
+  color: #383132;
+}
+
+/* line 484, ../scss/devices/_base.scss */
+#main {
+  float: left;
+  margin: 0 0 20px;
+  border-radius: 3px;
+}
+
+/* line 491, ../scss/devices/_base.scss */
 img {
   margin: 0;
-  max-width: 100%;
-  height: auto; }
-  img.full {
-    width: 100%; }
+  width: 100%;
+  height: auto;
+}
 
+/* line 498, ../scss/devices/_base.scss */
 #content {
-  margin-top: 14px; }
+  margin-top: 14px;
+}
+/* line 500, ../scss/devices/_base.scss */
+.home #content {
+  margin-top: 0;
+}
 
 /* post meta */
+/* line 508, ../scss/devices/_base.scss */
 .byline {
-  color: #999; }
+  color: #999;
+}
 
+/* line 512, ../scss/devices/_base.scss */
 .entry-content {
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
-  */ }
-  .entry-content dd {
-    margin-left: 0;
-    color: #787878; }
-  .entry-content video, .entry-content object {
-    max-width: 100%;
-    height: auto; }
-  .entry-content pre {
-    background: #eee;
-    border: 1px solid #cecece;
-    padding: 10px; }
+  */
+}
+/* line 513, ../scss/devices/_base.scss */
+.entry-content dd {
+  margin-left: 0;
+  color: #787878;
+}
+/* line 528, ../scss/devices/_base.scss */
+.entry-content video, .entry-content object {
+  max-width: 100%;
+  height: auto;
+}
+/* line 533, ../scss/devices/_base.scss */
+.entry-content pre {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px;
+}
 
 /* end .entry-content */
+/* line 541, ../scss/devices/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
-  padding: 5px; }
-  .wp-caption p.wp-caption-text {
-    font-size: 0.85em;
-    margin: 4px 0 7px;
-    text-align: center; }
+  padding: 5px;
+}
+/* line 546, ../scss/devices/_base.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 0.85em;
+  margin: 4px 0 7px;
+  text-align: center;
+}
 
 /* end .wp-caption */
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
+/* line 559, ../scss/devices/_base.scss */
 .page-navigation,
 .wp-prev-next {
-  margin: 1.1em 0 2.2em; }
+  margin: 1.1em 0 2.2em;
+}
 
-.bones_page_navi {
+/* line 562, ../scss/devices/_base.scss */
+.meat_page_navi {
   /* current page link */
-  /* end .bones_page_navi .bpn-current */
+  /* end .meat_page_navi .bpn-current */
   /* common styles for page-navi links */
-  /* remove the bg on end links */ }
-  .bones_page_navi li {
-    float: left;
-    margin-left: 10px; }
-    .bones_page_navi li a {
-      padding: 3px 6px;
-      display: block;
-      text-decoration: none;
-      position: relative; }
-      .bones_page_navi li a:hover, .bones_page_navi li a:focus {
-        color: #f01d4f;
-        text-decoration: underline; }
-  .bones_page_navi li.bpn-current {
-    padding: 3px 6px;
-    border-bottom: 2px solid #f01d4f;
-    position: relative; }
-  .bones_page_navi li.bpn-prev-link,
-  .bones_page_navi li.bpn-next-link {
-    font-weight: 700; }
-    .bones_page_navi li.bpn-prev-link a,
-    .bones_page_navi li.bpn-next-link a {
-      padding: 0; }
-  .bones_page_navi li.bpn-prev-link a:hover,
-  .bones_page_navi li.bpn-next-link a:hover,
-  .bones_page_navi li.bpn-first-page-link a:hover,
-  .bones_page_navi li.bpn-last-page-link a:hover {
-    background: none; }
+  /* remove the bg on end links */
+}
+/* line 564, ../scss/devices/_base.scss */
+.meat_page_navi li {
+  float: left;
+  margin-left: 10px;
+}
+/* line 568, ../scss/devices/_base.scss */
+.meat_page_navi li a {
+  padding: 3px 6px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+/* line 575, ../scss/devices/_base.scss */
+.meat_page_navi li a:hover, .meat_page_navi li a:focus {
+  color: #f01d4f;
+  text-decoration: underline;
+}
+/* line 584, ../scss/devices/_base.scss */
+.meat_page_navi li.bpn-current {
+  padding: 3px 6px;
+  border-bottom: 2px solid #f01d4f;
+  position: relative;
+}
+/* line 593, ../scss/devices/_base.scss */
+.meat_page_navi li.bpn-prev-link,
+.meat_page_navi li.bpn-next-link {
+  font-weight: 700;
+}
+/* line 596, ../scss/devices/_base.scss */
+.meat_page_navi li.bpn-prev-link a,
+.meat_page_navi li.bpn-next-link a {
+  padding: 0;
+}
+/* line 605, ../scss/devices/_base.scss */
+.meat_page_navi li.bpn-prev-link a:hover,
+.meat_page_navi li.bpn-next-link a:hover,
+.meat_page_navi li.bpn-first-page-link a:hover,
+.meat_page_navi li.bpn-last-page-link a:hover {
+  background: none;
+}
 
-/* end .bones_page_navi */
+/* end .meat_page_navi */
 /* fallback previous & next links */
+/* line 614, ../scss/devices/_base.scss */
 .wp-prev-next .prev-link {
-  float: left; }
+  float: left;
+}
+/* line 618, ../scss/devices/_base.scss */
 .wp-prev-next .next-link {
-  float: right; }
+  float: right;
+}
 
 /* end .wp-prev-next */
+/* line 629, ../scss/devices/_base.scss */
+.card {
+  background: white;
+  padding: 1em;
+  float: left;
+  margin: 0 0 20px;
+  border-radius: 3px;
+  width: 100%;
+}
+/* line 637, ../scss/devices/_base.scss */
+.stack .card {
+  width: 100%;
+  margin: 20px 0% 0px;
+}
+/* line 642, ../scss/devices/_base.scss */
+.card h3 {
+  color: #222222;
+  margin: 0.25em 0;
+  padding: 0;
+  line-height: 1.3;
+  font-size: 20.8px;
+  font-size: 1.3rem;
+}
+/* line 650, ../scss/devices/_base.scss */
+.card p {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
+/* line 654, ../scss/devices/_base.scss */
+.card img {
+  width: 110%;
+  height: auto;
+  max-width: 372px;
+  display: block;
+  margin: -5% -5% 10px;
+}
+/* line 663, ../scss/devices/_base.scss */
+.card .button, .card strong a {
+  width: 100%;
+}
+
+/* line 675, ../scss/devices/_base.scss */
+.gform_validation_container {
+  display: none;
+}
+
+/* line 680, ../scss/devices/_base.scss */
+.hentry {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* line 685, ../scss/devices/_base.scss */
+.wide {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 3em 0;
+}
+/* line 690, ../scss/devices/_base.scss */
+.wide.right {
+  background-position: center;
+  text-align: right;
+}
+/* line 691, ../scss/devices/_base.scss */
+.wide.left {
+  background-position: center;
+  text-align: left;
+}
+/* line 693, ../scss/devices/_base.scss */
+.wide.white {
+  color: black;
+}
+/* line 694, ../scss/devices/_base.scss */
+.wide.colour {
+  color: black;
+}
+/* line 695, ../scss/devices/_base.scss */
+.wide.dark {
+  color: white;
+}
+
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
+/* line 703, ../scss/devices/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1091,177 +1462,395 @@ COMMENT STYLES
   /* comment content */
   /* end .commentlist .comment_content */
   /* comment reply link */
-  /* end .commentlist .comment-reply-link */ }
-  .commentlist li {
-    position: relative;
-    clear: both;
-    overflow: hidden;
-    list-style-type: none;
-    margin-bottom: 1.5em;
-    padding: 0.7335em 10px;
-    /* end .commentlist li ul.children */ }
-    .commentlist li:last-child {
-      margin-bottom: 0; }
-    .commentlist li ul.children {
-      margin: 0; }
-  .commentlist li[class*=depth-] {
-    margin-top: 1.1em; }
-  .commentlist li.depth-1 {
-    margin-left: 0;
-    margin-top: 0; }
-  .commentlist li:not(.depth-1) {
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: 0;
-    padding-bottom: 0; }
-  .commentlist .odd {
-    background: #eee; }
-  .commentlist .even {
-    background: #fefefe; }
-  .commentlist .vcard {
-    margin-left: 50px; }
-    .commentlist .vcard cite.fn {
-      font-weight: 700;
-      font-style: normal; }
-    .commentlist .vcard time {
-      float: right; }
-      .commentlist .vcard time a {
-        color: #999;
-        text-decoration: none; }
-        .commentlist .vcard time a:hover {
-          text-decoration: underline; }
-    .commentlist .vcard img.avatar {
-      position: absolute;
-      left: 10px;
-      padding: 2px;
-      border: 1px solid #cecece;
-      background: #fff; }
-  .commentlist .comment_content {
-    margin-left: 50px; }
-    .commentlist .comment_content p {
-      margin: 0.7335em 0 1.5em;
-      font-size: 1em;
-      line-height: 1.5em; }
-  .commentlist .comment-reply-link {
-    text-decoration: none;
-    float: right;
-    background: #4598bb;
-    padding: 3px 5px;
-    color: #fff;
-    opacity: 0.65;
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 0.9em; }
-    .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
-      opacity: 1; }
+  /* end .commentlist .comment-reply-link */
+}
+/* line 705, ../scss/devices/_base.scss */
+.commentlist li {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  list-style-type: none;
+  margin-bottom: 1.5em;
+  padding: 0.7335em 10px;
+  /* end .commentlist li ul.children */
+}
+/* line 713, ../scss/devices/_base.scss */
+.commentlist li:last-child {
+  margin-bottom: 0;
+}
+/* line 717, ../scss/devices/_base.scss */
+.commentlist li ul.children {
+  margin: 0;
+}
+/* line 722, ../scss/devices/_base.scss */
+.commentlist li[class*=depth-] {
+  margin-top: 1.1em;
+}
+/* line 726, ../scss/devices/_base.scss */
+.commentlist li.depth-1 {
+  margin-left: 0;
+  margin-top: 0;
+}
+/* line 731, ../scss/devices/_base.scss */
+.commentlist li:not(.depth-1) {
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+/* line 739, ../scss/devices/_base.scss */
+.commentlist .odd {
+  background: #eee;
+}
+/* line 742, ../scss/devices/_base.scss */
+.commentlist .even {
+  background: #fefefe;
+}
+/* line 746, ../scss/devices/_base.scss */
+.commentlist .vcard {
+  margin-left: 50px;
+}
+/* line 749, ../scss/devices/_base.scss */
+.commentlist .vcard cite.fn {
+  font-weight: 700;
+  font-style: normal;
+}
+/* line 754, ../scss/devices/_base.scss */
+.commentlist .vcard time {
+  float: right;
+}
+/* line 757, ../scss/devices/_base.scss */
+.commentlist .vcard time a {
+  color: #999;
+  text-decoration: none;
+}
+/* line 761, ../scss/devices/_base.scss */
+.commentlist .vcard time a:hover {
+  text-decoration: underline;
+}
+/* line 769, ../scss/devices/_base.scss */
+.commentlist .vcard img.avatar {
+  position: absolute;
+  left: 10px;
+  padding: 2px;
+  border: 1px solid #cecece;
+  background: #fff;
+}
+/* line 780, ../scss/devices/_base.scss */
+.commentlist .comment_content {
+  margin-left: 50px;
+}
+/* line 783, ../scss/devices/_base.scss */
+.commentlist .comment_content p {
+  margin: 0.7335em 8px 1.5em;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 792, ../scss/devices/_base.scss */
+.commentlist .comment-reply-link {
+  text-decoration: none;
+  float: right;
+  background: #4598bb;
+  padding: 3px 5px;
+  color: #fff;
+  opacity: 0.65;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+/* line 804, ../scss/devices/_base.scss */
+.commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
+  opacity: 1;
+}
 
 /* end .commentlist */
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-form li {
-  list-style-type: none;
-  clear: both;
-  margin-bottom: 0.7335em; }
-  form li label,
-  form li small {
-    display: none; }
-form input[type=text],
-form input[type=email],
-form input[type=url],
-form textarea {
-  padding: 3px 8px;
-  background: #efefef;
-  border: 2px solid #cecece;
-  /* form validation */ }
-  form input[type=text]:focus,
-  form input[type=email]:focus,
-  form input[type=url]:focus,
-  form textarea:focus {
-    background: #fff; }
-  form input[type=text]:invalid,
-  form input[type=email]:invalid,
-  form input[type=url]:invalid,
-  form textarea:invalid {
-    outline: none;
-    border-color: #fbc2c4;
-    background-color: #f6e7eb;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    box-shadow: none; }
-form select,
-form input[type=text],
-form input[type=email],
-form input[type=url] {
-  max-width: 100%; }
-form textarea {
-  resize: none;
+/* line 814, ../scss/devices/_base.scss */
+.ginput_container input {
   width: 100%;
-  height: 150px; }
+}
 
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-/* allowed tags */
-/* no comments */
-/*********************
-FOOTER STYLES
-*********************/
-.article-header .byline,
-.footer p,
-.entry-content p,
-.entry-content ul,
-.entry-content ol,
-form p, h1, h2, h3, h4, h5, h6,
-.article-footer {
-  padding: 0 16px; }
-
-form .alert p {
-  padding: 0; }
-
-.entry-content ul {
-  list-style-type: disc;
-  padding-left: 48px; }
-
-.entry-content ol {
-  list-style-type: decimal;
-  padding-left: 48px; }
-
-.button {
-  background-color: #1dafee;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
+/* line 819, ../scss/devices/_base.scss */
+.sub-cards {
+  background: #383132;
+  color: white;
+}
+/* line 823, ../scss/devices/_base.scss */
+.sub-cards h3 {
+  color: white;
+  margin: 1em 0 0.35em;
+}
+/* line 828, ../scss/devices/_base.scss */
+.sub-cards p {
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 1em;
+}
+/* line 834, ../scss/devices/_base.scss */
+.sub-cards a {
+  background: white;
   border-radius: 2px;
   text-indent: 0;
   display: inline-block;
-  color: #ffffff;
+  color: #383132;
   font-weight: normal;
   font-style: normal;
   text-decoration: none;
   text-align: center;
-  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+  padding: 7px 14px 7px 14px;
   outline: none;
   border: none;
   -webkit-font-smoothing: antialiased;
-  border-bottom: 5px solid gray; }
-
-.button:hover {
-  background-color: #4cc0f2;
-  border-bottom-color: #999999; }
-
-.button:active {
+  border-bottom: 5px solid #89797b;
+}
+/* line 854, ../scss/devices/_base.scss */
+.sub-cards a:hover {
+  background: #615556;
+  color: white;
+}
+/* line 859, ../scss/devices/_base.scss */
+.sub-cards a:active {
+  background: #1d191a;
+  color: white;
   position: relative;
-  top: 1px; }
+  top: 4px;
+  margin: 0 0 4px;
+  border-bottom-width: 1px;
+  box-shadow: inset 0px 10px 5px -7px #020101;
+}
 
-.user-is-admin b:after {
-  content: ' The html tag <b> is deprecated! Use <h2> or <strong> instead! '; }
-.user-is-admin i:after {
-  content: ' The html tag <i> is deprecated! Use <em> instead! '; }
-.user-is-admin i:after, .user-is-admin b:after {
-  color: #fbe3e4;
-  display: block; }
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+/* line 885, ../scss/devices/_base.scss */
+form li {
+  list-style-type: none;
+  clear: both;
+  margin-bottom: 0.7335em;
+}
+/* line 899, ../scss/devices/_base.scss */
+form input[type=text],
+form input[type=email],
+form input[type=url],
+form textarea {
+  padding: 3px 7px;
+  background: #efefef;
+  border: 2px solid #cecece;
+  /* form validation */
+}
+/* line 905, ../scss/devices/_base.scss */
+form input[type=text]:focus,
+form input[type=email]:focus,
+form input[type=url]:focus,
+form textarea:focus {
+  background: #fff;
+}
+/* line 910, ../scss/devices/_base.scss */
+form input[type=text]:invalid,
+form input[type=email]:invalid,
+form input[type=url]:invalid,
+form textarea:invalid {
+  outline: none;
+  border-color: #fbc2c4;
+  background-color: #f6e7eb;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+}
+/* line 920, ../scss/devices/_base.scss */
+form .email {
+  height: 30px;
+}
+/* line 927, ../scss/devices/_base.scss */
+form select,
+form input[type=text],
+form input[type=email],
+form input[type=url] {
+  max-width: 100%;
+}
+/* line 932, ../scss/devices/_base.scss */
+form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+}
+
+/* comment form title */
+/* line 941, ../scss/devices/_base.scss */
+#comment-form-title {
+  margin: 0 0 1.1em;
+}
+
+/* allowed tags */
+/* no comments */
+/* line 966, ../scss/devices/_base.scss */
+.sidebar ul {
+  margin: 0;
+}
+/* line 971, ../scss/devices/_base.scss */
+.sidebar .current--page a {
+  background: rgba(108, 110, 109, 0.6);
+  color: white;
+}
+/* line 979, ../scss/devices/_base.scss */
+.sidebar li a {
+  background: rgba(255, 255, 255, 0.8);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: 0;
+  padding: 15px;
+  color: #222222;
+  margin-bottom: 3px;
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+/* line 996, ../scss/devices/_base.scss */
+form .alert p {
+  padding: 0;
+}
+
+/* line 1000, ../scss/devices/_base.scss */
+.entry-content ul {
+  list-style-type: disc;
+  padding-left: 42px;
+}
+
+/* line 1008, ../scss/devices/_base.scss */
+.button, .card strong a {
+  background: #383132;
+  border-radius: 2px;
+  text-indent: 0;
+  display: inline-block;
+  color: white;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 7px 14px 7px 14px;
+  outline: none;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 5px solid #020101;
+  /*
+  	&:link{ //Outbound links
+  		background: $brand-highlight;
+  		color: $white;
+  		border-bottom-color: darken($brand-highlight, 20%);
+  		
+  		&:active{
+  			box-shadow: inset 0px 10px 5px -7px darken($brand-highlight, 20%);
+  		}	
+  	
+  		&:visited{
+  			color: $white;
+  			border-bottom-color: darken($brand-highlight, 20%);
+  		}
+  	}
+  */
+}
+/* line 1027, ../scss/devices/_base.scss */
+.button:hover, .card strong a:hover {
+  background: #463d3e;
+  color: white;
+}
+/* line 1032, ../scss/devices/_base.scss */
+.button:active, .card strong a:active {
+  background: #1d191a;
+  position: relative;
+  top: 4px;
+  margin: 0 0 4px;
+  border-bottom-width: 1px;
+  box-shadow: inset 0px 10px 5px -7px #020101;
+}
+/* line 1043, ../scss/devices/_base.scss */
+.button:visited, .card strong a:visited {
+  color: white;
+  background: #383132;
+  border-bottom-color: #020101;
+}
+/* line 1066, ../scss/devices/_base.scss */
+.button:focus, .card strong a:focus {
+  color: white;
+}
+
+/* line 1073, ../scss/devices/_base.scss */
+.widgettitle {
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+  font-weight: bold;
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
+
+/* line 1088, ../scss/devices/_base.scss */
+.footer {
+  font-size: 13.6px;
+  font-size: 0.85rem;
+}
+/* line 1091, ../scss/devices/_base.scss */
+.footer > .wrap > nav {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+/* line 1097, ../scss/devices/_base.scss */
+.footer .menu {
+  margin: 0;
+}
+/* line 1100, ../scss/devices/_base.scss */
+.footer a {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 1106, ../scss/devices/_base.scss */
+.footer .fourcol > h2 {
+  color: #534741;
+  font-weight: bold;
+}
+/* line 1107, ../scss/devices/_base.scss */
+.footer .fourcol > div {
+  color: #999;
+  font-family: "Helvetica", sans-serif;
+}
+@media only screen and (max-width: 30.063em) {
+  /* line 1088, ../scss/devices/_base.scss */
+  .footer {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+}
+
+/* line 1127, ../scss/devices/_base.scss */
+.social [data-icon] {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+/* line 1132, ../scss/devices/_base.scss */
+.copyright {
+  color: #999;
+  margin: 10px 0 1em;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 1134, ../scss/devices/_base.scss */
+.copyright a {
+  color: #999;
+  border-bottom-color: #999;
+}
+@media only screen and (max-width: 30.063em) {
+  /* line 1132, ../scss/devices/_base.scss */
+  .copyright {
+    padding: 0 2em;
+  }
+}
 
 /*
 LARGER MOBILE DEVICES
@@ -1271,8 +1860,8 @@ tweeners.
 */
 @media only screen and (min-width: 30.063em) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: MEAT 
+  Author: Eivin + Andrew 
   
   Stylesheet: 481px and Up Stylesheet
   
@@ -1286,66 +1875,169 @@ tweeners.
   upon your base.scss styles.
   
   ******************************************************************/
+  /* line 29, ../scss/devices/_481up.scss */
+  .card {
+    background: white;
+    padding: 1em;
+    float: left;
+    margin: 0 0 20px;
+    border-radius: 3px;
+  }
+  /* line 36, ../scss/devices/_481up.scss */
+  .stack .card {
+    width: 48%;
+    margin: 10px 0% 20px;
+  }
+  /* line 41, ../scss/devices/_481up.scss */
+  .card h3 {
+    color: #222222;
+    margin: 0.25em 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 20.8px;
+    font-size: 1.3rem;
+  }
+  /* line 49, ../scss/devices/_481up.scss */
+  .card p {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+  }
+  /* line 53, ../scss/devices/_481up.scss */
+  .card img {
+    width: 110%;
+    height: 170px;
+    background: #383132;
+    display: block;
+    margin: -5% -5% 10px;
+  }
+  /* line 61, ../scss/devices/_481up.scss */
+  .card .button, .card strong a {
+    width: 100%;
+  }
+
   /*********************
   NAVIGATION STYLES
   *********************/
   /* .menu is clearfixed inside mixins.scss */
+  /* line 73, ../scss/devices/_481up.scss */
   .menu {
-    /* end .menu ul */ }
-    .menu ul {
-      /* end .menu ul li */
-      /* highlight current page */
-      /* end current highlighters */ }
-      .menu ul li {
-        /*
-        plan your menus and drop-downs wisely.
-        */ }
-        .menu ul li a {
-          /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
+    /* end .menu ul */
+  }
+  /* line 74, ../scss/devices/_481up.scss */
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  /* line 75, ../scss/devices/_481up.scss */
+  .menu ul li {
+    /*
+    plan your menus and drop-downs wisely.
+    */
+  }
+  /* line 76, ../scss/devices/_481up.scss */
+  .menu ul li a {
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
 
   /* end .menu */
   /*********************
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
+  /* line 121, ../scss/devices/_481up.scss */
   .entry-content {
-    /* at this larger size, we can start to align images */ }
-    .entry-content .alignleft, .entry-content img.alignleft {
-      margin-right: 1.5em;
-      display: inline;
-      float: left; }
-    .entry-content .alignright, .entry-content img.alignright {
-      margin-left: 1.5em;
-      display: inline;
-      float: right; }
-    .entry-content .aligncenter, .entry-content img.aligncenter {
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-      clear: both; }
+    /* at this larger size, we can start to align images */
+  }
+  /* line 125, ../scss/devices/_481up.scss */
+  .entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left;
+  }
+  /* line 130, ../scss/devices/_481up.scss */
+  .entry-content .alignright, .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right;
+  }
+  /* line 135, ../scss/devices/_481up.scss */
+  .entry-content .aligncenter, .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both;
+  }
 
   /* end .entry-content */
   /*********************
   FOOTER STYLES
   *********************/
-  /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
-  /* end .footer-links */ }
+  /* line 149, ../scss/devices/_481up.scss */
+  .footer {
+    padding: 1em 0.5em;
+    text-align: center;
+  }
+  /* line 154, ../scss/devices/_481up.scss */
+  .footer .widget {
+    width: 45.85636%;
+    width: calc((100% - 3em) / 2);
+    position: relative;
+    float: left;
+    margin-left: 2.76243%;
+    margin-left: calc(1em * 1);
+  }
+  /* line 163, ../scss/devices/_481up.scss */
+  .footer .widget:first-child {
+    margin-left: 0;
+  }
+  /* line 168, ../scss/devices/_481up.scss */
+  .footer .widget ul {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 172, ../scss/devices/_481up.scss */
+  .footer .widget ul li {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 30.063em) and (max-width: 47em) {
+  /* line 20, ../scss/devices/_481up.scss */
+  #logo {
+    width: 100%;
+  }
+  /* line 22, ../scss/devices/_481up.scss */
+  #logo img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 30.063em) and (max-width: 47.9em) {
+  /* line 154, ../scss/devices/_481up.scss */
+  .footer .widget {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  /* line 189, ../scss/devices/_481up.scss */
+  .footer .widget:nth-child(odd) {
+    margin-left: 0;
+  }
+}
+
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 47.9em) {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: MEAT
+  Author: Eivin + Andrew
   
   Stylesheet: Grid Stylesheet
   
@@ -1365,81 +2057,123 @@ you can add resource intensive styles.
   values are commented out on each line.
   
   ******************************************************************/
+  /* line 43, ../scss/mixins/_grid.scss */
   .onecol {
     width: 5.8011%;
-    width: calc((100% - 11em) / 12); }
+    width: calc((100% - 11em) / 12);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .twocol {
     width: 14.36464%;
-    width: calc((100% - 5em) / 6); }
+    width: calc((100% - 5em) / 6);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .threecol {
     width: 22.92818%;
-    width: calc((100% - 3em) / 4); }
+    width: calc((100% - 3em) / 4);
+  }
 
+  /* line 48, ../scss/mixins/_grid.scss */
+  .footer .widget {
+    width: 22.92818%;
+    width: calc((100% - 3em) / 4);
+  }
+
+  /* line 43, ../scss/mixins/_grid.scss */
   .fourcol {
     width: 31.49171%;
-    width: calc((100% - 2em) / 3); }
+    width: calc((100% - 2em) / 3);
+  }
 
+  /* line 48, ../scss/mixins/_grid.scss */
+  .tabs li {
+    width: 31.49171%;
+    width: calc((100% - 2em) / 3);
+  }
+
+  /* line 43, ../scss/mixins/_grid.scss */
   .fivecol {
     width: 40.05525%;
-    width: calc((100% - 1.4em) / 2.4); }
+    width: calc((100% - 1.4em) / 2.4);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .sixcol {
     width: 48.61878%;
-    width: calc((100% - 1em) / 2); }
+    width: calc((100% - 1em) / 2);
+  }
 
+  /* line 48, ../scss/mixins/_grid.scss */
+  #logo {
+    width: 48.61878%;
+    width: calc((100% - 1em) / 2);
+  }
+
+  /* line 43, ../scss/mixins/_grid.scss */
   .sevencol {
     width: 57.18232%;
-    width: calc((100% - 0.71429em) / 1.71429); }
+    width: calc((100% - 0.71429em) / 1.71429);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .eightcol {
     width: 65.74586%;
-    width: calc((100% - 0.5em) / 1.5); }
+    width: calc((100% - 0.5em) / 1.5);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .ninecol {
     width: 74.30939%;
-    width: calc((100% - 0.33333em) / 1.33333); }
+    width: calc((100% - 0.33333em) / 1.33333);
+  }
 
+  /* line 48, ../scss/mixins/_grid.scss */
+  .floating--excerpt {
+    width: 74.30939%;
+    width: calc((100% - 0.33333em) / 1.33333);
+  }
+
+  /* line 43, ../scss/mixins/_grid.scss */
   .tencol {
     width: 82.87293%;
-    width: calc((100% - 0.2em) / 1.2); }
+    width: calc((100% - 0.2em) / 1.2);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .elevencol {
     width: 91.43646%;
-    width: calc((100% - 0.09091em) / 1.09091); }
+    width: calc((100% - 0.09091em) / 1.09091);
+  }
 
+  /* line 43, ../scss/mixins/_grid.scss */
   .twelvecol {
     width: 100%;
-    width: calc((100% - 0em) / 1); }
+    width: calc((100% - 0em) / 1);
+  }
 
+  /* line 61, ../scss/mixins/_grid.scss */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
     position: relative;
     float: left;
     margin-left: 2.76243%;
-    margin-left: calc(1em * 1); }
+    margin-left: calc(1em * 1);
+  }
 
-  .first {
-    margin-left: 0; }
+  /* line 68, ../scss/mixins/_grid.scss */
+  .first, .tabs li:first-child, .footer .widget:first-child {
+    margin-left: 0;
+  }
 
+  /* line 72, ../scss/mixins/_grid.scss */
   .last {
-    float: right; }
-
-  .alert,
-  .article-header .byline,
-  .footer p,
-  .entry-content p,
-  .entry-content ul,
-  form p, h1, h2, h3, h4, h5, h6,
-  .article-footer {
-    padding: 0 8px; }
-
-  .entry-content ul {
-    padding-left: 40px; }
+    float: right;
+  }
 
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: MEAT
+  Author: Eivin + Andrew
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -1453,117 +2187,2493 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  /* line 19, ../scss/devices/_768up.scss */
+  body {
+    overflow-x: hidden;
+  }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
+  /* line 28, ../scss/devices/_768up.scss */
   .wrap {
-    max-width: 1140px; }
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 
   /*********************
   HEADER STYLES
   *********************/
-  #logo {
-    float: none; }
+  /* line 42, ../scss/devices/_768up.scss */
+  #logo img {
+    margin: 3em auto 1em;
+    max-width: 100%;
+    position: relative;
+    z-index: 20;
+  }
+
+  /* line 50, ../scss/devices/_768up.scss */
+  .lang_sel_list_horizontal {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+  }
+
+  /* line 56, ../scss/devices/_768up.scss */
+  .overflow {
+    overflow: hidden;
+  }
+
+  /* line 62, ../scss/devices/_768up.scss */
+  .tel.last {
+    float: right;
+    border-left: 1px solid #d2d2d2;
+  }
+
+  /* line 70, ../scss/devices/_768up.scss */
+  img {
+    vertical-align: bottom;
+  }
+
+  /* line 74, ../scss/devices/_768up.scss */
+  .floating--excerpt {
+    padding: 0.5em 2em;
+    position: absolute;
+    right: 1em;
+    bottom: 25%;
+  }
+
+  /* line 82, ../scss/devices/_768up.scss */
+  .tabs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 !important;
+  }
+  /* line 91, ../scss/devices/_768up.scss */
+  .tabs li a {
+    border-left: 1px solid #222222;
+  }
 
   /*********************
   NAVIGATION STYLES
   *********************/
-  .clickable {
-    display: none; }
+  /* line 105, ../scss/devices/_768up.scss */
+  .mobile-only {
+    display: none;
+    visibility: hidden;
+  }
 
+  /* line 110, ../scss/devices/_768up.scss */
   .nav {
-    background: #eee;
-    border: 0;
+    text-align: center;
+    margin: 10px 0;
+    vertical-align: middle;
+    border-bottom: 2px solid #cccccc;
     /* end .menu ul li */
     /* highlight current page */
-    /* end current highlighters */ }
-    .js .nav {
-      display: block;
-      position: static;
-      top: auto;
-      right: auto;
-      left: auto; }
-    .nav li {
-      float: left;
-      position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
-      .nav li a {
-        border-bottom: 0;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
-        .nav li a:hover, .nav li a:focus {
-          background-color: #dedede; }
-      .js .nav li.current-menu-ancestor ul.sub-menu, .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
-      .nav li ul.sub-menu,
-      .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        display: none;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        .js .nav li.current-menu-ancestor ul.sub-menu li, .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          .js .nav li.current-menu-ancestor ul.sub-menu li a, .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .js .nav li.current-menu-ancestor ul.sub-menu li:last-child a, .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
-      .js .nav li.current-menu-ancestor:hover ul, .js .nav li:hover ul, .js .nav li:hover ul.show, .nav li:hover ul {
-        top: auto;
-        display: block; }
+    /* end current highlighters */
+  }
+  /* line 116, ../scss/devices/_768up.scss */
+  .js .nav {
+    display: block;
+    top: auto;
+    right: auto;
+    left: auto;
+    max-height: 100%;
+  }
+  /* line 124, ../scss/devices/_768up.scss */
+  .nav li {
+    display: inline-block;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */
+  }
+  /* line 133, ../scss/devices/_768up.scss */
+  .nav li:hover, .nav li:focus {
+    color: white;
+    background: #383132;
+  }
+  /* line 137, ../scss/devices/_768up.scss */
+  .nav li:hover a, .nav li:focus a {
+    color: white;
+  }
+  /* line 142, ../scss/devices/_768up.scss */
+  .nav li a {
+    border-bottom: 0;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+  }
+  /* line 149, ../scss/devices/_768up.scss */
+  .nav li a:hover, .nav li a:focus {
+    color: white;
+    background: #1d191a;
+  }
+  /* line 165, ../scss/devices/_768up.scss */
+  .js .nav li + li ul.show.sub-menu:before, .js .nav li + li ul.show.children:before,
+  .nav li + li ul.sub-menu:before,
+  .nav li + li ul.children:before {
+    content: "\e000";
+    font-size: 104px;
+    font-size: 6.5rem;
+  }
+  /* line 178, ../scss/devices/_768up.scss */
+  .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    margin-top: 0;
+    border-top: 0;
+    position: absolute;
+    display: none;
+    z-index: 15;
+    text-align: left;
+    color: white;
+    background: #383132;
+    padding: 1em 1000em 1.5em;
+    margin: 0 -1000em;
+    /*
+    			&:before{
+    				font-family: $icon;
+    				@include font-size(6);
+    				font-weight: 100;
+    				left: 49.2%;
+    				position: absolute;
+    				top: 12%;
+    				vertical-align: middle;
+    				z-index: 130;
+    				content: "\e008";
+    				
+    			}
+    */
+    /* highlight sub-menu current page */
+  }
+  /* line 208, ../scss/devices/_768up.scss */
+  .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
+  .nav li ul.sub-menu li,
+  .nav li ul.children li {
+    /*
+    if you need to go deeper, go nuts
+    just remember deeper menus suck
+    for usability. k, bai.
+    */
+  }
+  /* line 211, ../scss/devices/_768up.scss */
+  .js .nav li ul.show.sub-menu li:hover a, .js .nav li ul.show.sub-menu li:focus a, .js .nav li ul.show.children li:hover a, .js .nav li ul.show.children li:focus a,
+  .nav li ul.sub-menu li:hover a,
+  .nav li ul.sub-menu li:focus a,
+  .nav li ul.children li:hover a,
+  .nav li ul.children li:focus a {
+    background: #1d191a;
+    border-radius: 2px;
+  }
+  /* line 217, ../scss/devices/_768up.scss */
+  .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+    padding: 2px 0 2px 14px;
+    border-right: 0;
+    display: block;
+    width: 200px;
+    color: white;
+  }
+  /* line 236, ../scss/devices/_768up.scss */
+  .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
+  .nav li ul.sub-menu li:last-child a,
+  .nav li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  /* line 258, ../scss/devices/_768up.scss */
+  .nav li:hover ul {
+    top: auto;
+    display: block;
+    padding: 1em 1000em;
+    margin: 0 -1000em;
+  }
 
   /* end .nav */
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  .sidebar {
-    margin-top: 2.2em; }
+  /* line 284, ../scss/devices/_768up.scss */
+  .sidebar img {
+    width: 100%;
+    height: auto;
+  }
 
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
+  /* line 294, ../scss/devices/_768up.scss */
+  .widget ul li {
+    margin-bottom: 0.75em;
+    /* deep nesting */
+  }
+  /* line 302, ../scss/devices/_768up.scss */
+  .widget ul li ul {
+    margin-top: 0.75em;
+    padding-left: 1em;
+  }
 
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0; }
-    .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
+  /* line 310, ../scss/devices/_768up.scss */
+  .masonry .grid-sizer {
+    width: 32%;
+  }
 
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
+  /* line 311, ../scss/devices/_768up.scss */
+  .masonry .gutter-sizer {
+    width: 2%;
+  }
+
+  /* line 314, ../scss/devices/_768up.scss */
+  .card {
+    background: white;
+    box-shadow: 5px 5px 15px -15px black;
+    padding: 1em;
+    float: left;
+    margin: 0 0 20px;
+    border-radius: 3px;
+  }
+  /* line 322, ../scss/devices/_768up.scss */
+  .stack .card {
+    width: 32%;
+    margin: 10px 0% 20px;
+  }
+  /* line 327, ../scss/devices/_768up.scss */
+  .card h3 {
+    color: #222222;
+    margin: 0.25em 0;
+    padding: 0;
+    line-height: 1.3;
+    font-size: 20.8px;
+    font-size: 1.3rem;
+  }
+  /* line 335, ../scss/devices/_768up.scss */
+  .card p {
+    font-size: 13.6px;
+    font-size: 0.85rem;
+  }
+  /* line 339, ../scss/devices/_768up.scss */
+  .card img {
+    width: 110%;
+    height: auto;
+    display: block;
+    margin: -5% -5% 10px;
+  }
+  /* line 346, ../scss/devices/_768up.scss */
+  .card .button, .card strong a, .card .sub-cards .hentry a, .sub-cards .hentry .card a {
+    width: 100%;
+  }
+
+  /* line 351, ../scss/devices/_768up.scss */
+  .wrap.stack {
+    margin-left: 0;
+    margin-right: -2%;
+    padding: 0;
+    text-align: center;
+    max-width: 1160px;
+  }
+
+  /* line 359, ../scss/devices/_768up.scss */
+  .display {
+    margin: 0 -45%;
+    max-width: 1140px;
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    width: 100%;
+  }
+
+  /* line 368, ../scss/devices/_768up.scss */
+  .display-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1em 2em 1.5em;
+    border-radius: 10px;
+    box-shadow: 6px 7px 21px -20px black;
+  }
+  /* line 374, ../scss/devices/_768up.scss */
+  .display-card .button, .display-card .card strong a, .card strong .display-card a, .display-card .sub-cards .hentry a, .sub-cards .hentry .display-card a {
+    display: none;
+  }
+
+  /* line 380, ../scss/devices/_768up.scss */
+  .sub-cards .hentry {
+    margin-bottom: 1em;
+  }
+  /* line 384, ../scss/devices/_768up.scss */
+  .sub-cards .hentry:before {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    content: "";
+    height: 100%;
+    left: -2%;
+    position: absolute;
+  }
+  /* line 393, ../scss/devices/_768up.scss */
+  .sub-cards .hentry:first-child:before {
+    border-left: 0;
+  }
+
+  /* line 406, ../scss/devices/_768up.scss */
+  input[type="search"] {
+    width: 61%;
+    float: left;
+    padding: 2% 1%;
+  }
+
+  /* line 412, ../scss/devices/_768up.scss */
+  .search-form .button, .search-form .card strong a, .card strong .search-form a, .search-form .sub-cards .hentry a, .sub-cards .hentry .search-form a {
+    float: right;
+    width: 35%;
+  }
+
+  /*
+  ----------------------------------------------------------------
+  
+  Gravity Forms Front End Form Styles
+  Version 1.7
+  http: //www.gravityforms.com
+  updated: April 22, 2013 5:19 PM
+  
+  */
+  /* line 11, ../scss/plugins/_gravity.scss */
+  .gform_wrapper {
+    overflow: inherit;
+    margin: 10px 0;
+    max-width: 98% img;
+    max-width-width: auto;
+  }
+
+  /* line 23, ../scss/plugins/_gravity.scss */
+  .gform_wrapper h1,
+  .gform_wrapper h2,
+  .gform_wrapper h3 {
+    font-weight: normal;
+    border: none;
+    outline: none;
+    background: none;
+  }
+
+  /* line 30, ../scss/plugins/_gravity.scss */
+  .gform_wrapper:focus {
+    outline: 0;
+  }
+
+  /* line 34, ../scss/plugins/_gravity.scss */
+  .gform_wrapper form {
+    text-align: left;
+  }
+
+  /* line 43, ../scss/plugins/_gravity.scss */
+  .gform_wrapper input[type=text],
+  .gform_wrapper input[type=url],
+  .gform_wrapper input[type=email],
+  .gform_wrapper input[type=tel],
+  .gform_wrapper input[type=number],
+  .gform_wrapper input[type=password] {
+    outline-style: none;
+    letter-spacing: normal;
+    border: solid 1px #ddd;
+    padding: 5px;
+    font-size: 1.3em;
+    color: #545454;
+  }
+  /* line 52, ../scss/plugins/_gravity.scss */
+  .gform_wrapper input[type=text]:focus,
+  .gform_wrapper input[type=url]:focus,
+  .gform_wrapper input[type=email]:focus,
+  .gform_wrapper input[type=tel]:focus,
+  .gform_wrapper input[type=number]:focus,
+  .gform_wrapper input[type=password]:focus {
+    border-color: #ccc;
+  }
+
+  /* line 57, ../scss/plugins/_gravity.scss */
+  .gform_wrapper input[type=image] {
+    border: none !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+
+  /* line 63, ../scss/plugins/_gravity.scss */
+  .gform_wrapper textarea {
+    outline-style: none;
+    letter-spacing: normal;
+    border: solid 1px #ddd;
+    padding: 5px;
+    font-size: 1.3em;
+    color: #545454;
+    resize: none;
+  }
+  /* line 73, ../scss/plugins/_gravity.scss */
+  .gform_wrapper textarea:focus {
+    border-color: #ccc;
+  }
+
+  /* line 78, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul {
+    margin: 0 !important;
+    list-style-type: none;
+  }
+
+  /* line 84, ../scss/plugins/_gravity.scss */
+  html > body .entry ul,
+  .gform_wrapper ul {
+    text-indent: 0;
+  }
+
+  /* line 89, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li,
+  .gform_wrapper form li {
+    margin-left: 0 !important;
+    list-style-type: none !important;
+    list-style-image: none !important;
+    list-style: none !important;
+    overflow: visible;
+  }
+
+  /* line 97, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul li.gfield {
+    clear: both;
+  }
+
+  /* line 102, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_radio li,
+  .gform_wrapper ul.gfield_checkbox li {
+    overflow: hidden;
+  }
+
+  /* line 109, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.right_label li,
+  .gform_wrapper form ul.right_label li,
+  .gform_wrapper ul.left_label li,
+  .gform_wrapper form ul.left_label li {
+    margin-bottom: 14px;
+  }
+
+  /* line 120, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.right_label li ul.gfield_radio li,
+  .gform_wrapper form ul.right_label li ul.gfield_radio li,
+  .gform_wrapper ul.left_label li ul.gfield_radio li,
+  .gform_wrapper form ul.left_label li ul.gfield_radio li,
+  .gform_wrapper ul.right_label li ul.gfield_checkbox li,
+  .gform_wrapper form ul.right_label li ul.gfield_checkbox li,
+  .gform_wrapper ul.left_label li ul.gfield_checkbox li,
+  .gform_wrapper form ul.left_label li ul.gfield_checkbox li {
+    margin-bottom: 10px;
+  }
+
+  /* line 126, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul li:before,
+  .gform_wrapper ul li:after,
+  .gform_wrapper ul.gform_fields {
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
+  /* line 132, ../scss/plugins/_gravity.scss */
+  .gform_wrapper select {
+    font-size: 11px;
+    padding: 5px 0 5px 0;
+    letter-spacing: normal;
+  }
+
+  /* line 139, ../scss/plugins/_gravity.scss */
+  .gform_wrapper select option {
+    padding: 2px 2px;
+    display: block;
+  }
+
+  /* line 144, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .inline {
+    display: inline !important;
+  }
+
+  /* line 148, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_heading {
+    width: 98%;
+    margin-bottom: 18px;
+  }
+
+  /* line 157, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_time_hour,
+  .gform_wrapper .gfield_time_minute,
+  .gform_wrapper .gfield_date_month,
+  .gform_wrapper .gfield_date_day,
+  .gform_wrapper .gfield_date_year {
+    width: 70px;
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* line 168, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_date_month,
+  .gform_wrapper .gfield_date_day,
+  .gform_wrapper .gfield_date_year {
+    margin-right: 12px;
+  }
+
+  /* line 174, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_date_dropdown_month,
+  .gform_wrapper .gfield_date_dropdown_day,
+  .gform_wrapper .gfield_date_dropdown_year {
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* line 184, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_date_dropdown_month,
+  .gform_wrapper .gfield_date_dropdown_day,
+  .gform_wrapper .gfield_date_dropdown_year {
+    margin-right: 6px;
+  }
+
+  /* line 188, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_time_ampm {
+    vertical-align: top;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* line 196, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_time_ampm select {
+    width: 60px !important;
+  }
+
+  /* line 204, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_time_hour input,
+  .gform_wrapper .gfield_time_minute input,
+  .gform_wrapper .gfield_date_month input,
+  .gform_wrapper .gfield_date_day input,
+  .gform_wrapper .gfield_date_year input {
+    width: 70% !important;
+  }
+
+  /* line 210, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_date_month,
+  .gform_wrapper .gfield_date_day,
+  .gform_wrapper .gfield_date_year {
+    width: 50px;
+    float: left;
+  }
+
+  /* line 217, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_date_month input,
+  .gform_wrapper .gfield_date_day input,
+  .gform_wrapper .gfield_date_year input {
+    width: 85% !important;
+  }
+
+  /* line 221, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .field_hover {
+    border: 1px dashed #2175A9;
+    cursor: pointer;
+  }
+
+  /* line 226, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .field_selected {
+    background-color: #DFEFFF;
+    border: 1px solid #C2D7EF;
+  }
+
+  /* line 232, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .field_name_first,
+  .gform_wrapper .field_name_last {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 237, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex {
+    overflow: hidden;
+  }
+
+  /* line 243, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_left input:focus + label,
+  .gform_wrapper .ginput_right input:focus + label,
+  .gform_wrapper .ginput_full input:focus + label {
+    font-weight: bold;
+  }
+
+  /* line 248, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .field_name_first input,
+  .gform_wrapper .ginput_complex .ginput_left input {
+    width: 95% !important;
+  }
+
+  /* line 252, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .field_name_last input {
+    width: 93% !important;
+  }
+
+  /* line 256, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .datepicker {
+    width: 100px !important;
+  }
+
+  /* line 260, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_left {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 265, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_right {
+    width: 49%;
+    float: right;
+  }
+
+  /* line 271, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left,
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right {
+    width: 50%;
+  }
+
+  /* line 280, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=text],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=url],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=email],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=tel],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=number],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=password] {
+    width: 90% !important;
+  }
+
+  /* line 289, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=text],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=url],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=email],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=tel],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=number],
+  .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=password] {
+    width: 95% !important;
+  }
+
+  /* line 299, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex input[type=text],
+  .gform_wrapper .ginput_complex input[type=url],
+  .gform_wrapper .ginput_complex input[type=email],
+  .gform_wrapper .ginput_complex input[type=tel],
+  .gform_wrapper .ginput_complex input[type=number],
+  .gform_wrapper .ginput_complex input[type=password],
+  .gform_wrapper .ginput_complex select {
+    width: 95% !important;
+  }
+
+  /* line 309, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_right input[type=text],
+  .gform_wrapper .ginput_complex .ginput_right input[type=url],
+  .gform_wrapper .ginput_complex .ginput_right input[type=email],
+  .gform_wrapper .ginput_complex .ginput_right input[type=tel],
+  .gform_wrapper .ginput_complex .ginput_right input[type=number],
+  .gform_wrapper .ginput_complex .ginput_right input[type=password],
+  .gform_wrapper .ginput_complex .ginput_right select {
+    width: 95% !important;
+  }
+
+  /* line 319, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex label,
+  .gform_wrapper .gfield_time_hour label,
+  .gform_wrapper .gfield_time_minute label,
+  .gform_wrapper .gfield_date_month label,
+  .gform_wrapper .gfield_date_day label,
+  .gform_wrapper .gfield_date_year label,
+  .gform_wrapper .instruction {
+    display: block;
+    margin: 3px 0;
+    font-size: 11px;
+    letter-spacing: 0.5pt;
+  }
+
+  /* line 326, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .name_prefix {
+    float: left;
+    width: 30px !important;
+    margin-right: 14px;
+  }
+
+  /* line 332, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .name_suffix {
+    float: left;
+    width: 30px !important;
+  }
+
+  /* line 338, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .name_first,
+  .gform_wrapper .ginput_complex .name_last {
+    float: left;
+    width: 100px;
+    margin-right: 8px;
+  }
+
+  /* line 344, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_label {
+    margin: 10px 0 5px 5px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    line-height: 1.3em;
+    clear: both;
+  }
+
+  /* line 352, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label .gfield_label {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 29%;
+    font-weight: bold;
+  }
+
+  /* line 359, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label .gfield_label {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 29%;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  /* line 370, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label ul.gfield_checkbox,
+  .gform_wrapper .right_label ul.gfield_checkbox,
+  .gform_wrapper .left_label ul.gfield_radio,
+  .gform_wrapper .right_label ul.gfield_radio {
+    margin-left: 32%;
+    overflow: hidden;
+  }
+
+  /* line 376, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label input.small,
+  .gform_wrapper .top_label select.small {
+    width: 25%;
+  }
+
+  /* line 381, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label input.medium,
+  .gform_wrapper .top_label select.medium {
+    width: 47%;
+  }
+
+  /* line 385, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label input.medium {
+    padding-right: 2px;
+  }
+
+  /* line 391, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label input.large,
+  .gform_wrapper .top_label select.large,
+  .gform_wrapper .top_label textarea.textarea {
+    width: 99.2%;
+  }
+
+  /* line 398, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label input.small,
+  .gform_wrapper .right_label select.small,
+  .gform_wrapper .left_label input.small,
+  .gform_wrapper .left_label select.small {
+    width: 15%;
+  }
+
+  /* line 405, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label input.medium,
+  .gform_wrapper .right_label select.medium,
+  .gform_wrapper .left_label input.medium,
+  .gform_wrapper .left_label select.medium {
+    width: 35%;
+  }
+
+  /* line 413, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label input.large,
+  .gform_wrapper .right_label select.large,
+  .gform_wrapper .left_label input.large,
+  .gform_wrapper .left_label select.large,
+  .gform_wrapper textarea.textarea {
+    width: 63%;
+  }
+
+  /* line 418, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label div.ginput_complex,
+  .gform_wrapper .left_label div.ginput_complex {
+    width: 64%;
+  }
+
+  /* line 422, ../scss/plugins/_gravity.scss */
+  .gform_wrapper h2.gsection_title {
+    margin: 0 !important;
+    padding: 0 !important;
+    letter-spacing: normal !important;
+  }
+
+  /* line 430, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gsection .gfield_label,
+  .gform_wrapper h2.gsection_title,
+  .gform_wrapper h3.gform_title {
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  /* line 435, ../scss/plugins/_gravity.scss */
+  .gform_wrapper h3.gform_title {
+    letter-spacing: normal !important;
+    margin: 10px 0 6px 0;
+  }
+
+  /* line 440, ../scss/plugins/_gravity.scss */
+  .gform_wrapper span.gform_description {
+    font-weight: normal;
+  }
+
+  /* line 446, ../scss/plugins/_gravity.scss */
+  .gform_wrapper h2.gsection_title,
+  .gform_wrapper .gsection_description,
+  .gform_wrapper h3.gform_title {
+    width: 98%;
+  }
+
+  /* line 450, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gsection {
+    border-bottom: 1px dotted #CCC;
+    padding: 0 0 8px 0;
+    margin: 16px 0;
+    clear: both;
+  }
+
+  /* line 458, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_checkbox li input[type=checkbox],
+  .gform_wrapper ul.gfield_radio li input[type=radio] {
+    width: auto !important;
+  }
+
+  /* radio and checkbox styling - justifies lenghty labels ------------------------------------------------------*/
+  /* line 466, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_checkbox li,
+  .gform_wrapper .gfield_radio li {
+    position: relative;
+  }
+
+  /* line 471, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_checkbox,
+  .gform_wrapper ul.gfield_radio {
+    margin: 6px 0;
+    padding: 0;
+  }
+
+  /* line 477, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_checkbox li label,
+  .gform_wrapper .gfield_radio li label {
+    display: block;
+    margin: 0 0 0 24px;
+    padding: 0;
+    width: auto;
+    line-height: 1.5;
+    vertical-align: top;
+  }
+
+  /* line 488, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_checkbox li input[type=checkbox],
+  .gform_wrapper .gfield_radio li input[type=radio],
+  .gform_wrapper .gfield_checkbox li input {
+    float: left;
+    margin-top: 2px;
+  }
+
+  /* line 496, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .description,
+  .gform_wrapper .gfield_description,
+  .gform_wrapper .gsection_description,
+  .gform_wrapper .instruction {
+    font-size: 0.85em;
+    line-height: 1.5em;
+    clear: both;
+    letter-spacing: normal;
+  }
+
+  /* line 505, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .description,
+  .gform_wrapper .gfield_description,
+  .gform_wrapper .gsection_description {
+    padding: 4px 0 8px 0;
+  }
+
+  /* line 509, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_description {
+    padding: 10px 0 0 0;
+    width: 99.8%;
+  }
+
+  /* line 515, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label .gfield_description,
+  .gform_wrapper .right_label .gfield_description {
+    width: 63%;
+  }
+
+  /* line 519, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .description_above .gfield_description {
+    padding: 0 0 10px 0;
+  }
+
+  /* line 523, ../scss/plugins/_gravity.scss */
+  .gfield_date_year + .gfield_description {
+    padding: 0;
+  }
+
+  /* line 530, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label .gfield_description,
+  .gform_wrapper .left_label .gfield_description,
+  .gform_wrapper .left_label .instruction,
+  .gform_wrapper .right_label .instruction {
+    margin-left: 31%;
+  }
+
+  /* line 535, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label .gsection .gsection_description,
+  .gform_wrapper .right_label .gsection .gsection_description {
+    margin-left: 0;
+    padding-top: 4px;
+    padding-left: 0;
+    line-height: 1.5em;
+  }
+
+  /* line 542, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_required {
+    color: #790000;
+    margin-left: 4px;
+  }
+
+  /* line 547, ../scss/plugins/_gravity.scss */
+  .gform_wrapper textarea.small {
+    height: 80px;
+  }
+
+  /* line 551, ../scss/plugins/_gravity.scss */
+  .gform_wrapper textarea.medium {
+    height: 150px;
+  }
+
+  /* line 555, ../scss/plugins/_gravity.scss */
+  .gform_wrapper textarea.large {
+    height: 250px;
+  }
+
+  /* line 560, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield.gfield_error,
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: #FFDFE0;
+    margin-bottom: 6px !important;
+    padding: 6px 6px 4px 6px !important;
+    border-top: 1px solid #C89797;
+    border-bottom: 1px solid #C89797;
+  }
+
+  /* line 568, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield.gfield_creditcard_warning {
+    margin-bottom: 6px !important;
+    padding: 6px 6px 4px 6px !important;
+    border: 1px dashed #C89797;
+  }
+
+  /* line 574, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield.gfield_creditcard_warning div.gfield_creditcard_warning_message {
+    font-size: 1em;
+    padding: 10px 20px 10px 45px;
+    min-height: 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #790000;
+    border-bottom: 1px solid #620101;
+    color: #FFF;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    line-height: 1.3em;
+    letter-spacing: 0.2pt;
+  }
+
+  /* line 589, ../scss/plugins/_gravity.scss */
+  li.gfield + li.gfield.gfield_creditcard_warning {
+    margin-top: 14px !important;
+  }
+
+  /* line 593, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_error .ginput_container {
+    max-width: 99%;
+  }
+
+  /* line 597, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_error {
+    width: 97%;
+  }
+
+  /* line 603, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_error input.large,
+  .gform_wrapper .top_label .gfield_error select.large,
+  .gform_wrapper .top_label .gfield_error textarea.textarea {
+    width: 100%;
+  }
+
+  /* line 612, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .right_label .gfield_error input.large,
+  .gform_wrapper .right_label .gfield_error select.large,
+  .gform_wrapper .right_label .gfield_error textarea.textarea,
+  .gform_wrapper .left_label .gfield_error input.large,
+  .gform_wrapper .left_label .gfield_error select.large,
+  .gform_wrapper .left_label .gfield_error textarea.textarea {
+    width: 66%;
+  }
+
+  /* line 616, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_error .gfield_label {
+    color: #790000;
+  }
+
+  /* line 620, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+    margin-top: 12px;
+    margin-bottom: 12px !important;
+    padding-left: 10px !important;
+  }
+
+  /* line 627, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label,
+  .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container {
+    margin-top: 12px;
+  }
+
+  /* line 631, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.validation_error {
+    color: #790000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1.6em;
+  }
+
+  /* line 638, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.validation_error {
+    color: #790000;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* line 644, ../scss/plugins/_gravity.scss */
+  div.gf_page_steps + div.validation_error {
+    margin-top: 16px;
+  }
+
+  /* line 648, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.gfield_description.validation_error {
+    color: #790000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-bottom: 16px;
+  }
+
+  /* line 656, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .validation_message {
+    color: #790000;
+    font-weight: bold;
+    letter-spacing: normal;
+  }
+
+  /* line 668, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield_error input[type=text],
+  .gform_wrapper li.gfield_error input[type=url],
+  .gform_wrapper li.gfield_error input[type=email],
+  .gform_wrapper li.gfield_error input[type=tel],
+  .gform_wrapper li.gfield_error input[type=number],
+  .gform_wrapper li.gfield_error input[type=password],
+  .gform_wrapper li.gfield_error textarea {
+    border: 1px solid #790000;
+  }
+
+  /* line 674, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label,
+  .gform_wrapper li.gfield_error ul.gfield_checkbox,
+  .gform_wrapper li.gfield_error ul.gfield_radio {
+    color: #790000;
+  }
+
+  /* line 678, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_footer {
+    padding: 16px 0 10px 0;
+    margin: 16px 0 0 0;
+    clear: both;
+  }
+
+  /* line 685, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_footer.right_label,
+  .gform_wrapper .gform_footer.left_label {
+    padding: 16px 0 10px 31%;
+  }
+
+  /* line 690, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_footer input.button,
+  .gform_wrapper .gform_footer input[type=submit] {
+    font-size: 1em;
+  }
+
+  /* line 694, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_footer input[type=image] {
+    padding: 0;
+    width: auto !important;
+    background: none !important;
+    border: none !important;
+  }
+
+  /* line 703, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_left,
+  .gform_wrapper .ginput_complex .ginput_right,
+  .gform_wrapper .ginput_complex .ginput_full {
+    min-height: 43px;
+    display: block;
+    overflow: hidden;
+  }
+
+  /* line 714, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_full input[type=text],
+  .gform_wrapper .ginput_complex .ginput_full input[type=url],
+  .gform_wrapper .ginput_complex .ginput_full input[type=email],
+  .gform_wrapper .ginput_complex .ginput_full input[type=tel],
+  .gform_wrapper .ginput_complex .ginput_full input[type=number],
+  .gform_wrapper .ginput_complex .ginput_full input[type=password] {
+    width: 97% !important;
+  }
+
+  /* line 719, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_checkbox li,
+  .gform_wrapper .gfield_radio li {
+    margin: 0 0 8px 0;
+    line-height: 1.3em;
+  }
+
+  /* line 725, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label,
+  .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label {
+    font-weight: bold;
+  }
+
+  /* line 729, ../scss/plugins/_gravity.scss */
+  .gform_wrapper input.datepicker.datepicker_with_icon {
+    margin-right: 4px !important;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* tame those pesky hidden fields ------------------------------------------------------*/
+  /* line 743, ../scss/plugins/_gravity.scss */
+  .gform_wrapper input[type=hidden],
+  .gform_wrapper input.gform_hidden,
+  .gform_wrapper .gform_hidden,
+  .gform_wrapper .gf_hidden {
+    display: none !important;
+    max-height: 1px !important;
+    overflow: hidden;
+  }
+
+  /* line 751, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_full br,
+  .gform_wrapper .ginput_left br,
+  .gform_wrapper .ginput_right br {
+    display: none !important;
+  }
+
+  /* additional spacing and padding tweaks ------------------------------------------------------*/
+  /* line 759, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_checkbox li,
+  .gform_wrapper ul.gfield_radio li {
+    padding: 0 !important;
+  }
+
+  /* line 763, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_radio li input + input {
+    margin-left: 4px;
+  }
+
+  /* line 767, ../scss/plugins/_gravity.scss */
+  .gform_wrapper ul.gfield_radio li input[value=gf_other_choice] {
+    margin-right: 6px;
+    margin-top: 4px;
+  }
+
+  /* line 772, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_description {
+    padding: 10px 0 0 0;
+  }
+
+  /* line 777, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_description.validation_message,
+  .gform_wrapper .gfield_description.validation_message {
+    padding: 10px 0 !important;
+  }
+
+  /* line 781, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_container + .gfield_description.validation_message {
+    margin-top: 6px;
+    padding-left: 10px;
+  }
+
+  /* line 786, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_description + .gform_wrapper .gfield_description.validation_message {
+    margin-top: 6px;
+  }
+
+  /* line 790, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_container.ginput_list + .gfield_description.validation_message {
+    margin-top: 0;
+  }
+
+  /* HTML field default margins -----------------------------------------------------*/
+  /* line 798, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label li.gfield_html_formatted,
+  .gform_wrapper .right_label li.gfield_html_formatted {
+    margin-left: 32%;
+  }
+
+  /* line 802, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_html.gfield_no_follows_desc {
+    margin-top: 10px;
+  }
+
+  /* ajax forms ------------------------------------------------------*/
+  /* line 809, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_ajax_spinner {
+    margin: 3px 10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  /* hide the honeypot field  ------------------------------------------------------*/
+  /* line 822, ../scss/plugins/_gravity.scss */
+  .gform_validation_container,
+  .gform_wrapper .gform_validation_container,
+  body .gform_wrapper li.gform_validation_container,
+  body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+  body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
+    display: none !important;
+    position: absolute !important;
+    left: -9000px;
+  }
+
+  /* Really Simple Captcha ------------------------------------------------------*/
+  /* line 831, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_captcha_input_container {
+    padding-top: 3px;
+  }
+
+  /* line 835, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .simple_captcha_small input {
+    width: 100px;
+  }
+
+  /* line 839, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .simple_captcha_medium input {
+    width: 150px;
+  }
+
+  /* line 843, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .simple_captcha_large input {
+    width: 200px;
+  }
+
+  /* line 852, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_wrapper .left_label .simple_captcha_small,
+  .gform_wrapper .right_label .simple_captcha_small,
+  .gform_wrapper .left_label .simple_captcha_medium,
+  .gform_wrapper .right_label .simple_captcha_medium,
+  .gform_wrapper .left_label .simple_captcha_large,
+  .gform_wrapper .right_label .simple_captcha_large {
+    margin-left: 32%;
+  }
+
+  /* line 856, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_captcha_container img.gfield_captcha {
+    border: none !important;
+    background: none !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* math challenge ------------------------------------------------------*/
+  /* line 867, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .math_small input {
+    width: 69px;
+  }
+
+  /* line 871, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .math_medium input {
+    width: 90px;
+  }
+
+  /* line 875, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .math_large input {
+    width: 108px;
+  }
+
+  /* line 884, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label .math_small,
+  .gform_wrapper .right_label .math_small,
+  .gform_wrapper .left_label .math_medium,
+  .gform_wrapper .right_label .math_medium,
+  .gform_wrapper .left_label .math_large,
+  .gform_wrapper .right_label .math_large {
+    margin-left: 32%;
+  }
+
+  /* textarea character counter ------------------------------------------------------*/
+  /* line 891, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.charleft {
+    font-size: 11px;
+    margin-top: 4px;
+    color: #B7B7B7;
+    width: 92% !important;
+    white-space: nowrap !important;
+  }
+
+  /* line 899, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.charleft[style] {
+    width: 92% !important;
+  }
+
+  /* line 904, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label div.charleft,
+  .gform_wrapper .right_label div.charleft {
+    margin-left: 32%;
+  }
+
+  /* line 908, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.charleft.warningTextareaInfo {
+    color: #A1A1A1;
+  }
+
+  /* line 912, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gf_hide_charleft div.charleft {
+    display: none !important;
+  }
+
+  /* submission limit message ------------------------------------------------------*/
+  /* line 918, ../scss/plugins/_gravity.scss */
+  .gf_submission_limit_message {
+    color: #790000;
+    font-size: 1.4em;
+  }
+
+  /* pricing fields ------------------------------------------------------*/
+  /* line 926, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_price {
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+  }
+
+  /* line 933, ../scss/plugins/_gravity.scss */
+  .gform_wrapper span.ginput_total {
+    color: #060;
+    font-size: 1.2em;
+  }
+
+  /* line 938, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label span.ginput_total {
+    margin: 8px 0;
+  }
+
+  /* line 942, ../scss/plugins/_gravity.scss */
+  .gform_wrapper span.ginput_product_price_label {
+    margin-right: 2px;
+  }
+
+  /* line 946, ../scss/plugins/_gravity.scss */
+  .gform_wrapper span.ginput_product_price {
+    color: #990000;
+  }
+
+  /* line 950, ../scss/plugins/_gravity.scss */
+  .gform_wrapper span.ginput_quantity_label {
+    margin-left: 10px;
+    margin-right: 2px;
+  }
+
+  /* line 955, ../scss/plugins/_gravity.scss */
+  .gform_wrapper input.ginput_quantity {
+    width: 40px;
+  }
+
+  /* multi-page form paging ------------------------------------------------------*/
+  /* line 961, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_page_footer {
+    margin: 20px 0;
+    width: 99%;
+    border-top: 1px dotted #CCC;
+    padding: 16px 0 0 0;
+  }
+
+  /* line 968, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_page_footer .button.gform_button, .gform_wrapper .gform_page_footer .card strong a.gform_button, .card strong .gform_wrapper .gform_page_footer a.gform_button, .gform_wrapper .gform_page_footer .sub-cards .hentry a.gform_button, .sub-cards .hentry .gform_wrapper .gform_page_footer a.gform_button {
+    margin-right: 10px;
+  }
+
+  /* multi-page progress bar  ------------------------------------------------------*/
+  /* line 975, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_progressbar_wrapper {
+    clear: both;
+    width: 99%;
+    margin: 0 0 8px 0;
+    padding: 0 0 16px 0;
+    border-bottom: 1px dotted #CCC;
+  }
+
+  /* line 983, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
+    font-size: 13px;
+    line-height: 1em !important;
+    margin: 0 0 6px 0 !important;
+    padding: 0 !important;
+    clear: both;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+  }
+
+  /* line 995, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_progressbar {
+    width: 99%;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px !important;
+    border: 1px solid #EEE;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* line 1013, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_progressbar_percentage {
+    height: 20px;
+    text-align: right;
+    font-size: 13px !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  /* line 1021, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_progressbar_percentage span {
+    display: block;
+    width: auto;
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  /* line 1029, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_progressbar_percentage.percentbar_0 span {
+    color: #959595;
+    text-shadow: none;
+  }
+
+  /* line 1034, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .percentbar_blue {
+    background-repeat: repeat-x;
+    background-color: #0072BC;
+    color: #FFF;
+  }
+
+  /* line 1041, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .percentbar_gray {
+    background-repeat: repeat-x;
+    background-color: #666;
+    color: #FFF;
+  }
+
+  /* line 1048, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .percentbar_green {
+    background-repeat: repeat-x;
+    background-color: #94DC21;
+    color: #FFF;
+  }
+
+  /* line 1055, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .percentbar_orange {
+    background-repeat: repeat-x;
+    background-color: #DC7021;
+    color: #FFF;
+  }
+
+  /* line 1062, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .percentbar_red {
+    background-repeat: repeat-x;
+    background-color: #DC2521;
+    color: #FFF;
+  }
+
+  /* line 1069, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .percentbar_custom {
+    background-repeat: repeat-x;
+  }
+
+  /* multi-page steps ------------------------------------------------------*/
+  /* line 1077, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_page_steps {
+    width: 99%;
+    margin: 0 0 8px 0;
+    padding: 0 0 4px 0;
+    border-bottom: 1px dotted #CCC;
+  }
+
+  /* line 1084, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_step {
+    width: auto !important;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px !important;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
+    opacity: 0.2;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* line 1101, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_step span.gf_step_number {
+    font-size: 20px;
+    float: left;
+  }
+
+  /* line 1107, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_step.gf_step_active {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+  }
+
+  /* line 1114, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gf_step_clear {
+    display: block;
+    clear: both;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  /* password strength indicator -----------------------------------------------------------------*/
+  /* line 1124, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_password_strength {
+    border: 1px solid #DDD;
+    margin: 0;
+    padding: 3px 5px;
+    text-align: center;
+    width: 200px;
+    background-color: #EEE;
+  }
+
+  /* line 1133, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_password_strength.bad {
+    background-color: #FFB78C;
+    border-color: #FF853C;
+  }
+
+  /* line 1138, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_password_strength.good {
+    background-color: #FFEC8b;
+    border-color: #FC0;
+  }
+
+  /* line 1144, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_password_strength.short,
+  .gform_wrapper .gfield_password_strength.mismatch {
+    background-color: #FFA0A0;
+    border-color: #f04040;
+  }
+
+  /* line 1149, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_password_strength.strong {
+    background-color: #C3FF88;
+    border-color: #8DFF1C;
+  }
+
+  /* reset the default list styles for the HTML blocks -----------------------------------------------------------------*/
+  /* line 1158, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
+  body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li {
+    list-style-type: disc !important;
+    margin: 0 0 0.5em;
+    overflow: visible;
+    padding-left: 0;
+  }
+
+  /* line 1166, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul,
+  body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul {
+    list-style-type: disc !important;
+    margin: 1em 0 1em 1.5em;
+    padding-left: 0;
+  }
+
+  /* line 1173, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li,
+  body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li {
+    list-style-type: decimal !important;
+    overflow: visible;
+    margin: 0 0 0.5em;
+    padding-left: 0;
+  }
+
+  /* line 1181, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol,
+  body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol {
+    list-style-type: decimal !important;
+    margin: 1em 0 1.5em 2.0em;
+    padding-left: 0;
+  }
+
+  /* line 1188, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul,
+  body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul li {
+    list-style-type: disc !important;
+    padding-left: 0;
+  }
+
+  /* line 1193, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul {
+    margin: 1em 0 1em 1.5em;
+  }
+
+  /* line 1197, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul li {
+    margin: 0 0 0.5em;
+  }
+
+  /* line 1201, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl {
+    margin: 0 0 1.5em 0;
+    padding-left: 0;
+  }
+
+  /* line 1206, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dt {
+    font-weight: bold;
+  }
+
+  /* line 1210, ../scss/plugins/_gravity.scss */
+  body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
+    margin: 0 0 1em 1.5em;
+  }
+
+  /* list fields added in v.1.6 -----------------------------------------------------------------*/
+  /* line 1224, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list,
+  .gform_wrapper table.gfield_list caption,
+  .gform_wrapper table.gfield_list tbody,
+  .gform_wrapper table.gfield_list tfoot,
+  .gform_wrapper table.gfield_list thead,
+  .gform_wrapper table.gfield_list tr,
+  .gform_wrapper table.gfield_list th,
+  .gform_wrapper table.gfield_list td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* line 1233, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  /* line 1238, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list thead th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* line 1243, ../scss/plugins/_gravity.scss */
+  .gform_wrapper li.gfield.gfield_error table.gfield_list thead th {
+    color: #790000;
+  }
+
+  /* line 1248, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list thead,
+  .gform_wrapper table.gfield_list tr {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 1254, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list th,
+  .gform_wrapper table.gfield_list td {
+    padding: 0 0 0.5em 0;
+  }
+
+  /* line 1259, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list th + th,
+  .gform_wrapper table.gfield_list td + td {
+    padding: 0 0 0.5em 0.7em;
+  }
+
+  /* line 1263, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label .gfield_list, .gform_wrapper .right_label .gfield_list {
+    width: 64%;
+  }
+
+  /* line 1267, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gfield_list {
+    width: 99%;
+  }
+
+  /* line 1271, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .left_label .gf_list_one_column, .gform_wrapper .right_label .gf_list_one_column {
+    width: 45%;
+  }
+
+  /* line 1275, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .top_label .gf_list_one_column {
+    width: 46%;
+  }
+
+  /* line 1279, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gfield_list input {
+    width: 98%;
+  }
+
+  /* line 1283, ../scss/plugins/_gravity.scss */
+  .gfield_icon_disabled {
+    cursor: default !important;
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+  }
+
+  /* line 1291, ../scss/plugins/_gravity.scss */
+  .gform_wrapper table.gfield_list td.gfield_list_icons {
+    min-width: 45px !important;
+  }
+
+  /* enhanced UI/select styles added in v.1.6 -----------------------------------------------------------------*/
+  /* line 1298, ../scss/plugins/_gravity.scss */
+  .gform_wrapper select.chzn-select {
+    visibility: hidden;
+    height: 28px !important;
+    min-height: 28px !important;
+  }
+
+  /* line 1304, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container {
+    font-size: 13px;
+    position: relative;
+    margin-bottom: 4px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* line 1313, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-drop {
+    background-color: #FFF;
+    border: 1px solid #AAA;
+    border-top: 0;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+  }
+
+  /* line 1327, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-single {
+    background-color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #AAA;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 0 0 8px;
+    color: #444;
+    text-decoration: none;
+  }
+
+  /* line 1352, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-single span {
+    margin-right: 26px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  /* line 1362, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-single div {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #CCC;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCC', endColorstr='#EEE',GradientType=0 );
+    border-left: 1px solid #AAA;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 18px;
+  }
+
+  /* line 1386, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-single div b {
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 1395, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-search {
+    padding: 3px 4px;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  /* line 1401, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-search input {
+    background: white url(../images/chosen-sprite.png) 100% -20px no-repeat;
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -ms-linear-gradient(top, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -ms-linear-gradient(top, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) 100% -20px no-repeat, linear, top, white 85%, #eeeeee 99%;
+    margin: 1px 0;
+    padding: 4px 20px 4px 5px;
+    outline: 0;
+    border: 1px solid #AAA;
+    font-size: 1em;
+  }
+
+  /* line 1418, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-single .chzn-drop {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+
+  /* line 1427, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices {
+    background-color: #FFF;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#EEE',GradientType=0 );
+    border: 1px solid #AAA;
+    margin: 0;
+    padding: 0;
+    cursor: text;
+    overflow: hidden;
+    height: auto !important;
+    height: 1%;
+    position: relative;
+  }
+
+  /* line 1445, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices li {
+    float: left;
+    list-style: none;
+  }
+
+  /* line 1450, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-field {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 1456, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-field input {
+    color: #666;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 5px;
+    margin: 1px 0;
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* line 1469, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-field .default {
+    color: #999;
+  }
+
+  /* line 1473, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-choice {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: #E4E4E4;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E4E4E4', endColorstr='#EEE',GradientType=0 );
+    color: #333;
+    border: 1px solid #B4B4B4;
+    line-height: 13px;
+    padding: 3px 19px 3px 6px;
+    margin: 3px 0 3px 5px;
+    position: relative;
+  }
+
+  /* line 1496, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-choice span {
+    cursor: default;
+  }
+
+  /* line 1500, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-choice-focus {
+    background-color: #D4D4D4;
+  }
+
+  /* line 1504, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    width: 8px;
+    height: 9px;
+    font-size: 1px;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  /* line 1517, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
+    background-position: right -9px;
+  }
+
+  /* line 1521, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
+    background-position: right -9px;
+  }
+
+  /* line 1525, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results {
+    margin: 0 4px 4px 0;
+    max-height: 190px;
+    padding: 0 0 0 4px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* line 1534, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-results {
+    margin: -1px 0 0;
+    padding: 0;
+  }
+
+  /* line 1539, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results li {
+    line-height: 80%;
+    padding: 7px 7px 8px;
+    margin: 0;
+    list-style: none;
+  }
+
+  /* line 1546, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results .active-result {
+    cursor: pointer;
+  }
+
+  /* line 1550, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results .highlighted {
+    background-color: #F0F0F0;
+  }
+
+  /* line 1554, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results li em {
+    background-color: #FEFFDE;
+    font-style: normal;
+  }
+
+  /* line 1559, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results .highlighted em {
+    background: transparent;
+  }
+
+  /* line 1563, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results .no-results {
+    background-color: #F4F4F4;
+  }
+
+  /* line 1567, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results .group-result {
+    cursor: default;
+    color: #999;
+    font-weight: bold;
+  }
+
+  /* line 1573, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container .chzn-results .group-option {
+    padding-left: 20px;
+  }
+
+  /* line 1577, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-multi .chzn-drop .result-selected {
+    display: none;
+  }
+
+  /* line 1581, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-active .chzn-single {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* line 1588, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-active .chzn-single-with-drop {
+    border: 1px solid #AAA;
+    -webkit-box-shadow: 0 1px 0 #FFF inset;
+    -moz-box-shadow: 0 1px 0 #FFF inset;
+    -o-box-shadow: 0 1px 0 #FFF inset;
+    box-shadow: 0 1px 0 #FFF inset;
+    background-color: #EEE;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#EEE',GradientType=0 );
+    -webkit-border-bottom-left-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  /* line 1610, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-active .chzn-single-with-drop div {
+    background: transparent;
+    border-left: none;
+  }
+
+  /* line 1615, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-active .chzn-single-with-drop div b {
+    background-position: -18px 1px;
+  }
+
+  /* line 1619, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-active .chzn-choices {
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  /* line 1626, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-container-active .chzn-choices .search-field input {
+    color: #111 !important;
+  }
+
+  /* line 1630, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl {
+    direction: rtl;
+    text-align: right;
+  }
+
+  /* line 1635, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-single {
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
+  /* line 1640, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-single span {
+    margin-left: 26px;
+    margin-right: 0;
+  }
+
+  /* line 1645, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-single div {
+    left: 0;
+    right: auto;
+    border-left: none;
+    border-right: 1px solid #AAA;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  /* line 1655, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-choices li {
+    float: right;
+  }
+
+  /* line 1659, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-choices .search-choice {
+    padding: 3px 6px 3px 19px;
+    margin: 3px 5px 3px 0;
+  }
+
+  /* line 1664, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-choices .search-choice .search-choice-close {
+    left: 5px;
+    right: auto;
+    background-position: right top;
+  }
+
+  /* line 1670, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl.chzn-container-single .chzn-results {
+    margin-left: 4px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 4px;
+  }
+
+  /* line 1677, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-results .group-option {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
+  /* line 1682, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl.chzn-container-active .chzn-single-with-drop div {
+    border-right: none;
+  }
+
+  /* line 1686, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .chzn-rtl .chzn-search input {
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, white;
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee));
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -o-linear-gradient(bottom, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -ms-linear-gradient(top, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -ms-linear-gradient(top, white 85%, #eeeeee 99%);
+    background: url(../images/chosen-sprite.png) -38px -20px no-repeat, linear, top, white 85%, #eeeeee 99%;
+    padding: 4px 5px 4px 20px;
+  }
+
+  /* credit card icons ------------------------------------------------------*/
+  /* line 1701, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container {
+    margin: 8px 0 6px 0;
+    height: 32px;
+  }
+
+  /* line 1706, ../scss/plugins/_gravity.scss */
+  .gform_wrapper div.gform_card_icon {
+    margin-right: 4px;
+    text-indent: -9000px;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 32px;
+    float: left;
+  }
+
+  /* line 1716, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_visa {
+    background-position: 0 0;
+  }
+
+  /* line 1720, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_visa {
+    background-position: 0 -32px;
+  }
+
+  /* line 1724, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_visa {
+    background-position: 0 -64px;
+  }
+
+  /* line 1728, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_mastercard {
+    background-position: -36px 0;
+  }
+
+  /* line 1732, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_mastercard {
+    background-position: -36px -32px;
+  }
+
+  /* line 1736, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_mastercard {
+    background-position: -36px -64px;
+  }
+
+  /* line 1740, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_amex {
+    background-position: -72px 0;
+  }
+
+  /* line 1744, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_amex {
+    background-position: -72px -32px;
+  }
+
+  /* line 1748, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_amex {
+    background-position: -72px -64px;
+  }
+
+  /* line 1752, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_discover {
+    background-position: -108px 0;
+  }
+
+  /* line 1756, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_discover {
+    background-position: -108px -32px;
+  }
+
+  /* line 1760, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_discover {
+    background-position: -108px -64px;
+  }
+
+  /* line 1764, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_maestro {
+    background-position: -144px 0;
+  }
+
+  /* line 1768, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_maestro {
+    background-position: -144px -32px;
+  }
+
+  /* line 1772, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_maestro {
+    background-position: -144px -64px;
+  }
+
+  /* line 1776, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_jcb {
+    background-position: -180px 0;
+  }
+
+  /* line 1780, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_jcb {
+    background-position: -180px -32px;
+  }
+
+  /* line 1784, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_jcb {
+    background-position: -180px -64px;
+  }
+
+  /* line 1788, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_visa {
+    background-position: 0 -192px;
+  }
+
+  /* line 1792, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_visa {
+    background-position: 0 -224px;
+  }
+
+  /* line 1796, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_visa {
+    background-position: 0 -256px;
+  }
+
+  /* line 1800, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_mastercard {
+    background-position: -36px -192px;
+  }
+
+  /* line 1804, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_mastercard {
+    background-position: -36px -224px;
+  }
+
+  /* line 1808, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_mastercard {
+    background-position: -36px -256px;
+  }
+
+  /* line 1812, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_amex {
+    background-position: -72px -192px;
+  }
+
+  /* line 1816, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_amex {
+    background-position: -72px -224px;
+  }
+
+  /* line 1820, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_amex {
+    background-position: -72px -256px;
+  }
+
+  /* line 1824, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_discover {
+    background-position: -108px -192px;
+  }
+
+  /* line 1828, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_discover {
+    background-position: -108px -224px;
+  }
+
+  /* line 1832, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_discover {
+    background-position: -108px -256px;
+  }
+
+  /* line 1836, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_maestro {
+    background-position: -144px -192px;
+  }
+
+  /* line 1840, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_maestro {
+    background-position: -144px -224px;
+  }
+
+  /* line 1844, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_maestro {
+    background-position: -144px -256px;
+  }
+
+  /* line 1848, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_jcb {
+    background-position: -180px -192px;
+  }
+
+  /* line 1852, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_jcb {
+    background-position: -180px -224px;
+  }
+
+  /* line 1856, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_jcb {
+    background-position: -180px -256px;
+  }
+
+  /* credit card fields ------------------------------------------------------*/
+  /* line 1863, ../scss/plugins/_gravity.scss */
+  .gform_card_icon_container input[type=radio]#gform_payment_method_creditcard {
+    float: left;
+    position: relative;
+    top: 4px !important;
+  }
+
+  /* line 1870, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_left,
+  .gform_wrapper .ginput_complex .ginput_cardinfo_right {
+    min-height: 43px;
+    position: relative;
+    float: left;
+  }
+
+  /* line 1876, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_left {
+    width: 50%;
+    margin-right: 1%;
+  }
+
+  /* line 1881, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_right {
+    min-width: 85px !important;
+  }
+
+  /* line 1886, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_left label,
+  .gform_wrapper .ginput_complex .ginput_cardinfo_right label {
+    white-space: nowrap !important;
+  }
+
+  /* line 1890, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex span.ginput_cardextras {
+    display: block;
+    overflow: hidden;
+  }
+
+  /* line 1895, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_left span.ginput_card_expiration_container {
+    position: relative;
+    display: block;
+    min-width: 160px !important;
+  }
+
+  /* line 1902, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex select.ginput_card_expiration.ginput_card_expiration_month,
+  .gform_wrapper .ginput_complex select.ginput_card_expiration.ginput_card_expiration_year {
+    width: 48% !important;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
+  /* line 1910, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_left select.ginput_card_expiration.ginput_card_expiration_month {
+    margin-right: 4px;
+  }
+
+  /* line 1914, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_right input.ginput_card_security_code {
+    max-width: 50% !important;
+  }
+
+  /* line 1918, ../scss/plugins/_gravity.scss */
+  .gform_wrapper .ginput_complex .ginput_cardinfo_right span.ginput_card_security_code_icon {
+    width: 32px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: 0 -128px;
+    position: relative;
+    top: -1px;
+    left: 6px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+
   /*********************
   FOOTER STYLES
   *********************/
@@ -1572,31 +4682,52 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
+  /* line 431, ../scss/devices/_768up.scss */
+  .footer {
+    text-align: left;
+  }
+  /* line 434, ../scss/devices/_768up.scss */
+  .footer .widget {
+    position: relative;
+    float: left;
+  }
+  /* line 444, ../scss/devices/_768up.scss */
+  .footer .widget ul {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 448, ../scss/devices/_768up.scss */
+  .footer .widget ul li {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 455, ../scss/devices/_768up.scss */
+  .footer .half-horizontal {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+  }
+  /* line 462, ../scss/devices/_768up.scss */
+  .footer a:hover {
+    color: #383132;
+    text-decoration: underline;
+  }
+
+  /* line 471, ../scss/devices/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
     it's very rare to have multi-depth menus in
     the footer.
-    */ }
+    */
+  }
 
   /* end .footer-links */
-  h1 {
-    font-size: 45px; }
-
-  h2 {
-    font-size: 32px; }
-
-  h3 {
-    font-size: 28px; }
-
-  h4 {
-    font-size: 24px; }
-
-  h5 {
-    font-size: 20px; }
-
-  h6 {
-    font-size: 18px; } }
+  /* line 487, ../scss/devices/_768up.scss */
+  .copyright br {
+    display: none;
+  }
+}
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -1605,30 +4736,63 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 64.375em) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: MEAT 
+  Author: Eivin + Andrew 
   
   Stylesheet: Desktop Stylsheet
   
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop. 
   
-  ******************************************************************/ }
+  ******************************************************************/
+  /* line 12, ../scss/devices/_1030up.scss */
+  .display {
+    margin: 0 -45%;
+  }
+
+  /* line 20, ../scss/devices/_1030up.scss */
+  .display-card .button, .display-card .card strong a, .card strong .display-card a {
+    display: inline-block;
+  }
+
+  /* line 25, ../scss/devices/_1030up.scss */
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+  }
+}
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 77.5em) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: MEAT 
+  Author: Eivin + Andrew 
   
   Stylesheet: Super Large Monitor Stylesheet
   
   You can add some advanced styles here if you like. This kicks in
   on larger screens.
   
-  ******************************************************************/ }
+  ******************************************************************/
+  /* line 12, ../scss/devices/_1240up.scss */
+  #container {
+    padding: 0;
+  }
+
+  /* line 17, ../scss/devices/_1240up.scss */
+  .display {
+    margin: 0 -570px;
+  }
+
+  /* line 21, ../scss/devices/_1240up.scss */
+  .footer {
+    padding: 1em 0;
+  }
+}
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -1637,8 +4801,8 @@ query for retina AND a certain size if you want. Go Nuts.
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
+  Site Name: MEAT 
+  Author: Eivin + Andrew 
   
   Stylesheet: Retina Screens & Devices Stylesheet
   
@@ -1675,7 +4839,8 @@ query for retina AND a certain size if you want. Go Nuts.
   (this is pretty standard practice). Set the background image so it matches
   the original dimensions and you are good to go. 
   
-  */ }
+  */
+}
 /*
 iPHONE 5 MEDIA QUERY
 Want to get fancy for no good reason? Knock yourself out.
@@ -1688,8 +4853,8 @@ be set to display none.
 */
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: MEAT
+  Author: Eivin + Andrew
   
   Stylesheet: Print Stylesheet
   
@@ -1698,53 +4863,79 @@ be set to display none.
   though, go for it.
   
   ******************************************************************/
+  /* line 15, ../scss/print/_print.scss */
   * {
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
     filter: none !important;
-    -ms-filter: none !important; }
+    -ms-filter: none !important;
+  }
 
+  /* line 23, ../scss/print/_print.scss */
   a, a:visited {
     color: #444 !important;
-    text-decoration: underline; }
-    a:after, a:visited:after {
-      content: " (" attr(href) ")"; }
-    a abbr[title]:after, a:visited abbr[title]:after {
-      content: " (" attr(title) ")"; }
+    text-decoration: underline;
+  }
+  /* line 28, ../scss/print/_print.scss */
+  a:after, a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  /* line 33, ../scss/print/_print.scss */
+  a abbr[title]:after, a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
+  /* line 40, ../scss/print/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: ""; }
+    content: "";
+  }
 
+  /* line 44, ../scss/print/_print.scss */
   pre, blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 49, ../scss/print/_print.scss */
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
 
+  /* line 53, ../scss/print/_print.scss */
   tr, img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
+  /* line 57, ../scss/print/_print.scss */
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   @page {
-    margin: 0.5cm; }
+    margin: 0.5cm;
+}
 
+  /* line 65, ../scss/print/_print.scss */
   p, h2, h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
+  /* line 71, ../scss/print/_print.scss */
   h2,
   h3 {
-    page-break-after: avoid; }
+    page-break-after: avoid;
+  }
 
+  /* line 80, ../scss/print/_print.scss */
   .sidebar,
   .page-navigation,
   .wp-prev-next,
   .respond-form,
   nav {
-    display: none; } }
+    display: none;
+  }
+}

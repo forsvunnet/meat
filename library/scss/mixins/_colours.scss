@@ -1,0 +1,53 @@
+/* Colours */
+
+// Primary alert colours
+
+	$alert-yellow:		#ebe16f;
+	$alert-red:			#fbe3e4;
+	$alert-green:		#e6efc2;
+	$alert-blue:		#d5edf8;
+	
+// Newsprint, black and white
+	
+	$black:				#000;
+	$white:				#fff;
+	
+// Primary colours
+	
+	$brand-colour:		#383132;
+	$brand-highlight:	#6c6e6d;
+	
+// Links and Anchors
+	
+	$link-color:		$brand-colour;
+	$link-hover:		darken($link-color, 9%);
+	
+// Shades of Grey
+	
+	$grey-darker:		#222;
+	$grey-dark:			#444;
+	$grey:			   	#666;
+	$grey-light:		#999;
+	$grey-lighter:		#ccc;
+	
+//Social Networks
+
+	$twitter:			#00aee7;
+	$facebook:			#0065b2;
+	$google: 			#f75539;
+	
+//Alerts	
+	$warning_text: 		$grey-dark;
+	$error_text: 		$alert-red;
+	$warning_text: 		$grey-dark;
+	$info_text: 		$alert-yellow;
+	$success_text: 		$alert-green;
+
+// Separators
+
+	$hr_border: 		$grey;
+	$menu-border: 		$grey-dark;
+	
+// Headings
+	
+	$headings-color: 	$alert-blue;

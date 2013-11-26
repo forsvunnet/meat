@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name: 
+Author: 
 
 Stylesheet: Main Stylesheet
 
@@ -16,10 +16,10 @@ of the styles inside media queries.
 //
 
 // import normalize
-@import "mixins/normalize";
+@import "normalize";
 
 // import mixins
-@import "mixins/mixins";
+@import "mixins";
 
 /*
 BASE (MOBILE) SIZE
@@ -28,8 +28,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 
-// styles in base.scss
-@import "devices/base";
+// styles in mobile.scss
+@import "mediaqueries/mobile";
 
 /*
 LARGER MOBILE DEVICES
@@ -39,8 +39,8 @@ tweeners.
 */
 @media only screen and (min-width: 30.063em) {
 
-	// styles in 481up.scss
-	@import "devices/481up";
+	// styles in mobiletablet.scss
+	@import "mediaqueries/mobiletablet";
 
 } // end of media query
 
@@ -50,13 +50,13 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 47.900em) {
+@media only screen and (min-width: 48.000em) {
 
 	// import grids
-	@import "mixins/grid";
+	@import "grid";
 
-	// styles in 768up.scss
-	@import "devices/768up";
+	// styles in tablet.scss
+	@import "mediaqueries/tablet";
 
 } // end of media query
 
@@ -68,8 +68,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 64.375em) {
 
-	// styles in 1030up.scss
-	@import "devices/1030up";
+	// styles in desktop.scss
+	@import "mediaqueries/desktop";
 
 } // end of media query
 
@@ -79,8 +79,8 @@ This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 77.500em) {
 
-	// styles in 1240up.scss
-	@import "devices/1240up";
+	// styles in largedisplay.scss
+	@import "mediaqueries/largedisplay";
 
 } // end of media query
 
@@ -95,7 +95,7 @@ query for retina AND a certain size if you want. Go Nuts.
        only screen and (min-device-pixel-ratio: 1.5) {
 
 	// styles in 2x.scss
-	@import "devices/2x";
+	@import "mediaqueries/2x";
 
 } // end of media query
 
@@ -116,5 +116,5 @@ sense to print at the bottom. Things like nav, ads, and forms should
 be set to display none.
 */
 @media print {
-	@import "print/print";
+	@import "print";
 }

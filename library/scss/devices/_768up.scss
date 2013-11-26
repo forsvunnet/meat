@@ -1,0 +1,382 @@
+/******************************************************************
+Site Name: MEAT
+Author: Eivin + Andrew
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	overflow-x: hidden; // This is in relation to the navigation at the top & it's full width glory
+}
+
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {}
+
+	#logo {
+		width: col_width(6);
+		width: col_width(6, true);
+		
+		float: left;
+		margin-left: $gutter;
+		margin-left: calc(#{$gutter_em} * 1);	
+			
+		&.first{ margin-left: 0;}
+		&.last{ float: right;}
+
+		img{
+		    margin: 3em auto 1em;
+		    max-width: 100%;
+		    position: relative;
+		    z-index: 20;
+		}
+	}
+
+
+.overflow{
+	overflow: hidden;
+}
+
+
+.tel{
+	&.last{
+		//@include font-size(1);
+		float: right;
+		border-left: 1px solid #d2d2d2;
+	}
+}
+
+// This fixed issues with images being shit when in anchors.
+img{
+	vertical-align: bottom;
+}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.mobile-only{
+	display: none;
+	visibility: hidden;
+}
+
+.nav {
+	text-align: center;
+	margin: 10px 0;
+	vertical-align: middle;
+	border-bottom: 2px solid $grey-lighter;
+
+	.js & {
+		display: block;
+		top: auto;
+		right: auto;
+		left: auto;
+		max-height: 100%;
+	}
+	
+	li {
+		display: inline-block;
+		position: relative;
+		border-radius: 3px 3px 0 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				background: $brand-colour;
+				
+				a{
+					color: $white;
+				}
+			}
+			
+		a {
+			border-bottom: 0;
+			text-transform: uppercase;
+			color: $grey-darker;
+			@include font-size(0.85);
+			letter-spacing: 0.05em;
+
+			&:hover, &:focus {
+				color: $white;
+				background: darken($brand-colour, 10%);
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		// This changes the before icon before it's set below, it's based
+		// upon the fact that there is only two menus and that each one has a different icon
+		& + li{
+			.js & ul.show.sub-menu,
+			.js & ul.show.children,
+			ul.sub-menu,
+			ul.children {
+				&:before{
+					content: "\e000";
+					@include font-size(6.5);
+				}
+			}
+		}
+		
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		.js & ul.show.sub-menu,
+		.js & ul.show.children,
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border-top: 0;
+			position: absolute;
+			display: none;
+			z-index: 15;
+			text-align: left;
+			
+			color: $white;
+			background: $brand-colour;
+			padding: 1em 1000em 1.5em;
+			margin: 0 -1000em;
+			
+			
+			
+/*
+			&:before{
+				font-family: $icon;
+				@include font-size(6);
+				font-weight: 100;
+				left: 49.2%;
+				position: absolute;
+				top: 12%;
+				vertical-align: middle;
+				z-index: 130;
+				content: "\e008";
+				
+			}
+*/
+
+			li {
+
+				&:hover, &:focus {
+					a{
+						background: darken($brand-colour, 10%);
+						border-radius: 2px;
+					}
+				}
+				
+				a {
+					@include font-size(0.85);
+					padding: 2px 0 2px 14px;
+					border-right: 0;
+					display: block;
+					width: 200px;
+					//border-bottom: 1px solid fade-out($white, 0.5);
+					color: $white;
+					
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			display: block;
+			
+			padding: 1em 1000em;
+			margin: 0 -1000em;
+			
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+
+	.sidebar{
+		img{
+			width:100%;
+			height: auto;
+		}
+	}
+
+
+
+	.widget {
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+// Search Form
+
+input[type="search"]{
+	width: 61%;
+	float: left;
+	padding: 2% 1%;
+}
+
+.search-form .button{
+	float: right;
+	width: 35%;
+}
+
+@import "../plugins/gravity";
+
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+
+.footer{
+	text-align: left;
+
+	.widget{
+		
+		width: col_width(3);
+		width: col_width(3, true);
+		
+		float: left;
+		margin-left: $gutter;
+		margin-left: calc(#{$gutter_em} * 1);	
+			
+		&.first{ margin-left: 0;}
+		&.last{ float: right;}
+		position: relative;
+		
+
+		&:first-child{
+			margin-left: 0;
+		}
+
+		ul{
+			padding: 0;
+			margin: 0;
+
+			li{
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+
+	.half-horizontal{
+		border-bottom: 1px solid $black;
+		padding-bottom: 0.5em;
+		margin-bottom: 1em;	
+	}
+
+	a{	
+		&:hover{
+			color: $brand-colour;
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+
+
+.copyright{
+	br{
+		display: none;
+	}
+}
