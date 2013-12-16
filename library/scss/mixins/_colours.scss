@@ -2,10 +2,10 @@
 
 // Primary alert colours
 
-	$alert-yellow:		#ebe16f;
-	$alert-red:			#fbe3e4;
-	$alert-green:		#e6efc2;
-	$alert-blue:		#d5edf8;
+	$alert-yellow:		#eadb33;
+	$alert-red:			#be3333;
+	$alert-green:		#a8c923;
+	$alert-blue:		#209dd6;
 	
 // Newsprint, black and white
 	
@@ -14,8 +14,8 @@
 	
 // Primary colours
 	
-	$brand-colour:		#383132;
-	$brand-highlight:	#6c6e6d;
+	$brand-colour:		#005699;
+	$brand-highlight:	#C0D5E5;
 	
 // Links and Anchors
 	
@@ -23,12 +23,12 @@
 	$link-hover:		darken($link-color, 9%);
 	
 // Shades of Grey
-	
-	$grey-darker:		#222;
-	$grey-dark:			#444;
-	$grey:			   	#666;
-	$grey-light:		#999;
-	$grey-lighter:		#ccc;
+
+	$grey:			   	#aaa;
+	$grey-dark:			darken($grey, 13%);
+	$grey-darker:		darken($grey-dark, 13%);
+	$grey-light:		lighten($grey, 13%);
+	$grey-lighter:		lighten($grey-light, 13%);
 	
 //Social Networks
 

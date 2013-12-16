@@ -307,7 +307,7 @@ and more scalable.
 		}
 		
 		&:after{
-			content: "Meny"; // How will you ever translate this?
+			content: "Menu"; // How will you ever translate this?
 			@include font-size(0.75);
 			text-transform: uppercase;
 			font-family: $sans-serif;
