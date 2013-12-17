@@ -426,63 +426,7 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 
-.tabContent{
-	position: relative;
-	width: 100%;
-	a{
-		border-bottom: 0;
-	}
-}
-
-.tab-navigation{
-	width: 100%;
-}
-
-.tabs {
-	background: fade-out($white, 0.2);
-
-
-	li {
-		list-style: none;
-		width: 100%;
-		text-align: center;
-		display: block;
-		
-		a{
-			color: $grey-darker;
-			@include font-size(1.2);
-			text-decoration: none;
-			border-bottom: 0;
-			text-align: center;
-			padding: 20px 5px;
-			border-left: 0px solid $grey-darker;
-			display: inline-block;
-			width: 100%;
-	
-		}
-	
-			&:first-child{
-				a{
-					border-left: 0;
-				}
-			}
-	}
-}
-
-.floating--excerpt{
-	background: fade-out($brand-highlight, 0.2);
-	color: $white;
-	padding: 1em;
-	@include font-size(0.85);
-	line-height: 1.75;
-	
-	a{
-		color: $brand-colour;
-	}
-}
-
 #main {
-	//padding: 1em;
 	float: left;
 	margin: 0 0 20px;
 	border-radius: 3px;		
@@ -622,30 +566,6 @@ PAGE NAVI STYLES
 	} /* end .wp-prev-next */
 
 
-// Uploading form for Graphic Designers
-
-.gform_validation_container{
-	display: none; // Unknown if i should remove it, or hide it...
-}
-
-
-.hentry{
-	padding-left: 8px; 
-	padding-right: 8px; 
-}
-
-.wide{
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	padding: 3em 0;
-	
-	&.right{	background-position: center; text-align: right;}
-	&.left{		background-position: center; text-align: left;}
-
-	&.white{	color: $black;}
-	&.colour{	color: $black;}
-	&.dark{		color: $white;}
-}
 
 /******************************************************************
 COMMENT STYLES
@@ -851,13 +771,6 @@ COMMENT FORM STYLES
 		//margin: 0 20px 1.1em;
 	}
 
-
-
-@media only screen and (max-width: 30.063em) {	
-	.sidebar {
-		//margin-top: 2.2em;
-	}
-}
 
 
 .sidebar{
