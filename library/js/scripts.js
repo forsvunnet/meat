@@ -96,6 +96,21 @@ jQuery(document).ready(function($) {
 }); /* end of as page load scripts */
 
 
+// This function swaps out all .svg files and replaces them with .png files. Not ideal if you don't support PNG aswell, but you can't get transparencies with jpgs.
+
+function supportsSVG() {
+    return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
+}
+if (!supportsSVG()) {
+    var imgs = document.getElementsByTagName('img');
+    var dotSVG = /.*\.svg$/;
+    for (var i = 0; i !== imgs.length; ++i) {
+        if(imgs[i].src.match(dotSVG)) {
+            imgs[i].src = imgs[i].src.slice(0, -3) + 'png';
+        }
+    }
+}
+
 /*! A fix for the iOS orientationchange zoom bug.
  Script by @scottjehl, rebound by @wilto.
  MIT License.
