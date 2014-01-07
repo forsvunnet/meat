@@ -17,7 +17,8 @@ GENERAL STYLES
 *********************/
 
 body {
-	overflow-x: hidden; // This is in relation to the navigation at the top & it's full width glory
+	font-size: 100%;
+	line-height: 1.5;
 }
 
 
@@ -29,6 +30,17 @@ LAYOUT & GRID STYLES
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+/*********************
+HEADER STYLES
+*********************/
+
+	h1, .h1 {	@include font-size(2.5);	} 
+	h2, .h2 {	@include font-size(2);		} 
+	h3, .h3 {	@include font-size(1.5);	} 
+	h4, .h4 {	@include font-size(1.25);	} 
+	h5, .h5 {	@include font-size(1);		} 
+	h6, .h6 {	@include font-size(0.85);	} 
 
 /*********************
 HEADER STYLES
@@ -298,7 +310,7 @@ input[type="search"]{
 	width: 35%;
 }
 
-@import "../plugins/gravity";
+// @import "../plugins/gravity";
 
 
 

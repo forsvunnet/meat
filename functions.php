@@ -50,14 +50,36 @@ require_once( 'library/bones.php' ); // if you remove this, bones will break
 
 // Thumbnail sizes
 // Per theme basis, enable if wanted
-// add_image_size( 'meat-600', 600, 9999, true );
-// add_image_size( 'meat-300', 300, 9999, true );
+ add_image_size( 'meat-600', 600, 9999, true );
+add_image_size( 'meat-300', 300, 9999, true );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
 upload a "featured image" as large as the biggest
 set width or height, all the other sizes will be
 auto-cropped.
+*/
+
+add_filter( 'image_size_names_choose', 'bones_custom_image_sizes' );
+
+function bones_custom_image_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'meat-600' => __('600px by 150px'),
+        'meat-300' => __('300px by 100px'),
+    ) );
+}
+
+/*
+The function above adds the ability to use the dropdown menu to select 
+the new images sizes you have just created from within the media manager 
+when you add media to your content blocks. If you add more image sizes, 
+duplicate one of the lines in the array and name it according to your 
+new image size.
+*/
+
+
+/*
 
 To call a different size, simply change the text
 inside the thumbnail function.
