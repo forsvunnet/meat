@@ -27,10 +27,10 @@ $gutter_em: 1rem; //This needs to be rem to not mess up margins
 	$divisor: 12 / $n;
 	@if ($use_calc) {
 		$gutter_offset: $gutter_em * ($divisor - 1);
-		@return calc((100% - #{$gutter_offset}) / #{$divisor});
+		@return calc((99.99% - #{$gutter_offset}) / #{$divisor});
 	}
 	@else {
-		@return (100% - $gutter * ($divisor - 1)) / $divisor;
+		@return (99.99% - $gutter * ($divisor - 1)) / $divisor;
 	}
 }
 
