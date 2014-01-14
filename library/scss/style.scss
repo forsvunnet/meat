@@ -1,20 +1,22 @@
+/******************************************************************
+Stylesheet: Meat. v1
+URL: http://forsvunnet.github.io/meat/
+
+Description: Meat.
+
+******************************************************************/
+
 body{
 	background: url('../images/background.jpg') #bc4824;
-	text-align: center;
 }
 
 #logo{
 	margin: 0 auto;
-	position: absolute;
+	position: absolute; //relative
 	top: 50%;
 		-webkit-transform: translateY(-50%);
 		-moz-transform: translateY(-50%);
 		-o-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
-	max-width: 40%;
-	width: 100%;
-	left: 50%;
-	margin-left: -20%;
-	height: auto;
 }

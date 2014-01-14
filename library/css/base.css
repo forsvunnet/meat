@@ -536,20 +536,3 @@ table {
 .clearfix {
     *zoom: 1;
 }
-
-.wrap {
-	position: relative;
-}
-
-#header {
-	background: #fff;
-	padding: 10px;
-	max-width: 1400px;
-	margin: 0 auto;
-}
-
-	#logo {
-		width: 75px;
-		height: 75px;
-		margin-left: 20px;
-	}
