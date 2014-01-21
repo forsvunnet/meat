@@ -49,18 +49,15 @@ HEADER STYLES
 .header {}
 
 	#logo {
-		width: col_width(6);
-		width: col_width(6, true);
+		width: col_width(3);
+		width: col_width(3, true);
 		
 		float: left;
-		margin-left: $gutter;
-		margin-left: calc(#{$gutter_em} * 1);	
-			
-		&.first{ margin-left: 0;}
-		&.last{ float: right;}
+		margin-left: 0;
+
 
 		img{
-		    margin: 3em auto 1em;
+		    margin: 0em auto;
 		    max-width: 100%;
 		    position: relative;
 		    z-index: 20;
@@ -68,18 +65,11 @@ HEADER STYLES
 	}
 
 
+
 .overflow{
 	overflow: hidden;
 }
 
-
-.tel{
-	&.last{
-		//@include font-size(1);
-		float: right;
-		border-left: 1px solid #d2d2d2;
-	}
-}
 
 // This fixed issues with images being shit when in anchors.
 img{

@@ -1,5 +1,5 @@
 /******************************************************************
-Site Name: MEAT
+Site Name: MEAT 
 Author: Eivin + Andrew
 
 Stylesheet: Login Stylesheet
@@ -12,13 +12,19 @@ For more info, check out the codex:
 http://codex.wordpress.org/Creating_Admin_Themes
 
 ******************************************************************/
+/**********
+VARIABLES
+***********/
+/***********/
+body.login {
+  background-image: url("/wp-content/themes/meat/library/images/background.jpg") #712b81; }
+
 /* the form box */
 /*
 This is the Wordpress logo in the admin area.
 You'll have to load your own images and mess
 with the width and height.
 */
-/* line 27, ../scss/login.scss */
 .login h1 a {
   background: url(../images/login-logo.png) no-repeat top center;
   /* make sure to replace this! */
@@ -26,11 +32,9 @@ with the width and height.
   height: 67px;
   text-indent: -9999px;
   overflow: hidden;
-  padding-bottom: 15px;
-  display: block;
-}
+  padding-bottom: 0;
+  display: block; }
 
-/* line 37, ../scss/login.scss */
 form {
   margin-left: 8px;
   padding: 26px 24px 46px;
@@ -38,10 +42,8 @@ form {
   background: white;
   border: 1px solid #E5E5E5;
   border-radius: 3px;
-  box-shadow: none;
-}
+  box-shadow: none; }
 
-/* line 47, ../scss/login.scss */
 body form .input {
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
   font-weight: 200;
@@ -54,8 +56,25 @@ body form .input {
   border: 1px solid #E5E5E5;
   background: #FBFBFB;
   outline: none;
-  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2);
-}
+  box-shadow: inset 1px 1px 2px rgba(200, 200, 200, 0.2); }
+
+.login #nav, .login #backtoblog {
+  text-align: center; }
+  .login #nav a, .login #backtoblog a {
+    color: white; }
+
+.wp-core-ui .button-primary {
+  background: #712b81;
+  border-color: #2e1235;
+  box-shadow: 0 1px 0 rgba(113, 43, 129, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15); }
+  .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:active {
+    background: #4f1e5b;
+    border-color: #0c050e;
+    box-shadow: 0 1px 0 rgba(174, 78, 196, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15); }
+  .wp-core-ui .button-primary .active:hover, .wp-core-ui .button-primary .active:focus {
+    background: #9338a7;
+    border-color: #c074d1;
+    box-shadow: 0 1px 0 rgba(174, 78, 196, 0.5) inset, 0 1px 0 rgba(0, 0, 0, 0.15); }
 
 /*
 You'll have to override some of the default styles
