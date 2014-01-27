@@ -32,6 +32,10 @@ $gutter_em: 1rem; //This needs to be rem to not mess up margins
 	}
 }
 
+//****************************** Visual Separation.
+//****************************** Visual Separation.
+//****************************** Visual Separation.
+
 p {
 	margin: 0 0 1em 0;
 }
@@ -41,7 +45,6 @@ body {
 	font-family: $sans-serif;
 	font-size: 80%;
 	line-height: 1.5;
-
 	background: $white;
 	color: $grey-dark;
 }
@@ -94,6 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 1;
 	}
 
+
+//****************************** Visual Separation.
+//****************************** Visual Separation.
+//****************************** Visual Separation.
+
+// This is designed to target the first heading of the page in .entry-content
 header + section h2:first-child {
 	margin-top: 16px;
 	margin-top: 1rem;
@@ -302,10 +311,6 @@ and more scalable.
 		}
 	}
 	
-	.lang_sel_list_horizontal{
-		display: none; //Not shown on mobile?
-	}
-
 	h1, h2, h3, h4, h5, h6,
 	p, pre {
 		padding: 0 8px;
@@ -317,7 +322,6 @@ and more scalable.
 			margin: 0 0.5rem 1rem 0.5rem;
 		}
 	}
-
 }
 
 
@@ -325,11 +329,6 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 
-#main {
-	float: left;
-	margin: 0 0 20px;
-	border-radius: 3px;		
-}
 
 img {
 	margin: 0;
@@ -337,62 +336,52 @@ img {
 	height: auto;
 }
 
-
-#content {
-	margin-top: $gutter * 2	;
-	.home &{
-		margin-top: 0;
-	}
+/* post meta */
+.byline {
+	color: #999;
 }
 
+.entry-content {
+	dd {
+		margin-left: 0;
+		color: #787878;
+	}
 
+	/*
+	image alignment on a screen this size may be
+	a bit difficult. It's set to start aligning
+	and floating images at the next breakpoint,
+	but it's up to you. Feel free to change it up.
+	*/
+	.alignleft, img.alignleft {}
+	.alignright, img.alignright {}
+	.aligncenter, img.aligncenter {}
 
-		/* post meta */
-		.byline {
-			color: #999;
-		}
+	video, object {
+		max-width: 100%;
+		height: auto;
+	}
 
-		.entry-content {
-			dd {
-				margin-left: 0;
-				color: #787878;
-			}
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+	}
 
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
+} /* end .entry-content */
 
-			video, object {
-				max-width: 100%;
-				height: auto;
-			}
+.wp-caption {
+	max-width: 100%;
+	background: #eee;
+	padding: 5px;
 
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
-			}
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
 
-		} /* end .entry-content */
-
-		.wp-caption {
-			max-width: 100%;
-			background: #eee;
-			padding: 5px;
-
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
-
-		} /* end .wp-caption */
+} /* end .wp-caption */
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -581,12 +570,6 @@ COMMENT STYLES
 } /* end .commentlist */
 
 
-.ginput_container{
-	input{
-		width: 100%;
-	}
-}
-
 
 /******************************************************************
 COMMENT FORM STYLES
@@ -677,24 +660,10 @@ COMMENT FORM STYLES
 		margin: 0;
 	}
 	
-	.current--page{
-		a{
-			background: fade-out($brand-highlight,0.4);
-			color: $white;
-		}
-	}
-	
 	li {
 	
 		a {
-			background: fade-out($white, 0.2);
 			display: block;
-			text-align: center;
-			text-decoration: none;
-			border-bottom: 0 ;
-			padding: 15px;
-			color: $grey-darker;
-			margin-bottom: 3px;
 		}
 	}
 }
@@ -703,17 +672,19 @@ COMMENT FORM STYLES
 FOOTER STYLES
 *********************/
 
-form .alert p {
-	padding: 0;
-}
+	form .alert p {
+		padding: 0;
+	}
+	
+	.entry-content ul {
+		list-style-type: disc;
+		padding-left: $gutter * 6;
+	}
 
-.entry-content ul {
-	list-style-type: disc;
-	padding-left: $gutter * 6;
-}
 
-
-
+/*********************
+BUTTON STYLES
+*********************/
 
 .button {
 	background: $brand-colour;
@@ -780,68 +751,45 @@ form .alert p {
 }
 
 
-.widgettitle{
-	font-family: $sans-serif;
-	text-transform: uppercase;
-	color: $grey-darker;
-	font-weight: bold;
+/*********************
+FOOTER STYLES
+*********************/
 
-    @include font-size(0.85);
-
-
+footer {
+	.widgettitle{
+		font-family: $sans-serif;
+		text-transform: uppercase;
+		color: $grey-darker;
+		font-weight: bold;
+	
+	    @include font-size(0.85);
+	}
 }
-
-
 
 .footer{
 	@include font-size(0.85);
 
-		& > .wrap > nav{
-			border-top: 1px solid #CCCCCC;
-			border-bottom: 1px solid #CCCCCC;
-			padding: 1em 0;
-			margin-top: 1em;
-		}
-		.menu{
-			margin: 0;
-		}
+
+	.menu{
+		margin: 0;
+	}
+	
 	a{
 		color: #999999;
 		text-decoration: none;
 	}
 
-	.fourcol{
-		> h2{ color: #534741; font-weight: bold;}
-		> div{
-			color: #999;
-			font-family: $sans-serif;
-		}
-	}	
-	
 
-	// This is my way of venting anger. A random media queries in
-	//the middle of nowhere. Stopping this nth-child from venturing
-	// into the larger world.
-	
-	@media only screen and (max-width: 30.063em) {
-		text-align: center;
-		margin-bottom: 3em;
-		
-	}
 	
 }
 
-.social{
-	[data-icon]{
-		@include font-size(2);
-	}
-}
 
 .copyright{
 	color: #999;
 	a{ color: #999; border-bottom-color: #999;}
 	margin: 10px 0 1em;
 	@include font-size(0.75);
+	
 	@media only screen and (max-width: 30.063em) {
 		padding: 0 2em;
 	}
