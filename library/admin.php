@@ -72,11 +72,16 @@ I don't really recommend editing the admin too much
 as things may get funky if WordPress updates. Here
 are a few funtions which you can choose to use if
 you like.
+
+Customising admin is something typically done in a
+[mu-plugin](http://codex.wordpress.org/Must_Use_Plugins) (Must use plugin).
 */
 
 // Custom Backend Footer
 function bones_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="http://fullphatdesign.co.uk" target="_blank">Full Phat Design.</a></span>. Built using Meat.', 'bonestheme' );
+	$developer = "Change me in admin.php";
+	$url = "theme-editor.php?file=library%2Fadmin.php";
+	_e( '<span id="footer-thankyou">Developed by <a href="' . $url . '" target="_blank">' . $developer . '</a></span>. Built using Meat.', 'bonestheme' );
 }
 
 // adding it to the admin area
