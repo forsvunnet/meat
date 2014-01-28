@@ -17,7 +17,7 @@ GENERAL STYLES
 
 // Include the grid for when you're using the lowest file, you might still want to use this in the base, the 481 etc
 
-$gutter: 100% / 36.2;
+$gutter: 100% / 36.2 !global;
 $gutter_em: 1rem; //This needs to be rem to not mess up margins
 
 // This calculate the gutter
@@ -240,7 +240,14 @@ and more scalable.
 .nav {
 	border-top: 1px solid $menu-border;
 	margin: 0;
-	@extend %togglable;
+	@media only screen and (max-width: 47.900em) {	
+				.js & {
+					overflow: hidden;
+					max-height: 0;
+					@include transition(0.4s all $ease-in-out-quart);
+					&.show { max-height: 2000px; }
+				}
+			}
 	font-family: $sans-serif;
 	
 	.js & {
@@ -275,7 +282,14 @@ and more scalable.
 		}
 		ul.sub-menu,
 		ul.children {
-			@extend %togglable;
+			@media only screen and (max-width: 47.900em) {	
+				.js & {
+					overflow: hidden;
+					max-height: 0;
+					@include transition(0.4s all $ease-in-out-quart);
+					&.show { max-height: 2000px; }
+				}
+			}
 			li {
 				a {
 					//@include bg($white);
@@ -301,7 +315,13 @@ and more scalable.
 	.nav {
 		border-top: 1px solid $menu-border;
 		margin: 0;
-		@extend %togglable;
+		
+			.js & {
+				overflow: hidden;
+				max-height: 0;
+				@include transition(0.4s all $ease-in-out-quart);
+				&.show { max-height: 2000px; }
+			}
 		
 		.js & {
 			position: absolute;

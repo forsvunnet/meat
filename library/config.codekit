@@ -695,7 +695,7 @@
     "hamlEscapeHTMLCharacters" : 0
   },
   "lastSavedByUser" : "Andrew Smith",
-  "creatorBuild" : "16100",
+  "creatorBuild" : "16142",
   "manualImportLinks" : {
 
   },
@@ -703,133 +703,14 @@
     "displayValueWasSetByUser" : 1,
     "displayValue" : "MEAT",
     "bowerAbbreviatedPath" : "",
-    "iconImageName" : "meme-wonka"
+    "iconImageName" : "pencil_gray"
   },
   "hooks" : [
 
   ],
   "files" : {
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/login.css" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/login.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/apple-icon-touch.png" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/apple-icon-touch.png",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/apple-icon-touch.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 31318,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/admin.php" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/admin.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_481up.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_481up.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_481up.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/login-logo.png" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/login-logo.png",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/login-logo.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 26741,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_1030up.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_1030up.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_1030up.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/translation\/translation.php" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/translation\/translation.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_grid.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_grid.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_grid.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_base.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_base.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_base.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_2x.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_2x.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_2x.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/style.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/style.scss",
+    "\/scss\/style.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/style.scss",
       "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/style.css",
       "outputPathIsSetByUser" : 0,
       "shouldRunAutoprefixer" : 1,
@@ -843,48 +724,25 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/style.css" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 16
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/custom-post-type.php" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/custom-post-type.php",
+    "\/translation\/translation.php" : {
+      "inputAbbreviatedPath" : "\/translation\/translation.php",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/print\/_print.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/print\/_print.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_print.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/build.php" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/build.php",
+    "\/js\/build.php" : {
+      "inputAbbreviatedPath" : "\/js\/build.php",
       "outputAbbreviatedPath" : "No Output Path",
       "outputPathIsSetByUser" : 0,
       "ignore" : 0,
       "ignoreWasSetByUser" : 0,
       "fileType" : 8192
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_768up.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_768up.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_768up.css",
+    "\/scss\/devices\/_481up.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/devices\/_481up.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_481up.css",
       "outputPathIsSetByUser" : 0,
       "shouldRunAutoprefixer" : 0,
       "ignore" : 1,
@@ -897,93 +755,8 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/libs\/modernizr.custom.min.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/libs\/modernizr.custom.min.js",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/libs\/min\/modernizr.custom.min-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_mixins.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_mixins.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_mixins.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/custom-post-icon.png" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/custom-post-icon.png",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/custom-post-icon.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 462,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_normalize.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_normalize.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_normalize.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/logo.png" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/logo.png",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/logo.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 5875,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_colours.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/mixins\/_colours.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_colours.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 1,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/win8-tile-icon.png" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/win8-tile-icon.png",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/win8-tile-icon.png",
-      "outputPathIsSetByUser" : 0,
-      "processed" : 0,
-      "ignore" : 0,
-      "initialSize" : 36557,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 32768
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_1240up.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/devices\/_1240up.scss",
+    "\/scss\/devices\/_1240up.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/devices\/_1240up.scss",
       "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_1240up.css",
       "outputPathIsSetByUser" : 0,
       "shouldRunAutoprefixer" : 0,
@@ -997,51 +770,18 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/scripts.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/scripts.js",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/min\/scripts-ck.js",
+    "\/images\/apple-icon-touch.png" : {
+      "inputAbbreviatedPath" : "\/images\/apple-icon-touch.png",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/apple-icon-touch.png",
       "outputPathIsSetByUser" : 0,
+      "processed" : 0,
       "ignore" : 0,
+      "initialSize" : 31318,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
+      "fileType" : 32768
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/bones.php" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/bones.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 8192
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/login.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/login.scss",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/login.css",
-      "outputPathIsSetByUser" : 0,
-      "shouldRunAutoprefixer" : 0,
-      "ignore" : 0,
-      "createSourceMap" : 0,
-      "decimalPrecision" : 5,
-      "ignoreWasSetByUser" : 0,
-      "debugStyle" : 0,
-      "fileType" : 4,
-      "shouldRunBless" : 0,
-      "outputStyle" : 0,
-      "useLibsass" : 0
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/meat.js" : {
-      "syntaxCheckerStyle" : 1,
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/meat.js",
-      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/min\/meat-ck.js",
-      "outputPathIsSetByUser" : 0,
-      "ignore" : 0,
-      "ignoreWasSetByUser" : 0,
-      "fileType" : 64,
-      "outputStyle" : 1
-    },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/ie.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/ie.scss",
+    "\/scss\/ie.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/ie.scss",
       "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/ie.css",
       "outputPathIsSetByUser" : 0,
       "shouldRunAutoprefixer" : 0,
@@ -1055,8 +795,223 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/plugins\/_gravity.scss" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/plugins\/_gravity.scss",
+    "\/css\/style.css" : {
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/scss\/print\/_print.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/print\/_print.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_print.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/scss\/mixins\/_grid.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/mixins\/_grid.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_grid.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/scss\/plugins\/_wpcf7.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/plugins\/_wpcf7.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_wpcf7.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/scss\/mixins\/_normalize.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/mixins\/_normalize.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_normalize.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/scss\/devices\/_base.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/devices\/_base.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_base.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/scss\/devices\/_1030up.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/devices\/_1030up.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_1030up.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/scss\/devices\/_768up.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/devices\/_768up.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_768up.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/images\/custom-post-icon.png" : {
+      "inputAbbreviatedPath" : "\/images\/custom-post-icon.png",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/custom-post-icon.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 462,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/custom-post-type.php" : {
+      "inputAbbreviatedPath" : "\/custom-post-type.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/js\/libs\/modernizr.custom.min.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/libs\/modernizr.custom.min.js",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/libs\/min\/modernizr.custom.min-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/scss\/mixins\/_mixins.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/mixins\/_mixins.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_mixins.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/css\/login.css" : {
+      "inputAbbreviatedPath" : "\/css\/login.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/css\/ie.css" : {
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 1,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 16
+    },
+    "\/js\/scripts.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/scripts.js",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/min\/scripts-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/scss\/devices\/_2x.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/devices\/_2x.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_2x.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/images\/logo.png" : {
+      "inputAbbreviatedPath" : "\/images\/logo.png",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/logo.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 5875,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/admin.php" : {
+      "inputAbbreviatedPath" : "\/admin.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 8192
+    },
+    "\/scss\/plugins\/_gravity.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/plugins\/_gravity.scss",
       "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_gravity.css",
       "outputPathIsSetByUser" : 0,
       "shouldRunAutoprefixer" : 0,
@@ -1070,13 +1025,65 @@
       "outputStyle" : 0,
       "useLibsass" : 0
     },
-    "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/ie.css" : {
-      "inputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
+    "\/images\/login-logo.png" : {
+      "inputAbbreviatedPath" : "\/images\/login-logo.png",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/login-logo.png",
       "outputPathIsSetByUser" : 0,
-      "ignore" : 1,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 26741,
       "ignoreWasSetByUser" : 0,
-      "fileType" : 16
+      "fileType" : 32768
+    },
+    "\/images\/win8-tile-icon.png" : {
+      "inputAbbreviatedPath" : "\/images\/win8-tile-icon.png",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/win8-tile-icon.png",
+      "outputPathIsSetByUser" : 0,
+      "processed" : 0,
+      "ignore" : 0,
+      "initialSize" : 36557,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 32768
+    },
+    "\/scss\/mixins\/_colours.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/mixins\/_colours.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_colours.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 1,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
+    },
+    "\/js\/meat.js" : {
+      "syntaxCheckerStyle" : 1,
+      "inputAbbreviatedPath" : "\/js\/meat.js",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/min\/meat-ck.js",
+      "outputPathIsSetByUser" : 0,
+      "ignore" : 0,
+      "ignoreWasSetByUser" : 0,
+      "fileType" : 64,
+      "outputStyle" : 1
+    },
+    "\/scss\/login.scss" : {
+      "inputAbbreviatedPath" : "\/scss\/login.scss",
+      "outputAbbreviatedPath" : "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/login.css",
+      "outputPathIsSetByUser" : 0,
+      "shouldRunAutoprefixer" : 0,
+      "ignore" : 0,
+      "createSourceMap" : 0,
+      "decimalPrecision" : 5,
+      "ignoreWasSetByUser" : 0,
+      "debugStyle" : 0,
+      "fileType" : 4,
+      "shouldRunBless" : 0,
+      "outputStyle" : 0,
+      "useLibsass" : 0
     }
   }
 }
