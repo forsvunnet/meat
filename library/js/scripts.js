@@ -27,21 +27,6 @@ if (!window.getComputedStyle) {
   };
 }
 
-var min_width;
-var Modernizr;
-if (Modernizr.mq('(min-width: 0px)')) {
-  // Browsers that support media queries
-  min_width = function (width) {
-  return Modernizr.mq('(min-width: ' + width + 'px)');
-  };
-}
-else {
-  // Fallback for browsers that does not support media queries
-  min_width = function (width) {
-  return jQuery(window).width() >= width;
-  };
-}
-
 // as the page loads, call these scripts
 jQuery(document).ready(function($) {
 
