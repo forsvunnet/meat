@@ -53,7 +53,7 @@ function bones_ahoy() {
     add_filter( 'excerpt_more', 'bones_excerpt_more' );
 
     // Nicer css for the mce in admin
-    add_filter( 'mce_css', 'meat_mce_css' );
+    add_action( 'init', 'meat_mce_css' );
 
 } /* end bones ahoy */
 
@@ -414,11 +414,6 @@ function meat_auto_email($text) {
 }
 
 function meat_mce_css( $mce_css ) {
-  if ( ! empty( $mce_css ) )
-    $mce_css .= ',';
-
-  $mce_css .= get_template_directory_uri() . '/library/css/style.css';
-
-  return $mce_css;
+  add_editor_style('library/css/style.css');
 }
 ?>
