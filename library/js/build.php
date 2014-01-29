@@ -12,6 +12,7 @@ function meat_build_js() {
 
   $cache = 'cache.js';
   $cache_path = $path . '/' . $cache;
+  $cache_uri = get_template_directory_uri() . '/library/js/' . $cache;
   $cache_exists = file_exists($cache_path);
   $script = FALSE;
 
@@ -59,8 +60,13 @@ function meat_build_js() {
   }
 
   if ($script !== FALSE) {
-    $html = '<script type="text/javascript">%s</script>';
-    $html = sprintf($html, $script);
+    if ($cache_exists) {
+      $html = '<script type="text/javascript" src="' . $cache_uri . '"></script>';
+    }
+    else {
+      $html = '<script type="text/javascript">%s</script>';
+      $html = sprintf($html, $script);
+    }
   }
 
   return $html;
