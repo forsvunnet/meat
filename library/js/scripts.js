@@ -41,17 +41,17 @@ jQuery(document).ready(function($) {
   var resize = function() {
   
     /* if is below 481px */
-    if (min_width(481)) {
+    if (min_width('30.0625em')) {
     
     } /* end smallest screen */
     
     /* if is larger than 481px */
-    if (min_width(481)) {
+    if (min_width('30.0625em')) {
       
     } /* end larger than 481px */
     
     /* if is above or equal to 768px */
-    if (min_width(768)) {
+    if (min_width('48em')) {
     
       /* load gravatars */
       $('.comment img[data-gravatar]').each(function(){
@@ -62,8 +62,8 @@ jQuery(document).ready(function($) {
       
     }
     
-    /* off the bat large screen actions */
-    if (min_width(1030)) {
+    /* iPad landscape and larger */
+    if (min_width('64em')) {
       
     }
 
