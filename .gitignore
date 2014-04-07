@@ -54,3 +54,8 @@ temp/
 
 .svn
 *.sass-cache
+
+#Using CK2
+.sass-cache/*
+**/.sass-cache
+**/.sass-cache/*
