@@ -15,17 +15,6 @@ upon your base.scss styles.
 
 ******************************************************************/
 
-@media only screen and (max-width: 47.000em) {	
-
-	#logo{
-		width: 100%;
-		img{
-			max-width: 300px;
-			margin: 0 auto;
-		}
-	}
-}
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -111,49 +100,4 @@ FOOTER STYLES
 
 .footer{
 
-	padding: 1em 0.5em;
-	text-align: center;
-
-	.widget{
-		
-		width: 22.92818% * 2;
-		width: calc((100% - 3em) / 2);
-		position: relative;
-		float: left;
-		margin-left: 2.76243%;
-		margin-left: calc(1em * 1);		
-
-		&:first-child{
-			margin-left: 0;
-		}
-		
-		
-		ul{
-			padding: 0;
-			margin: 0;
-
-			li{
-				padding: 0;
-				margin: 0;
-			}
-		}
-		
-
-		// This is my way of venting anger. A random media queries in
-		//the middle of nowhere. Stopping this nth-child from venturing
-		// into the larger world.
-		
-		// BASICALLY. Include this little ditty here to be mobile ONLY. 
-		// None of this mediaquery will leak outside of this stylesheet / size.
-		
-		// And it's currently seated within .widget
-		
-		@media only screen and (max-width: 47.900em) {
-			&:nth-child(odd){ margin-left: 0; }
-			margin-bottom: 2em;
-			text-align: center;
-		}
-
-		
-	}	
 }

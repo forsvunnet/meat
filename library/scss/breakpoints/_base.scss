@@ -15,30 +15,13 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
-// Include the grid for when you're using the lowest file, you might still want to use this in the base, the 481 etc
+/*************************************************
+	We include the grid for when you're 
+	using the lowest file, you might still
+	want to use this in the base, the 481 etc
+*************************************************/
 
-$gutter: 100% / 36.2 !global;
-$gutter_em: 1rem; //This needs to be rem to not mess up margins
-
-// This calculate the gutter
-@function col_width($n, $use_calc: false) {
-	$divisor: 12 / $n;
-	@if ($use_calc) {
-		$gutter_offset: $gutter_em * ($divisor - 1);
-		@return calc((99.99% - #{$gutter_offset}) / #{$divisor});
-	}
-	@else {
-		@return (99.99% - $gutter * ($divisor - 1)) / $divisor;
-	}
-}
-
-//****************************** Visual Separation.
-//****************************** Visual Separation.
-//****************************** Visual Separation.
-
-p {
-	margin: 0 0 1em 0;
-}
+@import 'partials/gridmath';
 
 
 body {
@@ -47,22 +30,19 @@ body {
 	line-height: 1.5;
 	background: $white;
 	color: $grey-dark;
+	-webkit-font-smoothing: antialiased;
+
 }
 
-// Emphasis & misc
-// -------------------------
-
-strong	{ font-weight: bold; }
-em		{ font-style: italic; }
-cite	{ font-style: normal; }
-
-.text-left		{ text-align: left; }
-.text-right		{ text-align: right; }
-.text-center	{ text-align: center; }
+.wrap {
+	width: 96%;
+	margin: 0 auto;
+}
 
 
-// Headings
-// -------------------------
+/*********************
+HEADING STYLES - Type
+*********************/
 
 h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
@@ -98,20 +78,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 
-//****************************** Visual Separation.
-//****************************** Visual Separation.
-//****************************** Visual Separation.
 
-// This is designed to target the first heading of the page in .entry-content
-header + section h2:first-child {
-	margin-top: 16px;
-	margin-top: 1rem;
-}
-
+/*********************
+SEPARATION STYLES
+*********************/
 
 // Horizontal rules
 hr {
-	margin: ($gutter * 5) 0;
+	margin: ($gutter * 2) 0;
 	border: 0;
 	border-bottom: 1px solid $black;
 }
@@ -140,8 +114,33 @@ a, a:visited {
 	}
 }
 
+
+
 /*********************
-NAVIGATION STYLES
+LOGO STYLES
+*********************/
+
+	
+#logo { //you'll need to undo this shit
+	display: block;
+	text-align: center;
+	width: 80%;
+	
+	a{
+		border-bottom: 0;
+	}
+	
+	img{
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+
+
+/*********************
+NAVIGATION AND MENUS
 *********************/
 
 /*
@@ -169,16 +168,14 @@ and more scalable.
 	}
 }
 
-%menu-button {
-	padding: $gutter ($gutter * 2);
-}
 
 
+/*********************
+MOBILE DROPDOWN NAVIGATION STYLES
+*********************/
 
 .clickable {
-	@extend %menu-button;
 	margin: 0;
-	//background: $brand-colour;
 	color: $grey-darker;
 	cursor: pointer;
 	position: relative;
@@ -215,27 +212,18 @@ and more scalable.
 		
 	}
 
-
-	
-#logo { //you'll need to undo this shit
-	display: block;
-	text-align: center;
-	width: 80%;
-	
-	a{
-		border-bottom: 0;
-	}
-	
-	img{
-		max-width: 100%;
-		height: auto;
-		margin: 0 auto;
-	}
-}
+/*********************************** 
+	Make the header nav relative so
+	the aboluste menu stays put
+***********************************/
 
 .header nav {
 	position: relative;
 }
+
+/*********************
+NAVIGATION STYLES
+*********************/
 
 .nav {
 	border-top: 1px solid $menu-border;
@@ -273,7 +261,6 @@ and more scalable.
 	
 	li {
 		a {
-			@extend %menu-button;
 			display: inline-block;
 			font-weight: bold;
 			text-decoration: none;
@@ -300,49 +287,6 @@ and more scalable.
 	} /* end .menu li */
 } /* end .nav */
 
-@media only screen and (max-width: 47.9375em) {	
-
-	#logo { //you'll need to undo this shit
-		display: block;
-		margin: 5px auto;
-		text-align: center;
-		float: left;
-		padding: 10px;
-		width: 80%;
-	
-	}
-
-	.nav {
-		border-top: 1px solid $menu-border;
-		margin: 0;
-		
-			.js & {
-				overflow: hidden;
-				max-height: 0;
-				@include transition(0.4s all $ease-in-out-quart);
-				&.show { max-height: 2000px; }
-			}
-		
-		.js & {
-			position: absolute;
-			top: 85px;
-			z-index: 5;
-			background: fade-out($white, 0.25);
-		}
-	}
-	
-	h1, h2, h3, h4, h5, h6,
-	p, pre {
-		padding: 0 8px;
-		padding: 0 0.5rem;
-	}
-	.respond-form {
-		ul {
-			margin: 0 8px 16px 8px;
-			margin: 0 0.5rem 1rem 0.5rem;
-		}
-	}
-}
 
 
 /*********************
@@ -352,7 +296,7 @@ POSTS & CONTENT STYLES
 
 img {
 	margin: 0;
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -402,6 +346,9 @@ img {
 	}
 
 } /* end .wp-caption */
+
+
+
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -478,7 +425,6 @@ PAGE NAVI STYLES
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
-
 
 .commentlist {
 
@@ -673,6 +619,9 @@ COMMENT FORM STYLES
 	}
 
 
+/*********************
+SIDEBAR STYLES
+*********************/
 
 .sidebar{
 	
@@ -700,75 +649,6 @@ FOOTER STYLES
 		list-style-type: disc;
 		padding-left: $gutter * 6;
 	}
-
-
-/*********************
-BUTTON STYLES
-*********************/
-
-.button {
-	background: $brand-colour;
-	border-radius: 2px;
-	text-indent:0;
-	display: inline-block;
-	color: $white;
-	font-weight: normal;
-	font-style: normal;
-	text-decoration: none;
-	text-align: center;
-	cursor: pointer;
-
-	padding: $gutter $gutter * 2 $gutter $gutter * 2; // Absolute madness
-
-	outline: none; 
-	border: none;
-	-webkit-font-smoothing: antialiased;
-	border-bottom: 5px solid darken($brand-colour, 20%);
-		
-	&:hover{
-		background: lighten($brand-colour, 5%);
-		color: $white;
-	}
-	
-	&:active{ 
-		background: darken($brand-colour, 10%); 
-		position: relative;
-	    top: 4px;
-	    margin: 0 0 4px;
-		border-bottom-width: 1px;
-		box-shadow: inset 0px 10px 5px -7px darken($brand-colour, 20%);
-		
-
-	}
-
-	&:visited{
-		color: $white;
-		background: $brand-colour;
-		border-bottom-color: darken($brand-colour, 20%);
-	}
-		
-/*
-	&:link{ //Outbound links
-		background: $brand-highlight;
-		color: $white;
-		border-bottom-color: darken($brand-highlight, 20%);
-		
-		&:active{
-			box-shadow: inset 0px 10px 5px -7px darken($brand-highlight, 20%);
-		}	
-	
-		&:visited{
-			color: $white;
-			border-bottom-color: darken($brand-highlight, 20%);
-		}
-	}
-*/
-	
-	&:focus{
-		color: $white;
-	}
-
-}
 
 
 /*********************

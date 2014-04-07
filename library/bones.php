@@ -178,7 +178,7 @@ function bones_theme_support() {
 	add_theme_support( 'post-thumbnails' );
 
 	// default thumb size
-	set_post_thumbnail_size(125, 125, true);
+	set_post_thumbnail_size(250, 250, true);
 
 	// wp custom background (thx to @bransonwerner for update)
 	/*add_theme_support( 'custom-background',
@@ -304,24 +304,24 @@ function bones_related_posts() {
 	global $post;
 	$tags = wp_get_post_tags( $post->ID );
 	if($tags) {
-		foreach( $tags as $tag ) { 
+		foreach( $tags as $tag ) {
 			$tag_arr .= $tag->slug . ',';
 		}
-        $args = array(
-        	'tag' => $tag_arr,
-        	'numberposts' => 5, /* you can change this to show more */
-        	'post__not_in' => array($post->ID)
-     	);
-        $related_posts = get_posts( $args );
-        if($related_posts) {
-        	foreach ( $related_posts as $post ) : setup_postdata( $post ); ?>
-	           	<li class="related_post"><a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
-	        <?php endforeach; }
-	    else { ?>
-            <?php echo '<li class="no_related_post">' . __( 'No Related Posts Yet!', 'bonestheme' ) . '</li>'; ?>
+		$args = array(
+			'tag' => $tag_arr,
+			'numberposts' => 5, /* you can change this to show more */
+			'post__not_in' => array($post->ID)
+		);
+		$related_posts = get_posts( $args );
+		if($related_posts) {
+			foreach ( $related_posts as $post ) : setup_postdata( $post ); ?>
+				<li class="related_post"><a class="entry-unrelated" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+			<?php endforeach; }
+		else { ?>
+			<?php echo '<li class="no_related_post">' . __( 'No Related Posts Yet!', 'bonestheme' ) . '</li>'; ?>
 		<?php }
 	}
-	wp_reset_query();
+	wp_reset_postdata();
 	echo '</ul>';
 } /* end bones related posts function */
 
@@ -366,7 +366,7 @@ function bones_filter_ptags_on_images($content){
 function bones_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
+	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
 }
 
 /*
@@ -413,6 +413,10 @@ function meat_auto_email($text) {
 	return $text;
 }
 
+
+/*********************************
+Admin Styles
+**********************************/
 function meat_mce_css( $mce_css ) {
   add_editor_style('library/css/style.css');
 }

@@ -11,11 +11,13 @@
 	
 	$black:				#000;
 	$white:				#fff;
-	
+	$text-color:        #555;
+
 // Primary colours
 	
-	$brand-colour:		#444444;
-	$brand-highlight:	#F95C27;
+	$brand-colour:		#3e454c;
+	$brand-highlight:	#ff642d;
+	$brand-compliment:	adjust-hue($brand-highlight, 180deg);
 	
 // Links and Anchors
 	
@@ -24,6 +26,7 @@
 	
 // Shades of Grey
 
+	$disabled-grey:     #cfcfcf;
 	$grey:			   	#aaa;
 	$grey-dark:			darken($grey, 13%);
 	$grey-darker:		darken($grey-dark, 13%);

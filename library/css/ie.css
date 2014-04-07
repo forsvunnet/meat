@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: MEAT 
-Author: Eivin + Andrew 
+Site Name: 
+Author:
 
 Stylesheet: IE Stylesheet
 
@@ -10,13 +10,14 @@ Here, we import all the styles the standard stylesheet gets, only
 without the media queries. No need to worry about editing anything!
 
 ******************************************************************/
-/*
+/******************************************************************
+IMPORTS & DEPENDENCIES
 Remember, all the BASE styles are called already since IE can
-read those. Below, we need to import only the stuff IE can't 
+read those. Below, we need to import only the stuff IE can't
 understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
-*/
-/* import mixins */
+******************************************************************/
+/* Colours */
 /******************************************************************
 Site Name: MEAT
 Author: Eivin + Andrew
@@ -44,9 +45,6 @@ CLEARFIXIN'
   .clearfix:after {
     clear: both; }
 
-.margin-auto {
-  margin: 0 auto; }
-
 .vertical {
   position: absolute;
   top: 50%;
@@ -55,23 +53,6 @@ CLEARFIXIN'
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
-
-
-/********************
-meat Mixin scss (migrated to keep mixins and styles separate)
-********************/
-.text-left {
-  text-align: left; }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.marginauto {
-  margin: 0 auto !important;
-  float: none !important; }
 
 /*********************
 TOOLS
@@ -85,28 +66,6 @@ TOOLS
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
-
-/*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
-/* Colours */
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/
-/*********************
-TYPOGRAPHY
-*********************/
-/*
-use the best ampersand
-http://simplebits.com/notebook/2008/08/14/ampersands-2/
-*/
-span.amp {
-  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif !important;
-  font-style: italic; }
 
 /*********************
 TRANSITION
@@ -129,143 +88,26 @@ BOX SIZING
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
 probably best not to use it. I mean, were you going to anyway? */
-.alert-help, .alert-info, .alert-error, .validation_message, .alert-success {
-  padding: 7px 14px;
-  border: 1px solid; }
-
-.alert-help {
-  border-color: #e8d71c;
-  background: #eadb33; }
-
-.alert-info {
-  border-color: #1d8fc0;
-  background: #209dd6; }
-
-.alert-error, .validation_message {
-  border-color: #aa2e2e;
-  background: #be3333; }
-
-.alert-success {
-  border-color: #98b31f;
-  background: #a8c923; }
-
+/*********************
+Text Overflow
+*********************/
+/*********************
+Background colour based on brightness
+*********************/
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name:
+Author:
 
-Stylesheet: Grid Stylesheet
+Stylesheet: IE Grid Styles
 
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
+Since the example grid is based on media queries, so rather than
+setup some js library that would make IE8 and below understand
+media queries, let's just add some styles that serves a fixed grid.
 
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-
-The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-together, let's see how this works out. If you want to use 1140, the original 
-values are commented out on each line.
+Again, if you want to roll your own, just remove this junk and put
+whatever you use in here.
 
 ******************************************************************/
-.onecol {
-  width: 5.80027%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.twocol {
-  width: 14.36297%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.threecol {
-  width: 22.92568%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.fourcol {
-  width: 31.48838%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.fivecol {
-  width: 40.05108%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.sixcol {
-  width: 48.61378%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.sevencol {
-  width: 57.17649%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.eightcol {
-  width: 65.73919%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.ninecol {
-  width: 74.30189%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.tencol {
-  width: 82.86459%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.elevencol {
-  width: 91.4273%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-.twelvecol {
-  width: 99.99%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor}); }
-
-
-/*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
-
-	article {
-		width: col_width(6);
-		width: col_width(6, true);
-		
-		float: left;
-		margin-left: $gutter;
-		margin-left: calc(#{$gutter_em} * 1);	
-			
-		&.first{ margin-left: 0;}
-		&.last{ float: right;}
-	}
-*/
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol, .fifthcol, .threefifth {
-  position: relative;
-  float: left;
-  margin-left: 2.76243%;
-  margin-left: calc(#{$gutter_em} * 1); }
-
-
-.first {
-  margin-left: 0; }
-
-.last {
-  float: right; }
-
-.gutter-top {
-  margin-top: 2.76243%;
-  margin-top: calc(#{$gutter_em} * 1); }
-
-.gutter-bottom {
-  margin-bottom: 2.76243%;
-  margin-bottom: calc(#{$gutter_em} * 1); }
-
 /******************************************************************
 Site Name: MEAT 
 Author: Eivin + Andrew 
@@ -288,11 +130,9 @@ upon your base.scss styles.
     #logo img {
       max-width: 300px;
       margin: 0 auto; } }
-
 /*********************
 NAVIGATION STYLES
 *********************/
-
 /* .menu is clearfixed inside mixins.scss */
 .menu {
   /* end .menu ul */ }
@@ -302,13 +142,13 @@ NAVIGATION STYLES
     /* end current highlighters */ }
     .menu ul li {
       /*
-				plan your menus and drop-downs wisely.
-				*/ }
+      plan your menus and drop-downs wisely.
+      */ }
       .menu ul li a {
         /*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/ }
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
 
 /* end .menu */
 /*********************
@@ -340,7 +180,7 @@ FOOTER STYLES
   text-align: center; }
   .footer .widget {
     width: 45.85636%;
-    width: calc(100% - 3em/2);
+    width: calc((100% - 3em) / 2);
     position: relative;
     float: left;
     margin-left: 2.76243%;
@@ -417,10 +257,9 @@ h6, .h6 {
 /*********************
 HEADER STYLES
 *********************/
-
 #logo {
-  width: 22.92568%;
-  width: calc(99.99% - #{$gutter_offset}/#{$divisor});
+  width: 22.91568%;
+  width: calc((99.95% - 3rem) / 4);
   float: left;
   margin-left: 0; }
   #logo img {
@@ -461,18 +300,18 @@ NAVIGATION STYLES
     position: relative;
     border-radius: 3px 3px 0 0;
     /*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
     /*
-		plan your menus and drop-downs wisely.
-		*/
+    plan your menus and drop-downs wisely.
+    */
     /* showing sub-menus */ }
     .nav li:hover, .nav li:focus {
-      color: #fff;
-      background: #444444; }
+      color: white;
+      background: #3e454c; }
       .nav li:hover a, .nav li:focus a {
-        color: #fff; }
+        color: white; }
     .nav li a {
       border-bottom: 0;
       text-transform: uppercase;
@@ -481,56 +320,70 @@ NAVIGATION STYLES
       font-size: 0.85rem;
       letter-spacing: 0.05em; }
       .nav li a:hover, .nav li a:focus {
-        color: #fff;
-        background: #2b2b2b; }
-    .js .nav li + li ul.show.sub-menu:before, .js .nav li + li ul.show.children:before, .nav li + li ul.sub-menu:before, .nav li + li ul.children:before {
+        color: white;
+        background: #272c30; }
+    .js .nav li + li ul.show.sub-menu:before, .js .nav li + li ul.show.children:before,
+    .nav li + li ul.sub-menu:before,
+    .nav li + li ul.children:before {
       content: "\e000";
       font-size: 104px;
       font-size: 6.5rem; }
-    .js .nav li ul.show.sub-menu, .js .nav li ul.show.children, .nav li ul.sub-menu, .nav li ul.children {
+    .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
+    .nav li ul.sub-menu,
+    .nav li ul.children {
       margin-top: 0;
       border-top: 0;
       position: absolute;
       display: none;
       z-index: 15;
       text-align: left;
-      color: #fff;
-      background: #444444;
+      color: white;
+      background: #3e454c;
       padding: 1em 1000em 1.5em;
       margin: 0 -1000em;
       /*
-			&:before{
-				font-family: $icon;
-				@include font-size(6);
-				font-weight: 100;
-				left: 49.2%;
-				position: absolute;
-				top: 12%;
-				vertical-align: middle;
-				z-index: 130;
-				content: "\e008";
-				
-			}
-*/
+      			&:before{
+      				font-family: $icon;
+      				@include font-size(6);
+      				font-weight: 100;
+      				left: 49.2%;
+      				position: absolute;
+      				top: 12%;
+      				vertical-align: middle;
+      				z-index: 130;
+      				content: "\e008";
+      				
+      			}
+      */
       /* highlight sub-menu current page */ }
-      .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li, .nav li ul.sub-menu li, .nav li ul.children li {
+      .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
         /*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/ }
-        .js .nav li ul.show.sub-menu li:hover a, .js .nav li ul.show.sub-menu li:focus a, .js .nav li ul.show.children li:hover a, .js .nav li ul.show.children li:focus a, .nav li ul.sub-menu li:hover a, .nav li ul.sub-menu li:focus a, .nav li ul.children li:hover a, .nav li ul.children li:focus a {
-          background: #2b2b2b;
+        if you need to go deeper, go nuts
+        just remember deeper menus suck
+        for usability. k, bai.
+        */ }
+        .js .nav li ul.show.sub-menu li:hover a, .js .nav li ul.show.sub-menu li:focus a, .js .nav li ul.show.children li:hover a, .js .nav li ul.show.children li:focus a,
+        .nav li ul.sub-menu li:hover a,
+        .nav li ul.sub-menu li:focus a,
+        .nav li ul.children li:hover a,
+        .nav li ul.children li:focus a {
+          background: #272c30;
           border-radius: 2px; }
-        .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a, .nav li ul.sub-menu li a, .nav li ul.children li a {
+        .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
           font-size: 13.6px;
           font-size: 0.85rem;
           padding: 2px 0 2px 14px;
           border-right: 0;
           display: block;
           width: 200px;
-          color: #fff; }
-        .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a, .nav li ul.sub-menu li:last-child a, .nav li ul.children li:last-child a {
+          color: white; }
+        .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
+        .nav li ul.sub-menu li:last-child a,
+        .nav li ul.children li:last-child a {
           border-bottom: 0; }
     .nav li:hover ul {
       top: auto;
@@ -573,11 +426,11 @@ mobile. Make sure to double check these!
 .footer {
   text-align: left; }
   .footer .widget {
-    width: 22.92568%;
-    width: calc(99.99% - #{$gutter_offset}/#{$divisor});
+    width: 22.91568%;
+    width: calc((99.95% - 3rem) / 4);
     float: left;
     margin-left: 2.76243%;
-    margin-left: calc(#{$gutter_em} * 1);
+    margin-left: calc(1rem * 1);
     position: relative; }
     .footer .widget.first {
       margin-left: 0; }
@@ -592,19 +445,19 @@ mobile. Make sure to double check these!
         padding: 0;
         margin: 0; }
   .footer .half-horizontal {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid black;
     padding-bottom: 0.5em;
     margin-bottom: 1em; }
   .footer a:hover {
-    color: #444444;
+    color: #3e454c;
     text-decoration: underline; }
 
 .footer-links ul li {
   /*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/ }
+  be careful with the depth of your menus.
+  it's very rare to have multi-depth menus in
+  the footer.
+  */ }
 
 /* end .footer-links */
 .copyright br {
@@ -626,8 +479,8 @@ be seen on the Desktop.
   width: 100%;
   z-index: 30; }
 
-/* 
-you can call the larger styles if you want, but there's really no need 
+/*
+you can call the larger styles if you want, but there's really no need
 */
 /******************************************************************
 ADDITIONAL IE FIXES

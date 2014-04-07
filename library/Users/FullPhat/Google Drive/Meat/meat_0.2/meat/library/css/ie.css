@@ -1,0 +1,473 @@
+/******************************************************************
+Site Name: 
+Author:
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/******************************************************************
+IMPORTS & DEPENDENCIES
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+******************************************************************/
+/* Colours */
+/******************************************************************
+Site Name: MEAT
+Author: Eivin + Andrew
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
+/*********************
+CLEARFIXIN'
+*********************/
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.vertical {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/*********************
+TOOLS
+*********************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/*********************
+TRANSITION
+*********************/
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SIZING
+*********************/
+/* @include box-sizing(border-box); */
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+/*********************
+Text Overflow
+*********************/
+/*********************
+Background colour based on brightness
+*********************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Grid Styles
+
+Since the example grid is based on media queries, so rather than
+setup some js library that would make IE8 and below understand
+media queries, let's just add some styles that serves a fixed grid.
+
+Again, if you want to roll your own, just remove this junk and put
+whatever you use in here.
+
+******************************************************************/
+/******************************************************************
+Site Name: MEAT 
+Author: Eivin + Andrew 
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+/*********************
+NAVIGATION STYLES
+*********************/
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+  /* end .menu ul */ }
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+    .menu ul li {
+      /*
+      plan your menus and drop-downs wisely.
+      */ }
+      .menu ul li a {
+        /*
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
+
+/* end .menu */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+.entry-content {
+  /* at this larger size, we can start to align images */ }
+  .entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left; }
+  .entry-content .alignright, .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right; }
+  .entry-content .aligncenter, .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both; }
+
+/* end .entry-content */
+/*********************
+FOOTER STYLES
+*********************/
+/******************************************************************
+Site Name: MEAT
+Author: Eivin + Andrew
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+body {
+  font-size: 100%;
+  line-height: 1.5; }
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/*********************
+HEADER STYLES
+*********************/
+h1, .h1 {
+  font-size: 40px;
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 32px;
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+h4, .h4 {
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+h5, .h5 {
+  font-size: 16px;
+  font-size: 1rem; }
+
+h6, .h6 {
+  font-size: 13.6px;
+  font-size: 0.85rem; }
+
+/*********************
+HEADER STYLES
+*********************/
+#logo {
+  width: 22.91568%;
+  width: calc((99.95% - 3rem) / 4);
+  float: left;
+  margin-left: 0; }
+  #logo img {
+    margin: 0em auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 20; }
+
+.overflow {
+  overflow: hidden; }
+
+img {
+  vertical-align: bottom; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.mobile-only {
+  display: none;
+  visibility: hidden; }
+
+.nav {
+  text-align: center;
+  margin: 10px 0;
+  vertical-align: middle;
+  border-bottom: 2px solid #ececec;
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */ }
+  .js .nav {
+    display: block;
+    top: auto;
+    right: auto;
+    left: auto;
+    max-height: 100%; }
+  .nav li {
+    display: inline-block;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */ }
+    .nav li:hover, .nav li:focus {
+      color: white;
+      background: #3e454c; }
+      .nav li:hover a, .nav li:focus a {
+        color: white; }
+    .nav li a {
+      border-bottom: 0;
+      text-transform: uppercase;
+      color: #686868;
+      font-size: 13.6px;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em; }
+      .nav li a:hover, .nav li a:focus {
+        color: white;
+        background: #272c30; }
+    .js .nav li + li ul.show.sub-menu:before, .js .nav li + li ul.show.children:before,
+    .nav li + li ul.sub-menu:before,
+    .nav li + li ul.children:before {
+      content: "\e000";
+      font-size: 104px;
+      font-size: 6.5rem; }
+    .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      margin-top: 0;
+      border-top: 0;
+      position: absolute;
+      display: none;
+      z-index: 15;
+      text-align: left;
+      color: white;
+      background: #3e454c;
+      padding: 1em 1000em 1.5em;
+      margin: 0 -1000em;
+      /*
+      			&:before{
+      				font-family: $icon;
+      				@include font-size(6);
+      				font-weight: 100;
+      				left: 49.2%;
+      				position: absolute;
+      				top: 12%;
+      				vertical-align: middle;
+      				z-index: 130;
+      				content: "\e008";
+      				
+      			}
+      */
+      /* highlight sub-menu current page */ }
+      .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
+      .nav li ul.sub-menu li,
+      .nav li ul.children li {
+        /*
+        if you need to go deeper, go nuts
+        just remember deeper menus suck
+        for usability. k, bai.
+        */ }
+        .js .nav li ul.show.sub-menu li:hover a, .js .nav li ul.show.sub-menu li:focus a, .js .nav li ul.show.children li:hover a, .js .nav li ul.show.children li:focus a,
+        .nav li ul.sub-menu li:hover a,
+        .nav li ul.sub-menu li:focus a,
+        .nav li ul.children li:hover a,
+        .nav li ul.children li:focus a {
+          background: #272c30;
+          border-radius: 2px; }
+        .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
+        .nav li ul.sub-menu li a,
+        .nav li ul.children li a {
+          font-size: 13.6px;
+          font-size: 0.85rem;
+          padding: 2px 0 2px 14px;
+          border-right: 0;
+          display: block;
+          width: 200px;
+          color: white; }
+        .js .nav li ul.show.sub-menu li:last-child a, .js .nav li ul.show.children li:last-child a,
+        .nav li ul.sub-menu li:last-child a,
+        .nav li ul.children li:last-child a {
+          border-bottom: 0; }
+    .nav li:hover ul {
+      top: auto;
+      display: block;
+      padding: 1em 1000em;
+      margin: 0 -1000em; }
+
+/* end .nav */
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar img {
+  width: 100%;
+  height: auto; }
+
+.widget ul li {
+  margin-bottom: 0.75em;
+  /* deep nesting */ }
+  .widget ul li ul {
+    margin-top: 0.75em;
+    padding-left: 1em; }
+
+input[type="search"] {
+  width: 61%;
+  float: left;
+  padding: 2% 1%; }
+
+.search-form .button {
+  float: right;
+  width: 35%; }
+
+/*********************
+FOOTER STYLES
+*********************/
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer {
+  text-align: left; }
+  .footer .widget {
+    width: 22.91568%;
+    width: calc((99.95% - 3rem) / 4);
+    float: left;
+    margin-left: 2.76243%;
+    margin-left: calc(1rem * 1);
+    position: relative; }
+    .footer .widget.first {
+      margin-left: 0; }
+    .footer .widget.last {
+      float: right; }
+    .footer .widget:first-child {
+      margin-left: 0; }
+    .footer .widget ul {
+      padding: 0;
+      margin: 0; }
+      .footer .widget ul li {
+        padding: 0;
+        margin: 0; }
+  .footer .half-horizontal {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em; }
+  .footer a:hover {
+    color: #3e454c;
+    text-decoration: underline; }
+
+.footer-links ul li {
+  /*
+  be careful with the depth of your menus.
+  it's very rare to have multi-depth menus in
+  the footer.
+  */ }
+
+/* end .footer-links */
+.copyright br {
+  display: none; }
+
+/******************************************************************
+Site Name: MEAT 
+Author: Eivin + Andrew 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 30; }
+
+/*
+you can call the larger styles if you want, but there's really no need
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/

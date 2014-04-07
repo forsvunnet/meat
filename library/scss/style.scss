@@ -1,3 +1,5 @@
+/*! Made with Meat: http://forsvunnet.github.io/meat/  */
+
 /******************************************************************
 Site Name: MEAT
 Author: Eivin + Andrew
@@ -11,15 +13,53 @@ of the styles inside media queries.
 ******************************************************************/
 
 
-//
-// IMPORTING STYLES
-//
+/*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
 
-// import normalize
-@import "mixins/normalize";
+// Normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
 
-// import mixins
-@import "mixins/mixins";
+// Sass variables
+@import "partials/variables";
+
+// Typography
+@import "partials/typography";
+
+// Sass functions
+@import "partials/functions";
+
+// Import mixins
+@import "partials/mixins";
+
+// The grid
+@import "partials/grid";
+
+
+
+/*********************
+IMPORTING MODULES
+Modules are reusable blocks or elements we use throughout the project.
+We can break them up as much as we want or just keep them all in one.
+I mean, you can do whatever you want. The world is your oyster. Unless
+you hate oysters, then the world is your peanut butter & jelly sandwich.
+*********************/
+// Animations
+@import "modules/animations";
+
+// alert boxes
+@import "modules/alerts";
+
+// buttons
+@import "modules/buttons";
+
+// forms (inputs & labels)
+@import "modules/forms";
+
+
 
 /*
 BASE (MOBILE) SIZE
@@ -29,7 +69,7 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 */
 
 // styles in base.scss
-@import "devices/base";
+@import "breakpoints/base";
 
 /*
 LARGER MOBILE DEVICES
@@ -40,7 +80,7 @@ tweeners.
 @media only screen and (min-width: 30.063em) {
 
 	// styles in 481up.scss
-	@import "devices/481up";
+	@import "breakpoints/481up";
 
 } // end of media query
 
@@ -53,10 +93,10 @@ you can add resource intensive styles.
 @media only screen and (min-width: 47.900em) {
 
 	// import grids
-	@import "mixins/grid";
+	@import "partials/grid";
 
 	// styles in 768up.scss
-	@import "devices/768up";
+	@import "breakpoints/768up";
 
 } // end of media query
 
@@ -69,7 +109,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: 64.375em) {
 
 	// styles in 1030up.scss
-	@import "devices/1030up";
+	@import "breakpoints/1030up";
 
 } // end of media query
 
@@ -80,7 +120,7 @@ This is for the larger monitors and possibly full screen viewers.
 @media only screen and (min-width: 77.500em) {
 
 	// styles in 1240up.scss
-	@import "devices/1240up";
+	@import "breakpoints/1240up";
 
 } // end of media query
 
@@ -95,7 +135,7 @@ query for retina AND a certain size if you want. Go Nuts.
        only screen and (min-device-pixel-ratio: 1.5) {
 
 	// styles in 2x.scss
-	@import "devices/2x";
+	@import "breakpoints/2x";
 
 } // end of media query
 

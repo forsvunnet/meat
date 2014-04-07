@@ -21,24 +21,11 @@ values are commented out on each line.
 
 ******************************************************************/
 
-$gutter: 100% / 36.2;
-$gutter_em: 1rem; //This needs to be rem to not mess up margins
-
-// This calculate the gutter
-@function col_width($n, $use_calc: false) {
-	$divisor: 12 / $n;
-	@if ($use_calc) {
-		$gutter_offset: $gutter_em * ($divisor - 1);
-		@return calc((99.95% - #{$gutter_offset}) / #{$divisor});
-	}
-	@else {
-		@return (99.95% - $gutter * ($divisor - 1)) / $divisor;
-	}
-}
+@import 'gridmath';
 
 // Each number here becomes a grid: onecol, twocol etc. 
-$grids: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
-$i: 1;
+$grids: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve !global;
+$i: 1 !global;
 @each $grid in $grids {
 	.#{$grid}col {
 		width: col_width( $i );
@@ -49,7 +36,7 @@ $i: 1;
 		width: col_width( $i );
 		width: col_width( $i, true );
 	}
-	$i: $i + 1;
+	$i: $i + 1 !global;
 }
 
 /*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
@@ -69,9 +56,9 @@ $i: 1;
 
 
 // This then collates these classes into one class to apply the gutter
-$classes: ();
+$classes: () !global;
 @each $grid in $grids {
-    $classes: join($classes, unquote(".#{$grid}col"), comma);
+    $classes: join($classes, unquote(".#{$grid}col"), comma) !global;
 }
 
 #{$classes}, .fifthcol, .threefifth{
