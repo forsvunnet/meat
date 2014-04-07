@@ -97,6 +97,10 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "breakpoints/768up";
+	
+	/* Desktop only Plugins.
+		@import "plugins/gravity";
+	*/
 
 } // end of media query
 

@@ -143,6 +143,7 @@ em,
  */
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -153,6 +154,7 @@ p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto; }
 
 /*
@@ -352,6 +354,8 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -455,6 +459,13 @@ The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
+/*********************************************
+		T y p e k i t   O v e r w r i t e
+		
+	If you've used any fonts from typekit
+	and you want to use them, plop them in here.
+
+*********************************************/
 /*
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
@@ -466,6 +477,7 @@ p {
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
@@ -568,8 +580,6 @@ CLEARFIXIN'
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
@@ -646,50 +656,62 @@ values are commented out on each line.
 ********************************************/
 .onecol {
   width: 5.79694%;
+  width: -webkit-calc((99.95% - 11rem) / 12);
   width: calc((99.95% - 11rem) / 12); }
 
 .twocol {
   width: 14.35631%;
+  width: -webkit-calc((99.95% - 5rem) / 6);
   width: calc((99.95% - 5rem) / 6); }
 
 .threecol {
   width: 22.91568%;
+  width: -webkit-calc((99.95% - 3rem) / 4);
   width: calc((99.95% - 3rem) / 4); }
 
 .fourcol {
   width: 31.47505%;
+  width: -webkit-calc((99.95% - 2rem) / 3);
   width: calc((99.95% - 2rem) / 3); }
 
 .fivecol {
   width: 40.03442%;
+  width: -webkit-calc((99.95% - 1.4rem) / 2.4);
   width: calc((99.95% - 1.4rem) / 2.4); }
 
 .sixcol {
   width: 48.59378%;
+  width: -webkit-calc((99.95% - 1rem) / 2);
   width: calc((99.95% - 1rem) / 2); }
 
 .sevencol {
   width: 57.15315%;
+  width: -webkit-calc((99.95% - 0.71429rem) / 1.71429);
   width: calc((99.95% - 0.71429rem) / 1.71429); }
 
 .eightcol {
   width: 65.71252%;
+  width: -webkit-calc((99.95% - 0.5rem) / 1.5);
   width: calc((99.95% - 0.5rem) / 1.5); }
 
 .ninecol {
   width: 74.27189%;
+  width: -webkit-calc((99.95% - 0.33333rem) / 1.33333);
   width: calc((99.95% - 0.33333rem) / 1.33333); }
 
 .tencol {
   width: 82.83126%;
+  width: -webkit-calc((99.95% - 0.2rem) / 1.2);
   width: calc((99.95% - 0.2rem) / 1.2); }
 
 .elevencol {
   width: 91.39063%;
+  width: -webkit-calc((99.95% - 0.09091rem) / 1.09091);
   width: calc((99.95% - 0.09091rem) / 1.09091); }
 
 .twelvecol {
   width: 99.95%;
+  width: -webkit-calc((99.95% - 0rem) / 1);
   width: calc((99.95% - 0rem) / 1); }
 
 /*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
@@ -710,6 +732,7 @@ values are commented out on each line.
   position: relative;
   float: left;
   margin-left: 2.76243%;
+  margin-left: -webkit-calc(1rem * 1);
   margin-left: calc(1rem * 1); }
 
 .first {
@@ -720,10 +743,12 @@ values are commented out on each line.
 
 .gutter-top {
   margin-top: 2.76243%;
+  margin-top: -webkit-calc(1rem * 1);
   margin-top: calc(1rem * 1); }
 
 .gutter-bottom {
   margin-bottom: 2.76243%;
+  margin-bottom: -webkit-calc(1rem * 1);
   margin-bottom: calc(1rem * 1); }
 
 /*********************
@@ -762,9 +787,9 @@ you can just remove this stylesheet.
 
 ******************************************************************/
 .alert-help, .alert-info, .alert-error, .alert-success {
-  margin: 10px;
   padding: 5px 18px;
-  border: 1px solid; }
+  border: 1px solid;
+  color: white; }
 
 .alert-help {
   border-color: #e8d71c;
@@ -845,6 +870,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #49525a; }
   .button:active {
     background: #272c30;
+    -webkit-box-shadow: inset 0px 10px 5px -7px #101214;
     box-shadow: inset 0px 10px 5px -7px #101214;
     position: relative;
     top: 4px;
@@ -883,6 +909,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #ff7747; }
   .button.highlight:active {
     background: #f94100;
+    -webkit-box-shadow: inset 0px 10px 5px -7px #c63400;
     box-shadow: inset 0px 10px 5px -7px #c63400;
     position: relative;
     top: 4px;
@@ -921,6 +948,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: white; }
   .button.white:active {
     background: #e6e6e6;
+    -webkit-box-shadow: inset 0px 10px 5px -7px #cccccc;
     box-shadow: inset 0px 10px 5px -7px #cccccc;
     position: relative;
     top: 4px;
@@ -959,6 +987,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #0d0d0d; }
   .button.black:active {
     background: black;
+    -webkit-box-shadow: inset 0px 10px 5px -7px black;
     box-shadow: inset 0px 10px 5px -7px black;
     position: relative;
     top: 4px;
@@ -997,6 +1026,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #47cfff; }
   .button.compliment:active {
     background: #00b8f9;
+    -webkit-box-shadow: inset 0px 10px 5px -7px #0092c6;
     box-shadow: inset 0px 10px 5px -7px #0092c6;
     position: relative;
     top: 4px;
@@ -1052,14 +1082,16 @@ textarea,
   color: #555555;
   border-radius: 3px;
   vertical-align: middle;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #aaaaaa;
   -webkit-transition: background-color 0.24s ease-in-out;
   -transition: background-color 0.24s ease-in-out;
+  -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
   input[type="text"]:focus, input[type="text"]:active,
   input[type="password"]:focus,
@@ -1326,11 +1358,7 @@ GENERAL STYLES
 			  
 ********************************************/
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 80%;
-  line-height: 1.5;
   background: white;
-  color: #898989;
   -webkit-font-smoothing: antialiased; }
 
 .wrap {
@@ -1343,13 +1371,12 @@ HEADING STYLES - Type
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
   color: #3e454c;
-  margin: 0; }
+  font-weight: 300; }
 
 h1, .h1 {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.18;
-  font-weight: 300; }
+  font-weight: 500; }
 
 h2, .h2 {
   font-size: 21px;
@@ -1377,6 +1404,19 @@ h6, .h6 {
   line-height: 1; }
 
 /*********************
+TEXT BODY STYLES
+*********************/
+body {
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 80%;
+  line-height: 1.5;
+  color: #898989;
+  font-weight: 100; }
+
+b, strong {
+  font-weight: 500; }
+
+/*********************
 SEPARATION STYLES
 *********************/
 hr {
@@ -1397,6 +1437,12 @@ a, a:visited {
     color: #292e33; }
   a:link, a:visited:link {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+/*********************
+IMG STYLES
+*********************/
+.img {
+  vertical-align: bottom; }
 
 /*********************
 LOGO STYLES
@@ -1451,7 +1497,7 @@ MOBILE DROPDOWN NAVIGATION STYLES
     font-size: 12px;
     font-size: 0.75rem;
     text-transform: uppercase;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     text-align: center; }
 
@@ -1468,7 +1514,7 @@ NAVIGATION STYLES
 .nav {
   border-top: 1px solid #898989;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* end .menu li */ }
   @media only screen and (max-width: 47.9em) {
     .js .nav {
@@ -1476,6 +1522,7 @@ NAVIGATION STYLES
       max-height: 0;
       -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       -transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
+      -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1); }
       .js .nav.show {
         max-height: 2000px; } }
@@ -1492,10 +1539,7 @@ NAVIGATION STYLES
       width: 100%; }
   .nav li a {
     display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #898989;
-    color: #534741; }
+    text-decoration: none; }
   @media only screen and (max-width: 47.9em) {
     .js .nav li ul.sub-menu, .js
     .nav li ul.children {
@@ -1503,13 +1547,14 @@ NAVIGATION STYLES
       max-height: 0;
       -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       -transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
+      -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1); }
       .js .nav li ul.sub-menu.show, .js
       .nav li ul.children.show {
         max-height: 2000px; } }
   .nav li ul.sub-menu li a,
   .nav li ul.children li a {
-    padding-left: 11.04972%; }
+    padding-left: 5.52486%; }
 
 /* end .nav */
 /*********************
@@ -1524,6 +1569,16 @@ img {
 .byline {
   color: #999; }
 
+blockquote {
+  background: #ececec;
+  border-left: 10px solid;
+  margin: 0;
+  padding: 1em 2em; }
+
+.page-title {
+  /* Removing the */
+  margin: 0; }
+
 .entry-content {
   /*
   image alignment on a screen this size may be
@@ -1531,6 +1586,9 @@ img {
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
+  .entry-content ul {
+    list-style: disc;
+    margin-left: 8.28729%; }
   .entry-content dd {
     margin-left: 0;
     color: #787878; }
@@ -1706,7 +1764,6 @@ form textarea {
     border-color: #fbc2c4;
     background-color: #f6e7eb;
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none; }
 form .email {
@@ -1738,18 +1795,8 @@ SIDEBAR STYLES
 /*********************
 FOOTER STYLES
 *********************/
-form .alert p {
-  padding: 0; }
-
-.entry-content ul {
-  list-style-type: disc;
-  padding-left: 16.57459%; }
-
-/*********************
-FOOTER STYLES
-*********************/
 footer .widgettitle {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #686868;
   font-weight: bold;
@@ -1799,14 +1846,7 @@ tweeners.
   so you still want to keep it pretty light and simply expand
   upon your base.scss styles.
   
-  ******************************************************************/ }
-@media only screen and (min-width: 30.063em) and (max-width: 47em) {
-  #logo {
-    width: 100%; }
-    #logo img {
-      max-width: 300px;
-      margin: 0 auto; } }
-@media only screen and (min-width: 30.063em) {
+  ******************************************************************/
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -1851,32 +1891,7 @@ tweeners.
   /* end .entry-content */
   /*********************
   FOOTER STYLES
-  *********************/
-  .footer {
-    padding: 1em 0.5em;
-    text-align: center; }
-    .footer .widget {
-      width: 45.85636%;
-      width: calc((100% - 3em) / 2);
-      position: relative;
-      float: left;
-      margin-left: 2.76243%;
-      margin-left: calc(1em * 1); }
-      .footer .widget:first-child {
-        margin-left: 0; }
-      .footer .widget ul {
-        padding: 0;
-        margin: 0; }
-        .footer .widget ul li {
-          padding: 0;
-          margin: 0; } }
-    @media only screen and (min-width: 30.063em) and (max-width: 47.9em) {
-      .footer .widget {
-        margin-bottom: 2em;
-        text-align: center; }
-        .footer .widget:nth-child(odd) {
-          margin-left: 0; } }
-
+  *********************/ }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -1917,50 +1932,62 @@ you can add resource intensive styles.
   ********************************************/
   .onecol {
     width: 5.79694%;
+    width: -webkit-calc((99.95% - 11rem) / 12);
     width: calc((99.95% - 11rem) / 12); }
 
   .twocol {
     width: 14.35631%;
+    width: -webkit-calc((99.95% - 5rem) / 6);
     width: calc((99.95% - 5rem) / 6); }
 
   .threecol {
     width: 22.91568%;
+    width: -webkit-calc((99.95% - 3rem) / 4);
     width: calc((99.95% - 3rem) / 4); }
 
   .fourcol {
     width: 31.47505%;
+    width: -webkit-calc((99.95% - 2rem) / 3);
     width: calc((99.95% - 2rem) / 3); }
 
   .fivecol {
     width: 40.03442%;
+    width: -webkit-calc((99.95% - 1.4rem) / 2.4);
     width: calc((99.95% - 1.4rem) / 2.4); }
 
   .sixcol {
     width: 48.59378%;
+    width: -webkit-calc((99.95% - 1rem) / 2);
     width: calc((99.95% - 1rem) / 2); }
 
   .sevencol {
     width: 57.15315%;
+    width: -webkit-calc((99.95% - 0.71429rem) / 1.71429);
     width: calc((99.95% - 0.71429rem) / 1.71429); }
 
   .eightcol {
     width: 65.71252%;
+    width: -webkit-calc((99.95% - 0.5rem) / 1.5);
     width: calc((99.95% - 0.5rem) / 1.5); }
 
   .ninecol {
     width: 74.27189%;
+    width: -webkit-calc((99.95% - 0.33333rem) / 1.33333);
     width: calc((99.95% - 0.33333rem) / 1.33333); }
 
   .tencol {
     width: 82.83126%;
+    width: -webkit-calc((99.95% - 0.2rem) / 1.2);
     width: calc((99.95% - 0.2rem) / 1.2); }
 
   .elevencol {
     width: 91.39063%;
+    width: -webkit-calc((99.95% - 0.09091rem) / 1.09091);
     width: calc((99.95% - 0.09091rem) / 1.09091); }
 
   .twelvecol {
     width: 99.95%;
+    width: -webkit-calc((99.95% - 0rem) / 1);
     width: calc((99.95% - 0rem) / 1); }
 
   /*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
@@ -1981,6 +2008,7 @@ you can add resource intensive styles.
     position: relative;
     float: left;
     margin-left: 2.76243%;
+    margin-left: -webkit-calc(1rem * 1);
     margin-left: calc(1rem * 1); }
 
   .first {
@@ -1991,10 +2019,12 @@ you can add resource intensive styles.
 
   .gutter-top {
     margin-top: 2.76243%;
+    margin-top: -webkit-calc(1rem * 1);
     margin-top: calc(1rem * 1); }
 
   .gutter-bottom {
     margin-bottom: 2.76243%;
+    margin-bottom: -webkit-calc(1rem * 1);
     margin-bottom: calc(1rem * 1); }
 
   /******************************************************************
@@ -2028,20 +2058,20 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   h1, .h1 {
-    font-size: 40px;
-    font-size: 2.5rem; }
+    font-size: 36px;
+    font-size: 2.25rem; }
 
   h2, .h2 {
-    font-size: 32px;
-    font-size: 2rem; }
+    font-size: 30px;
+    font-size: 1.875rem; }
 
   h3, .h3 {
     font-size: 24px;
     font-size: 1.5rem; }
 
   h4, .h4 {
-    font-size: 20px;
-    font-size: 1.25rem; }
+    font-size: 18px;
+    font-size: 1.125rem; }
 
   h5, .h5 {
     font-size: 16px;
@@ -2054,9 +2084,14 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  /*********************
+  LOGO STYLES
+  *********************/
   #logo {
     width: 22.91568%;
+    width: -webkit-calc((99.95% - 3rem) / 4);
     width: calc((99.95% - 3rem) / 4);
+    text-align: left;
     float: left;
     margin-left: 0; }
     #logo img {
@@ -2065,12 +2100,6 @@ you can add resource intensive styles.
       position: relative;
       z-index: 20; }
 
-  .overflow {
-    overflow: hidden; }
-
-  img {
-    vertical-align: bottom; }
-
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2078,11 +2107,13 @@ you can add resource intensive styles.
     display: none;
     visibility: hidden; }
 
+  nav[role=navigation] {
+    float: right; }
+
   .nav {
     text-align: center;
     margin: 10px 0;
     vertical-align: middle;
-    border-bottom: 2px solid #ececec;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -2095,7 +2126,6 @@ you can add resource intensive styles.
     .nav li {
       display: inline-block;
       position: relative;
-      border-radius: 3px 3px 0 0;
       /*
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
@@ -2111,20 +2141,14 @@ you can add resource intensive styles.
           color: white; }
       .nav li a {
         border-bottom: 0;
-        text-transform: uppercase;
         color: #686868;
-        font-size: 13.6px;
-        font-size: 0.85rem;
-        letter-spacing: 0.05em; }
+        font-size: 16px;
+        font-size: 1rem;
+        padding: 7px 10px;
+        font-weight: 100; }
         .nav li a:hover, .nav li a:focus {
           color: white;
           background: #272c30; }
-      .js .nav li + li ul.show.sub-menu:before, .js .nav li + li ul.show.children:before,
-      .nav li + li ul.sub-menu:before,
-      .nav li + li ul.children:before {
-        content: "\e000";
-        font-size: 104px;
-        font-size: 6.5rem; }
       .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
       .nav li ul.sub-menu,
       .nav li ul.children {
@@ -2136,22 +2160,6 @@ you can add resource intensive styles.
         text-align: left;
         color: white;
         background: #3e454c;
-        padding: 1em 1000em 1.5em;
-        margin: 0 -1000em;
-        /*
-        			&:before{
-        				font-family: $icon;
-        				@include font-size(6);
-        				font-weight: 100;
-        				left: 49.2%;
-        				position: absolute;
-        				top: 12%;
-        				vertical-align: middle;
-        				z-index: 130;
-        				content: "\e008";
-        				
-        			}
-        */
         /* highlight sub-menu current page */ }
         .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
         .nav li ul.sub-menu li,
@@ -2184,18 +2192,41 @@ you can add resource intensive styles.
             border-bottom: 0; }
       .nav li:hover ul {
         top: auto;
-        display: block;
-        padding: 1em 1000em;
-        margin: 0 -1000em; }
+        display: block; }
 
   /* end .nav */
+  /***************************************************
+  		D i a g o n a l   S i d e b a r s !
+  
+  		This is where we can add a slanted
+  		bar to the end of a container. The
+  		height is wank though, so it needs
+  		to be pulled in from JS 
+  		
+  		Should look like this:	[div]/
+  
+  
+  ***************************************************/
+  .slant-right {
+    position: relative;
+    background: #3e454c; }
+    .slant-right .slanted {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 15px;
+      right: -15px;
+      -webkit-backface-visibility: hidden;
+      background-image: url("../images/slant.svg");
+      -webkit-background-size: 100% 100%;
+      background-size: 100% 100%;
+      height: 100%; }
+    .slant-right #slant polygon {
+      fill: #3e454c !important; }
+
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  .sidebar img {
-    width: 100%;
-    height: auto; }
-
   .widget ul li {
     margin-bottom: 0.75em;
     /* deep nesting */ }
@@ -2224,9 +2255,11 @@ you can add resource intensive styles.
     text-align: left; }
     .footer .widget {
       width: 22.91568%;
+      width: -webkit-calc((99.95% - 3rem) / 4);
       width: calc((99.95% - 3rem) / 4);
       float: left;
       margin-left: 2.76243%;
+      margin-left: -webkit-calc(1rem * 1);
       margin-left: calc(1rem * 1);
       position: relative; }
       .footer .widget.first {
@@ -2258,7 +2291,11 @@ you can add resource intensive styles.
 
   /* end .footer-links */
   .copyright br {
-    display: none; } }
+    display: none; }
+
+  /* Desktop only Plugins.
+  	@import "plugins/gravity";
+  */ }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -2369,6 +2406,7 @@ be set to display none.
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
+    -webkit-filter: none !important;
     filter: none !important;
     -ms-filter: none !important; }
 

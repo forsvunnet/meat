@@ -124,12 +124,6 @@ so you still want to keep it pretty light and simply expand
 upon your base.scss styles.
 
 ******************************************************************/
-@media only screen and (max-width: 47em) {
-  #logo {
-    width: 100%; }
-    #logo img {
-      max-width: 300px;
-      margin: 0 auto; } }
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -175,31 +169,6 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
-.footer {
-  padding: 1em 0.5em;
-  text-align: center; }
-  .footer .widget {
-    width: 45.85636%;
-    width: calc((100% - 3em) / 2);
-    position: relative;
-    float: left;
-    margin-left: 2.76243%;
-    margin-left: calc(1em * 1); }
-    .footer .widget:first-child {
-      margin-left: 0; }
-    .footer .widget ul {
-      padding: 0;
-      margin: 0; }
-      .footer .widget ul li {
-        padding: 0;
-        margin: 0; }
-    @media only screen and (max-width: 47.9em) {
-      .footer .widget {
-        margin-bottom: 2em;
-        text-align: center; }
-        .footer .widget:nth-child(odd) {
-          margin-left: 0; } }
-
 /******************************************************************
 Site Name: MEAT
 Author: Eivin + Andrew
@@ -231,20 +200,20 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 h1, .h1 {
-  font-size: 40px;
-  font-size: 2.5rem; }
+  font-size: 36px;
+  font-size: 2.25rem; }
 
 h2, .h2 {
-  font-size: 32px;
-  font-size: 2rem; }
+  font-size: 30px;
+  font-size: 1.875rem; }
 
 h3, .h3 {
   font-size: 24px;
   font-size: 1.5rem; }
 
 h4, .h4 {
-  font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 h5, .h5 {
   font-size: 16px;
@@ -257,9 +226,13 @@ h6, .h6 {
 /*********************
 HEADER STYLES
 *********************/
+/*********************
+LOGO STYLES
+*********************/
 #logo {
   width: 22.91568%;
   width: calc((99.95% - 3rem) / 4);
+  text-align: left;
   float: left;
   margin-left: 0; }
   #logo img {
@@ -268,12 +241,6 @@ HEADER STYLES
     position: relative;
     z-index: 20; }
 
-.overflow {
-  overflow: hidden; }
-
-img {
-  vertical-align: bottom; }
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -281,11 +248,13 @@ NAVIGATION STYLES
   display: none;
   visibility: hidden; }
 
+nav[role=navigation] {
+  float: right; }
+
 .nav {
   text-align: center;
   margin: 10px 0;
   vertical-align: middle;
-  border-bottom: 2px solid #ececec;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -298,7 +267,6 @@ NAVIGATION STYLES
   .nav li {
     display: inline-block;
     position: relative;
-    border-radius: 3px 3px 0 0;
     /*
     you can use hover styles here even though this size
     has the possibility of being a mobile device.
@@ -314,20 +282,14 @@ NAVIGATION STYLES
         color: white; }
     .nav li a {
       border-bottom: 0;
-      text-transform: uppercase;
       color: #686868;
-      font-size: 13.6px;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em; }
+      font-size: 16px;
+      font-size: 1rem;
+      padding: 7px 10px;
+      font-weight: 100; }
       .nav li a:hover, .nav li a:focus {
         color: white;
         background: #272c30; }
-    .js .nav li + li ul.show.sub-menu:before, .js .nav li + li ul.show.children:before,
-    .nav li + li ul.sub-menu:before,
-    .nav li + li ul.children:before {
-      content: "\e000";
-      font-size: 104px;
-      font-size: 6.5rem; }
     .js .nav li ul.show.sub-menu, .js .nav li ul.show.children,
     .nav li ul.sub-menu,
     .nav li ul.children {
@@ -339,22 +301,6 @@ NAVIGATION STYLES
       text-align: left;
       color: white;
       background: #3e454c;
-      padding: 1em 1000em 1.5em;
-      margin: 0 -1000em;
-      /*
-      			&:before{
-      				font-family: $icon;
-      				@include font-size(6);
-      				font-weight: 100;
-      				left: 49.2%;
-      				position: absolute;
-      				top: 12%;
-      				vertical-align: middle;
-      				z-index: 130;
-      				content: "\e008";
-      				
-      			}
-      */
       /* highlight sub-menu current page */ }
       .js .nav li ul.show.sub-menu li, .js .nav li ul.show.children li,
       .nav li ul.sub-menu li,
@@ -387,18 +333,40 @@ NAVIGATION STYLES
           border-bottom: 0; }
     .nav li:hover ul {
       top: auto;
-      display: block;
-      padding: 1em 1000em;
-      margin: 0 -1000em; }
+      display: block; }
 
 /* end .nav */
+/***************************************************
+		D i a g o n a l   S i d e b a r s !
+
+		This is where we can add a slanted
+		bar to the end of a container. The
+		height is wank though, so it needs
+		to be pulled in from JS 
+		
+		Should look like this:	[div]/
+
+
+***************************************************/
+.slant-right {
+  position: relative;
+  background: #3e454c; }
+  .slant-right .slanted {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15px;
+    right: -15px;
+    -webkit-backface-visibility: hidden;
+    background-image: url("../images/slant.svg");
+    background-size: 100% 100%;
+    height: 100%; }
+  .slant-right #slant polygon {
+    fill: #3e454c !important; }
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.sidebar img {
-  width: 100%;
-  height: auto; }
-
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */ }

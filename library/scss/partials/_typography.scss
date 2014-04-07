@@ -27,6 +27,19 @@ I've edited it a bit, but it's a nice starting point.
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
 
+
+/*********************************************
+		T y p e k i t   O v e r w r i t e
+		
+	If you've used any fonts from typekit
+	and you want to use them, plop them in here.
+
+*********************************************/
+
+$sans-serif:        "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
 /*
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography

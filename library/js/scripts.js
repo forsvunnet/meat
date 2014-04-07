@@ -78,7 +78,10 @@ jQuery(document).ready(function($) {
   
   // add all your scripts here
   
- 
+	$('.slant-right').each( function(){
+		$(this).prepend('<div class="slanted"></div>');
+	});
+
 }); /* end of as page load scripts */
 
 // This function swaps out all .svg files and replaces them with .png files. Not ideal if you don't support PNG aswell, but you can't get transparencies with jpgs.

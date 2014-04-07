@@ -25,11 +25,7 @@ GENERAL STYLES
 
 
 body {
-	font-family: $sans-serif;
-	font-size: 80%;
-	line-height: 1.5;
 	background: $white;
-	color: $grey-dark;
 	-webkit-font-smoothing: antialiased;
 
 }
@@ -47,13 +43,12 @@ HEADING STYLES - Type
 h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
 	color: $brand-colour;
-	margin: 0; // Something to stop the huge padding being added somewhere
+	font-weight: 300;
 }
 
 	h1, .h1 {
 		@include font-size(1.5);
-		line-height: 1.18;
-		font-weight: 300;
+		font-weight: 500;
 	}
 	h2, .h2 {
 		//margin-top: 0.1em;
@@ -77,7 +72,21 @@ h1, h2, h3, h4, h5, h6 {
 		line-height: 1;
 	}
 
+/*********************
+TEXT BODY STYLES
+*********************/
 
+body{
+	font-family: $sans-serif;
+	font-size: 80%;
+	line-height: 1.5;
+	color: $grey-dark;
+	font-weight: 100;
+}
+
+b, strong{
+	font-weight: 500;
+}
 
 /*********************
 SEPARATION STYLES
@@ -114,6 +123,14 @@ a, a:visited {
 	}
 }
 
+
+/*********************
+IMG STYLES
+*********************/
+
+.img{
+	vertical-align: bottom;
+}
 
 
 /*********************
@@ -262,11 +279,9 @@ NAVIGATION STYLES
 	li {
 		a {
 			display: inline-block;
-			font-weight: bold;
 			text-decoration: none;
-			border-bottom: 1px solid $menu-border;
-			color: #534741; // cba to have variables everywhere, the .AI file has about 40 colours.
 		}
+		
 		ul.sub-menu,
 		ul.children {
 			@media only screen and (max-width: 47.900em) {	
@@ -280,7 +295,7 @@ NAVIGATION STYLES
 			li {
 				a {
 					//@include bg($white);
-					padding-left: $gutter * 4;
+					padding-left: $gutter * 2;
 				}
 			}
 		}
@@ -305,7 +320,31 @@ img {
 	color: #999;
 }
 
+
+blockquote {
+    background: $grey-lighter;
+    border-left: 10px solid;
+    margin: 0;
+    padding: 1em 2em;
+}
+
+
+.page-title {
+	/* Removing the */
+    margin: 0;
+}
+
 .entry-content {
+
+	ul{
+		list-style: disc;
+		margin-left: $gutter * 3;
+		
+		li{
+			
+		}
+	}
+
 	dd {
 		margin-left: 0;
 		color: #787878;
@@ -636,19 +675,6 @@ SIDEBAR STYLES
 		}
 	}
 }
-
-/*********************
-FOOTER STYLES
-*********************/
-
-	form .alert p {
-		padding: 0;
-	}
-	
-	.entry-content ul {
-		list-style-type: disc;
-		padding-left: $gutter * 6;
-	}
 
 
 /*********************

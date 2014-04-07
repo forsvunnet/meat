@@ -35,10 +35,10 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-	h1, .h1 {	@include font-size(2.5);	} 
-	h2, .h2 {	@include font-size(2);		} 
+	h1, .h1 {	@include font-size(2.250);	} 
+	h2, .h2 {	@include font-size(1.875);	} 
 	h3, .h3 {	@include font-size(1.5);	} 
-	h4, .h4 {	@include font-size(1.25);	} 
+	h4, .h4 {	@include font-size(1.125);	} 
 	h5, .h5 {	@include font-size(1);		} 
 	h6, .h6 {	@include font-size(0.85);	} 
 
@@ -48,10 +48,15 @@ HEADER STYLES
 
 .header {}
 
+
+/*********************
+LOGO STYLES
+*********************/
+
 	#logo {
 		width: col_width(3);
 		width: col_width(3, true);
-		
+		text-align: left;
 		float: left;
 		margin-left: 0;
 
@@ -64,19 +69,6 @@ HEADER STYLES
 		}
 	}
 
-
-
-.overflow{
-	overflow: hidden;
-}
-
-
-// This fixed issues with images being shit when in anchors.
-img{
-	vertical-align: bottom;
-}
-
-
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -86,11 +78,14 @@ NAVIGATION STYLES
 	visibility: hidden;
 }
 
+nav[role=navigation]{
+	float: right;
+}
+
 .nav {
 	text-align: center;
 	margin: 10px 0;
 	vertical-align: middle;
-	border-bottom: 2px solid $grey-lighter;
 
 	.js & {
 		display: block;
@@ -103,7 +98,6 @@ NAVIGATION STYLES
 	li {
 		display: inline-block;
 		position: relative;
-		border-radius: 3px 3px 0 0;
 
 			/*
 			you can use hover styles here even though this size
@@ -120,10 +114,10 @@ NAVIGATION STYLES
 			
 		a {
 			border-bottom: 0;
-			text-transform: uppercase;
 			color: $grey-darker;
-			@include font-size(0.85);
-			letter-spacing: 0.05em;
+			@include font-size(1);
+			padding: 7px 10px;
+			font-weight: 100;
 
 			&:hover, &:focus {
 				color: $white;
@@ -133,20 +127,6 @@ NAVIGATION STYLES
 
 		&:first-child {}
 		&:last-child {}
-
-		// This changes the before icon before it's set below, it's based
-		// upon the fact that there is only two menus and that each one has a different icon
-		& + li{
-			.js & ul.show.sub-menu,
-			.js & ul.show.children,
-			ul.sub-menu,
-			ul.children {
-				&:before{
-					content: "\e000";
-					@include font-size(6.5);
-				}
-			}
-		}
 		
 		/*
 		plan your menus and drop-downs wisely.
@@ -161,28 +141,8 @@ NAVIGATION STYLES
 			display: none;
 			z-index: 15;
 			text-align: left;
-			
 			color: $white;
 			background: $brand-colour;
-			padding: 1em 1000em 1.5em;
-			margin: 0 -1000em;
-			
-			
-			
-/*
-			&:before{
-				font-family: $icon;
-				@include font-size(6);
-				font-weight: 100;
-				left: 49.2%;
-				position: absolute;
-				top: 12%;
-				vertical-align: middle;
-				z-index: 130;
-				content: "\e008";
-				
-			}
-*/
 
 			li {
 
@@ -199,7 +159,6 @@ NAVIGATION STYLES
 					border-right: 0;
 					display: block;
 					width: 200px;
-					//border-bottom: 1px solid fade-out($white, 0.5);
 					color: $white;
 					
 					&:hover,
@@ -237,10 +196,6 @@ NAVIGATION STYLES
 		&:hover ul {
 			top: auto;
 			display: block;
-			
-			padding: 1em 1000em;
-			margin: 0 -1000em;
-			
 		}
 
 	} /* end .menu ul li */
@@ -254,19 +209,49 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+
+
+
+/***************************************************
+		D i a g o n a l   S i d e b a r s !
+
+		This is where we can add a slanted
+		bar to the end of a container. The
+		height is wank though, so it needs
+		to be pulled in from JS 
+		
+		Should look like this:	[div]/
+
+
+***************************************************/
+
+@mixin slanted($slant-right, $colour){
+	position: relative;
+	background: $colour;
+	
+	.slanted{
+		content: "";
+		position: absolute;
+		top: 0;
+		width: $slant-right;
+		right: -$slant-right;
+		-webkit-backface-visibility: hidden;
+		background-image: url('../images/slant.svg');
+		background-size: 100% 100%;
+		height: 100%;
+	}
+
+	#slant polygon { fill: $colour !important; }
+	
+}
+
+.slant-right {
+	@include slanted(15px, $brand-colour);
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
-
-
-	.sidebar{
-		img{
-			width:100%;
-			height: auto;
-		}
-	}
-
-
 
 	.widget {
 		ul {
@@ -299,8 +284,6 @@ input[type="search"]{
 	float: right;
 	width: 35%;
 }
-
-// @import "../plugins/gravity";
 
 
 
