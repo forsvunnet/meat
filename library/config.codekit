@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "16895",
+"creatorBuild": "16903",
 "files": {
 	"\/admin.php": {
 		"fileType": 8192,
@@ -62,7 +62,7 @@
 		"ignoreWasSetByUser": 0,
 		"initialSize": 31318,
 		"inputAbbreviatedPath": "\/images\/apple-icon-touch.png",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/apple-icon-touch.png",
+		"outputAbbreviatedPath": "\/images\/apple-icon-touch.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -73,7 +73,7 @@
 		"ignoreWasSetByUser": 0,
 		"initialSize": 462,
 		"inputAbbreviatedPath": "\/images\/custom-post-icon.png",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/custom-post-icon.png",
+		"outputAbbreviatedPath": "\/images\/custom-post-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -84,7 +84,7 @@
 		"ignoreWasSetByUser": 0,
 		"initialSize": 26741,
 		"inputAbbreviatedPath": "\/images\/login-logo.png",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/login-logo.png",
+		"outputAbbreviatedPath": "\/images\/login-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -95,7 +95,7 @@
 		"ignoreWasSetByUser": 0,
 		"initialSize": 5875,
 		"inputAbbreviatedPath": "\/images\/logo.png",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/logo.png",
+		"outputAbbreviatedPath": "\/images\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -106,7 +106,7 @@
 		"ignoreWasSetByUser": 0,
 		"initialSize": 36557,
 		"inputAbbreviatedPath": "\/images\/win8-tile-icon.png",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/images\/win8-tile-icon.png",
+		"outputAbbreviatedPath": "\/images\/win8-tile-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -136,7 +136,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/libs\/modernizr.custom.min.js",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/libs\/min\/modernizr.custom.min-ck.js",
+		"outputAbbreviatedPath": "\/js\/libs\/min\/modernizr.custom.min-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -147,7 +147,18 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/meat.js",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/min\/meat-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/meat-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/cache-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/cache-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/cache-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -158,7 +169,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/scripts.js",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/js\/min\/scripts-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/scripts-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -270,7 +281,7 @@
 		"inputAbbreviatedPath": "\/scss\/ie.scss",
 		"outputAbbreviatedPath": "\/css\/ie.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -286,7 +297,7 @@
 		"inputAbbreviatedPath": "\/scss\/login.scss",
 		"outputAbbreviatedPath": "\/css\/login.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -492,7 +503,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/plugins\/_gravity.scss",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_gravity.css",
+		"outputAbbreviatedPath": "\/scss\/css\/_gravity.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -508,7 +519,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/plugins\/_wpcf7.scss",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_wpcf7.css",
+		"outputAbbreviatedPath": "\/scss\/css\/_wpcf7.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -524,7 +535,7 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/print\/_print.scss",
-		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/scss\/css\/_print.css",
+		"outputAbbreviatedPath": "\/scss\/css\/_print.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -542,9 +553,9 @@
 		"inputAbbreviatedPath": "\/scss\/style.scss",
 		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
@@ -556,39 +567,21 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/ie.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/ie.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/style.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/css\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Andrew Smith",
+"lastSavedByUser": "Andrew Lazarus",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Lobster Diecast",
+	"displayValue": "meat",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-girlfriend"
+	"iconImageName": "globe_brown"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
@@ -617,7 +610,7 @@
 			"flagValue": 10
 			},
 		"duplicate_key": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"empty_constructor_needs_parens": {
@@ -700,7 +693,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/lobster.dev",
+	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathRelativePath": "",
@@ -1157,7 +1150,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log",
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
 	"slimAutoOutputPathRelativePath": "",
 	"slimAutoOutputPathReplace1": "",
 	"slimAutoOutputPathReplace2": "",

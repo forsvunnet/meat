@@ -143,7 +143,6 @@ em,
  */
 hr {
   -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -154,7 +153,6 @@ p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto; }
 
 /*
@@ -354,8 +352,6 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -477,7 +473,6 @@ p {
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
-  -ms-hyphens: auto;
   hyphens: auto;
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
@@ -580,6 +575,8 @@ CLEARFIXIN'
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
@@ -656,62 +653,50 @@ values are commented out on each line.
 ********************************************/
 .onecol {
   width: 5.79694%;
-  width: -webkit-calc((99.95% - 11rem) / 12);
   width: calc((99.95% - 11rem) / 12); }
 
 .twocol {
   width: 14.35631%;
-  width: -webkit-calc((99.95% - 5rem) / 6);
   width: calc((99.95% - 5rem) / 6); }
 
 .threecol {
   width: 22.91568%;
-  width: -webkit-calc((99.95% - 3rem) / 4);
   width: calc((99.95% - 3rem) / 4); }
 
 .fourcol {
   width: 31.47505%;
-  width: -webkit-calc((99.95% - 2rem) / 3);
   width: calc((99.95% - 2rem) / 3); }
 
 .fivecol {
   width: 40.03442%;
-  width: -webkit-calc((99.95% - 1.4rem) / 2.4);
   width: calc((99.95% - 1.4rem) / 2.4); }
 
 .sixcol {
   width: 48.59378%;
-  width: -webkit-calc((99.95% - 1rem) / 2);
   width: calc((99.95% - 1rem) / 2); }
 
 .sevencol {
   width: 57.15315%;
-  width: -webkit-calc((99.95% - 0.71429rem) / 1.71429);
   width: calc((99.95% - 0.71429rem) / 1.71429); }
 
 .eightcol {
   width: 65.71252%;
-  width: -webkit-calc((99.95% - 0.5rem) / 1.5);
   width: calc((99.95% - 0.5rem) / 1.5); }
 
 .ninecol {
   width: 74.27189%;
-  width: -webkit-calc((99.95% - 0.33333rem) / 1.33333);
   width: calc((99.95% - 0.33333rem) / 1.33333); }
 
 .tencol {
   width: 82.83126%;
-  width: -webkit-calc((99.95% - 0.2rem) / 1.2);
   width: calc((99.95% - 0.2rem) / 1.2); }
 
 .elevencol {
   width: 91.39063%;
-  width: -webkit-calc((99.95% - 0.09091rem) / 1.09091);
   width: calc((99.95% - 0.09091rem) / 1.09091); }
 
 .twelvecol {
   width: 99.95%;
-  width: -webkit-calc((99.95% - 0rem) / 1);
   width: calc((99.95% - 0rem) / 1); }
 
 /*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
@@ -732,7 +717,6 @@ values are commented out on each line.
   position: relative;
   float: left;
   margin-left: 2.76243%;
-  margin-left: -webkit-calc(1rem * 1);
   margin-left: calc(1rem * 1); }
 
 .first {
@@ -743,12 +727,10 @@ values are commented out on each line.
 
 .gutter-top {
   margin-top: 2.76243%;
-  margin-top: -webkit-calc(1rem * 1);
   margin-top: calc(1rem * 1); }
 
 .gutter-bottom {
   margin-bottom: 2.76243%;
-  margin-bottom: -webkit-calc(1rem * 1);
   margin-bottom: calc(1rem * 1); }
 
 /*********************
@@ -870,7 +852,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #49525a; }
   .button:active {
     background: #272c30;
-    -webkit-box-shadow: inset 0px 10px 5px -7px #101214;
     box-shadow: inset 0px 10px 5px -7px #101214;
     position: relative;
     top: 4px;
@@ -909,7 +890,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #ff7747; }
   .button.highlight:active {
     background: #f94100;
-    -webkit-box-shadow: inset 0px 10px 5px -7px #c63400;
     box-shadow: inset 0px 10px 5px -7px #c63400;
     position: relative;
     top: 4px;
@@ -948,7 +928,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: white; }
   .button.white:active {
     background: #e6e6e6;
-    -webkit-box-shadow: inset 0px 10px 5px -7px #cccccc;
     box-shadow: inset 0px 10px 5px -7px #cccccc;
     position: relative;
     top: 4px;
@@ -987,7 +966,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #0d0d0d; }
   .button.black:active {
     background: black;
-    -webkit-box-shadow: inset 0px 10px 5px -7px black;
     box-shadow: inset 0px 10px 5px -7px black;
     position: relative;
     top: 4px;
@@ -1026,7 +1004,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background: #47cfff; }
   .button.compliment:active {
     background: #00b8f9;
-    -webkit-box-shadow: inset 0px 10px 5px -7px #0092c6;
     box-shadow: inset 0px 10px 5px -7px #0092c6;
     position: relative;
     top: 4px;
@@ -1082,7 +1059,6 @@ textarea,
   color: #555555;
   border-radius: 3px;
   vertical-align: middle;
-  -webkit-box-shadow: none;
   box-shadow: none;
   border: 0;
   width: 100%;
@@ -1091,7 +1067,6 @@ textarea,
   background-color: #aaaaaa;
   -webkit-transition: background-color 0.24s ease-in-out;
   -transition: background-color 0.24s ease-in-out;
-  -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
   input[type="text"]:focus, input[type="text"]:active,
   input[type="password"]:focus,
@@ -1411,7 +1386,7 @@ body {
   font-size: 80%;
   line-height: 1.5;
   color: #898989;
-  font-weight: 100; }
+  font-weight: 400; }
 
 b, strong {
   font-weight: 500; }
@@ -1522,7 +1497,6 @@ NAVIGATION STYLES
       max-height: 0;
       -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       -transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
-      -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1); }
       .js .nav.show {
         max-height: 2000px; } }
@@ -1547,7 +1521,6 @@ NAVIGATION STYLES
       max-height: 0;
       -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       -transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
-      -webkit-transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1);
       transition: 0.4s all cubic-bezier(0.77, 0, 0.175, 1); }
       .js .nav li ul.sub-menu.show, .js
       .nav li ul.children.show {
@@ -1764,6 +1737,7 @@ form textarea {
     border-color: #fbc2c4;
     background-color: #f6e7eb;
     -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none; }
 form .email {
@@ -1932,62 +1906,50 @@ you can add resource intensive styles.
   ********************************************/
   .onecol {
     width: 5.79694%;
-    width: -webkit-calc((99.95% - 11rem) / 12);
     width: calc((99.95% - 11rem) / 12); }
 
   .twocol {
     width: 14.35631%;
-    width: -webkit-calc((99.95% - 5rem) / 6);
     width: calc((99.95% - 5rem) / 6); }
 
   .threecol {
     width: 22.91568%;
-    width: -webkit-calc((99.95% - 3rem) / 4);
     width: calc((99.95% - 3rem) / 4); }
 
   .fourcol {
     width: 31.47505%;
-    width: -webkit-calc((99.95% - 2rem) / 3);
     width: calc((99.95% - 2rem) / 3); }
 
   .fivecol {
     width: 40.03442%;
-    width: -webkit-calc((99.95% - 1.4rem) / 2.4);
     width: calc((99.95% - 1.4rem) / 2.4); }
 
   .sixcol {
     width: 48.59378%;
-    width: -webkit-calc((99.95% - 1rem) / 2);
     width: calc((99.95% - 1rem) / 2); }
 
   .sevencol {
     width: 57.15315%;
-    width: -webkit-calc((99.95% - 0.71429rem) / 1.71429);
     width: calc((99.95% - 0.71429rem) / 1.71429); }
 
   .eightcol {
     width: 65.71252%;
-    width: -webkit-calc((99.95% - 0.5rem) / 1.5);
     width: calc((99.95% - 0.5rem) / 1.5); }
 
   .ninecol {
     width: 74.27189%;
-    width: -webkit-calc((99.95% - 0.33333rem) / 1.33333);
     width: calc((99.95% - 0.33333rem) / 1.33333); }
 
   .tencol {
     width: 82.83126%;
-    width: -webkit-calc((99.95% - 0.2rem) / 1.2);
     width: calc((99.95% - 0.2rem) / 1.2); }
 
   .elevencol {
     width: 91.39063%;
-    width: -webkit-calc((99.95% - 0.09091rem) / 1.09091);
     width: calc((99.95% - 0.09091rem) / 1.09091); }
 
   .twelvecol {
     width: 99.95%;
-    width: -webkit-calc((99.95% - 0rem) / 1);
     width: calc((99.95% - 0rem) / 1); }
 
   /*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
@@ -2008,7 +1970,6 @@ you can add resource intensive styles.
     position: relative;
     float: left;
     margin-left: 2.76243%;
-    margin-left: -webkit-calc(1rem * 1);
     margin-left: calc(1rem * 1); }
 
   .first {
@@ -2019,12 +1980,10 @@ you can add resource intensive styles.
 
   .gutter-top {
     margin-top: 2.76243%;
-    margin-top: -webkit-calc(1rem * 1);
     margin-top: calc(1rem * 1); }
 
   .gutter-bottom {
     margin-bottom: 2.76243%;
-    margin-bottom: -webkit-calc(1rem * 1);
     margin-bottom: calc(1rem * 1); }
 
   /******************************************************************
@@ -2089,7 +2048,6 @@ you can add resource intensive styles.
   *********************/
   #logo {
     width: 22.91568%;
-    width: -webkit-calc((99.95% - 3rem) / 4);
     width: calc((99.95% - 3rem) / 4);
     text-align: left;
     float: left;
@@ -2218,7 +2176,6 @@ you can add resource intensive styles.
       right: -15px;
       -webkit-backface-visibility: hidden;
       background-image: url("../images/slant.svg");
-      -webkit-background-size: 100% 100%;
       background-size: 100% 100%;
       height: 100%; }
     .slant-right #slant polygon {
@@ -2255,11 +2212,9 @@ you can add resource intensive styles.
     text-align: left; }
     .footer .widget {
       width: 22.91568%;
-      width: -webkit-calc((99.95% - 3rem) / 4);
       width: calc((99.95% - 3rem) / 4);
       float: left;
       margin-left: 2.76243%;
-      margin-left: -webkit-calc(1rem * 1);
       margin-left: calc(1rem * 1);
       position: relative; }
       .footer .widget.first {
@@ -2406,7 +2361,6 @@ be set to display none.
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
-    -webkit-filter: none !important;
     filter: none !important;
     -ms-filter: none !important; }
 
