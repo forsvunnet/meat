@@ -99,6 +99,16 @@ you like. Enjoy!
 // Sidebars & Widgetizes Areas
 function bones_register_sidebars() {
 	register_sidebar(array(
+		'id' => 'sidebar',
+		'name' => __( 'Sidebar', 'bonestheme' ),
+		'description' => __( 'The Sidebar.', 'bonestheme' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => '</h2>',
+	));
+	
+	register_sidebar(array(
 		'id' => 'footer',
 		'name' => __( 'Footer', 'bonestheme' ),
 		'description' => __( 'The footer.', 'bonestheme' ),
