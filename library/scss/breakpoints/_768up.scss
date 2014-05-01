@@ -117,7 +117,7 @@ nav[role=navigation]{
 			color: $grey-darker;
 			@include font-size(1);
 			padding: 7px 10px;
-			font-weight: 100;
+			font-weight: 400;
 
 			&:hover, &:focus {
 				color: $white;
