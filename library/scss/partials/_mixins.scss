@@ -170,28 +170,6 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
-
-// This is for website rem to PX
-// so you can use @include font-size(2);
-// which outputs font-size: 24px; font-size:2rem;
-
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 16) + px;
-  font-size: $sizeValue + rem;
-}
-
-
-/*********************
-Text Overflow
-*********************/
-
-@mixin text-overflow() {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-
 /*********************
 Background colour based on brightness
 *********************/
