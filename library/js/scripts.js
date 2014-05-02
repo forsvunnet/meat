@@ -9,6 +9,8 @@ slow the page load.
 
 */
 
+/* global min_width, max_width */
+
 // IE8 ployfill for GetComputed Style (for Responsive Script below)
 if (!window.getComputedStyle) {
   window.getComputedStyle = function(el) {

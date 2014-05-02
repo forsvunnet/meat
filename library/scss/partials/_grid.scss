@@ -95,3 +95,21 @@ $classes: () !global;
 	margin-bottom: $gutter;
 	margin-bottom: calc(#{$gutter_em} * 1);
 }
+
+// No margin grid
+
+.third, .quarter, .half {
+	float: left;
+}
+
+.third {
+    width: 33.33333333333%;
+}
+
+.quarter {
+	width: 25%;
+}
+
+.half {
+	width: 50%;
+}
