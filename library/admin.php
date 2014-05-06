@@ -79,8 +79,8 @@ Customising admin is something typically done in a
 
 // Custom Backend Footer
 function bones_custom_admin_footer() {
-	$developer = "Change me in admin.php";
-	$url = "theme-editor.php?file=library%2Fadmin.php";
+	$developer = "Full Phat Design";
+	$url = "http://www.fullphatdesign.co.uk";
 	_e( '<span id="footer-thankyou">Developed by <a href="' . $url . '" target="_blank">' . $developer . '</a></span>. Built using Meat.', 'bonestheme' );
 }
 
