@@ -1,6 +1,11 @@
+/* Ownership of the stylesheets is global. */
+
+$site-name: Meat !global;
+$author:	Andrew + Eivin !global;
+
 /******************************************************************
-Site Name: 
-Author:
+Site Name: #{$site-name}
+Author: #{$author}
 
 Stylesheet: IE Stylesheet
 

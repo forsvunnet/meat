@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: MEAT 
+Author: Eivin + Andrew 
 
 Stylesheet: Form Styles
 
@@ -41,7 +41,7 @@ textarea,
   display: block;
   height: 40px;
   line-height: 40px;
-  padding: 0 12px;
+  padding: 10px 12px;
   margin-bottom: 14px;
   font-size: 1em;
   color: $text-color;
@@ -52,13 +52,13 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: $sans-serif;
-  background-color: $grey;
+  background-color: lighten($black, 93%);
   @include transition(background-color 0.24s ease-in-out);
 
   // a focused input (or hovered on)
   &:focus,
   &:active {
-    background-color: lighten($grey, 4%);
+    background-color: lighten($black, 97%);
   } // end hover or focus
 
   // error notification
@@ -116,5 +116,3 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center;
 }
-
-

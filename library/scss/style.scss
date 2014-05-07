@@ -1,8 +1,13 @@
 /*! Made with Meat: http://forsvunnet.github.io/meat/  */
 
+/* Ownership of the stylesheets is global. */
+
+$site-name: Meat !global;
+$author:	Andrew + Eivin !global;
+
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name: #{$site-name}
+Author: #{$author}
 
 Stylesheet: Main Stylesheet
 
