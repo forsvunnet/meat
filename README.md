@@ -5,6 +5,32 @@ __A meatier Wordpress Development Theme__
 
 It's using the fantastic bones theme as a skeleton and beefs it up to become a more powerful starting theme.
 
+---
+
+### A help guide to starting with this theme.
+
+> Most of the styles in this theme are documented in the stylesheet they're in.
+> So you don't need a helpful document telling you how to use them, but for people have requested [Tom], i'll be writing up a tiny guide on using this theme.
+
+---
+
+#### Responsiveness
+
+- Breakpoint stylesheets
+- Partials
+	- Grid + The Math behind it
+	- Functions
+	- Mixins
+	- Typography
+- Modules
+	- Alerts
+	- Animations
+	- Buttons
+	- Forms
+- Plugins
+
+---
+
 ## History
 
 Meat is mainly a collaborative effort between the excellent front-end developers [Eivin Landa](https://www.forsvunnet.co.uk) and [Andrew Lazarus](http://www.eyeversuseye.com/). We produce a lot of wordpress powered websites and our prefered starting theme has been bones, but we've recognized that there is room for improvement and we've set out to make a more fleshed out starting theme.
