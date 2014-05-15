@@ -494,85 +494,6 @@ Text Overflow
 // which outputs font-size: 24px; font-size:2rem;
 
 *********************************/
-/********************************* 
-
-Vertical Rhythm Mixin
-
-This mixin is to help create a typograhpical baseline grid
-but also to allow for specifying different line heights 
-or bottom margins if you need to.
-
-In this mixin you can specifiy the font size in PX and 
-it will calculate the REM based on your $doc-font-size 
-& $doc-line-height variables. 
-
-	@include font-size(24);
-
-It will also create a bottom margin based on the 
-$doc-font-size & $doc-line-height variables unless 
-you specify that it shouldn't have one -
-
-	@include font-size(24, no);
-
-Or if you want to specify a different bottom margin 
-to be generated -
-
-	@include font-size(24,32);
-
-This mixin also generates a pixel-less line height 
-by default unless you specify that you either don't 
-want one where I'd suggest declaring 1 within the mixin -
-
-	@include font-size(24, yes, 1);
-
-There's also the option to specify a different line-height 
-for it to generate to, where you would specify the 
-line-height in (effectively) it's pixel value -
-
-	@include font-size(24, yes, 40);
-
-*********************************/
-.all {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-.no-margin {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 0; }
-
-.no-line-height {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-.define-line-height {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 3;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-.define-margin-bottom {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
-
-.define-all {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 3;
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
-
 /*********************************
 	Text alignment in classes	
 *********************************/
@@ -1480,51 +1401,33 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
 h1, .h1 {
-  font-size: 1.5px;
-  font-size: 0.09375rem;
-  line-height: 16;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500; }
 
 h2, .h2 {
-  font-size: 1.3125px;
-  font-size: 0.08203rem;
-  line-height: 18.28571;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  font-size: 21px;
+  font-size: 1.3125rem;
   line-height: 1.1; }
 
 h3, .h3 {
-  font-size: 1.2px;
-  font-size: 0.075rem;
-  line-height: 20;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  font-size: 19.2px;
+  font-size: 1.2rem;
   line-height: 1; }
 
 h4, .h4 {
-  font-size: 1.1px;
-  font-size: 0.06875rem;
-  line-height: 21.81818;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  font-size: 17.6px;
+  font-size: 1.1rem;
   line-height: 1; }
 
 h5, .h5 {
-  font-size: 1px;
-  font-size: 0.0625rem;
-  line-height: 24;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1; }
 
 h6, .h6 {
-  font-size: 0.75px;
-  font-size: 0.04688rem;
-  line-height: 32;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1; }
 
 /*********************
@@ -1618,22 +1521,12 @@ MOBILE DROPDOWN NAVIGATION STYLES
     background: #686868; }
   .menu-icon:after {
     content: "Menu";
-    font-size: 0.75px;
-    font-size: 0.04688rem;
-    line-height: 32;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
     text-align: center; }
-
-/*********************************** 
-	Make the header nav relative so
-	the aboluste menu stays put
-***********************************/
-.header nav {
-  position: relative; }
 
 /*********************
 NAVIGATION STYLES
@@ -1926,18 +1819,12 @@ footer .widgettitle {
   text-transform: uppercase;
   color: #686868;
   font-weight: bold;
-  font-size: 0.85px;
-  font-size: 0.05313rem;
-  line-height: 28.23529;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 13.6px;
+  font-size: 0.85rem; }
 
 .footer {
-  font-size: 0.85px;
-  font-size: 0.05313rem;
-  line-height: 28.23529;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 13.6px;
+  font-size: 0.85rem; }
   .footer .menu {
     margin: 0; }
   .footer a {
@@ -1947,11 +1834,8 @@ footer .widgettitle {
 .copyright {
   color: #999;
   margin: 10px 0 1em;
-  font-size: 0.75px;
-  font-size: 0.04688rem;
-  line-height: 32;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 12px;
+  font-size: 0.75rem; }
   .copyright a {
     color: #999;
     border-bottom-color: #999; }
@@ -2190,46 +2074,28 @@ you can add resource intensive styles.
   HEADER STYLES
   *********************/
   h1, .h1 {
-    font-size: 2.25px;
-    font-size: 0.14063rem;
-    line-height: 10.66667;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    font-size: 36px;
+    font-size: 2.25rem; }
 
   h2, .h2 {
-    font-size: 1.875px;
-    font-size: 0.11719rem;
-    line-height: 12.8;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    font-size: 30px;
+    font-size: 1.875rem; }
 
   h3, .h3 {
-    font-size: 1.5px;
-    font-size: 0.09375rem;
-    line-height: 16;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    font-size: 24px;
+    font-size: 1.5rem; }
 
   h4, .h4 {
-    font-size: 1.125px;
-    font-size: 0.07031rem;
-    line-height: 21.33333;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    font-size: 18px;
+    font-size: 1.125rem; }
 
   h5, .h5 {
-    font-size: 1px;
-    font-size: 0.0625rem;
-    line-height: 24;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    font-size: 16px;
+    font-size: 1rem; }
 
   h6, .h6 {
-    font-size: 0.85px;
-    font-size: 0.05313rem;
-    line-height: 28.23529;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem; }
+    font-size: 13.6px;
+    font-size: 0.85rem; }
 
   /*********************
   HEADER STYLES
@@ -2291,11 +2157,8 @@ you can add resource intensive styles.
       .nav li a {
         border-bottom: 0;
         color: #686868;
-        font-size: 1px;
-        font-size: 0.0625rem;
-        line-height: 24;
-        margin-bottom: 24px;
-        margin-bottom: 1.5rem;
+        font-size: 16px;
+        font-size: 1rem;
         padding: 7px 10px;
         font-weight: 400; }
         .nav li a:hover, .nav li a:focus {
@@ -2331,11 +2194,8 @@ you can add resource intensive styles.
           .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
-            font-size: 0.85px;
-            font-size: 0.05313rem;
-            line-height: 28.23529;
-            margin-bottom: 24px;
-            margin-bottom: 1.5rem;
+            font-size: 13.6px;
+            font-size: 0.85rem;
             padding: 2px 0 2px 14px;
             border-right: 0;
             display: block;
