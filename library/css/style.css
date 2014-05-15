@@ -1,7 +1,8 @@
 /*! Made with Meat: http://forsvunnet.github.io/meat/  */
+/* Ownership of the stylesheets is global. */
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name: Meat
+Author: AndrewEivin
 
 Stylesheet: Main Stylesheet
 
@@ -589,8 +590,8 @@ line-height in (effectively) it's pixel value -
   float: none !important; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Meat
+Author: AndrewEivin
 
 Stylesheet: Sass Functions
 
@@ -634,8 +635,8 @@ both compile to:
 width: 65%;
 *********************/
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name: Meat
+Author: AndrewEivin
 
 Stylesheet: Mixins & Constants Stylesheet
 
@@ -715,8 +716,8 @@ probably best not to use it. I mean, were you going to anyway? */
 Background colour based on brightness
 *********************/
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name: Meat
+Author: AndrewEivin
 
 Stylesheet: Grid Stylesheet
 
@@ -827,6 +828,18 @@ values are commented out on each line.
   margin-bottom: 2.76243%;
   margin-bottom: calc(1rem * 1); }
 
+.third, .quarter, .half {
+  float: left; }
+
+.third {
+  width: 33.33333333333%; }
+
+.quarter {
+  width: 25%; }
+
+.half {
+  width: 50%; }
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -884,8 +897,8 @@ you can just remove this stylesheet.
   background: #a8c923; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: Meat
+Author: AndrewEivin
 
 Stylesheet: Button Styles
 
@@ -917,8 +930,11 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 
 *************************************/
-.button {
-  background: #3e454c;
+/******************************
+Button Classes that you can have
+for free. Go on. Have them
+******************************/
+.button.brand {
   border: none;
   border-bottom: 5px solid #101214;
   border-radius: 2px;
@@ -939,24 +955,28 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
    becomes dark to compensate.
   **********************************/
   color: white;
-  color: white; }
-  .button:hover, .button:focus, .button:active {
+  background: #3e454c;
+  color: white;
+  /**********************************
+   This is the style for the hovers,
+   the actives and the visited.
+  **********************************/ }
+  .button.brand:hover, .button.brand:focus, .button.brand:active {
     color: white; }
-  .button:hover {
+  .button.brand:hover {
     background: #49525a; }
-  .button:active {
+  .button.brand:active {
     background: #272c30;
     box-shadow: inset 0px 10px 5px -7px #101214;
     position: relative;
     top: 4px;
     margin-bottom: 4px;
     border-bottom-width: 1px; }
-  .button:visited {
+  .button.brand:visited {
     background: #3e454c;
     border-bottom-color: #101214; }
 
 .button.highlight {
-  background: #ff642d;
   border: none;
   border-bottom: 5px solid #c63400;
   border-radius: 2px;
@@ -977,7 +997,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
    becomes dark to compensate.
   **********************************/
   color: white;
-  color: white; }
+  background: #ff642d;
+  color: white;
+  /**********************************
+   This is the style for the hovers,
+   the actives and the visited.
+  **********************************/ }
   .button.highlight:hover, .button.highlight:focus, .button.highlight:active {
     color: white; }
   .button.highlight:hover {
@@ -994,7 +1019,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     border-bottom-color: #c63400; }
 
 .button.white {
-  background: white;
   border: none;
   border-bottom: 5px solid #cccccc;
   border-radius: 2px;
@@ -1015,7 +1039,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
    becomes dark to compensate.
   **********************************/
   color: white;
-  color: #555555; }
+  background: white;
+  color: #555555;
+  /**********************************
+   This is the style for the hovers,
+   the actives and the visited.
+  **********************************/ }
   .button.white:hover, .button.white:focus, .button.white:active {
     color: #555555; }
   .button.white:hover {
@@ -1032,7 +1061,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     border-bottom-color: #cccccc; }
 
 .button.black {
-  background: black;
   border: none;
   border-bottom: 5px solid black;
   border-radius: 2px;
@@ -1053,7 +1081,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
    becomes dark to compensate.
   **********************************/
   color: white;
-  color: white; }
+  background: black;
+  color: white;
+  /**********************************
+   This is the style for the hovers,
+   the actives and the visited.
+  **********************************/ }
   .button.black:hover, .button.black:focus, .button.black:active {
     color: white; }
   .button.black:hover {
@@ -1070,7 +1103,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     border-bottom-color: black; }
 
 .button.compliment {
-  background: #2dc8ff;
   border: none;
   border-bottom: 5px solid #0092c6;
   border-radius: 2px;
@@ -1091,7 +1123,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
    becomes dark to compensate.
   **********************************/
   color: white;
-  color: white; }
+  background: #2dc8ff;
+  color: white;
+  /**********************************
+   This is the style for the hovers,
+   the actives and the visited.
+  **********************************/ }
   .button.compliment:hover, .button.compliment:focus, .button.compliment:active {
     color: white; }
   .button.compliment:hover {
@@ -1108,8 +1145,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     border-bottom-color: #0092c6; }
 
 /******************************************************************
-Site Name:
-Author:
+Site Name: MEAT 
+Author: Eivin + Andrew 
 
 Stylesheet: Form Styles
 
@@ -1147,7 +1184,7 @@ textarea,
   display: block;
   height: 40px;
   line-height: 40px;
-  padding: 0 12px;
+  padding: 10px 12px;
   margin-bottom: 14px;
   font-size: 1em;
   color: #555555;
@@ -1158,7 +1195,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #aaaaaa;
+  background-color: #ededed;
   -webkit-transition: background-color 0.24s ease-in-out;
   -transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1195,7 +1232,7 @@ textarea,
   textarea:active,
   .field:focus,
   .field:active {
-    background-color: #b4b4b4; }
+    background-color: #f7f7f7; }
   input[type="text"].error, input[type="text"].is-invalid,
   input[type="password"].error,
   input[type="password"].is-invalid,
@@ -1398,8 +1435,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
-Site Name: MEAT
-Author: Eivin + Andrew
+Site Name: Meat
+Author: AndrewEivin
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1930,8 +1967,8 @@ tweeners.
 */
 @media only screen and (min-width: 30.063em) {
   /******************************************************************
-  Site Name: MEAT 
-  Author: Eivin + Andrew 
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: 481px and Up Stylesheet
   
@@ -1998,8 +2035,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 47.9em) {
   /******************************************************************
-  Site Name: MEAT
-  Author: Eivin + Andrew
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: Grid Stylesheet
   
@@ -2110,9 +2147,21 @@ you can add resource intensive styles.
     margin-bottom: 2.76243%;
     margin-bottom: calc(1rem * 1); }
 
+  .third, .quarter, .half {
+    float: left; }
+
+  .third {
+    width: 33.33333333333%; }
+
+  .quarter {
+    width: 25%; }
+
+  .half {
+    width: 50%; }
+
   /******************************************************************
-  Site Name: MEAT
-  Author: Eivin + Andrew
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: Tablet & Small Desktop Stylesheet
   
@@ -2407,8 +2456,8 @@ you can add resource intensive styles.
 */
 @media only screen and (min-width: 64.375em) {
   /******************************************************************
-  Site Name: MEAT 
-  Author: Eivin + Andrew 
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: Desktop Stylsheet
   
@@ -2427,8 +2476,8 @@ This is for the larger monitors and possibly full screen viewers.
 */
 @media only screen and (min-width: 77.5em) {
   /******************************************************************
-  Site Name: MEAT 
-  Author: Eivin + Andrew 
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: Super Large Monitor Stylesheet
   
@@ -2444,8 +2493,8 @@ query for retina AND a certain size if you want. Go Nuts.
 */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: MEAT 
-  Author: Eivin + Andrew 
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: Retina Screens & Devices Stylesheet
   
@@ -2495,8 +2544,8 @@ be set to display none.
 */
 @media print {
   /******************************************************************
-  Site Name: MEAT
-  Author: Eivin + Andrew
+  Site Name: Meat
+  Author: AndrewEivin
   
   Stylesheet: Print Stylesheet
   
