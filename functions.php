@@ -46,6 +46,12 @@ require_once( 'library/admin.php' ); // this comes turned off by default
 */
 // require_once( 'library/translation/translation.php' ); // this comes turned off by default
 
+
+// Include some much needed WooCommerce functions
+//require_once('library/woocommerce.php');
+
+
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
@@ -170,5 +176,32 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+
+// REMOVE UPDATE NOTICES FOR NONE-ADMINS
+remove_action( 'admin_notices', 'update_nag', 3 );
+remove_action( 'network_admin_notices', 'update_nag', 3 );
+function my_custom_update_nag() {
+        if ( is_multisite() && !current_user_can('update_core') )
+                return false;
+
+        global $pagenow;
+
+        if ( 'update-core.php' == $pagenow )
+                return;
+
+        $cur = get_preferred_from_update_core();
+
+        if ( ! isset( $cur->response ) || $cur->response != 'upgrade' )
+                return false;
+
+        if ( current_user_can('update_core') ) {
+                $msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! <a href="%2$s">Please update now</a>.'), $cur->current, network_admin_url( 'update-core.php' ) );
+        } else {
+                $msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! Please contact <a href="mailto:andrew@fullphatdesign.co.uk?subject='.get_bloginfo('name').' Update Wordpress: '.get_bloginfo('url').'">Full Phat Design</a>.'), $cur->current );
+        }
+        echo "<div class='update-nag'>$msg</div>";
+}
+add_action( 'admin_notices', 'my_custom_update_nag', 3 );
+add_action( 'network_admin_notices', 'my_custom_update_nag', 3 );
 
 ?>
