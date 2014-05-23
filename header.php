@@ -34,6 +34,20 @@
     <?php wp_head(); ?>
     <!-- end of wordpress head -->
 
+	<!--[if lt IE 9]>
+	   <script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	      document.createElement('section');
+	      document.createElement('article');
+	      document.createElement('aside');
+	      document.createElement('footer');
+	   </script>
+	
+		<style>header, nav, section, article, aside, footer {
+	   display:block;}</style>
+	<![endif]-->
+
     <!-- drop Google Analytics Here -->
     <!-- end analytics -->
 
