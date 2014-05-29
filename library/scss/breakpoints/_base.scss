@@ -195,20 +195,16 @@ MOBILE DROPDOWN NAVIGATION STYLES
 	margin: 0;
 	color: $grey-darker;
 	cursor: pointer;
-	position: relative;
-	padding: 20px 8px 0;
-	float: right;
-	width: 18%;
+	padding: 0;
+	width: 45px;
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 20px;
+	right: 20px;
 }
 
 	.menu-icon {
-		//width: 18px;
-		//float: right;
 		margin-top: 0px;
-		padding: 0 4px;
+		padding: 0;
 		
 		div {
 			height: 4px;
@@ -218,6 +214,8 @@ MOBILE DROPDOWN NAVIGATION STYLES
 			background: $grey-darker;
 		}
 		
+/* Uncomment this for menu to be written after the burger style buttons
+
 		&:after{
 			content: "Menu"; // How will you ever translate this?
 			@include font-size(0.75);
@@ -226,6 +224,7 @@ MOBILE DROPDOWN NAVIGATION STYLES
 			display: block;
 			text-align: center;
 		}
+*/
 		
 	}
 

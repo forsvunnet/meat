@@ -636,131 +636,6 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 Background colour based on brightness
 *********************/
-/******************************************************************
-Site Name: Meat
-Author: AndrewEivin
-
-Stylesheet: Grid Stylesheet
-
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-
-The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-together, let's see how this works out. If you want to use 1140, the original 
-values are commented out on each line.
-
-******************************************************************/
-/********************************************
-			   G R I D  M A T H
-
-	Math. A bunch of it. This is the math
-	that makes the grid. Math can change
-	in here to completely change the whole
-	layout of your site. 
-			  
-********************************************/
-.onecol {
-  width: 5.79694%;
-  width: calc((99.95% - 11rem) / 12); }
-
-.twocol {
-  width: 14.35631%;
-  width: calc((99.95% - 5rem) / 6); }
-
-.threecol {
-  width: 22.91568%;
-  width: calc((99.95% - 3rem) / 4); }
-
-.fourcol {
-  width: 31.47505%;
-  width: calc((99.95% - 2rem) / 3); }
-
-.fivecol {
-  width: 40.03442%;
-  width: calc((99.95% - 1.4rem) / 2.4); }
-
-.sixcol {
-  width: 48.59378%;
-  width: calc((99.95% - 1rem) / 2); }
-
-.sevencol {
-  width: 57.15315%;
-  width: calc((99.95% - 0.71429rem) / 1.71429); }
-
-.eightcol {
-  width: 65.71252%;
-  width: calc((99.95% - 0.5rem) / 1.5); }
-
-.ninecol {
-  width: 74.27189%;
-  width: calc((99.95% - 0.33333rem) / 1.33333); }
-
-.tencol {
-  width: 82.83126%;
-  width: calc((99.95% - 0.2rem) / 1.2); }
-
-.elevencol {
-  width: 91.39063%;
-  width: calc((99.95% - 0.09091rem) / 1.09091); }
-
-.twelvecol {
-  width: 99.95%;
-  width: calc((99.95% - 0rem) / 1); }
-
-/*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
-
-	article {
-		width: col_width(6);
-		width: col_width(6, true);
-		
-		float: left;
-		margin-left: $gutter;
-		margin-left: calc(1rem * 1);	
-			
-		&.first{ margin-left: 0;}
-		&.last{ float: right;}
-	}
-*/
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol, .fifthcol, .threefifth {
-  position: relative;
-  float: left;
-  margin-left: 2.76243%;
-  margin-left: calc(1rem * 1); }
-
-.first {
-  margin-left: 0; }
-
-.last {
-  float: right; }
-
-.gutter-top {
-  margin-top: 2.76243%;
-  margin-top: calc(1rem * 1); }
-
-.gutter-bottom {
-  margin-bottom: 2.76243%;
-  margin-bottom: calc(1rem * 1); }
-
-.third, .quarter, .half {
-  float: left; }
-
-.third {
-  width: 33.33333333333%; }
-
-.quarter {
-  width: 25%; }
-
-.half {
-  width: 50%; }
-
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -1502,31 +1377,32 @@ MOBILE DROPDOWN NAVIGATION STYLES
   margin: 0;
   color: #686868;
   cursor: pointer;
-  position: relative;
-  padding: 20px 8px 0;
-  float: right;
-  width: 18%;
+  padding: 0;
+  width: 45px;
   position: absolute;
-  top: 0;
-  right: 0; }
+  top: 20px;
+  right: 20px; }
 
 .menu-icon {
   margin-top: 0px;
-  padding: 0 4px; }
+  padding: 0;
+  /* Uncomment this for menu to be written after the burger style buttons
+  
+  		&:after{
+  			content: "Menu"; // How will you ever translate this?
+  			@include font-size(0.75);
+  			text-transform: uppercase;
+  			font-family: $sans-serif;
+  			display: block;
+  			text-align: center;
+  		}
+  */ }
   .menu-icon div {
     height: 4px;
     width: 100%;
     margin-bottom: 5px;
     border-radius: 1px;
     background: #686868; }
-  .menu-icon:after {
-    content: "Menu";
-    font-size: 12px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    display: block;
-    text-align: center; }
 
 /*********************
 NAVIGATION STYLES
