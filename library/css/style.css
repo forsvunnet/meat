@@ -1352,11 +1352,16 @@ LOGO STYLES
 #logo {
   display: block;
   text-align: center;
-  width: 80%; }
+  width: 100%;
+  padding: 20px 30px;
+  margin: 0; }
+  @media (max-width: 30.063em) {
+    #logo {
+      padding: 20px 70px 20px 30px; } }
   #logo a {
     border-bottom: 0; }
   #logo img {
-    max-width: 100%;
+    max-width: 250px;
     height: auto;
     margin: 0 auto; }
 

@@ -137,22 +137,29 @@ IMG STYLES
 LOGO STYLES
 *********************/
 
-	
-#logo { //you'll need to undo this shit
+#logo {
 	display: block;
 	text-align: center;
-	width: 80%;
+	width: 100%;
+	padding: 20px 30px;
+	
+	@media (max-width: $mobile){ 
+		padding: 20px 70px 20px 30px;
+	}
+	
+	margin: 0;
 	
 	a{
 		border-bottom: 0;
 	}
 	
 	img{
-		max-width: 100%;
+		max-width: 250px;
 		height: auto;
 		margin: 0 auto;
 	}
 }
+
 
 
 
