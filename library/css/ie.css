@@ -78,85 +78,6 @@ Text Overflow
 // which outputs font-size: 24px; font-size:2rem;
 
 *********************************/
-/********************************* 
-
-Vertical Rhythm Mixin
-
-This mixin is to help create a typograhpical baseline grid
-but also to allow for specifying different line heights 
-or bottom margins if you need to.
-
-In this mixin you can specifiy the font size in PX and 
-it will calculate the REM based on your $doc-font-size 
-& $doc-line-height variables. 
-
-	@include font-size(24);
-
-It will also create a bottom margin based on the 
-$doc-font-size & $doc-line-height variables unless 
-you specify that it shouldn't have one -
-
-	@include font-size(24, no);
-
-Or if you want to specify a different bottom margin 
-to be generated -
-
-	@include font-size(24,32);
-
-This mixin also generates a pixel-less line height 
-by default unless you specify that you either don't 
-want one where I'd suggest declaring 1 within the mixin -
-
-	@include font-size(24, yes, 1);
-
-There's also the option to specify a different line-height 
-for it to generate to, where you would specify the 
-line-height in (effectively) it's pixel value -
-
-	@include font-size(24, yes, 40);
-
-*********************************/
-.all {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-.no-margin {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 0; }
-
-.no-line-height {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-.define-line-height {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 3;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
-
-.define-margin-bottom {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
-
-.define-all {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 3;
-  margin-bottom: 48px;
-  margin-bottom: 3rem; }
-
 /*********************************
 	Text alignment in classes	
 *********************************/
@@ -217,6 +138,16 @@ Something that will reorder your content if used correctly.
 And on the right browser, of course.
 
 **********************/
+/*********************
+Placeholder Mixin
+
+Simply use this in a class somewhere to add placeholder styles.
+
+	@include placeholder {
+		colour: $brand-colour;
+	}
+
+*********************/
 /*********************
 TOOLS
 *********************/
@@ -787,6 +718,67 @@ select {
   background-position: 97.5% center; }
 
 /******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+.respond-form label {
+  display: block; }
+
+.form li {
+  list-style-type: none;
+  clear: both;
+  margin-bottom: 0.7335em; }
+.form input[type=text],
+.form input[type=email],
+.form input[type=url],
+.form textarea {
+  padding: 3px 7px;
+  background: #efefef;
+  border: 2px solid #cecece;
+  /* form validation */ }
+  .form input[type=text]:focus,
+  .form input[type=email]:focus,
+  .form input[type=url]:focus,
+  .form textarea:focus {
+    background: #fff; }
+  .form input[type=text]:invalid,
+  .form input[type=email]:invalid,
+  .form input[type=url]:invalid,
+  .form textarea:invalid {
+    outline: none;
+    border-color: #962828;
+    background-color: #be3333;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none; }
+.form .email {
+  height: 30px; }
+.form select,
+.form input[type=text],
+.form input[type=email],
+.form input[type=url] {
+  max-width: 100%; }
+.form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px; }
+
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em; }
+
+/* allowed tags */
+/* no comments */
+input[type="search"] {
+  width: 61%;
+  float: left;
+  padding: 2% 1%; }
+
+.search-form .button {
+  float: right;
+  width: 35%; }
+
+/******************************************************************
 Site Name:
 Author:
 
@@ -1035,46 +1027,28 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 h1, .h1 {
-  font-size: 2.25px;
-  font-size: 0.14063rem;
-  line-height: 10.66667;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 36px;
+  font-size: 2.25rem; }
 
 h2, .h2 {
-  font-size: 1.875px;
-  font-size: 0.11719rem;
-  line-height: 12.8;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 30px;
+  font-size: 1.875rem; }
 
 h3, .h3 {
-  font-size: 1.5px;
-  font-size: 0.09375rem;
-  line-height: 16;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 24px;
+  font-size: 1.5rem; }
 
 h4, .h4 {
-  font-size: 1.125px;
-  font-size: 0.07031rem;
-  line-height: 21.33333;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 18px;
+  font-size: 1.125rem; }
 
 h5, .h5 {
-  font-size: 1px;
-  font-size: 0.0625rem;
-  line-height: 24;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 16px;
+  font-size: 1rem; }
 
 h6, .h6 {
-  font-size: 0.85px;
-  font-size: 0.05313rem;
-  line-height: 28.23529;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem; }
+  font-size: 13.6px;
+  font-size: 0.85rem; }
 
 /*********************
 HEADER STYLES
@@ -1136,11 +1110,8 @@ nav[role=navigation] {
     .nav li a {
       border-bottom: 0;
       color: #686868;
-      font-size: 1px;
-      font-size: 0.0625rem;
-      line-height: 24;
-      margin-bottom: 24px;
-      margin-bottom: 1.5rem;
+      font-size: 16px;
+      font-size: 1rem;
       padding: 7px 10px;
       font-weight: 400; }
       .nav li a:hover, .nav li a:focus {
@@ -1176,11 +1147,8 @@ nav[role=navigation] {
         .js .nav li ul.show.sub-menu li a, .js .nav li ul.show.children li a,
         .nav li ul.sub-menu li a,
         .nav li ul.children li a {
-          font-size: 0.85px;
-          font-size: 0.05313rem;
-          line-height: 28.23529;
-          margin-bottom: 24px;
-          margin-bottom: 1.5rem;
+          font-size: 13.6px;
+          font-size: 0.85rem;
           padding: 2px 0 2px 14px;
           border-right: 0;
           display: block;
@@ -1232,15 +1200,6 @@ SIDEBARS & ASIDES
   .widget ul li ul {
     margin-top: 0.75em;
     padding-left: 1em; }
-
-input[type="search"] {
-  width: 61%;
-  float: left;
-  padding: 2% 1%; }
-
-.search-form .button {
-  float: right;
-  width: 35%; }
 
 /*********************
 FOOTER STYLES

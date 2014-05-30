@@ -600,6 +600,16 @@ And on the right browser, of course.
 
 **********************/
 /*********************
+Placeholder Mixin
+
+Simply use this in a class somewhere to add placeholder styles.
+
+	@include placeholder {
+		colour: $brand-colour;
+	}
+
+*********************/
+/*********************
 TOOLS
 *********************/
 * {
@@ -1224,6 +1234,67 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center; }
 
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+.respond-form label {
+  display: block; }
+
+.form li {
+  list-style-type: none;
+  clear: both;
+  margin-bottom: 0.7335em; }
+.form input[type=text],
+.form input[type=email],
+.form input[type=url],
+.form textarea {
+  padding: 3px 7px;
+  background: #efefef;
+  border: 2px solid #cecece;
+  /* form validation */ }
+  .form input[type=text]:focus,
+  .form input[type=email]:focus,
+  .form input[type=url]:focus,
+  .form textarea:focus {
+    background: #fff; }
+  .form input[type=text]:invalid,
+  .form input[type=email]:invalid,
+  .form input[type=url]:invalid,
+  .form textarea:invalid {
+    outline: none;
+    border-color: #962828;
+    background-color: #be3333;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none; }
+.form .email {
+  height: 30px; }
+.form select,
+.form input[type=text],
+.form input[type=email],
+.form input[type=url] {
+  max-width: 100%; }
+.form textarea {
+  resize: none;
+  width: 100%;
+  height: 150px; }
+
+/* comment form title */
+#comment-form-title {
+  margin: 0 0 1.1em; }
+
+/* allowed tags */
+/* no comments */
+input[type="search"] {
+  width: 61%;
+  float: left;
+  padding: 2% 1%; }
+
+.search-form .button {
+  float: right;
+  width: 35%; }
+
 /*
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
@@ -1557,6 +1628,14 @@ PAGE NAVI STYLES
   float: right; }
 
 /* end .wp-prev-next */
+.pagination .page-numbers {
+  width: 100%;
+  display: inline-block;
+  text-align: center; }
+  .pagination .page-numbers li {
+    display: inline-block;
+    padding: 4px; }
+
 /******************************************************************
 COMMENT STYLES
 ******************************************************************/
@@ -1632,58 +1711,6 @@ COMMENT STYLES
       opacity: 1; }
 
 /* end .commentlist */
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-.respond-form label {
-  display: block; }
-
-form li {
-  list-style-type: none;
-  clear: both;
-  margin-bottom: 0.7335em; }
-form input[type=text],
-form input[type=email],
-form input[type=url],
-form textarea {
-  padding: 3px 2.76243%;
-  background: #efefef;
-  border: 2px solid #cecece;
-  /* form validation */ }
-  form input[type=text]:focus,
-  form input[type=email]:focus,
-  form input[type=url]:focus,
-  form textarea:focus {
-    background: #fff; }
-  form input[type=text]:invalid,
-  form input[type=email]:invalid,
-  form input[type=url]:invalid,
-  form textarea:invalid {
-    outline: none;
-    border-color: #fbc2c4;
-    background-color: #f6e7eb;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    box-shadow: none; }
-form .email {
-  height: 30px; }
-form select,
-form input[type=text],
-form input[type=email],
-form input[type=url] {
-  max-width: 100%; }
-form textarea {
-  resize: none;
-  width: 100%;
-  height: 150px; }
-
-/* comment form title */
-#comment-form-title {
-  margin: 0 0 1.1em; }
-
-/* allowed tags */
-/* no comments */
 /*********************
 SIDEBAR STYLES
 *********************/
@@ -2128,15 +2155,6 @@ you can add resource intensive styles.
     .widget ul li ul {
       margin-top: 0.75em;
       padding-left: 1em; }
-
-  input[type="search"] {
-    width: 61%;
-    float: left;
-    padding: 2% 1%; }
-
-  .search-form .button {
-    float: right;
-    width: 35%; }
 
   /*********************
   FOOTER STYLES

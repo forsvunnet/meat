@@ -67,6 +67,11 @@ $gutter: 7px;
 }
 
 
+
+
+
+
+
 /*********************
 
 C O N T E N T   C H O R E O G R A P H Y
@@ -100,6 +105,44 @@ And on the right browser, of course.
 	-webkit-box-ordinal-group: #{$num};
 }
 
+
+
+/*********************
+Placeholder Mixin
+
+Simply use this in a class somewhere to add placeholder styles.
+
+	@include placeholder {
+		colour: $brand-colour;
+	}
+
+*********************/
+
+@mixin placeholder {
+
+	&:placeholder{
+		@content;
+	}
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+
+
 /*********************
 TOOLS
 *********************/
@@ -117,6 +160,10 @@ TOOLS
 	white-space: nowrap;
 	overflow: hidden;
 }
+
+
+
+
 
 
 /*********************
