@@ -469,6 +469,17 @@ PAGE NAVI STYLES
 			li{
 				display: inline-block;
 				padding: 4px;
+				
+				a, .span {
+					background: $brand-colour;
+					color: $white;
+					border-radius: 2px;
+					display: block;
+					height: 30px;
+					width: 30px;
+					text-align: center;
+					vertical-align: middle;
+				}
 			}
 					
 		}

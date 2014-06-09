@@ -1635,6 +1635,15 @@ PAGE NAVI STYLES
   .pagination .page-numbers li {
     display: inline-block;
     padding: 4px; }
+    .pagination .page-numbers li a, .pagination .page-numbers li .span {
+      background: #3e454c;
+      color: white;
+      border-radius: 2px;
+      display: block;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      vertical-align: middle; }
 
 /******************************************************************
 COMMENT STYLES
