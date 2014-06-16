@@ -1,11 +1,11 @@
 /******************************************************************
-Site Name: #{$site-name}
-Author: #{$author}
+Site Name:
+Author:
 
-Stylesheet: Mixins & Constants Stylesheet
+Stylesheet: Mixins Stylesheet
 
-This is where you can take advantage of Sass' great features:
-Mixins & Constants. I won't go in-depth on how they work exactly,
+This is where you can take advantage of Sass' great features: Mixins.
+I won't go in-depth on how they work exactly,
 there are a few articles below that will help do that. What I will
 tell you is that this will help speed up simple changes like
 changing a color or adding CSS3 techniques gradients.
@@ -13,157 +13,12 @@ changing a color or adding CSS3 techniques gradients.
 A WORD OF WARNING: It's very easy to overdo it here. Be careful and
 remember less is more.
 
+Helpful:
+http://sachagreif.com/useful-sass-mixins/
+http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+
 ******************************************************************/
-
-
-/*********************
-CLEARFIXIN'
-*********************/
-
-// Contain floats: nicolasgallagher.com/micro-clearfix-hack/
-.clearfix {
-  zoom: 1;
-	&:before, &:after { content: ""; display: table; }
-	&:after { clear: both; }
-}
-
-// A Meatier Clearfix: You won't need to put clearfix class everywhere.
-// However, i've foudn taht this way of doing things gets messy. It's
-// easier to know what you're adding to your HTML rather than
-// clearfixing everything in the scss
-
-@mixin clearfix {
-  zoom: 1;
-	&:before, &:after { content: ""; display: table; }
-	&:after { clear: both; }
-}
-
-
-// Base measurement
-$gutter: 7px;
-
-
-// *********************
-// Vertical Align any DIV
-// Supported from as low as IE9, IE8 can do one.
-// *********************
-// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
-
-// *********************
-
-@mixin vertical-align {
-	position: absolute; //relative
-	top: 50%;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		transform: translateY(-50%);
-}
-// Give it a class
-
-.vertical { 
-	@include vertical-align;
-}
-
-
-
-
-
-
-
-/*********************
-
-C O N T E N T   C H O R E O G R A P H Y
-
-Something that will reorder your content if used correctly.
-And on the right browser, of course.
-
-**********************/
-
-// This is a mixin for making the PARENT box ready.
-// Usage:	@include boxed(vertical);
- 
-@mixin boxed ($dir) {
-	display:box;
-	display:-moz-box;
-	display:-webkit-box;
-	box-orient:$dir;
-	-moz-box-orient:$dir;
-	-webkit-box-orient:$dir;
-}
-
-// This is the lever ordering part.
-// Usage:	@include order(1);
-
-@mixin order ($num) {
-	box-ordinal-group: 1;
-	-moz-box-ordinal-group: 1;
-	-webkit-box-ordinal-group: 1;
-	box-ordinal-group: #{$num};
-	-moz-box-ordinal-group: #{$num};
-	-webkit-box-ordinal-group: #{$num};
-}
-
-
-
-/*********************
-Placeholder Mixin
-
-Simply use this in a class somewhere to add placeholder styles.
-
-	@include placeholder {
-		colour: $brand-colour;
-	}
-
-*********************/
-
-@mixin placeholder {
-
-	&:placeholder{
-		@content;
-	}
-
-    &::-webkit-input-placeholder {
-        @content;
-    }
-
-    &:-moz-placeholder { /* Firefox 18- */
-        @content;
-    }
-
-    &::-moz-placeholder {  /* Firefox 19+ */
-        @content;
-    }
-
-    &:-ms-input-placeholder {
-        @content;
-    }
-}
-
-
-
-/*********************
-TOOLS
-*********************/
-
-// BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-}
-
-// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-.image-replacement {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-
-
-
 
 
 /*********************
@@ -178,13 +33,11 @@ USAGE: @include transition(all 0.2s ease-in-out);
 */
 
 @mixin transition($transition...) {
-	// defining prefixes so we can use them in mixins below
-	$prefixes:      ("-webkit",  "");
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit-", "" );
   @each $prefix in $prefixes {
-    #{$prefix}-transition: $transition;
+    #{$prefix}transition: $transition;
   }
-
-  transition: $transition;
 }
 
 /*********************
@@ -217,23 +70,4 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
-/*********************
-Background colour based on brightness
-*********************/
 
-@mixin bg($color) {
-	// do some clever maths to determine if we
-	// should go brighter or darker
-	$brightness: lightness($color);
-	background-color: $color;
-
-	@if ($brightness > 50%) {
-		&:hover, &:focus {
-			background-color: darken($color, 10%);
-		}
-	} @else {
-		&:hover, &:focus {
-			background-color: lighten($color, 10%);
-		}
-	}
-}

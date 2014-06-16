@@ -10,10 +10,36 @@ Author: Eddie Machado
 
 *******************************************************************
 
-**v1.4 update**
+/* 1.(I've lost track so I'm starting at)7 update */
+- reworked Sass files and broke them into partials
+- setup Sass syntax and new mixins / functions
+- added a ton of pull requests (thanks everyone)
+- developed a bro crush on everyone who's helped contribute, thanks guys
+- also lady crush since I don't want to leave out the helpful women
+- animal crush? Who knows, just thanks everyone
+- added pull paths for the includes in functions.php ( get_template_directory() )
+- renamed clearfix to cf (just cuz i feel like it)
+- removed custom search form since WordPress now supports HTML5 search form
+- moving bones ahoy function to main functions file
+- added content width and replaced css w/ the new markup for oembeds
+- put the nav link functions directly in the templates, no need for extra functions
+- removed navigation fallbacks, because really you never use those anyway
+- removed the_author_posts_link() for a better more native function
+- moved all the extra reset stuff to normalize, I mean these styles aren't changing so it's cool
+- added wp_link_pages for people who are evil and break articles up into multiple pages
+- worked out Theme Check issues
+
+/* 1.5 update */
+- sorted out new scss structure and cleaned up files
+- more pull requests and language translations
+- added some default form styles
+- added a bunch of new style options and variables
+
+/* 1.4 update */
 - updated Modernizr to 2.6.2
 - merged a ton of pull requests (thanks guys and gals!)
 - added windows 8 tile support
+- put LESS back in (too many requests)
 
 **v1.3 update**
 - removed version number from scripts & styles (thanks James)

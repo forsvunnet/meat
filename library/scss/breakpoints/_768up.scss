@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: #{$site-name}
-Author: #{$author}
+Site Name:
+Author:
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -12,35 +12,20 @@ come into play. Have fun!
 
 ******************************************************************/
 
+
 /*********************
 GENERAL STYLES
 *********************/
 
-body {
-	font-size: 100%;
-	line-height: 1.5;
-}
-
+body {}
 
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	max-width: 1140px;
-	margin: 0 auto;
+	max-width: 71.25em;
 }
-
-/*********************
-HEADER STYLES
-*********************/
-
-	h1, .h1 {	@include font-size(2.250);	} 
-	h2, .h2 {	@include font-size(1.875);	} 
-	h3, .h3 {	@include font-size(1.5);	} 
-	h4, .h4 {	@include font-size(1.125);	} 
-	h5, .h5 {	@include font-size(1);		} 
-	h6, .h6 {	@include font-size(0.85);	} 
 
 /*********************
 HEADER STYLES
@@ -48,26 +33,7 @@ HEADER STYLES
 
 .header {}
 
-
-/*********************
-LOGO STYLES
-*********************/
-
-	#logo {
-		width: col_width(3);
-		width: col_width(3, true);
-		text-align: left;
-		float: left;
-		margin-left: 0;
-
-
-		img{
-		    margin: 0em auto;
-		    max-width: 100%;
-		    position: relative;
-		    z-index: 20;
-		}
-	}
+	#logo {}
 
 /*********************
 NAVIGATION STYLES
@@ -94,73 +60,55 @@ nav[role=navigation]{
 		left: auto;
 		max-height: 100%;
 	}
-	
-	li {
-		display: inline-block;
-		position: relative;
+	border: 0;
+	ul {
+		background:$black;
+		margin-top:0;
+	}
 
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
-			&:hover, &:focus {
-				color: $white;
-				background: $brand-colour;
-				
-				a{
-					color: $white;
-				}
-			}
-			
-		a {
-			border-bottom: 0;
-			color: $grey-darker;
-			@include font-size(1);
-			padding: 7px 10px;
-			font-weight: 400;
+	a {
+		border-bottom: 0;
+		background: $brand-colour;
 
-			&:hover, &:focus {
-				color: $white;
-				background: darken($brand-colour, 10%);
-			}
+		/*
+		you can use hover styles here even though this size
+		has the possibility of being a mobile device.
+		*/
+		&:hover, &:focus {
+			color: $white;
+			background: darken($brand-colour, 10%);
+			text-decoration: underline;
 		}
+	}
+
+	li {
+		float: left;
+		position: relative;
 
 		&:first-child {}
 		&:last-child {}
-		
+
 		/*
 		plan your menus and drop-downs wisely.
 		*/
-		.js & ul.show.sub-menu,
-		.js & ul.show.children,
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
+			border: 1px solid #ccc;
 			border-top: 0;
 			position: absolute;
-			display: none;
-			z-index: 15;
-			text-align: left;
-			color: $white;
-			background: $brand-colour;
+			visibility: hidden;
+			z-index: 8999;
 
 			li {
 
-				&:hover, &:focus {
-					a{
-						background: darken($brand-colour, 10%);
-						border-radius: 2px;
-					}
-				}
-				
 				a {
-					@include font-size(0.85);
-					padding: 2px 0 2px 14px;
+					padding: 0.125em 1em;
 					border-right: 0;
 					display: block;
-					width: 200px;
-					color: $white;
-					
+					width: 11em;
+					border-bottom: 1px solid #ccc;
+
 					&:hover,
 					&:focus {}
 
@@ -181,21 +129,24 @@ nav[role=navigation]{
 				just remember deeper menus suck
 				for usability. k, bai.
 				*/
-				ul {}
+				ul {
+					top:0;
+					left:100%;
+				}
 			}
 
 			/* highlight sub-menu current page */
 			li.current-menu-item,
 			li.current_page_item,
-			li.current-page-ancestor {
+			li.current_page_ancestor {
 				a {}
 			}
 		}
 
 		/* showing sub-menus */
-		&:hover ul {
+		&:hover > ul {
 			top: auto;
-			display: block;
+			visibility:visible;
 		}
 
 	} /* end .menu ul li */
@@ -203,14 +154,11 @@ nav[role=navigation]{
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
-	li.current-page-ancestor {
+	li.current_page_ancestor {
 		a {}
 	}  /* end current highlighters */
 
 } /* end .nav */
-
-
-
 
 /***************************************************
 		D i a g o n a l   S i d e b a r s !
@@ -218,8 +166,8 @@ nav[role=navigation]{
 		This is where we can add a slanted
 		bar to the end of a container. The
 		height is wank though, so it needs
-		to be pulled in from JS 
-		
+		to be pulled in from JS
+
 		Should look like this:	[div]/
 
 
@@ -228,7 +176,7 @@ nav[role=navigation]{
 @mixin slanted($slant-right, $colour){
 	position: relative;
 	background: $colour;
-	
+
 	.slanted{
 		content: "";
 		position: absolute;
@@ -242,63 +190,33 @@ nav[role=navigation]{
 	}
 
 	#slant polygon { fill: $colour !important; }
-	
+
 }
 
 .slant-right {
 	@include slanted(15px, $brand-colour);
 }
 
-/*********************
-SIDEBARS & ASIDES
-*********************/
-
-	.widget {
-		ul {
-			li {
-				margin-bottom: 0.75em;
-
-				&:first-child {}
-				&:last-child {}
-				a {}
-				/* deep nesting */
-
-				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
-				}
-			}
-		}
-	}
-
-
 
 /*********************
 FOOTER STYLES
 *********************/
 
-/*
-you'll probably need to do quite a bit
-of overriding here if you styled them for
-mobile. Make sure to double check these!
-*/
-
 .footer{
-	text-align: left;
 
-	.widget{
-		
+	.widget {
+
 		width: col_width(3);
 		width: col_width(3, true);
-		
+
 		float: left;
 		margin-left: $gutter;
-		margin-left: calc(#{$gutter_em} * 1);	
-			
+		margin-left: calc(#{$gutter_em} * 1);
+
 		&.first{ margin-left: 0;}
 		&.last{ float: right;}
 		position: relative;
-		
+
 
 		&:first-child{
 			margin-left: 0;
@@ -318,36 +236,13 @@ mobile. Make sure to double check these!
 	.half-horizontal{
 		border-bottom: 1px solid $black;
 		padding-bottom: 0.5em;
-		margin-bottom: 1em;	
+		margin-bottom: 1em;
 	}
 
-	a{	
+	a{
 		&:hover{
 			color: $brand-colour;
 			text-decoration: underline;
 		}
-	}
-}
-
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
-		}
-	}
-} /* end .footer-links */
-
-
-.copyright{
-	br{
-		display: none;
 	}
 }

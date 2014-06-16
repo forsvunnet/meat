@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: #{$site-name}
-Author: #{$author}
+Site Name:
+Author:
 
 Stylesheet: Button Styles
 
@@ -24,84 +24,133 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
 
+%btn {
+  display: inline-block;
+  position: relative;
+  font-family: $sans-serif;
+  text-decoration: none;
+  color: $white;
+  font-size: 0.9em;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: normal;
+  padding: 0 24px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  @include transition(background-color 0.14s ease-in-out);
+
+  // hovering on the btn
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+  } // end hover
+
+  // clicking on the button
+  &:active {
+    top: 1px; // adds a tiny hop to the click
+  } // end active
+
+} // end .button
+
+/*
+An example button.
+You can use this example if you want. Just replace all the variables
+and it will create a button dependant on those variables.
+*/
+.blue-btn {
+  @extend %btn; // here we load the btn defaults
+  background-color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: darken($blue, 4%);
+  } // end hover
+
+  &:active {
+    background-color: darken($blue, 5%);
+  } // end active
+
+} // end blue button
+
 
 /************************************
-		B U T T O N   C O L O U R S
-	
-	This mixin gives you a button in any
-	colour that you want. It then decides
-	if the background is dark or light and
-	gives you white or dark grey text colour.
+   B U T T O N   C O L O U R S
+
+ This mixin gives you a button in any
+ colour that you want. It then decides
+ if the background is dark or light and
+ gives you white or dark grey text colour.
 
 
 *************************************/
 @mixin button($colour, $style: false){
 
-	@if ($style) {
-		// Standard styles
-		border: none;
-		border-bottom: 5px solid darken($colour, 20%);
-		border-radius: 2px;
-		text-indent:0;
-		display: inline-block;
-		font-weight: normal;
-		font-style: normal;
-		text-decoration: none;
-		text-align: center;
-		cursor: pointer;
-		padding: 7px 14px;
-		outline: none; 
-		-webkit-font-smoothing: antialiased;
-	}
-	
-	/**********************************
-	 This determines the background colour
-	 in a greyscale manner, if it's lighter
-	 than 40% lightness, the text colour
-	 becomes dark to compensate.
-	**********************************/
+ @if ($style) {
+   // Standard styles
+   border: none;
+   border-bottom: 5px solid darken($colour, 20%);
+   border-radius: 2px;
+   text-indent:0;
+   display: inline-block;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   text-align: center;
+   cursor: pointer;
+   padding: 7px 14px;
+   outline: none;
+   -webkit-font-smoothing: antialiased;
+ }
 
-	color: $white;
-	background: $colour;
+ /**********************************
+  This determines the background colour
+  in a greyscale manner, if it's lighter
+  than 40% lightness, the text colour
+  becomes dark to compensate.
+ **********************************/
 
-	$brightness: lightness($colour);
-	@if ($brightness < 70%) {
-	
-		color: $white;
-		&:hover, &:focus, &:active { color: $white; }
-		
-	} @else {
-	
-		color: $text-color;
-		&:hover, &:focus, &:active { color: $text-color; }
-		
-	}
-	
-	/**********************************
-	 This is the style for the hovers,
-	 the actives and the visited.
-	**********************************/
+ color: $white;
+ background: $colour;
 
-	&:hover{
-		background: lighten($colour, 5%);
-	}
-	
-	&:active{ 
-		background: darken($colour, 10%); 
+ $brightness: lightness($colour);
+ @if ($brightness < 70%) {
 
-		@if ($style) {
-			box-shadow: inset 0px 10px 5px -7px darken($colour, 20%);
-			position: relative;
-		    top: 4px;
-		    margin-bottom: 4px;
-			border-bottom-width: 1px;
-		}
-	}
+   color: $white;
+   &:hover, &:focus, &:active { color: $white; }
 
-	&:visited{
-		background: $colour;
-		border-bottom-color: darken($colour, 20%);
-	}
+ } @else {
+
+   color: $text-color;
+   &:hover, &:focus, &:active { color: $text-color; }
+
+ }
+
+ /**********************************
+  This is the style for the hovers,
+  the actives and the visited.
+ **********************************/
+
+ &:hover{
+   background: lighten($colour, 5%);
+ }
+
+ &:active{
+   background: darken($colour, 10%);
+
+   @if ($style) {
+     box-shadow: inset 0px 10px 5px -7px darken($colour, 20%);
+     position: relative;
+       top: 4px;
+       margin-bottom: 4px;
+     border-bottom-width: 1px;
+   }
+ }
+
+ &:visited{
+   background: $colour;
+   border-bottom-color: darken($colour, 20%);
+ }
 
 
 }
@@ -111,8 +160,8 @@ Button Classes that you can have
 for free. Go on. Have them
 ******************************/
 
-.button.brand {			@include button($brand-colour, true);		}
-.button.highlight { 	@include button($brand-highlight, true); 	}
-.button.white {			@include button($white, true); 				}
-.button.black {			@include button($black, true);				}
-.button.compliment {	@include button($brand-compliment, true);	}
+// .button.brand {      @include button($brand-colour, true);   }
+// .button.highlight {  @include button($brand-highlight, true);  }
+// .button.white {      @include button($white, true);        }
+// .button.black {      @include button($black, true);        }
+// .button.compliment { @include button($brand-compliment, true); }

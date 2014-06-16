@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: MEAT 
-Author: Eivin + Andrew 
+Site Name:
+Author:
 
 Stylesheet: Form Styles
 
@@ -41,7 +41,7 @@ textarea,
   display: block;
   height: 40px;
   line-height: 40px;
-  padding: 10px 12px;
+  padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
   color: $text-color;
@@ -51,14 +51,14 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: $sans-serif;
-  background-color: lighten($black, 93%);
+  font-family: $lato;
+  background-color: $gray;
   @include transition(background-color 0.24s ease-in-out);
 
   // a focused input (or hovered on)
   &:focus,
   &:active {
-    background-color: lighten($black, 97%);
+    background-color: lighten($gray, 4%);
   } // end hover or focus
 
   // error notification
@@ -89,7 +89,7 @@ textarea,
   &[disabled],
   &.is-disabled {
     cursor: not-allowed;
-    border-color: $disabled-grey;
+    border-color: $disabled-gray;
     opacity: 0.6;
 
     &:focus,
@@ -117,101 +117,4 @@ select {
   background-position: 97.5% center;
 }
 
-
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-
-.respond-form label {
-	display: block;
-}
-
-.form {
-	//margin: 0.75em 0;
-
-	li {
-		list-style-type: none;
-		clear: both;
-		margin-bottom: 0.7335em;
-
-		label,
-		small {
-			//display: none;
-		}
-	}
-
-	input[type=text],
-	input[type=email],
-	input[type=url],
-	textarea {
-		padding: 3px $gutter;
-		background: #efefef;
-		border: 2px solid #cecece;
-		//line-height: 1.5;
-
-		&:focus {
-			background: #fff;
-		}
-
-		/* form validation */
-		&:invalid {
-			outline: none;
-			border-color: darken($alert-red, 10%);
-			background-color: $alert-red;
-			-webkit-box-shadow: none;
-			   -moz-box-shadow: none;
-			    -ms-box-shadow: none;
-					box-shadow: none;
-		}
-	}
-	.email{
-		height: 30px;
-	}
-	
-	select,
-	input[type=text],
-	input[type=email],
-	input[type=url] {
-		max-width: 100%;
-		//min-width: 250px;
-	}
-
-	textarea {
-		resize: none;
-		width: 100%;
-		height: 150px;
-	}
-
-}
-
-/* comment form title */
-#comment-form-title {
-	margin: 0 0 1.1em;
-}
-
-/* allowed tags */
-#allowed_tags {
-	//margin: 1.5em 10px 0.7335em 0;
-}
-
-/* no comments */
-.nocomments {
-	//margin: 0 20px 1.1em;
-}
-
-
-
-// Search Form
-
-input[type="search"]{
-	width: 61%;
-	float: left;
-	padding: 2% 1%;
-}
-
-.search-form .button{
-	float: right;
-	width: 35%;
-}
 

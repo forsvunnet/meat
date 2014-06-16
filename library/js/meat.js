@@ -101,9 +101,7 @@ jQuery(document).ready(function($) {
 
   // Menu (button) script:
   $('body').addClass('js');
-  var menu_button = $('<p>').addClass('clickable mobile-only'); //.text(window.main_nav_name || ''); <-- This adds the name of the navigation to the nav on mobile
-  var menu_icon = '<div class="menu-icon"><div></div><div></div><div></div></div>';
-  menu_button.append(menu_icon);
+  var menu_button = $('<p>').text('Menu').addClass('clickable mobile-only'); //.text(window.main_nav_name || ''); <-- This adds the name of the navigation to the nav on mobile
   $('.nav').before(menu_button);
 
   $('.clickable, .nav a').click(function(event) {
@@ -116,7 +114,7 @@ jQuery(document).ready(function($) {
       }
     }
   });
- 
+
   if(!Modernizr.svg) {
     // Replace svg file-extention with png.
     // Note: This is only for browsers that does not support svg

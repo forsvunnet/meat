@@ -2,42 +2,61 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="wrap cf">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<div id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?>>
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
-									<?php 
-										// A note about thumbnails:
-										// Responsive images is really troublesome as long as there is no set standard
-										// The best solution so far seems to be this:
-									  // http://adaptive-images.com/
-										the_post_thumbnail('full');
-									?>
+
 									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
 
-								</header> <!-- end article header -->
+									<p class="byline vcard">
+										<?php printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+									</p>
 
-								<section class="entry-content clearfix">
-									<?php the_content(); ?>
-								</section> <!-- end article section -->
+								</header> <?php // end article header ?>
 
-								<footer class="article-footer">
-									<?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?>
+								<section class="entry-content cf" itemprop="articleBody">
+									<?php
+										// the content (pretty self explanatory huh)
+										the_content();
 
-								</footer> <!-- end article footer -->
+										/*
+										 * Link Pages is used in case you have posts that are set to break into
+										 * multiple pages. You can remove this if you don't plan on doing that.
+										 *
+										 * Also, breaking content up into multiple pages is a horrible experience,
+										 * so don't do it. While there are SOME edge cases where this is useful, it's
+										 * mostly used for people to get more ad views. It's up to you but if you want
+										 * to do it, you're wrong and I hate you. (Ok, I still love you but just not as much)
+										 *
+										 * http://gizmodo.com/5841121/google-wants-to-help-you-avoid-stupid-annoying-multiple-page-articles
+										 *
+										*/
+										wp_link_pages( array(
+											'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'bonestheme' ) . '</span>',
+											'after'       => '</div>',
+											'link_before' => '<span>',
+											'link_after'  => '</span>',
+										) );
+									?>
+								</section> <?php // end article section ?>
+
+								<footer class="article-footer cf">
+
+								</footer>
 
 								<?php comments_template(); ?>
 
-							</div> <!-- end article -->
+							</article>
 
 							<?php endwhile; else : ?>
 
-									<article id="post-not-found" class="hentry clearfix">
+									<article id="post-not-found" class="hentry cf">
 										<header class="article-header">
 											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 										</header>
@@ -51,12 +70,12 @@
 
 							<?php endif; ?>
 
-						</div> <!-- end #main -->
+						</div>
 
 						<?php get_sidebar(); ?>
 
-				</div> <!-- end #inner-content -->
+				</div>
 
-			</div> <!-- end #content -->
+			</div>
 
 <?php get_footer(); ?>

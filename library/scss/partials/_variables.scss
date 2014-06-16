@@ -1,56 +1,80 @@
-/* Colours */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
 
 // Primary alert colours
 
-	$alert-yellow:		#eadb33;
-	$alert-red:			#be3333;
-	$alert-green:		#a8c923;
-	$alert-blue:		#209dd6;
-	
+$alert-yellow:    #eadb33;
+$alert-red:     #be3333;
+$alert-green:   #a8c923;
+$alert-blue:    #209dd6;
+
 // Newsprint, black and white
-	
-	$black:				#000;
-	$white:				#fff;
-	$text-color:        #555;
+
+$black:       #000;
+$white:       #fff;
+$text-color:        #555;
 
 // Primary colours
-	
-	$brand-colour:		#3e454c;
-	$brand-highlight:	#ff642d;
-	$brand-compliment:	adjust-hue($brand-highlight, 180deg);
-	
-// Links and Anchors
-	
-	$link-color:		$brand-colour;
-	$link-hover:		darken($link-color, 9%);
-	
-// Shades of Grey
 
-	$disabled-grey:     #cfcfcf;
-	$grey:			   	#aaa;
-	$grey-dark:			darken($grey, 13%);
-	$grey-darker:		darken($grey-dark, 13%);
-	$grey-light:		lighten($grey, 13%);
-	$grey-lighter:		lighten($grey-light, 13%);
-	
+$brand-colour:    #3e454c;
+$brand-highlight: #ff642d;
+$brand-compliment:  adjust-hue($brand-highlight, 180deg);
+$black:             #323944;
+$white:             #fff;
+
+$light-gray:        #f8f9fa;
+$gray:              #eaedf2;
+$text-color:        #5c6b80;
+$meta-gray:         #9fa6b4;
+
+
+// Shades of Grey
+$disabled-grey:     #cfcfcf;
+$grey:          #aaa;
+$grey-dark:     darken($grey, 13%);
+$grey-darker:   darken($grey-dark, 13%);
+$grey-light:    lighten($grey, 13%);
+$grey-lighter:    lighten($grey-light, 13%);
+
+
 //Social Networks
 
-	$twitter:			#00aee7;
-	$facebook:			#0065b2;
-	$google: 			#f75539;
-	
-//Alerts	
-	$warning_text: 		$grey-dark;
-	$error_text: 		$alert-red;
-	$warning_text: 		$grey-dark;
-	$info_text: 		$alert-yellow;
-	$success_text: 		$alert-green;
+$twitter:     #00aee7;
+$facebook:      #0065b2;
+$google:      #f75539;
 
-// Separators
+$tan:               #eceee5;
 
-	$hr_border: 		$grey;
-	$menu-border: 		$grey-dark;
-	
-// Headings
-	
-	$headings-color: 	$alert-blue;
+$green:             #7dd667;
+
+$bones-pink:        #f01d4f;
+$blue:              #2980b9;
+
+$link-color:        $bones-pink;
+$link-hover:        darken($link-color, 9%);
+
+$border-color:      #ccc;
+$disabled-gray:     #cfcfcf;
+
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/

@@ -1,11 +1,6 @@
-/* Ownership of the stylesheets is global. */
-
-$site-name: Meat !global;
-$author:	Andrew + Eivin !global;
-
 /******************************************************************
-Site Name: #{$site-name}
-Author: #{$author}
+Site Name:
+Author:
 
 Stylesheet: IE Stylesheet
 
@@ -25,23 +20,14 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 ******************************************************************/
 
-
 @import "partials/variables"; // import variables
-@import "partials/typography"; // import type
 @import "partials/mixins"; // import mixins
-
-@import "modules/buttons"; // import buttons
-@import "modules/forms"; // import buttons
-@import "modules/alerts"; // import buttons
-@import "modules/animations"; // import Animations
-
 @import "partials/ie_grid"; // import grid
 
 // import everything inside media queries
 @import "breakpoints/481up";
 @import "breakpoints/768up";
 @import "breakpoints/1030up";
-
 
 /*
 you can call the larger styles if you want, but there's really no need

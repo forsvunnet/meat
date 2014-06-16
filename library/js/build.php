@@ -69,5 +69,7 @@ function meat_build_js() {
     }
   }
 
-  return $html;
+  //return $html;
+  wp_register_script( 'cached-js', get_stylesheet_directory_uri() . '/library/js/cache.js', array( 'jquery' ), '', true );
+  wp_enqueue_script( 'cached-js' );
 }

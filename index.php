@@ -2,52 +2,49 @@
 
 			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="wrap cf">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+						<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<header class="article-header">
 
-									<h1 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&</span> filed under %4$s.', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));
-									?></p>
+									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<p class="byline vcard">
+										<?php printf( __( 'Posted', 'bonestheme' ) . ' <time class="updated" datetime="%1$s" pubdate>%2$s</time> ' . __('by', 'bonestheme' ) . ' <span class="author">%3$s</span>', get_the_time('Y-m-j'), get_the_time(get_option('date_format')), get_the_author_link( get_the_author_meta( 'ID' ) )); ?>
+									</p>
 
-								</header> <!-- end article header -->
+								</header>
 
-								<section class="entry-content clearfix">
+								<section class="entry-content cf">
 									<?php the_content(); ?>
-								</section> <!-- end article section -->
+								</section>
 
-								<footer class="article-footer">
-									<p class="tags"><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
+								<footer class="article-footer cf">
+									<p class="footer-comment-count">
+										<?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), _n( '<span>%</span> Comments', '<span>%</span> Comments', get_comments_number(), 'bonestheme' ) );?>
+									</p>
 
-								</footer> <!-- end article footer -->
 
-								<?php // comments_template(); // uncomment if you want to use them ?>
+                 	<?php printf( '<p class="footer-category">' . __('filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
 
-							</article> <!-- end article -->
+                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+
+
+								</footer>
+
+							</article>
 
 							<?php endwhile; ?>
 
-									<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
-											<?php bones_page_navi(); ?>
-									<?php } else { ?>
-											<nav class="wp-prev-next">
-													<ul class="clearfix">
-														<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-														<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-													</ul>
-											</nav>
-									<?php } ?>
+									<?php bones_page_navi(); ?>
 
 							<?php else : ?>
 
-									<article id="post-not-found" class="hentry clearfix">
+									<article id="post-not-found" class="hentry cf">
 											<header class="article-header">
 												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 										</header>
@@ -61,12 +58,14 @@
 
 							<?php endif; ?>
 
-						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						</div>
 
-				</div> <!-- end #inner-content -->
+					<?php get_sidebar(); ?>
 
-			</div> <!-- end #content -->
+				</div>
+
+			</div>
+
 
 <?php get_footer(); ?>
