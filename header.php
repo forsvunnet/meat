@@ -36,15 +36,12 @@
 
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
-
 	</head>
 
 	<body <?php body_class(); ?>>
 
 		<div id="container">
-
 			<header class="header" role="banner">
-
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
@@ -52,7 +49,6 @@
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
-
 
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
@@ -68,9 +64,7 @@
         			'depth' => 0,                                   // limit the depth of the nav
     					'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
-
 					</nav>
 
 				</div>
-
 			</header>

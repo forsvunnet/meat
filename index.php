@@ -9,6 +9,7 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('full'); ?></a>
 
 								<header class="article-header">
 
@@ -28,29 +29,26 @@
 										<?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), _n( '<span>%</span> Comments', '<span>%</span> Comments', get_comments_number(), 'bonestheme' ) );?>
 									</p>
 
-
                  	<?php printf( '<p class="footer-category">' . __('filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
 
                   <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
 
-
 								</footer>
-
 							</article>
 
 							<?php endwhile; ?>
-
-									<?php bones_page_navi(); ?>
-
+								<?php bones_page_navi(); ?>
 							<?php else : ?>
 
 									<article id="post-not-found" class="hentry cf">
 											<header class="article-header">
 												<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
 										</header>
+
 											<section class="entry-content">
 												<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
 										</section>
+
 										<footer class="article-footer">
 												<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
 										</footer>
@@ -58,14 +56,11 @@
 
 							<?php endif; ?>
 
-
 						</div>
 
 					<?php get_sidebar(); ?>
 
 				</div>
-
 			</div>
-
 
 <?php get_footer(); ?>

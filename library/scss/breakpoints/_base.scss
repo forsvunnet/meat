@@ -23,6 +23,10 @@ body {
 	background-color: $gray;
 }
 
+img {
+	width: 100%; 
+	height: auto;
+}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -224,7 +228,7 @@ POSTS & CONTENT STYLES
 		.hentry {
 			background-color: $white;
 			border-radius: 3px;
-			margin-bottom: 1.5em;
+			margin: 0 0.5em 1.5em;
 			border: 1px solid $border-color;
 
 			header {
@@ -782,14 +786,14 @@ SIDEBARS & ASIDES
 
 	}
 
-	.no-widgets {
-		background-color: $white;
-		padding: 1.5em;
-		text-align: center;
-		border: 1px solid $border-color;
-		border-radius: 2px;
-		margin-bottom: 1.5em;
-	}
+.no-widgets {
+	background-color: $white;
+	padding: 1.5em;
+	text-align: center;
+	border: 1px solid $border-color;
+	border-radius: 0.2em;
+	margin: 0 0.5em 1.5em;
+}
 
 /*********************
 FOOTER STYLES
@@ -818,14 +822,22 @@ FOOTER STYLES
 
 		}
 
-	} /* end .footer-links */
+	} 
+	/* end .footer-links */
 
 .copyright{
 	color: #999;
-	a { color: #999; border-bottom-color: #999;}
+	text-align: center;
+	a { 
+		color: #999; border-bottom-color: #999;
+	}
 	margin: 1em 0 1em;
+
+
+/*media query for iphone portrait*/
 
 	@media only screen and (max-width: 30.063em) {
 		padding: 0 2em;
 	}
 }
+
