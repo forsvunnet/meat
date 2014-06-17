@@ -23,6 +23,13 @@ our mixins, functions, and variables that we'll be using across
 the whole project.
 *********************/
 
+
+$mobile: 	30.063em; //481px
+$tablet: 	47.900em; //766px
+$desktop: 	64.375em; //1030px
+$beyond: 	77.500em; //1240px
+$thin: 		42.500em; //680px
+
 // normalize: http://necolas.github.io/normalize.css/
 @import "partials/normalize";
 
@@ -69,12 +76,6 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 
 // styles in base.scss
 @import "breakpoints/base";
-
-$mobile: 	30.063em; //481px
-$tablet: 	47.900em; //766px
-$desktop: 	64.375em; //1030px
-$beyond: 	77.500em; //1240px
-$thin: 		42.500em; //680px
 
 /*********************
 LARGER MOBILE DEVICES

@@ -148,7 +148,7 @@ function bones_scripts_and_styles() {
 		// enqueue styles and scripts
     //wp_enqueue_script( 'bones-modernizr' );
     // Load and run a tiny php script to combine js files
-    require_once "library/js/build.php";
+    require_once "js/build.php";
     meat_build_js();
 
 

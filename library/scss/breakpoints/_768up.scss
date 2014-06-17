@@ -206,13 +206,6 @@ FOOTER STYLES
 
 	.widget {
 
-		width: col_width(3);
-		width: col_width(3, true);
-
-		float: left;
-		margin-left: $gutter;
-		margin-left: calc(#{$gutter_em} * 1);
-
 		&.first{ margin-left: 0;}
 		&.last{ float: right;}
 		position: relative;

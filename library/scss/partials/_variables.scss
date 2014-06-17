@@ -33,6 +33,7 @@ $text-color:        #555;
 // Primary colours
 
 $brand-colour:    #3e454c;
+$brand:    $brand-colour;
 $brand-highlight: #ff642d;
 $brand-compliment:  adjust-hue($brand-highlight, 180deg);
 $black:             #323944;
