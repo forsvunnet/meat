@@ -11,6 +11,15 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
+/*
+	These are the breakpoints for your website.
+	These can be customised to your design. The 
+	more that I think about it, the more I'm 
+	starting to realise that these breakpoints 
+	need to change for the design, and not for 
+	the sizes they are. They're just a guide. 
+	In fact, I insist, you MUST change these.
+*/
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all

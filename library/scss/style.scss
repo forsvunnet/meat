@@ -17,11 +17,7 @@ and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
 
-$mobile: 	30.063em; //481px
-$tablet: 	47.900em; //766px
-$desktop: 	64.375em; //1030px
-$beyond: 	77.500em; //1240px
-$thin: 		42.500em; //680px
+@import "breakpoints"; // These are the sizes for the responsive design
 
 /*********************
 IMPORTING PARTIALS
@@ -86,7 +82,7 @@ tweeners.
 @media only screen and (min-width: $mobile) {
 
 	// styles in 481up.scss
-	@import "breakpoints/481up";
+	@import "breakpoints/mobile";
 
 } // end of media query
 
@@ -102,7 +98,7 @@ you can add resource intensive styles.
 	@import "partials/grid";
 
 	// styles in 768up.scss
-	@import "breakpoints/768up";
+	@import "breakpoints/tablet";
 	
 	/* Desktop only Plugins.
 		@import "plugins/gravity";
@@ -119,7 +115,7 @@ you can add resource intensive styles.
 @media only screen and (min-width: $desktop) {
 
 	// styles in 1030up.scss
-	@import "breakpoints/1030up";
+	@import "breakpoints/desktop";
 
 } // end of media query
 
@@ -127,10 +123,10 @@ you can add resource intensive styles.
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
-@media only screen and (min-width: $beyond) {
+@media only screen and (min-width: $cinema) {
 
 	// styles in 1240up.scss
-	@import "breakpoints/1240up";
+	@import "breakpoints/cinema";
 
 } // end of media query
 

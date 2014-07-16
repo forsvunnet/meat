@@ -16,6 +16,7 @@ without the media queries. No need to worry about editing anything!
 
 ******************************************************************/
 
+@import "breakpoints"; // These are the sizes for the responsive design
 
 /******************************************************************
 IMPORTS & DEPENDENCIES
@@ -38,9 +39,9 @@ import the mixins file so SASS can understand the variables.
 @import "partials/ie_grid"; // import grid
 
 // import everything inside media queries
-@import "breakpoints/481up";
-@import "breakpoints/768up";
-@import "breakpoints/1030up";
+@import "breakpoints/mobile";
+@import "breakpoints/tablet";
+@import "breakpoints/desktop";
 
 
 /*
