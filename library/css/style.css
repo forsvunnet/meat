@@ -1339,6 +1339,8 @@ GENERAL STYLES
 	layout of your site. 
 			  
 ********************************************/
+/* Adding an extra mixin to make widths fallbackabler.*/
+/* Usage: @include width(2); */
 body {
   background: white;
   -webkit-font-smoothing: antialiased; }
@@ -1875,6 +1877,8 @@ you can add resource intensive styles.
   	layout of your site. 
   			  
   ********************************************/
+  /* Adding an extra mixin to make widths fallbackabler.*/
+  /* Usage: @include width(2); */
   .onecol {
     width: 5.79694%;
     width: calc((99.95% - 11rem) / 12); }
