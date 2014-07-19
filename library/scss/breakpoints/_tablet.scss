@@ -54,8 +54,7 @@ LOGO STYLES
 *********************/
 
 	#logo {
-		width: col_width(3);
-		width: col_width(3, true);
+		@include width(3);
 		text-align: left;
 		float: left;
 		margin-left: 0;

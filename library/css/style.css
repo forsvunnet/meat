@@ -580,6 +580,8 @@ A WORD OF WARNING: It's very easy to overdo it here. Be careful and
 remember less is more.
 
 ******************************************************************/
+/* Adding an extra mixin to make widths fallbackabler.*/
+/* Usage: @include width(2); */
 /*********************
 CLEARFIXIN'
 *********************/
@@ -1339,8 +1341,6 @@ GENERAL STYLES
 	layout of your site. 
 			  
 ********************************************/
-/* Adding an extra mixin to make widths fallbackabler.*/
-/* Usage: @include width(2); */
 body {
   background: white;
   -webkit-font-smoothing: antialiased; }
@@ -1435,7 +1435,7 @@ LOGO STYLES
   display: block;
   text-align: center;
   width: 100%;
-  padding: 20px 30px;
+  padding: 20px 0;
   margin: 0; }
   @media (max-width: 30.063em) {
     #logo {
@@ -1877,8 +1877,6 @@ you can add resource intensive styles.
   	layout of your site. 
   			  
   ********************************************/
-  /* Adding an extra mixin to make widths fallbackabler.*/
-  /* Usage: @include width(2); */
   .onecol {
     width: 5.79694%;
     width: calc((99.95% - 11rem) / 12); }
