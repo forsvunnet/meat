@@ -1925,26 +1925,13 @@ you can add resource intensive styles.
     width: 99.95%;
     width: calc((99.95% - 0rem) / 1); }
 
-  /*	//This is how i've been using responsive widths, you're able to overwrite these per stylesheet
-  
-  	article {
-  		width: col_width(6);
-  		width: col_width(6, true);
-  		
-  		float: left;
-  		margin-left: $gutter;
-  		margin-left: calc(1rem * 1);	
-  			
-  		&.first{ margin-left: 0;}
-  		&.last{ float: right;}
-  	}
-  */
   .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol, .fifthcol, .threefifth {
     position: relative;
     float: left;
     margin-left: 2.76243%;
     margin-left: calc(1rem * 1); }
 
+  /* Adding an extra mixin to make widths fallbackabler.*/
   .first {
     margin-left: 0; }
 
