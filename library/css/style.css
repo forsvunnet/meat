@@ -1437,7 +1437,7 @@ LOGO STYLES
   width: 100%;
   padding: 20px 0;
   margin: 0; }
-  @media (max-width: 30.063em) {
+  @media (max-width: 30.063rem) {
     #logo {
       padding: 20px 70px 20px 30px; } }
   #logo a {
@@ -1499,7 +1499,7 @@ NAVIGATION STYLES
   margin: 0;
   font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* end .menu li */ }
-  @media only screen and (max-width: 47.9em) {
+  @media only screen and (max-width: 47.9rem) {
     .js .nav {
       overflow: hidden;
       max-height: 0;
@@ -1522,7 +1522,7 @@ NAVIGATION STYLES
   .nav li a {
     display: inline-block;
     text-decoration: none; }
-  @media only screen and (max-width: 47.9em) {
+  @media only screen and (max-width: 47.9rem) {
     .js .nav li ul.sub-menu, .js
     .nav li ul.children {
       overflow: hidden;
@@ -1767,7 +1767,7 @@ footer .widgettitle {
   .copyright a {
     color: #999;
     border-bottom-color: #999; }
-  @media only screen and (max-width: 30.063em) {
+  @media only screen and (max-width: 30.063rem) {
     .copyright {
       padding: 0 2em; } }
 
@@ -1777,7 +1777,7 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
-@media only screen and (min-width: 30.063em) {
+@media only screen and (min-width: 30.063rem) {
   /******************************************************************
   Site Name: Meat
   Author: AndrewEivin
@@ -1845,7 +1845,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 47.9em) {
+@media only screen and (min-width: 47.9rem) {
   /******************************************************************
   Site Name: Meat
   Author: AndrewEivin
@@ -2220,7 +2220,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 64.375em) {
+@media only screen and (min-width: 64.375rem) {
   /******************************************************************
   Site Name: Meat
   Author: AndrewEivin
@@ -2240,7 +2240,7 @@ you can add resource intensive styles.
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
-@media only screen and (min-width: 77.5em) {
+@media only screen and (min-width: 77.5rem) {
   /******************************************************************
   Site Name: Meat
   Author: AndrewEivin
