@@ -127,7 +127,7 @@ HEADER STYLES
 	}
 
 	@media (max-width: $mobile){
-		padding: 1.5em 3.5em 1.5em 2em;
+		padding: 1.5em 2em;
 	}
 }
 
@@ -226,18 +226,13 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
-			border-radius: 3px;
-			margin: 0 0.5em 1.5em;
-			border: 1px solid $border-color;
+			padding: 0 0.5em;
 
 			header {
-				border-bottom: 1px solid $light-gray;
-				padding: 1.5em;
 			}
 
 			footer {
-				padding: 1.5em;
+				padding: 1.5em 0;
 				border-top: 1px solid $light-gray;
 
 				p {
@@ -264,7 +259,7 @@ POSTS & CONTENT STYLES
 
 		/* entry content */
 		.entry-content {
-			padding: 1.5em 1.5em 0;
+			padding: 1.5em 0 0;
 
 			p {
 				margin: 0 0 1.5em;
@@ -699,7 +694,7 @@ COMMENT FORM STYLES
 
 .comment-respond {
 	@extend .cf;
-	padding: 1.5em;
+	padding: 1.5em 0;
 	border-top: 1px solid $light-gray;
 }
 

@@ -4,6 +4,12 @@
 
 				<div id="inner-content" class="wrap cf">
 
+					<div class="m-all t-all d-all featured-image">
+	          <?php the_post_thumbnail("full"); ?>
+						<p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+					</div>
+
+
 					<div id="main" class="m-all t-2of3 d-5of7 cf" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
