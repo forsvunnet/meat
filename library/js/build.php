@@ -60,16 +60,14 @@ function meat_build_js() {
   }
 
   if ($script !== FALSE) {
-    if ($cache_exists) {
-      $html = '<script type="text/javascript" src="' . $cache_uri . '"></script>';
-    }
-    else {
-      $html = '<script type="text/javascript">%s</script>';
+    if ( !$cache_exists ) {
+      $html = '<'.'script type="text/javascript">%s</script>';
       $html = sprintf($html, $script);
     }
   }
 
-  //return $html;
-  wp_register_script( 'cached-js', get_stylesheet_directory_uri() . '/library/js/cache.js', array( 'jquery' ), '', true );
-  wp_enqueue_script( 'cached-js' );
+  if ( $cache_exists ) {
+    wp_register_script( 'cached-js', get_stylesheet_directory_uri() . '/library/js/cache.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'cached-js' );
+  }
 }
