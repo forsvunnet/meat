@@ -19,6 +19,20 @@ of the styles inside media queries.
 
 @import "breakpoints"; // These are the sizes for the responsive design
 
+
+/********************************************
+				B O U R B O N
+
+	Note: If you don't know what you
+	do and don't want, just uncomment
+	bourbon below and just enjoy life
+	with a glass of bourbon.
+
+********************************************/
+
+@import 'bourbon';
+
+
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
@@ -86,6 +100,20 @@ tweeners.
 
 } // end of media query
 
+
+/*
+PHABLET
+In between Phone and tablet. Seriously. This covers things from nexus 7 to iphone6+ etc.
+*/
+
+@media only screen and (min-width: $phablet) {
+
+	@import "breakpoints/phablet";
+
+} // end of media query
+
+
+
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -105,6 +133,22 @@ you can add resource intensive styles.
 	*/
 
 } // end of media query
+
+
+
+
+/*
+DESKLET
+In between desktop and tablet
+*/
+
+@media only screen and (min-width: $desklet) {
+
+	@import "breakpoints/desklet";
+
+} // end of media query
+
+
 
 /*
 DESKTOP

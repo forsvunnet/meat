@@ -1,0 +1,16 @@
+/******************************************************************
+Site Name: #{$site-name}
+Author: #{$author}
+
+Stylesheet: Phablet Stylsheet
+
+This is the Phablet size. It's larger than phone, smaller than a tablet...
+
+******************************************************************/
+
+$wrap: $phablet;
+
+.wrap {
+	max-width: $wrap;
+	margin: 0 auto;
+}
