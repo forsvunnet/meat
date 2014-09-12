@@ -26,10 +26,13 @@ body {
 LAYOUT & GRID STYLES
 *********************/
 
+$wrap: $tablet;
+
 .wrap {
-	max-width: 1140px;
+	max-width: $wrap;
 	margin: 0 auto;
 }
+
 
 /*********************
 HEADER STYLES
