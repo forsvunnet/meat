@@ -2,6 +2,101 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "17908",
 "files": {
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/404.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/404.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/archive-custom_type.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/archive-custom_type.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/archive.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/archive.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/CHANGELOG.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/CHANGELOG.md",
+		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/CHANGELOG.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/comments.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/comments.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16299,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/favicon.png",
+		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/footer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/footer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/functions.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/functions.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/header.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/index.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/index.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/library\/admin.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -680,6 +775,119 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/modules\/module-box.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/modules\/module-box.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/modules\/readme.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/modules\/readme.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/page-custom.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/page-custom.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/README.md",
+		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/screenshot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68193,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/screenshot.png",
+		"outputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/screenshot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/search.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/search.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/sidebar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/single-custom_type.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/single-custom_type.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/single.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/single.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/style.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/taxonomy-custom_cat.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/Users\/FullPhat\/Google Drive\/Meat\/meat_0.2\/meat\/taxonomy-custom_cat.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
@@ -689,9 +897,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "library",
+	"displayValue": "meat",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "compass_gray"
+	"iconImageName": "brackets_darkGray"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,

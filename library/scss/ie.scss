@@ -16,7 +16,7 @@ without the media queries. No need to worry about editing anything!
 
 ******************************************************************/
 
-@import "breakpoints"; // These are the sizes for the responsive design
+@import 'bourbon';
 
 /******************************************************************
 IMPORTS & DEPENDENCIES
@@ -26,10 +26,25 @@ understand (what's inside the media queries). We also need to
 import the mixins file so SASS can understand the variables.
 ******************************************************************/
 
+// THIS CONVERTS ALL REMS TO PX
+$px-only: true;
 
-@import "partials/variables"; // import variables
-@import "partials/typography"; // import type
-@import "partials/mixins"; // import mixins
+// Normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
+
+// Sass variables
+@import "partials/variables";
+
+@import "breakpoints"; // These are the sizes for the responsive design
+
+// Typography
+@import "partials/typography";
+
+// Sass functions
+@import "partials/functions";
+
+// Import mixins
+@import "partials/mixins";
 
 @import "modules/buttons"; // import buttons
 @import "modules/forms"; // import buttons
@@ -40,7 +55,9 @@ import the mixins file so SASS can understand the variables.
 
 // import everything inside media queries
 @import "breakpoints/mobile";
+@import "breakpoints/phablet";
 @import "breakpoints/tablet";
+@import "breakpoints/desklet";
 @import "breakpoints/desktop";
 
 
