@@ -50,9 +50,9 @@ p {
       word-break: break-word;
      word-break: break-word;
   // cleaning up the ragged lines and breaks
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+          hyphens: none;
   // sets a minimum number of characters before and after the break
   -webkit-hyphenate-before: 2;
    -webkit-hyphenate-after: 3;
@@ -73,7 +73,7 @@ p {
 Text Overflow
 *********************/
 
-@mixin text-overflow() {
+@mixin text-overflow( ) {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -87,11 +87,20 @@ Text Overflow
 
 *********************************/
 
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 16) + px;
-  font-size: $sizeValue + rem;
-}
 
+@mixin font-size($sizeValue: 1.6, $px: false) {
+
+	@if $px == false{ 
+	  font-size: ($sizeValue * 16) + px;
+	  font-size: $sizeValue + rem;
+	}
+
+	@else {
+	  font-size: $sizeValue + px;
+	  font-size: ($sizeValue / 16) + rem;
+	}
+  
+}
 /*********************************
 	Text alignment in classes	
 *********************************/
