@@ -81,9 +81,25 @@ jQuery(document).ready(function($) {
   // add all your scripts here
   
 	/*
-	$('.slant-right').each( function(){
-		$(this).prepend('<div class="slanted"></div>');
-	});
+
+		//This makes all links that start with # scrolling links
+		$('a[href^="#"]').on('click',function (e) {
+			e.preventDefault();
+			var target = this.hash,
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top - 100
+			}, 900, 'swing', function () {
+			window.location.hash = target - 100;
+			});
+		});
+		
+		//back to top link scrolls back to the top of the page
+		$(".BackToTop").click(function() {
+			$('html, body').animate({scrollTop: 0}, 1000);
+		});
+
+
 	*/
 
 }); /* end of as page load scripts */
