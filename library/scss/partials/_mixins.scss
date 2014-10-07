@@ -171,7 +171,69 @@ TOOLS
 
 
 
+/************************
+ I N L I N E - B L O C K
+~ Gap Removal Technique ~
 
+@usage: @include ib();
+************************/
+
+@mixin ib( ){
+	// Remove that gap
+    letter-spacing: -0.31em; /* webkit */
+    letter-spacing: -0.31rem; /* webkit */
+    *letter-spacing: normal; /* reset IE < 8 */
+    word-spacing: -0.43em; /* IE < 8 && gecko */
+    word-spacing: -0.43rem; /* IE < 8 && gecko */
+
+	> * {
+	// Apply normals to all direct child elements
+	    display: inline-block;
+	    zoom: 1; *display: inline; /* IE < 8: fake inline-block */
+	    letter-spacing: normal;
+	    word-spacing: normal;
+	    vertical-align: top;
+	}	
+}
+
+
+
+
+// Modular Scale and all that jazz. SHOULD WORK! But might not... depends on the size really, doesn't it.
+// @Useage:	@include modular(rem(44));
+
+// Scaling Variables
+$golden:           1.618;
+$minor-second:     1.067;
+$major-second:     1.125;
+$minor-third:      1.2;
+$major-third:      1.25;
+$perfect-fourth:   1.333;
+$augmented-fourth: 1.414;
+$perfect-fifth:    1.5;
+$minor-sixth:      1.6;
+$major-sixth:      1.667;
+$minor-seventh:    1.778;
+$major-seventh:    1.875;
+$octave:           2;
+$major-tenth:      2.5;
+$major-eleventh:   2.667;
+$major-twelfth:    3;
+$double-octave:    4;
+
+// This is quite an experiment with font sizes. 
+// Basically, i'm using a modualr scale for the type.
+
+@mixin modular($largest){
+	$ratio: $minor-second;
+	font-size: modular-scale($largest,  -6, $ratio);
+	@media(min-width: $mobile){ 	font-size: modular-scale($largest,  -5, $ratio); };
+	@media(min-width: $phablet){ 	font-size: modular-scale($largest,  -4, $ratio); };
+	@media(min-width: $tablet){ 	font-size: modular-scale($largest,  -3, $ratio); };
+	@media(min-width: $desklet){ 	font-size: modular-scale($largest,  -2, $ratio); };
+	@media(min-width: $desktop){ 	font-size: modular-scale($largest,  -1, $ratio); };
+	@media(min-width: $cinema){ 	font-size: $largest; };
+}
 
 
 /*********************
