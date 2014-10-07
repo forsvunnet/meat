@@ -8,6 +8,7 @@
 	In fact, I insist, you MUST change these.
 */
 
+	// Rems
 	$base:		20rem;
 	$mobile: 	30.063rem; 
 	$phablet:	37rem;
@@ -15,7 +16,6 @@
 	$desklet: 	55.5rem; 
 	$desktop: 	62.5rem; 	
 	$cinema: 	75rem;
-	
 	$thin: 		42.500rem;
 
 /* 
@@ -34,6 +34,6 @@
 	$tablet: 	48 * 16px;
 	$desklet: 	55.5 * 16px; 
 	$desktop: 	62.5 * 16px; 	
-	$cinema: 	$desktop; //77.500;
+	$cinema: 	75 * 16px;
 	$thin: 		42.500 * 16px;
 }

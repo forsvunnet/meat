@@ -19,58 +19,10 @@ $wrap: $mobile;
 
 .wrap {
 	max-width: $wrap;
-	margin: 0 auto;
 }
 
-/*********************
-NAVIGATION STYLES
-*********************/
 
-.nav {}
 
-	/* .menu is clearfixed inside mixins.scss */
-	.menu {
-		ul {
-			li {
-				a {
-					
-					/*
-					you can use hover styles here even though this size
-					has the possibility of being a mobile device.
-					*/
-					&:hover, &:focus {
-					
-					}
-				}
-				
-				&:first-child {}
-				&:last-child {}
-				
-				/*
-				plan your menus and drop-downs wisely.
-				*/
-				ul.sub-menu,
-				ul.children {
-					li {
-						a {
-							&:hover,
-							&:focus {}
-							&:link {}
-						}
-						&:first-child {}
-						&:last-child {}
-					}
-				}
-			} /* end .menu ul li */
-			
-			/* highlight current page */
-			li.current-menu-item, 
-			li.current_page_item,
-			li.current-page-ancestor {
-				a {}
-			}  /* end current highlighters */
-		} /* end .menu ul */
-	} /* end .menu */
 
 /*********************
 POSTS & CONTENT STYLES
@@ -99,6 +51,13 @@ POSTS & CONTENT STYLES
 	}
 			
 } /* end .entry-content */
+
+
+
+
+
+
+
 
 /*********************
 FOOTER STYLES

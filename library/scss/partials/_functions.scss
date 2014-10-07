@@ -41,6 +41,72 @@ box-shadow: 0 0 4px rgba(0,0,0,0.3);
 
 
 
+
+
+// Strip out units from anything
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+/* 
+
+Rems for the future, PX for the past.
+
+This is a function that has been created to
+remove the need to write everything twice when it comes to REMs and PX.
+
+Basically, when you use u(3rem), the px-only variable on the style, 
+android and ie page tells the preprocessor to either change all 
+values in the breakpoint stylesheets to be either REM or PX, 
+and it'll do the math around it. So what you're left with is more hair
+at the end of the day.
+
+Source: http://davidwalsh.name/rem-px-browser-function-sass
+@Useage: u(3rem); 
+ 
+*/
+
+
+$pxBase : 16; /* 1 */
+
+@function parseInt($n) {
+	@return $n / ($n * 0 + 1); /* 2 */
+}
+
+@function u($values){ /* 3 */
+
+      $list: (); /* 4 */
+
+      @each $value in $values { /* 5 */
+
+            $unit : unit($value); /* 6 */
+            $val  : parseInt($value); /* 2 */
+
+			@if $value == 0 or type-of($value) != "number" {
+				$list: append($list, $value);
+			}
+			
+            @else if ($px-only) and ($unit == 'rem') { /* 7 */
+				$list: append($list, ($val * $pxBase) + px); /* 7 */
+            }
+
+            @else if($unit == 'px') or ($unit == 'rem'){ /* 8 */
+				$list: append($list, $value); /* 8 */
+            }
+
+            @else {
+				@warn "Somewhere, you\'ve used em or pt or some other units other than rem or px";
+            }
+      }
+
+      @return $list(); /* 10 */
+}
+
+
+
+
+
+
 /************************
 	SQUARE ROOTS
 *************************/

@@ -125,9 +125,6 @@ function bones_gallery_style($css) {
 
 
 
-
-
-
 /*********************
 CUSTOM BARLEY FUNCTION!!
 You need the Barley plugin to get this working.
@@ -198,6 +195,15 @@ function bones_scripts_and_styles() {
 		wp_enqueue_script( 'comment-reply' );
     }
 
+	// This is the part that makes me laugh. Android Browsers need PX.
+    $ad_css_path = dirname(__FILE__) . '/css/android.css';
+    
+    // Check if browser is Android here, then use it against the twat.
+	$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
+	if (stripos($ua,'applewebkit') !== false && stripos($ua,'mozilla') !== false) {
+    wp_register_style( 'android-styles', get_stylesheet_directory_uri() . '/library/css/android.css?' . filemtime($ad_css_path), array(), '', 'all' );
+	};
+
     //adding scripts file in the footer
     //wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 
@@ -205,6 +211,12 @@ function bones_scripts_and_styles() {
     //wp_enqueue_script( 'bones-modernizr' );
     wp_enqueue_style( 'bones-stylesheet' );
     wp_enqueue_style( 'bones-ie-only' );
+
+	// Call Android in last if it's needed.
+	if (stripos($ua,'applewebkit') !== false && stripos($ua,'mozilla') !== false) {
+	    wp_enqueue_style( 'android-styles' );
+	};
+
 
     $wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
@@ -230,7 +242,7 @@ function bones_theme_support() {
 	add_theme_support( 'post-thumbnails' );
 
 	// default thumb size
-	set_post_thumbnail_size(250, 250, true);
+	set_post_thumbnail_size(400, 400, true);
 
 	// wp custom background (thx to @bransonwerner for update)
 	/*add_theme_support( 'custom-background',
@@ -252,8 +264,8 @@ function bones_theme_support() {
 	add_theme_support( 'post-formats',
 		array(
 			//'aside',             // title less blurb
-			'gallery',           // gallery of images
-			'link',              // quick link to other site
+			//'gallery',           // gallery of images
+			//'link',              // quick link to other site
 			//'image',             // an image
 			//'quote',             // a quick quote
 			//'status',            // a Facebook like status update

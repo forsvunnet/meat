@@ -11,13 +11,19 @@
 	
 	$black:				#000;
 	$white:				#fff;
-	$text-colour:        #555;
+	$text-colour:       #555;
 
 // Primary colours
 	
-	$brand-colour:		#3e454c;
-	$brand-highlight:	#ff642d;
-	$brand-compliment:	adjust-hue($brand-highlight, 180deg);
+	$red:				#ff4338;
+	$yellow:			#f7a800;
+	$green:				#00a23a;
+	$blue:				#00a1be;
+	$purple:			#a261b3;
+	
+	$brand-colour:		$red;
+	$brand-highlight:	$blue;
+	$brand-compliment:	$purple;
 	
 // Links and Anchors
 	

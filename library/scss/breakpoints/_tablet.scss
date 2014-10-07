@@ -30,20 +30,8 @@ $wrap: $tablet;
 
 .wrap {
 	max-width: $wrap;
-	margin: 0 auto;
 }
 
-
-/*********************
-HEADER STYLES
-*********************/
-
-	h1, .h1 {	@include font-size(2.250);	} 
-	h2, .h2 {	@include font-size(1.875);	} 
-	h3, .h3 {	@include font-size(1.5);	} 
-	h4, .h4 {	@include font-size(1.125);	} 
-	h5, .h5 {	@include font-size(1);		} 
-	h6, .h6 {	@include font-size(0.85);	} 
 
 /*********************
 HEADER STYLES
@@ -56,20 +44,20 @@ HEADER STYLES
 LOGO STYLES
 *********************/
 
-	#logo {
-		@include width(3);
-		text-align: left;
-		float: left;
-		margin-left: 0;
+#logo {
+	@include width(3);
+	text-align: left;
+	float: left;
+	margin-left: 0;
 
 
-		img{
-		    margin: 0em auto;
-		    max-width: 100%;
-		    position: relative;
-		    z-index: 20;
-		}
+	img{
+	    margin: 0em auto;
+	    max-width: 100%;
+	    position: relative;
+	    z-index: 20;
 	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -80,13 +68,10 @@ NAVIGATION STYLES
 	visibility: hidden;
 }
 
-nav[role=navigation]{
-	float: right;
-}
 
 .nav {
 	text-align: center;
-	margin: 10px 0;
+	margin: u(1rem 0);
 	vertical-align: middle;
 
 	.js & {
@@ -116,9 +101,9 @@ nav[role=navigation]{
 			
 		a {
 			border-bottom: 0;
-			color: $grey-darker;
+			color: $text-colour;
 			@include font-size(1);
-			padding: 7px 10px;
+			padding: u(0.5rem 1rem);
 			font-weight: 400;
 
 			&:hover, &:focus {
@@ -157,10 +142,9 @@ nav[role=navigation]{
 				
 				a {
 					@include font-size(0.85);
-					padding: 2px 0 2px 14px;
 					border-right: 0;
 					display: block;
-					width: 200px;
+					width: u(18rem);
 					color: $white;
 					
 					&:hover,
@@ -214,43 +198,6 @@ nav[role=navigation]{
 
 
 
-/***************************************************
-		D i a g o n a l   S i d e b a r s !
-
-		This is where we can add a slanted
-		bar to the end of a container. The
-		height is wank though, so it needs
-		to be pulled in from JS 
-		
-		Should look like this:	[div]/
-
-
-***************************************************/
-
-@mixin slanted($slant-right, $colour){
-	position: relative;
-	background: $colour;
-	
-	.slanted{
-		content: "";
-		position: absolute;
-		top: 0;
-		width: $slant-right;
-		right: -$slant-right;
-		-webkit-backface-visibility: hidden;
-		background-image: url('../images/slant.svg');
-		background-size: 100% 100%;
-		height: 100%;
-	}
-
-	#slant polygon { fill: $colour !important; }
-	
-}
-
-.slant-right {
-	@include slanted(15px, $brand-colour);
-}
-
 /*********************
 SIDEBARS & ASIDES
 *********************/
@@ -258,7 +205,7 @@ SIDEBARS & ASIDES
 	.widget {
 		ul {
 			li {
-				margin-bottom: 0.75em;
+				margin-bottom: u(0.75rem);
 
 				&:first-child {}
 				&:last-child {}
@@ -266,8 +213,8 @@ SIDEBARS & ASIDES
 				/* deep nesting */
 
 				ul {
-					margin-top: 0.75em;
-					padding-left: 1em;
+					margin-top: u(0.75rem);
+					padding-left: u(1rem);
 				}
 			}
 		}
@@ -292,14 +239,9 @@ mobile. Make sure to double check these!
 		
 		width: col_width(3);
 		width: col_width(3, true);
-		
-		float: left;
-		margin-left: $gutter;
-		margin-left: calc(#{$gutter_em} * 1);	
-			
+
 		&.first{ margin-left: 0;}
 		&.last{ float: right;}
-		position: relative;
 		
 
 		&:first-child{
@@ -317,39 +259,10 @@ mobile. Make sure to double check these!
 		}
 	}
 
-	.half-horizontal{
-		border-bottom: 1px solid $black;
-		padding-bottom: 0.5em;
-		margin-bottom: 1em;	
-	}
-
 	a{	
 		&:hover{
 			color: $brand-colour;
 			text-decoration: underline;
 		}
-	}
-}
-
-.footer-links {
-	ul {
-		li {
-			a {
-				&:hover {}
-			}
-			/*
-			be careful with the depth of your menus.
-			it's very rare to have multi-depth menus in
-			the footer.
-			*/
-			ul {}
-		}
-	}
-} /* end .footer-links */
-
-
-.copyright{
-	br{
-		display: none;
 	}
 }
