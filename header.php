@@ -48,8 +48,9 @@
 	   display:block;}</style>
 	<![endif]-->
 
-    <!-- drop Google Analytics Here -->
-    <!-- end analytics -->
+	<!-- <picture> element: http://scottjehl.github.io/picturefill -->
+	<script>document.createElement( "picture" ); // Picture element HTML5 shiv</script>
+	<script src="<?php bloginfo('template_url'); ?>/library/js/libs/picturefill.js" async></script>
 
   </head>
 

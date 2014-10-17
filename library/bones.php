@@ -200,7 +200,7 @@ function bones_scripts_and_styles() {
     
     // Check if browser is Android here, then use it against the twat.
 	$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
-	if (stripos($ua,'applewebkit') !== false && stripos($ua,'mozilla') !== false) {
+	if (stripos($ua,'applewebkit') !== false && stripos($ua,'mozilla') !== false && stripos($ua,'linux') !== false) {
     wp_register_style( 'android-styles', get_stylesheet_directory_uri() . '/library/css/android.css?' . filemtime($ad_css_path), array(), '', 'all' );
 	};
 

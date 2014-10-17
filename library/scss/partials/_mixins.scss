@@ -77,6 +77,38 @@ $gutter: 7px;
 
 
 
+	// Padding in rems.
+	// padding-1, padding-4 etc is 1 rem or 4rem
+	
+	/* this is the padding */
+	
+	$paddings: 1, 2, 3, 4;
+	@each $padding in $paddings {
+		
+		$value: number(#{$padding});
+		$px-padding: $value * 16px;
+		
+	    .padding-#{$padding}{
+			padding-top: $px-padding;
+			padding-bottom: $px-padding;
+	
+			padding-top: #{$padding}rem;
+			padding-bottom: #{$padding}rem;
+	
+			&-top {
+				padding-top: $px-padding;
+				padding-top: #{$padding}rem;
+				padding-bottom: 0;
+			}
+	
+			&-bottom{
+				padding-bottom: $px-padding;
+				padding-bottom: #{$padding}rem;
+				padding-top: 0;
+			}
+	    }
+	}
+
 
 
 

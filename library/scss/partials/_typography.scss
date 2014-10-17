@@ -66,6 +66,39 @@ p {
 }
 
 
+/*
+	# Typekit and FOUT.
+
+	FOUT means "Flash of Unstyled Text"
+	and that happens when the site loads before the 
+	javascript can get the fonts needed for the 
+	page to be styled.
+	
+	Typekit have suggested "how about you hide 
+	everything until they load?" and have provided 
+	a javascript way of getting the fonts to load. 
+	
+	Which might work, but if the javascript doesn't 
+	load, we're still going to have a flash of 
+	text right?
+
+*/
+
+// Give the body a transition for opacity.
+
+body { @include transition(opacity 0.3s ease-out); }
+
+// Hide the body when the fonts are loading...
+.wf-loading {
+	body { opacity: 0; }
+}
+
+// Bring the body in when they have loaded...
+.wf-active {
+	body { opacity: 1; }
+
+}
+
 
 
 
@@ -101,6 +134,7 @@ Text Overflow
 	}
   
 }
+
 /*********************************
 	Text alignment in classes	
 *********************************/
