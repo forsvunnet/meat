@@ -75,6 +75,31 @@ $gutter: 7px;
 }
 
 
+/* This mixin will help you nest mediaqueries easier.
+
+@Usage:
+	.font-size{
+		// Root font size
+		@include font-size(1);
+		// All sizes going up.
+		@include media(mobile){ @include font-size(1.1); }
+		@include media(tablet){ @include font-size(1.2); }
+		@include media(desktop){@include font-size(1.4); }
+		@include media(cinema){ @include font-size(1.6); }
+	}
+*/
+@mixin media($point) { 
+	$media-mobile:  '(min-width: #{$mobile})';
+	$media-tablet:  '(min-width: #{$tablet})';
+	$media-desktop: '(min-width: #{$desktop})';
+	$media-cinema: '(min-width: #{$cinema})';
+	// Start detecting the mediaquery
+	@if $point == cinema { @media #{$media-cinema} { @content; } }
+	@else if $point == desktop { @media #{$media-desktop} { @content; } }
+	@else if $point == tablet { @media #{$media-tablet} { @content; } } 
+	@else if $point == mobile { @media #{$media-mobile}  { @content; } }
+}
+
 
 
 	// Padding in rems.
